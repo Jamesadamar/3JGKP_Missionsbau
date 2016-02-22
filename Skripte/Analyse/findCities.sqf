@@ -44,7 +44,7 @@ JGKP_fnc_searchSquare = {
 
 	_nrBuildings = {
 			count (_x buildingPos -1) > 0;
-	} count (nearestObjects [_cell, ["House"], _resolution / 2]);
+	} count (nearestObjects [_cell, ["House"], (_resolution / 2) + 10]);
 
 	if (_nrBuildings == 0) exitWith {}; // Stadtende!
 	if (_cell in JGKP_var_city) exitWith {}; // Feld bereits abgesucht!
@@ -111,7 +111,7 @@ for "_dy" from 1 to _stepsY do {
 		// Finde Häuser
 		_nrBuildings = {
 			count (_x buildingPos -1) > 0;
-		} count (nearestObjects [_cell, ["House"], _resolution / 2]);
+		} count (nearestObjects [_cell, ["House"], (_resolution / 2) + 10]);
 		
 		if (_nrBuildings >= _size && ({ _cell in _x } count _cities) == 0) then {
 			
