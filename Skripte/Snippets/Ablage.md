@@ -22,3 +22,22 @@ Dieser sehr merkwürdige und mächtige Befehl sucht nach Plätzen, die "houses" 
   }; 
 } foreach selectBestPlaces [position player, 1000, "houses", 25, 100];
 ```
+
+Klassiker nearestObjects sollte für diesen Fall doch am besten sein. Es gibt leider nur `nearestBuilding` und nicht Buildings, und der Unterschied zu nearestEntitiy ist nicht ganz klar, aber es findet alle Objekte vom Typ "house" im Umkreis von 200. Idee: Karte in 100mx100m Suchquadrate einteilen und nach Häusern suchen, wenn mehr als 5, Dorf gefunden?
+Aktuell: house umfasst auch Zäune und Mauern, Building auch.
+```SQF
+nearestObjects [player, ["house"], 200];
+```
+
+Erweiterung des Codes von oben. Hiermit werden wirklich nur begehbare Häuser gefunden. Erlaubt somit sichere Identifizierung größerer Städte (obgleich hier noch alle Häuser einzeln gefunden werden, das müsste man also noch aggregieren). 
+Problem: Klappt nur mit begehbaren Häusern, Inseln wie Chernarus sind damit so nicht möglich!
+```SQF
+{ 
+  if (count (_x buildingPos -1) > 0) then {  
+    _marker = createMarker [str(_x), _x];  
+    _marker setMarkerType "C_unknown"; 
+  };
+} foreach (nearestObjects [player, ["House"], 100])
+```
+
+
