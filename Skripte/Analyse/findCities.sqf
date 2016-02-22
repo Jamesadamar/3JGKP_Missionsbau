@@ -121,6 +121,18 @@ for "_dy" from 1 to _stepsY do {
 
 			_cities pushBack JGKP_var_city;
 
+			// DEBUG
+			// markiere jede Stadt mit einem Marker
+			{
+				_cell = _x select 0; // einfach erstes Planquadrat der Stadt
+				_marker = createMarker [format["city:%1", _cell], _cell];
+				_marker setMarkerShape "ICON";
+				_marker setMarkerType "C_Unknown";
+				_marker setMarkerText "Stadt";
+				//_marker setMarkerSize [_resolution / 2, _resolution / 2];
+				//_marker setMarkerColor "ColorEAST";
+				_marker setMarkerAlpha 0.3;
+			} foreach _cities;
 			/*
 			_marker = createMarker [format["cell%1%2", _dy,_dx], _cell];
 			_marker setMarkerShape "RECTANGLE";
