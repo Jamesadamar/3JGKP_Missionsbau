@@ -6,7 +6,7 @@
 	arguments: 			start (int): Startkoordinate, meist unten links
 						end (int): Endkoordinate, meist oben rechts
 						resolution (int): Größe eines Planquadrates (z.B. 100m)
-						size (int): Größe einer Siedlung, Anzahl der begehbaren Häuser
+						size (int): Größe einer Siedlung, Anzahl der begehbaren Häuser, bildet Zentrum für den Suchalgorithmus!
 	return value:		None
 
 	example call: 		[[0,0,0],[5000,5000,0],100,3] execVM "scripts\findCities.sqf";
@@ -19,6 +19,7 @@ _start = param [0, [0, 0, 0], [[]], 3];
 _end = param [1, [5000, 5000, 0], [[]], 3];
 _resolution = param [2, 100,[1]];
 _size = param [3, 5, [1]];
+_markerID = 1;
 
 // begin of script
 _distanceX = (_end select 0) - (_start select 0); // 5000 - 0 = 5000 m in x
@@ -50,12 +51,6 @@ JGKP_fnc_searchSquare = {
 	if (_cell in JGKP_var_city) exitWith {}; // Feld bereits abgesucht!
 
 	JGKP_var_city pushBack _cell;
-
-	_marker = createMarker [format["cell:%1", _cell], _cell];
-	_marker setMarkerShape "RECTANGLE";
-	_marker setMarkerSize [_resolution / 2, _resolution / 2];
-	_marker setMarkerColor "ColorEAST";
-	_marker setMarkerAlpha 0.3;
 
 	// durchsuche angrenzende Quadrate
 	if (_direction != "W") then {
@@ -120,26 +115,6 @@ for "_dy" from 1 to _stepsY do {
 			[_cell, "O",_resolution] call JGKP_fnc_searchSquare;
 
 			_cities pushBack JGKP_var_city;
-
-			// DEBUG
-			// markiere jede Stadt mit einem Marker
-			{
-				_cell = _x select 0; // einfach erstes Planquadrat der Stadt
-				_marker = createMarker [format["city:%1", _cell], _cell];
-				_marker setMarkerShape "ICON";
-				_marker setMarkerType "C_Unknown";
-				_marker setMarkerText "Stadt";
-				//_marker setMarkerSize [_resolution / 2, _resolution / 2];
-				//_marker setMarkerColor "ColorEAST";
-				_marker setMarkerAlpha 0.3;
-			} foreach _cities;
-			/*
-			_marker = createMarker [format["cell%1%2", _dy,_dx], _cell];
-			_marker setMarkerShape "RECTANGLE";
-			_marker setMarkerSize [_resolution / 2, _resolution / 2];
-			_marker setMarkerColor "ColorEAST";
-			_marker setMarkerAlpha 0.3;
-			*/
 		};
 		
 		// nächstes Quadrat in x
@@ -155,6 +130,84 @@ for "_dy" from 1 to _stepsY do {
 				0
 			];
 };
+
+// Berechne Zentrum für alle Städte
+
+JGKP_fnc_searchCentre = {
+	
+	private ["_city", "_xmin","_xmax","_ymin","_ymax","_centre","_a","_b"];
+
+	_city = _this select 0; // Array aus Planquadraten (Pos) [ [x1,y1,z1], [x2,y2,z3], ...]
+
+	_xmin = 1e6;
+	_ymin = 1e6;
+	_xmax = -1;
+	_ymax = -1;
+
+	{
+		if (_x select 0 < _xmin) then {
+			_xmin = _x select 0;
+		};
+
+		if (_x select 0 > _xmax) then {
+			_xmax = _x select 0;
+		};
+
+		if (_x select 1 > _ymax) then {
+			_ymax = _x select 1;
+		};
+
+		if (_x select 1 < _ymin) then {
+			_ymin = _x select 1;
+		};
+
+	} foreach _city;
+
+	_centre = [	(_xmax + _xmin) / 2,
+				(_ymax + _ymin) / 2,
+				0
+	];
+
+	_a = abs(_xmin - (_centre select 0)) max abs(_xmax - (_centre select 0));
+	_b = abs(_ymin - (_centre select 1)) max abs(_ymax - (_centre select 1));
+
+	[_centre, _a, _b]
+};
+
+{	
+	// Erzeuge Marker für Zentrum und Ausdehnung
+	_city = _x;
+	_centre = [_city] call JGKP_fnc_searchCentre; // einfach erstes Planquadrat der Stadt
+	_marker = createMarker [format["city:%1", _centre select 0], _centre select 0];
+	_markerBorder = createMarker [format["cityborder:%1",_centre select 0], _centre select 0];
+
+	_marker setMarkerShape "ICON";
+	_marker setMarkerType "C_Unknown";
+	_marker setMarkerText "Stadt";
+	//_marker setMarkerSize [_resolution / 2, _resolution / 2];
+	//_marker setMarkerColor "ColorEAST";
+	_marker setMarkerAlpha 0.3;
+
+	_markerBorder setMarkerShape "ELLIPSE";
+	_markerBorder setMarkerBrush "SolidBorder";
+	_markerBorder setMarkerSize [	(_centre select 1) + _resolution / 2, 
+									(_centre select 2) + _resolution / 2]; // Marker gehen nur bis zur Mitte des Quadrats!
+	_markerBorder setMarkerColor "ColorBLUE";
+	_markerBorder setMarkerAlpha 0.3;
+
+	// Erzeuge für jede Stadt Auslöser + Marker für Freund/Feind-Erkennung:
+	{
+		_cell = _x;
+		// Rufe Hilfsfunktion auf, die Trigger + Marker erzeugt!
+		_trg = createTrigger ["EmptyDetector", _cell, true];
+		_trg setTriggerArea [_resolution / 2, _resolution / 2, 0, true];
+
+		[_trg, _markerID, 60, 120] spawn JGKP_fnc_createMarkerAndTrigger;
+		_markerID = _markerID + 1;
+
+	} foreach _city;
+
+} foreach _cities;
 
 hint "Analyse abgeschlossen";
 
