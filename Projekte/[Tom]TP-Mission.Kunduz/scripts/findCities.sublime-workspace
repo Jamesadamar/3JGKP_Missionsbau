@@ -1,0 +1,1206 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"_squareS",
+				"_squareSize"
+			],
+			[
+				"_squa",
+				"_squarePos"
+			],
+			[
+				"addMagaz",
+				"addMagazineCargo"
+			],
+			[
+				"_sub",
+				"_subSquareWidth"
+			],
+			[
+				"_height",
+				"_subSquareHeight"
+			],
+			[
+				"setMarkerS",
+				"setMarkerSize"
+			],
+			[
+				"_marker",
+				"_markerAngle"
+			],
+			[
+				"_subs",
+				"_subSquareHeight"
+			],
+			[
+				"_Squa",
+				"_squareSize"
+			],
+			[
+				"_subS",
+				"_subSquareHeight"
+			],
+			[
+				"_sq",
+				"_squareSize"
+			],
+			[
+				"f",
+				"for	from 0 to XX do"
+			],
+			[
+				"createM",
+				"createMarker"
+			],
+			[
+				"for",
+				"for	from 0 to XX do"
+			],
+			[
+				"_new",
+				"_newAngle"
+			],
+			[
+				"_de",
+				"_deltaX"
+			],
+			[
+				"_ori",
+				"_ori_z"
+			],
+			[
+				"resi",
+				"resize"
+			],
+			[
+				"enableS",
+				"enableSimulation"
+			],
+			[
+				"_deta",
+				"_delta_z"
+			],
+			[
+				"fo",
+				"for	from 0 to XX step -1 do"
+			],
+			[
+				"getpos",
+				"getPosASL"
+			],
+			[
+				"_newOb",
+				"_newObject"
+			],
+			[
+				"getPos",
+				"getPosASL"
+			],
+			[
+				"_query",
+				"_queryVar"
+			],
+			[
+				"prepro",
+				"preprocessFileLineNumbers"
+			],
+			[
+				"EquipLo",
+				"EquipLocal_ID"
+			],
+			[
+				"removeAllA",
+				"removeAllAssignedItems"
+			],
+			[
+				"removeMaga",
+				"removeMagazines"
+			],
+			[
+				"JGKPO",
+				"JGKP_TFAR_RADIO_ID"
+			],
+			[
+				"JGK",
+				"JGKP_TFAR_RADIO_IDS"
+			],
+			[
+				"parse",
+				"parseText"
+			],
+			[
+				"public",
+				"publicVariable"
+			],
+			[
+				"JGKP",
+				"JGKP_UTIL_FNC_DELETE_VEHICLE"
+			],
+			[
+				"_delta",
+				"_delta_X"
+			],
+			[
+				"back",
+				"backpackCargo"
+			],
+			[
+				"magaz",
+				"magazineCargo"
+			],
+			[
+				"publicV",
+				"publicVariable"
+			],
+			[
+				"_edit",
+				"_edit_content"
+			],
+			[
+				"_ite",
+				"_items"
+			],
+			[
+				"_wea",
+				"_weapons"
+			],
+			[
+				"_uni",
+				"_uniformitems"
+			],
+			[
+				"CBA_",
+				"CBA_fnc_addClientToServerEventhandler"
+			],
+			[
+				"OFFSET",
+				"OFFSET_HOEHE"
+			],
+			[
+				"publi",
+				"publicVariableClient"
+			],
+			[
+				"_EF_na",
+				"_EF_name"
+			],
+			[
+				"_EF_",
+				"_EF_gruppe"
+			],
+			[
+				"_EF",
+				"_EF_gruppe"
+			],
+			[
+				"ctrlEn",
+				"ctrlEnable"
+			],
+			[
+				"_CB_",
+				"_CB_insignia"
+			],
+			[
+				"DB_connect_",
+				"DB_connect_User"
+			],
+			[
+				"swic",
+				"switch	switch_SQF"
+			],
+			[
+				"_is",
+				"_isMedic"
+			],
+			[
+				"_Button_",
+				"_Button_Save"
+			],
+			[
+				"_Butt",
+				"_Button_Refresh"
+			],
+			[
+				"_Button",
+				"_Button_LoadLoadout"
+			],
+			[
+				"forea",
+				"foreach"
+			],
+			[
+				"foreac",
+				"_forEachIndex"
+			],
+			[
+				"_CB",
+				"_CB_gruppe"
+			],
+			[
+				"_backpack",
+				"_backpack"
+			],
+			[
+				"addItemCar",
+				"addItemCargoGlobal"
+			],
+			[
+				"_backap",
+				"_backpackitems"
+			],
+			[
+				"_unif",
+				"_uniformitems"
+			],
+			[
+				"addItemToU",
+				"addItemToUniform"
+			],
+			[
+				"addItem",
+				"canAddItemToBackpack"
+			],
+			[
+				"addWea",
+				"addPrimaryWeaponItem"
+			],
+			[
+				"_weap",
+				"_weaponitems"
+			],
+			[
+				"addItemT",
+				"addItemToBackpack"
+			],
+			[
+				"addBaack",
+				"addBackpack"
+			],
+			[
+				"removeBackpack",
+				"removeBackpackGlobal"
+			],
+			[
+				"_uniform",
+				"_uniformitems"
+			],
+			[
+				"removeAllGo",
+				"hcRemoveAllGroups"
+			],
+			[
+				"_se",
+				"_selectWeapon"
+			],
+			[
+				"CBA_fnc",
+				"CBA_fnc_addEventHandler"
+			],
+			[
+				"addMaga",
+				"addMagazineCargoGlobal"
+			],
+			[
+				"addBack",
+				"addBackpackCargoGlobal"
+			],
+			[
+				"prepr",
+				"preprocessFileLineNumbers"
+			],
+			[
+				"diag",
+				"diag_log"
+			],
+			[
+				"_weapon",
+				"_weaponitems"
+			],
+			[
+				"_back",
+				"_backpack"
+			],
+			[
+				"uniform",
+				"uniformItems"
+			],
+			[
+				"addVe",
+				"addVest"
+			],
+			[
+				"switch",
+				"switch	switch_SQF"
+			],
+			[
+				"addItemTo",
+				"addItemToBackpack"
+			],
+			[
+				"publiV",
+				"publicVariableServer"
+			],
+			[
+				"_curs",
+				"_cursoraim"
+			],
+			[
+				"JGKP_Classes_M",
+				"JGKP_Classes_Magazines_Explosives"
+			],
+			[
+				"JGKP_Classes_Magazines",
+				"JGKP_Classes_Magazines_VehicleMagazines"
+			],
+			[
+				"config",
+				"configFile"
+			],
+			[
+				"JGKP_Classes_Weapons_Nav",
+				"JGKP_Classes_Weapons_Navigation"
+			],
+			[
+				"fnc_",
+				"fnc_projectile"
+			],
+			[
+				"setMarkerDir",
+				"setMarkerDirLocal"
+			],
+			[
+				"setMa",
+				"setMarkerSize"
+			],
+			[
+				"setMarkerC",
+				"setMarkerColorLocal"
+			],
+			[
+				"setMar",
+				"setMarkerType"
+			],
+			[
+				"_p",
+				"_projectile"
+			],
+			[
+				"pro",
+				"progressPosition"
+			],
+			[
+				"GUI",
+				"GUI_GRID_Y"
+			],
+			[
+				"GRID",
+				"GUI_GRID_X"
+			],
+			[
+				"JGKP_War",
+				"JGKP_Warfare_fnc_showMap"
+			],
+			[
+				"_oro",
+				"_originalAnchorPosition"
+			],
+			[
+				"_origi",
+				"_originalAnchorPosition"
+			],
+			[
+				"addItemto",
+				"addItemToUniform"
+			],
+			[
+				"JG",
+				"JGKP_Zeus_aus"
+			],
+			[
+				"JGKP_latop",
+				"JGKP_laptop_ID"
+			],
+			[
+				"exit",
+				"exitWith"
+			],
+			[
+				"_daz_jg",
+				"_daz_jg_qrf"
+			],
+			[
+				"_daz_uo",
+				"_daz_uo_qrf"
+			],
+			[
+				"_daz",
+				"_daz_jg_g1"
+			],
+			[
+				"sco",
+				"scopeName"
+			],
+			[
+				"_marekr",
+				"_markerName"
+			],
+			[
+				"deletem",
+				"deleteMarkerLocal"
+			],
+			[
+				"setMarkerDi",
+				"setMarkerDirLocal"
+			],
+			[
+				"createMarker",
+				"createMarkerLocal"
+			],
+			[
+				"deleteMark",
+				"deleteMarkerLocal"
+			],
+			[
+				"nearest",
+				"nearestObjects"
+			],
+			[
+				"disa",
+				"disableSerialization"
+			],
+			[
+				"RscB",
+				"RscButton_MakeUp_Layer3"
+			],
+			[
+				"onl",
+				"onLBSelChanged"
+			],
+			[
+				"disse",
+				"disableSerialization"
+			],
+			[
+				"exi",
+				"exitWith"
+			],
+			[
+				"GRI",
+				"GUI_GRID_W"
+			],
+			[
+				"addI",
+				"addItemToUniform"
+			],
+			[
+				"pre",
+				"preprocessFileLineNumbers"
+			],
+			[
+				"prep",
+				"preprocessFileLineNumbers"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "colr",
+		"selected_items":
+		[
+			[
+				"colr",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"color su",
+				"Colorsublime: Browse Themes"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"sqf",
+				"Set Syntax: SQF"
+			],
+			[
+				"s",
+				"Set Syntax: SQF"
+			],
+			[
+				"sq",
+				"Set Syntax: SQF"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"packa inst",
+				"Package Control: Install Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"sy",
+				"Set Syntax: SQF"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: while"
+			],
+			[
+				"package u",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"set sy",
+				"Set Syntax: SQF"
+			],
+			[
+				"sy xml",
+				"Set Syntax: XML"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"syn sq",
+				"Set Syntax: SQF"
+			],
+			[
+				"set s",
+				"Set Syntax: SQF"
+			],
+			[
+				"m",
+				"View: Toggle Minimap"
+			],
+			[
+				"sideb",
+				"View: Toggle Open Files in Side Bar"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"view.encoding()",
+			"show.encoding()",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/scripts/findCities.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/tsk/fn_patrolUrban.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/initPlayerLocal.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_findBuildingPositions.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_occupyBuildings.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/tsk/fn_occupy.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_assignTask.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_cache.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_createSpawnPos.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_createTemplate.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_createWaypointPositions.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_debugLog.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_groupCopyVars.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_groupRegroup.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_moveToPos.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_redoOriginTask.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_releaseGroup.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_spawn.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/tsk/fn_patrol.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/tsk/fn_patrolAround.sqf",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/tsk/fn_patrolGarrison.sqf",
+		"/C/Users/Michael/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/mission.sqm",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/initPlayerServer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/initServer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/modules/Upsmon/UPSMON/MODULES/Init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/onPlayerRespawn.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/Analysetest.Chernarus/findCities.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/createMarkerAndTrigger.sqf",
+		"/C/Users/Michael/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Michael/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Michael/AppData/Roaming/Sublime Text 3/Packages/Color Scheme - Default/Pastels on Dark.tmTheme",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/modules/Upsmon/Init_UPSMON.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/CONFIG.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/FUNCTIONS.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/MACRO.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/fnc/fn_createTemplate.sqf",
+		"/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-02-21_17-22-05.rpt",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/functions/spawnTemplate.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/scripts/templates/small_startCamp.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/functions/analyseSquare.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8_missionEXEC.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/mission.sqm",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/functions/createScenario.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8_missionEXEC.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/CONFIG.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/functions/fn_equipSoldier.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/onPlayerRespawn.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/scripts/paradrop.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/mission.sqm",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/scripts/setSkill.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/scripts/createHQ.sqf",
+		"/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-02-11_17-58-20.rpt",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/functions/analyseSquare.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/initServer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/scripts/gruppenteleport.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/functions/createScenario.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/fnc/fn_spawn.sqf",
+		"/C/Users/Michael/AppData/Local/Temp/Rar$DIa0.024/T8_missionEXEC.sqf",
+		"/C/Users/Michael/AppData/Local/Temp/Rar$DIa0.149/init.sqf",
+		"/C/Users/Michael/AppData/Local/Temp/Rar$DIa0.986/BLU_F_groupArrays.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/fnc/fn_INIT.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/FUNCTIONS.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/fnc/fn_.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/MACRO.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8_Units/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/intro.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[James&Ahab]Duala-Up.IslaDuala3/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/mission.sqm",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/scripts/teleport.sqf",
+		"/C/Users/Michael/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-01-28_20-33-01.rpt",
+		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/mission.sqm",
+		"/S/Steam/steamapps/common/Arma 3/@inidbi/db/xCam/Library_Pre/_xCamPrefabs.ini",
+		"/G/Workplace/[3%2eJgKp]James/missions/[James]Warfare_Chernarus.Chernarus/scripts/misc/fn_objectsMapper.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/functions/fn_init.sqf",
+		"/S/Steam/steamapps/common/Arma 3/@extDB2_DEBUG/extDB/logs/2016/1/09/16-42-12.log",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/saveCrate.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/Template_Waldkatze.mske/mission.sqm",
+		"/G/Workplace/[3%2eJgKp]James/missions/ZeusToSQM.utes/init.sqf",
+		"/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-01-13_19-50-06.rpt",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/@extDB2_DEBUG/extDB/sql_custom_v2/loadouts.ini",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/3JGKP_DBCrateSave.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]Basic_UPSMON_HC.Altis/initServer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]Basic_UPSMON_HC.Altis/initPlayerLocal.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]Basic_UPSMON_HC.Altis/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]Basic_UPSMON_HC.Altis/modules/Upsmon/UPSMON/COMMON/Params/fnc/UPSMON_SetMarkerArea.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]Basic_UPSMON_HC.Altis/initPlayerServer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]Basic_UPSMON_HC.Altis/modules/Upsmon/UPSMON/COMMON/markerAlpha.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]Basic_UPSMON_HC.Altis/modules/Upsmon/Init_UPSMON.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/Missionslayout_Event.VR/onPlayerRespawn.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]Basic_UPSMON_HC.Altis/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/marker_change_color.utes/createMarkerAndTrigger.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/onKeyUp.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/initSaveDialog.sqf",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/@extDB2_DEBUG/extdb-conf.ini",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/functions/fn_checkResult.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/initLoadDialog.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/3JGKP_DBLoadoutLoad.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/onKeyUp.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/initSaveDialog.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/functions/fn_fill_crate.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/selectTyp.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/selectGruppe.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/listNames.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/3JGKP_DBLoadoutSave.hpp",
+		"/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-01-07_19-44-42.rpt",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/3JGKP_DBCrateList.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/3JGKP_DBCrateEntry.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/Description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/marker_change_color.utes/mission.sqm",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/marker_change_color.utes/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/selectTyp.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/initListDialog.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/selectVar.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/3JGKP_DBLoadoutEdit.hpp",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/@extDB2_DEBUG/extDB/sql_custom_v2/user.ini",
+		"/S/Steam/steamapps/common/Arma 3/@extDB2_DEBUG/extDB/logs/2016/1/07/23-07-43.log",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/initCrateEntryDialog.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/initCrateEntryDialog.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/3JGKP_DBCrateList.hpp"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"G:\\Workplace\\[3%2eJgKp]James\\missions\\[James]Kartrennen_v1.Altis",
+			"C:\\Users\\Michael\\Documents\\Arma 3 - Other Profiles\\[3%2eJgKp]James\\missions\\[Steff]Sandbox_V14.Takistan,D:\\Meine Daten\\Dropbox\\Git\\Duala-up\\[James&Ahab]Duala-Up.IslaDuala3\\modules\\Upsmon",
+			"C:\\Users\\Michael\\Documents\\Arma 3 - Other Profiles\\[3%2eJgKp]James\\missions\\[Steff]Sandbox_V14.Takistan",
+			"C:\\Users\\Michael\\Documents\\Arma 3 - Other Profiles\\[3%2eJgKp]James\\missions\\[COY]_BW_Zargabad_v0_5.Zargabad",
+			"C:\\Users\\Michael\\Documents\\Arma 3 - Other Profiles\\[3%2eJgKp]James\\missions\\[3JgKp]RKB_v02.Altis\\modules\\Upsmon"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Create",
+			"expActiv",
+			"trigger",
+			";_",
+			"]; _",
+			"gruppen",
+			"MG",
+			"teleport",
+			"\"T8\\fnc\"",
+			"_camera",
+			"],[",
+			"],",
+			"],[",
+			"],",
+			"random(100)",
+			"5",
+			"_resolution",
+			"pusBack",
+			" _newObject",
+			" ",
+			"];",
+			"log",
+			"JGKP_Loadout_Selection",
+			"_weapons",
+			"_tempWeapons",
+			"_backpacks",
+			"_tempBackpacks",
+			"_EF_gruppe",
+			"_CB_zug",
+			"ResultLoadoutInfo",
+			"dialog\\",
+			"check",
+			"fn",
+			"_addmagazine",
+			"_addweapon",
+			"_addbackpack",
+			"_additem",
+			"fnc_check_result",
+			"_crateInventory",
+			"jgkp",
+			"_crate_",
+			"jgkp",
+			"jgkp_select_crate_inventory",
+			"jgkp",
+			"execVM '",
+			"'",
+			"dialog\\",
+			"server",
+			"b0",
+			"global",
+			"_unit",
+			"\";\";",
+			"_loadout",
+			"hint",
+			"_unit",
+			"_x",
+			"JGKP_kart_ownRaceTime",
+			"allowDa",
+			"refre",
+			"functions\\",
+			"8001",
+			"m92",
+			"feld",
+			"92",
+			"m92_tropen_gt",
+			"m92_gras_fleck",
+			"m92_fleck_gtd",
+			"feldbluse",
+			"german_feldbluse2_fleck",
+			"feldmuetze_fleck_helmet",
+			"feldmuetze_tropen_helmet",
+			"bar",
+			"UPSMON_RESPAWN",
+			"respawn",
+			"erspawn",
+			"spawn",
+			"retreat",
+			"Land_c_Grass_Bunch_Small",
+			"Land_c_GrassGreen_GroupHard",
+			"Land_c_Grass_BrushHigh_Green",
+			"thor",
+			"Land_c_StrThornGreen",
+			"Land_c_StrThornKhaki",
+			"Land_b_NeriumO2d_F",
+			"Land_BluntStone_03",
+			"Land_BluntStones_erosion",
+			"Land_BluntStone_01",
+			"Land_b_FicusC1s_F",
+			"Land_b_ficusC2d_F",
+			"xcam_",
+			"xcam_IronPipes_F",
+			"xcam_Mil_WallBig_Corner_F",
+			"xcam_Mil_WallBig_4m_F",
+			"xcam_Hbarrier_Big_F",
+			"xcam_Hbarrier_3_F",
+			"\"this enableSimulation false; this enableSimulation false; enableSimulation false; enableSimulation false;\"",
+			"enableSimulation",
+			"\"this enableSimulation false;this enableSimulation false; enableSimulation false; enableSimulation false;\"",
+			"enableSim",
+			"Race0",
+			"Race1",
+			"Race2",
+			"Race3",
+			"\"\"Race\"\",0",
+			"\"\"Race\"\",1",
+			"\"\"Race\"\",2",
+			"\"Race\",0",
+			"rennen",
+			"sense",
+			"Soldat",
+			"uf",
+			"uff",
+			"ufz",
+			"'dialog",
+			"button",
+			"'dialog\\selectColumn.sqf';",
+			"equip",
+			"equipü",
+			"save",
+			"check",
+			"onlyPublic",
+			"get_zug",
+			"get_gruppe",
+			"redresh",
+			"Versio",
+			"2.0",
+			"picture",
+			"1601"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"modules\\T8_Units\\T8\\fnc\"",
+			"_cam",
+			"pushBack",
+			"dialog\\DBCrateDialog\\",
+			"dialog\\DBLoadoutDialog\\",
+			"_magazines",
+			"_weapons",
+			"_backpacks",
+			"_items",
+			"sk3yn3t_server\\functions\\",
+			"PBW_Helm1_tropen_BO",
+			"PBW_Helm2_fleck",
+			"PBW_Helm1_fleck_BOD",
+			"PBW_Uniform1H_fleck",
+			"PBW_muetze2_fleck",
+			"PBW_muetze2_tropen",
+			"Land_Hbarrier_3_F",
+			"Land_",
+			"Land_IronPipes_F",
+			"Land_Mil_WallBig_Corner_F",
+			"Land_Mil_WallBig_4m_F",
+			"Land_HBarrier_Big_F",
+			"Land_HBarrier_3_F",
+			"Land_HBarrier_Big_F",
+			"\"this enableSimulation false; this allowDamage false;\"",
+			"Race1",
+			"Race2",
+			"Race3",
+			"\"\"Race\"\",1",
+			"\"\"Race\"\",2",
+			"\"\"Race\"\",3",
+			"11.10.2015",
+			"'sk3yn3t_client\\dialog",
+			"'dialog\\selectColumn.sqf'; JGKP_DB_column = ",
+			"\"~\"",
+			"ACE",
+			"ace",
+			":",
+			"",
+			"_queryResult",
+			"BWA3_Vest_Rifleman1_Fleck",
+			"BW_BACKPACK2_SAN_FLECK",
+			"BW_BACKPACK2_SAN_TROPEN",
+			"BWA3_Vest_Medic_Tropen",
+			"BWA3_Vest_Medic_Fleck",
+			"GLT_Carryall_Tropentarn",
+			"GLT_Carryall_Flecktarn",
+			"BWA3_Vest_Autorifleman_Tropen",
+			"BWA3_Vest_Autorifleman_Fleck",
+			"'CAN_COLLIDE']; _newObject enableSimulationGlobal false;",
+			"_unit",
+			"_camo_",
+			"camo",
+			"STR"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "findCities.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pare",
+				"dialog\\parent.hpp"
+			],
+			[
+				"small",
+				"scripts\\DAC\\fn_createSmallRandomCamp.sqf"
+			],
+			[
+				"change",
+				"scripts\\provinzen\\fn_changeCityStatus.sqf"
+			],
+			[
+				"mis",
+				"mission.sqm"
+			],
+			[
+				"mapper",
+				"scripts\\misc\\fn_objectsMapper.sqf"
+			],
+			[
+				"temp",
+				"scripts\\misc\\templates.sqf"
+			],
+			[
+				"zeus",
+				"scripts\\zg\\zeusForZgFhr.sqf"
+			],
+			[
+				"initp",
+				"initPlayerLocal.sqf"
+			],
+			[
+				"des",
+				"Description.ext"
+			],
+			[
+				"grps",
+				"scripts\\1.grp\\loadouts\\GrpSchrfSchtz.sqf"
+			],
+			[
+				"pio",
+				"scripts\\1.grp\\loadouts\\Pio.sqf"
+			],
+			[
+				"shtz",
+				"scripts\\1.grp\\loadouts\\Schtz.sqf"
+			],
+			[
+				"san",
+				"scripts\\1.grp\\loadouts\\San.sqf"
+			],
+			[
+				"gren",
+				"scripts\\1.grp\\loadouts\\Gren.sqf"
+			],
+			[
+				"pzf",
+				"scripts\\1.grp\\loadouts\\PzF.sqf"
+			],
+			[
+				"mg5_h",
+				"scripts\\1.grp\\loadouts\\MG5_H.sqf"
+			],
+			[
+				"mg5",
+				"scripts\\1.grp\\loadouts\\MG5.sqf"
+			],
+			[
+				"mg4",
+				"scripts\\1.grp\\loadouts\\MG4.sqf"
+			],
+			[
+				"mg3",
+				"scripts\\1.grp\\loadouts\\MG3_H.sqf"
+			],
+			[
+				"grpf",
+				"scripts\\1.grp\\loadouts\\GrpF.sqf"
+			],
+			[
+				"tr",
+				"scripts\\1.grp\\loadouts\\TrpF.sqf"
+			],
+			[
+				"in",
+				"functions\\fn_inline.sqf"
+			],
+			[
+				"scope",
+				"scripts\\scope.sqf"
+			],
+			[
+				"cop",
+				"scripts\\copy.sqf"
+			],
+			[
+				"d",
+				"scripts\\loadouts\\daz_jg_start.sqf"
+			],
+			[
+				"dz",
+				"scripts\\loadouts\\daz_uo_start.sqf"
+			],
+			[
+				"init",
+				"initPlayerLocal.sqf"
+			],
+			[
+				"j",
+				"scripts\\loadouts\\daz_jg_start.sqf"
+			],
+			[
+				"fn",
+				"scripts\\fn_changeModulState.sqf"
+			],
+			[
+				"kiste",
+				"scripts\\module\\kiste8.sqf"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 276.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

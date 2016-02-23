@@ -1,0 +1,96 @@
+//**********************************************************************************
+//** Scripted by DasMaeh		v1.0
+//**********************************************************************************
+//** Quelle(n):
+//** https://community.bistudio.com/wiki/Description.ext
+//**********************************************************************************
+
+//**********************************************************************************
+//** Definieren von Variablen
+//**********************************************************************************
+#define LOADSCREEN "loadscreen.jpg"
+#define LOADSCREENTEXT "[3.JGKP]UPSMON_BASIC + HC"
+#define INTROTEXT "Text unterm Ladebild (Intro)"
+
+//**********************************************************************************
+//** Einfügen von UserInterfaces/Dialoge von anderen Modulen/Scripts/etc
+//**********************************************************************************
+//#include "defines.hpp"
+
+//**********************************************************************************
+//** Missionsparamter
+//**********************************************************************************
+OnLoadName = "[James]UPSMON_Basic + HC";		// String (usually mission name) shown during mission loading
+author="[3.JgKp]James";					// Author of the mission
+onLoadMission = LOADSCREENTEXT;				// Displays a message while the mission is loading. In MP this is the name you see when selecting a mission and also the name that is presented to the Gamebrowser.
+onLoadIntro = Beispielmission;					// Displays a message while the intro is loading.
+onLoadMissionTime = true;					// Define whether you will see the time and date displayed while the mission loads. 1 means visible, 0 hidden.
+onLoadIntroTime = true;						// Define whether you will see the time and date displayed while the intro loads. 1 means visible, 0 hidden.
+//loadScreen = LOADSCREEN; 					// You can define a picture to be shown while the mission is loaded. The path is relative to the mission folder.
+//minScore = 0;								// Set minimum score for your mission. Score is related to the star display in the debriefing screen. The score can be influenced during a missions progress by using the addRating command.
+//avgScore = 1800;							// Set average score for your mission. Score is related to the star display in the debriefing screen.
+//maxScore = 75000;							// Set minimum score for your mission. Score is related to the star display in the debriefing screen.
+
+//*********************************
+//** Sets respawn type.
+//*********************************
+//** 0 or "NONE" - No respawn 
+//** 1 or "BIRD" - Respawn as a seagull 
+//** 2 or "INSTANT" - Respawn just where you died. 
+//** 3 or "BASE" - Respawn in base.
+//**		Requires a marker named: respawn_west, respawn_east, respawn_guerrila, respawn_civilian
+//**		Add markers named with the prefix 'respawn_west' with any suffix (eg: respawn_west1,respawn_west_2) for multiple random respawn points.
+//**		Vehicle respawn in base requires a marker named: respawn_vehicle_west, etc
+//** 4 or "GROUP" - Respawn in your group (if there's no AI left, you'll become a seagull).
+//** 5 or "SIDE" - Respawn into an AI unit on your side (if there's no AI left, you'll become a seagull).
+//*********************************
+respawn = 3;
+
+respawnDelay = 10;							// Set respawn delay in seconds.
+respawnVehicleDelay = 11;					// Set vehicle respawn delay in seconds.
+respawnDialog = 1;							// Show the scoreboard and respawn countdown timer for a player if he is killed with respawnType 3. Default is 1 (true).
+joinUnassigned = 1;							// New Player auto assigned to the side with least players
+//forceRotorLibSimulation = 1; 				// Force enable or disable RotorLib [Default value: 0 - options based; 1 - force enable; 2 - force disable]
+disabledAI = 1;								// When 1, removes all playable units which do not have a human player. (MP)
+//aiKills = 1;								// Enables scorelist for AI players
+//briefing = 0;								// Skip briefing screen for SP missions. If no briefing.html is present, it is skipped anyway.
+//debriefing = 0;							// Defines if the debriefing is shown or not at the end of the mission.
+
+enableDebugConsole = 1;						// ermöglicht es als eingelogter Admin die DebugKonsole zu nutzen
+ShowGPS = 1;								// Enables/Disables the GPS
+showCompass = 1;							// Defines if the compass is visible.
+showMap = 1;								// Defines if the map is shown after the mission starts.
+showNotePad = 0;							// Defines if the NotePad is shown after the mission starts.
+showWatch = 1;								// Defines if the watch is visible.
+scriptedPlayer = 0;							// When scripted player is enabled, game no longer shows "No player select" error message upon mission start when no player unit is present.
+// disableChannels[]={0,1,2,3,4};			// Deaktiviert Chatkanäle (0 = Global; 1 = Side; 2 = Command; 3 = Group; 4 = Vehicle; 5 = Direct; 6 = System)
+enableItemsDropping = 0;					// Activate dropping items while swimming
+
+
+//**********************************************************************************
+//** The purpose of the following class definition is to signal the engine the gameType
+//** which is displayed in the MP game browser.
+//** This can assist other players for finding particular missions using the filters.
+//**********************************************************************************
+//** gameType can be one of following:
+//**		DM - Death Match 
+//**		CTF - Capture the Flag 
+//**		FF - Flag Fight 
+//**		Coop -Cooperative Mission 
+//**		Team - Team Mission 
+//**		Scont - Sector Control 
+//**		Hold - Hold Location 
+//**		Unknown - Unknown - is used when no class header is defined.
+//**********************************************************************************
+//** playerCountMultipleOf: the game server would set the maximum amount of players based on bandwidth and eventually this parameter.
+//** The default is 2, so it means the mission will try to balance the game to multiples of 2 (2 vs 2, 4 vs 4, etc.)
+//** and you did not end up with a team mission with 5 maximum players(2 vs 3 is unfair?). Coop type missions use 1, Team type missions use 2 (default). 
+//**********************************************************************************
+class Header
+{
+	gameType = COOP; 			// game type
+	minPlayers = 10; 			// min # of players the mission supports
+	maxPlayers = 53; 			// max # of players the mission supports
+	playerCountMultipleOf = 1;	// 1=all on one side (Coop), 2= TvT (balanced Teams)
+};
+

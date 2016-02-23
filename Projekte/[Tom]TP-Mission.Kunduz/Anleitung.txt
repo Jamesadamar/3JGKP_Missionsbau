@@ -1,0 +1,24 @@
+HC-Mover Anleitung:
+
+- Die Ordner Coyote und HC_Mover ins Missions-Hauptverzeichnis kopieren.
+
+- Die Zeilen der Init.sqf in die Eigene Init.sqf kopieren.
+
+- Die Zeilen der InitServer.sqf in die Eigene InitServer.sqf kopieren.
+
+- Im Missionseditor Auslöser mit folgenden Einstellungen platzieren.
+  Name:       COY_Debug_Trigger
+  Größe:      Über die gesammte Karte
+  Bedingung:  Jeder, Mehrfach 
+
+Scripteinstellungen über InitServer.sqf:
+coyote_debug = true;   Einblendung im SideChat wieviele Einheiten wann verschoben werden.
+coyote_debug = false;  keine Einblendungen
+
+Im Absatz HC-Mover ist es möglich Mover-Scripte für OPFOR BLUEFOR INDIPENDENT und ZIVILISTEN einzeln zu Aktivieren.
+Einfach Scriptaufrufe mit // ein- oder auskommentieren.
+
+- Wenn Einheiten mit Modulen synchronisiert sind und über einen Auslöser aktiviert werden, dann ist es möglich, nach dem Auslösen die EInheiten auf den HC zu verschieben.
+Dazu in den Auslöser in die Aktivierungszeile folgendes schreiben: 
+	- nul = [thisTrigger] execVM ""HC_Mover\delete_logic.sqf
+Dieses Skript löscht die Module, mit denen die EInheiten verbunden sind, wodurch der HC sie übernehmen kann
