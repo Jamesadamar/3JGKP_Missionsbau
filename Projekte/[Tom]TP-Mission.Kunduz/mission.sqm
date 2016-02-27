@@ -8,18 +8,22 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=1154;
+		nextID=1163;
 	};
 	class MarkerIDProvider
 	{
 		nextID=11;
 	};
+	class LayerIndexProvider
+	{
+		nextID=3;
+	};
 	class Camera
 	{
-		pos[]={5083.561,38.103764,1665.3328};
-		dir[]={-0.055653181,-0.53659075,0.84203267};
-		up[]={-0.035388362,0.84383577,0.53542298};
-		aside[]={0.99784195,-2.2251334e-007,0.065951116};
+		pos[]={1451.1188,376.65829,177.18668};
+		dir[]={0.46364293,-0.80382794,0.37272701};
+		up[]={0.62649262,0.59484845,0.50364423};
+		aside[]={0.62656164,-9.4471034e-008,-0.77939308};
 	};
 };
 binarizationWanted=0;
@@ -255,12 +259,12 @@ class Mission
 	};
 	class Entities
 	{
-		items=393;
+		items=394;
 		class Item0
 		{
 			dataType="Marker";
 			position[]={5066.75,8.4670267,1697.75};
-			name="ups_spawn_templates";
+			name="ups_templates_spawn";
 			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorRed";
@@ -1295,11 +1299,11 @@ class Mission
 		class Item60
 		{
 			dataType="Trigger";
-			position[]={5067.125,8.5164948,1697.75};
+			position[]={5068.5,8.4499836,1697.75};
 			class Attributes
 			{
-				name="TrgKillAll";
-				onActivation="{ if (vehicle _x != _x) then { {deleteVehicle _x} foreach (crew _x); deleteVehicle _x; } else { deleteVehicle _x; }; } forEach thislist; ";
+				name="trgKillAll";
+				onActivation="{deleteVehicle _x; } foreach thislist";
 				sizeB=100;
 				timeout[]={15,15,15};
 				repeatable=1;
@@ -10416,8 +10420,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5039.75,7.0394249,1759.8};
-						angles[]={0.1312411,0,6.183517};
+						position[]={5039.75,7.0394244,1759.8};
+						angles[]={0.13124876,0,6.1835093};
 					};
 					side="East";
 					flags=2;
@@ -10425,7 +10429,7 @@ class Mission
 					{
 						skill=0.34473008;
 						rank="LIEUTENANT";
-						init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",1] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+						init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",1] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 					};
 					id=597;
 					type="CAF_AG_ME_T_AK47";
@@ -10501,7 +10505,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5040.0078,7.2244496,1751.1051};
+						position[]={5040.0078,7.2244492,1751.1051};
 						angles[]={6.2711778,0,0.043964844};
 					};
 					side="East";
@@ -10510,7 +10514,7 @@ class Mission
 					{
 						skill=0.33996552;
 						rank="LIEUTENANT";
-						init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",2] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+						init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",2] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 					};
 					id=602;
 					type="CAF_AG_ME_T_AK47";
@@ -10621,8 +10625,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5035.9995,7.5402055,1719.651};
-						angles[]={0.051953323,0,6.251195};
+						position[]={5036,7.5401859,1719.651};
+						angles[]={0.051958453,0,6.251193};
 					};
 					side="East";
 					class Attributes
@@ -10738,7 +10742,7 @@ class Mission
 					{
 						skill=0.27326074;
 						rank="LIEUTENANT";
-						init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",5] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+						init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",5] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 					};
 					id=1097;
 					type="GLT_Middle_East_Teamleader";
@@ -10887,8 +10891,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5060.75,9.1617537,1669.9896};
-						angles[]={6.2551923,0,0.055941612};
+						position[]={5060.75,9.1617661,1669.99};
+						angles[]={6.2551899,0,0.055937801};
 					};
 					side="East";
 					class Attributes
@@ -10913,7 +10917,7 @@ class Mission
 					{
 						skill=0.35425916;
 						rank="CORPORAL";
-						init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",7] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+						init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",7] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 					};
 					id=626;
 					type="CAF_AG_ME_T_RPG";
@@ -11079,7 +11083,7 @@ class Mission
 					{
 						skill=0.34949461;
 						rank="CORPORAL";
-						init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",8] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+						init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",8] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 					};
 					id=633;
 					type="CAF_AG_ME_T_PKM";
@@ -11181,8 +11185,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5074.25,8.5334606,1707.8};
-						angles[]={6.1914439,0,0.067896426};
+						position[]={5074.396,8.5391092,1707.8081};
+						angles[]={6.1914506,0,0.067893311};
 					};
 					side="East";
 					class Attributes
@@ -11196,8 +11200,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5074.25,8.5334606,1707.8};
-						angles[]={6.1914439,0,0.067896426};
+						position[]={5074.396,8.5391092,1707.8081};
+						angles[]={6.1914506,0,0.067893311};
 					};
 					side="East";
 					flags=2;
@@ -11249,15 +11253,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5074.25,10.691717,1707.6014};
-				angles[]={6.1914439,0,0.067896426};
+				position[]={5074.2495,10.691818,1707.6013};
+				angles[]={6.1914506,0,0.067893311};
 			};
 			side="East";
 			flags=2;
 			class Attributes
 			{
 				skill=0.60678422;
-				init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",9] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+				init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",9] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 			};
 			id=638;
 			type="CAF_AG_ME_T_Offroad_armed_01";
@@ -12246,7 +12250,7 @@ class Mission
 					{
 						skill=0.38588089;
 						rank="LIEUTENANT";
-						init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",3] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+						init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",3] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 					};
 					id=1088;
 					type="GLT_Middle_East_Teamleader";
@@ -12314,7 +12318,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5047.875,7.3554459,1737.675};
+						position[]={5047.875,7.3554454,1737.675};
 					};
 					side="East";
 					flags=3;
@@ -12322,7 +12326,7 @@ class Mission
 					{
 						skill=0.42460668;
 						rank="LIEUTENANT";
-						init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",4] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+						init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",4] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 					};
 					id=1092;
 					type="GLT_Middle_East_Teamleader";
@@ -12382,15 +12386,6 @@ class Mission
 		{
 			dataType="Group";
 			side="East";
-			class Attributes
-			{
-			};
-			id=1098;
-		};
-		class Item372
-		{
-			dataType="Group";
-			side="East";
 			class Entities
 			{
 				items=8;
@@ -12399,7 +12394,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5041.1152,7.7620668,1704.3191};
+						position[]={5041.1152,7.7620673,1704.3191};
 					};
 					side="East";
 					flags=3;
@@ -12407,7 +12402,7 @@ class Mission
 					{
 						skill=0.39620769;
 						rank="LIEUTENANT";
-						init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",6] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+						init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",6] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 					};
 					id=1103;
 					type="GLT_Middle_East_Teamleader";
@@ -12507,7 +12502,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5059.5225,8.7183552,1691.2238};
+						position[]={5059.522,8.7183237,1691.224};
 					};
 					side="East";
 					flags=1;
@@ -12523,7 +12518,7 @@ class Mission
 			};
 			id=1102;
 		};
-		class Item373
+		class Item372
 		{
 			dataType="Group";
 			side="East";
@@ -12535,7 +12530,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5101,10.03544,1693.675};
+						position[]={5101.0518,10.037684,1693.576};
 						angles[]={0.047961645,0,0.047961645};
 					};
 					side="East";
@@ -12573,24 +12568,24 @@ class Mission
 			};
 			id=1117;
 		};
-		class Item374
+		class Item373
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5078.4932,10.515728,1693.7054};
-				angles[]={6.259192,0,0.071875811};
+				position[]={5078.4932,10.515957,1693.7058};
+				angles[]={6.2591867,0,0.071872659};
 			};
 			side="East";
 			flags=2;
 			class Attributes
 			{
-				init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",10] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+				init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",10] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 			};
 			id=1118;
 			type="LOP_TKA_Static_M2";
 		};
-		class Item375
+		class Item374
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12602,46 +12597,46 @@ class Mission
 			flags=2;
 			class Attributes
 			{
-				init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",11] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+				init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",11] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 			};
 			id=1120;
 			type="LOP_TKA_Static_M2_MiniTripod";
 		};
-		class Item376
+		class Item375
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5094.7734,10.325447,1693.6055};
+				position[]={5094.7734,10.325551,1693.6053};
 				angles[]={6.2631841,0,0.023998277};
 			};
 			side="East";
 			flags=2;
 			class Attributes
 			{
-				init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",12] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+				init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",12] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 			};
 			id=1122;
 			type="LOP_TKA_Static_Mk19_TriPod";
 		};
-		class Item377
+		class Item376
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5100.9897,11.340014,1693.5884};
+				position[]={5100.9893,11.339811,1693.5886};
 				angles[]={0.047961645,0,0.047961645};
 			};
 			side="East";
 			flags=2;
 			class Attributes
 			{
-				init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",13] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+				init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",13] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 			};
 			id=1124;
 			type="LOP_TKA_NSV_TriPod";
 		};
-		class Item378
+		class Item377
 		{
 			dataType="Group";
 			side="East";
@@ -12653,8 +12648,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5078.5,8.8404446,1693.675};
-						angles[]={6.259192,0,0.071875811};
+						position[]={5078.6138,8.843544,1693.796};
+						angles[]={6.2591867,0,0.071872659};
 					};
 					side="East";
 					flags=2;
@@ -12691,7 +12686,7 @@ class Mission
 			};
 			id=1126;
 		};
-		class Item379
+		class Item378
 		{
 			dataType="Group";
 			side="East";
@@ -12741,7 +12736,7 @@ class Mission
 			};
 			id=1127;
 		};
-		class Item380
+		class Item379
 		{
 			dataType="Group";
 			side="East";
@@ -12753,7 +12748,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5094.875,9.3509445,1693.675};
+						position[]={5094.7969,9.3460693,1693.675};
 						angles[]={6.2631841,0,0.023998277};
 					};
 					side="East";
@@ -12791,21 +12786,60 @@ class Mission
 			};
 			id=1128;
 		};
+		class Item380
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5077.9766,8.9519529,1685.0615};
+				angles[]={6.2591867,0,0.0039968039};
+			};
+			side="East";
+			class Attributes
+			{
+				init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",14] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+			};
+			id=1129;
+			type="LOP_TKA_UAZ_AGS";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
 		class Item381
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5077.9761,8.9518604,1685.0615};
-				angles[]={6.259192,0,0.0039967569};
+				position[]={5083.0664,9.0222931,1685.0405};
+				angles[]={0.043964844,0,0.083810709};
 			};
 			side="East";
 			class Attributes
 			{
-				init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",14] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+				init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",15] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 			};
-			id=1129;
-			type="LOP_TKA_UAZ_AGS";
+			id=1132;
+			type="LOP_TKA_UAZ_DshKM";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12835,16 +12869,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5083.0669,9.0224371,1685.041};
-				angles[]={0.043971907,0,0.083803542};
+				position[]={5088.1899,9.2774982,1685.0183};
+				angles[]={6.2591867,0,0.0877726};
 			};
 			side="East";
 			class Attributes
 			{
-				init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",15] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+				ammo=0.78505594;
+				init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",16] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 			};
-			id=1132;
-			type="LOP_TKA_UAZ_DshKM";
+			id=1135;
+			type="LOP_TKA_UAZ_SPG";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12874,57 +12909,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5088.1904,9.2778463,1685.0186};
-				angles[]={6.2591896,0,0.087773547};
-			};
-			side="East";
-			class Attributes
-			{
-				init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",16] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
-			};
-			id=1135;
-			type="LOP_TKA_UAZ_SPG";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item384
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={5078.8994,11.904706,1675.2271};
 				angles[]={0.039985489,0,0.0079936078};
 			};
 			side="East";
 			class Attributes
 			{
-				init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",17] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+				init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",17] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 			};
 			id=1138;
 			type="LOP_TKA_BMP1";
 		};
-		class Item385
+		class Item384
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12935,12 +12931,12 @@ class Mission
 			side="East";
 			class Attributes
 			{
-				init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",18] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+				init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",18] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 			};
 			id=1141;
 			type="LOP_TKA_BMP2D";
 		};
-		class Item386
+		class Item385
 		{
 			dataType="Group";
 			side="East";
@@ -13040,7 +13036,7 @@ class Mission
 			};
 			id=1144;
 		};
-		class Item387
+		class Item386
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13052,7 +13048,7 @@ class Mission
 			flags=2;
 			class Attributes
 			{
-				init="nul = [this,""ups_template_spawn"",""TEMPLATE:"",19] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
+				init="nul = [this,""ups_templates_spawn"",""TEMPLATE:"",19] execVM ""modules\Upsmon\UPSMON.sqf"";this disableAI ""move"";";
 			};
 			id=1145;
 			type="LOP_TKA_T72BB";
@@ -13080,7 +13076,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item388
+		class Item387
 		{
 			dataType="Group";
 			side="East";
@@ -13092,8 +13088,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5078.0381,8.9016247,1684.968};
-						angles[]={6.259192,0,0.0039967569};
+						position[]={5078.0352,8.8976135,1684.968};
+						angles[]={6.2591867,0,0.0039968039};
 					};
 					side="East";
 					flags=2;
@@ -13108,8 +13104,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5078.0381,8.9016247,1684.968};
-						angles[]={6.259192,0,0.0039967569};
+						position[]={5078.0352,8.8976135,1684.968};
+						angles[]={6.2591867,0,0.0039968039};
 					};
 					side="East";
 					class Attributes
@@ -13155,7 +13151,7 @@ class Mission
 			};
 			id=1149;
 		};
-		class Item389
+		class Item388
 		{
 			dataType="Group";
 			side="East";
@@ -13167,8 +13163,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5083.126,8.9786758,1684.9441};
-						angles[]={0.043971907,0,0.083803542};
+						position[]={5083.1289,8.972805,1684.947};
+						angles[]={0.043964844,0,0.083810709};
 					};
 					side="East";
 					flags=2;
@@ -13183,8 +13179,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5083.126,8.9786758,1684.9441};
-						angles[]={0.043971907,0,0.083803542};
+						position[]={5083.1289,8.972805,1684.947};
+						angles[]={0.043964844,0,0.083810709};
 					};
 					side="East";
 					class Attributes
@@ -13230,7 +13226,7 @@ class Mission
 			};
 			id=1150;
 		};
-		class Item390
+		class Item389
 		{
 			dataType="Group";
 			side="East";
@@ -13242,8 +13238,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5088.25,9.2244501,1684.925};
-						angles[]={6.2591896,0,0.087773547};
+						position[]={5088.2529,9.2276926,1684.925};
+						angles[]={6.2591867,0,0.0877726};
 					};
 					side="East";
 					flags=2;
@@ -13258,8 +13254,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5088.25,9.2244501,1684.925};
-						angles[]={6.2591896,0,0.087773547};
+						position[]={5088.2529,9.2276926,1684.925};
+						angles[]={6.2591867,0,0.0877726};
 					};
 					side="East";
 					class Attributes
@@ -13305,7 +13301,7 @@ class Mission
 			};
 			id=1151;
 		};
-		class Item391
+		class Item390
 		{
 			dataType="Group";
 			side="East";
@@ -13380,7 +13376,7 @@ class Mission
 			};
 			id=1152;
 		};
-		class Item392
+		class Item391
 		{
 			dataType="Group";
 			side="East";
@@ -13454,6 +13450,23 @@ class Mission
 				};
 			};
 			id=1153;
+		};
+		class Item392
+		{
+			dataType="Layer";
+			name="Kontrollpunkt (Groß)";
+			id=1160;
+		};
+		class Item393
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1286.5,34.290001,449.75};
+			};
+			name="JGKP_loc_base";
+			id=1162;
+			type="LocationBase_F";
 		};
 	};
 	class Connections

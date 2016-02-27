@@ -20,6 +20,7 @@ _end = param [1, [5000, 5000, 0], [[]], 3];
 _resolution = param [2, 100,[1]];
 _size = param [3, 5, [1]];
 _markerID = 1;
+_safetyDistance = "SafetyDistance" call BIS_fnc_getParamValue;
 
 // begin of script
 _distanceX = (_end select 0) - (_start select 0); // 5000 - 0 = 5000 m in x
@@ -102,12 +103,23 @@ JGKP_fnc_searchSquare = {
 for "_dy" from 1 to _stepsY do {
 	
 	for "_dx" from 1 to _stepsX do {
+		
+		// überspringe aktuelles Quadrat, falls näher als 1000m an der Basis
+		if (_cell distance2D (position JGKP_loc_base) < _safetyDistance) then {
+
+			_cell = [	(_cell select 0) + _resolution,
+						(_cell select 1),
+						0
+			];
+
+		} else {
 
 		// Finde Häuser
 		_nrBuildings = {
 			count (_x buildingPos -1) > 0;
 		} count (nearestObjects [_cell, ["House"], (_resolution / 2) + 10]);
 		
+
 		if (_nrBuildings >= _size && ({ _cell in _x } count _cities) == 0) then {
 			
 			// in benachbarten Quadraten schauen:
@@ -122,6 +134,9 @@ for "_dy" from 1 to _stepsY do {
 					(_cell select 1),
 					0
 				];
+
+		};
+
 	};
 
 	// nächstes Quadrat in y

@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"JGKP_vs",
+				"JGKP_var_Shooter"
+			],
+			[
+				"JGKP",
+				"JGKP_var_lastShotTime"
+			],
+			[
+				"JGKPO",
+				"JGKP_var_lastShot"
+			],
+			[
+				"setTrig",
+				"setTriggerType"
+			],
+			[
+				"distan",
+				"distance2D"
+			],
+			[
+				"_x",
+				"_xmin"
+			],
+			[
 				"_squareS",
 				"_squareSize"
 			],
@@ -120,10 +144,6 @@
 				"removeMagazines"
 			],
 			[
-				"JGKPO",
-				"JGKP_TFAR_RADIO_ID"
-			],
-			[
 				"JGK",
 				"JGKP_TFAR_RADIO_IDS"
 			],
@@ -134,10 +154,6 @@
 			[
 				"public",
 				"publicVariable"
-			],
-			[
-				"JGKP",
-				"JGKP_UTIL_FNC_DELETE_VEHICLE"
 			],
 			[
 				"_delta",
@@ -498,10 +514,6 @@
 			[
 				"pre",
 				"preprocessFileLineNumbers"
-			],
-			[
-				"prep",
-				"preprocessFileLineNumbers"
 			]
 		]
 	},
@@ -511,7 +523,39 @@
 			"file": "scripts/findCities.sqf",
 			"settings":
 			{
-				"buffer_size": 4131,
+				"buffer_size": 5676,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_getTimer.sqf",
+			"settings":
+			{
+				"buffer_size": 715,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_init.sqf",
+			"settings":
+			{
+				"buffer_size": 671,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog.hpp",
+			"settings":
+			{
+				"buffer_size": 4661,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/parent.hpp",
+			"settings":
+			{
+				"buffer_size": 21550,
 				"line_ending": "Windows"
 			}
 		}
@@ -523,10 +567,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "colr",
+		"height": 104.0,
+		"last_filter": "sqf",
 		"selected_items":
 		[
+			[
+				"sqf",
+				"Set Syntax: SQF"
+			],
 			[
 				"colr",
 				"Colorsublime: Install Theme"
@@ -550,10 +598,6 @@
 			[
 				"upda",
 				"Package Control: Upgrade Package"
-			],
-			[
-				"sqf",
-				"Set Syntax: SQF"
 			],
 			[
 				"s",
@@ -656,11 +700,38 @@
 	"expanded_folders":
 	[
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/functions",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/scripts"
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/ressources"
 	],
 	"file_history":
 	[
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_initVars.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog_startTimer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog_init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog_selectShooter.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/parent.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_startTimer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSC_init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSC_getTimer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSTimerDialog_init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/3JGKP_DBLoadoutEntry.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/Description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimer.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Warfare_Chernarus.Chernarus/dialogs/parentDialog.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Warfare_Chernarus.Chernarus/dialogs/vehicleOrderingDialog.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Warfare_Chernarus.Chernarus/dialogs/VKDialog/VKDialog.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Warfare_Chernarus.Chernarus/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/functions/createMarkerAndTrigger.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/initServer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/[3%2eJgKp]James.Arma3AlphaProfile",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/modules/Upsmon/UPSMON/COMMON/markerAlpha.sqf",
+		"/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-02-23_16-19-45.rpt",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/modules/Upsmon/Init_UPSMON.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/description.ext",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/scripts/findCities.sqf",
 		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/tsk/fn_patrolUrban.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/initPlayerLocal.sqf",
@@ -683,10 +754,8 @@
 		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/tsk/fn_patrolAround.sqf",
 		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/tsk/fn_patrolGarrison.sqf",
 		"/C/Users/Michael/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/init.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/mission.sqm",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/initPlayerServer.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/initServer.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/modules/Upsmon/UPSMON/MODULES/Init.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/onPlayerRespawn.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/Analysetest.Chernarus/findCities.sqf",
@@ -694,7 +763,6 @@
 		"/C/Users/Michael/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Michael/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
 		"/C/Users/Michael/AppData/Roaming/Sublime Text 3/Packages/Color Scheme - Default/Pastels on Dark.tmTheme",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[Tom]TP-Mission.Kunduz/modules/Upsmon/Init_UPSMON.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/CONFIG.hpp",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/FUNCTIONS.hpp",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/T8/MACRO.hpp",
@@ -763,36 +831,11 @@
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/marker_change_color.utes/createMarkerAndTrigger.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/onKeyUp.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/initSaveDialog.sqf",
-		"/D/Meine Daten/Dropbox/Git/3jgkp_database/@extDB2_DEBUG/extdb-conf.ini",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/functions/fn_checkResult.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/initLoadDialog.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/3JGKP_DBLoadoutLoad.hpp",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/onKeyUp.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/initSaveDialog.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/functions/fn_fill_crate.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/selectTyp.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/selectGruppe.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/listNames.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/3JGKP_DBLoadoutSave.hpp",
-		"/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-01-07_19-44-42.rpt",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/3JGKP_DBCrateList.hpp",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/3JGKP_DBCrateEntry.hpp",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/Description.ext",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/marker_change_color.utes/mission.sqm",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/marker_change_color.utes/init.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/selectTyp.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/initListDialog.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/selectVar.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBLoadoutDialog/3JGKP_DBLoadoutEdit.hpp",
-		"/D/Meine Daten/Dropbox/Git/3jgkp_database/@extDB2_DEBUG/extDB/sql_custom_v2/user.ini",
-		"/S/Steam/steamapps/common/Arma 3/@extDB2_DEBUG/extDB/logs/2016/1/07/23-07-43.log",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/initCrateEntryDialog.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/initCrateEntryDialog.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/3JGKP_DBCrateList.hpp"
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/@extDB2_DEBUG/extdb-conf.ini"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -811,6 +854,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"shadow",
+			"button",
+			"Puris",
+			"Edit",
+			"Text",
+			"{0,0,0,1}",
+			"IPSC",
+			"IPSCTimerRsc",
+			"Frame",
+			"Rsc",
+			"class Rsc",
+			"calss Rsc",
+			"Rsc",
+			"marker",
 			"Create",
 			"expActiv",
 			"trigger",
@@ -924,21 +981,7 @@
 			"uf",
 			"uff",
 			"ufz",
-			"'dialog",
-			"button",
-			"'dialog\\selectColumn.sqf';",
-			"equip",
-			"equipü",
-			"save",
-			"check",
-			"onlyPublic",
-			"get_zug",
-			"get_gruppe",
-			"redresh",
-			"Versio",
-			"2.0",
-			"picture",
-			"1601"
+			"'dialog"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -946,6 +989,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"{1,1,1,1}",
+			"IPSCTimer",
+			"class IPSCTimer",
+			"IPSCTimer",
 			"\"modules\\T8_Units\\T8\\fnc\"",
 			"_cam",
 			"pushBack",
@@ -1016,18 +1063,47 @@
 				{
 					"buffer": 0,
 					"file": "scripts/findCities.sqf",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4131,
+						"buffer_size": 5676,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2833,
+								2834
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/SQF.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1395.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_getTimer.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 715,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								715,
+								715
 							]
 						],
 						"settings":
@@ -1039,7 +1115,93 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_init.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 671,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								671,
+								671
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/SQF.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4192,
+								4192
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1585.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/parent.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21550,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1910,
+								1916
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 622.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1084,7 +1246,7 @@
 	"project": "Insurgency_Kundus.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
