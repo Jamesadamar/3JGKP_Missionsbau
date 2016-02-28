@@ -22,16 +22,17 @@ _kiste addAction ["<t color='#66ff66' size='1.25'>IPSC Timer </t> abgeben", {
 	if (not isNil "JGKP_var_menu_blue") then {
 
 		player removeAction JGKP_var_menu_blue;
-		JGKP_var_menu_blue = nil; 
 
 	};
 
 	if (not isNil "JGKP_var_menu_yellow") then {
 
 		player removeAction JGKP_var_menu_yellow;
-		JGKP_var_menu_yellow = nil;
-		
+
 	};
+
+	// lege verwendete Variablen fest
+	[] execVM "scripts\IPSCTimer_initVars.sqf";
 }];
 
 // lege verwendete Variablen fest

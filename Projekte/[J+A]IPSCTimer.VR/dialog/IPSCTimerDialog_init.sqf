@@ -14,43 +14,45 @@ disableSerialization;
 _params = _this;
 _dialog = findDisplay 3155;
 
-// begin of script
-// Färbe Hintergrund entpsrechend des Timers
+// controls
 _frame = _dialog displayCtrl 1800;
-
-if (JGKP_var_wettkampf) then {
-
-	_frame ctrlSetTextColor [0, 0, 1, 0.95];
-
-} else {
-
-	_frame ctrlSetTextColor [1, 1, 0.4, 0.95];
-	_frame ctrlSetScale 2;
-	_buttonShooter = _dialog displayCtrl 1600;
-	_buttonShooter ctrlEnable false;
-	_editShooter = _dialog displayCtrl 1400;
-	_editShooter ctrlEnable false;
-
-};
 
 _buttonStart = _dialog displayCtrl 1601;
 _buttonCancel = _dialog displayCtrl 1602;
+_buttonShooter = _dialog displayCtrl 1600;
 
-// Gib aktuellen Schützen aus
-if (not isNull JGKP_var_Shooter && JGKP_var_wettkampf) then {
+_editShooter = _dialog displayCtrl 1400;
 
-	_edit = _dialog displayCtrl 1400;
-	_edit ctrlSetText name JGKP_var_Shooter;
+// begin of script
+// Färbe Hintergrund entpsrechend des Timers
 
-	_buttonStart ctrlEnable true;
-	_buttonCancel ctrlEnable true;
+if (JGKP_var_wettkampf) then {
+
+	// blau!
+	_frame ctrlSetTextColor [0, 0, 1, 0.95];
+
+	if (not isNull JGKP_var_Shooter) then {
+
+		_editShooter ctrlSetText (name JGKP_var_Shooter);
+
+	} else {
+
+		_buttonStart ctrlEnable false;
+		_buttonCancel ctrlEnable false;
+
+	};
 
 } else {
 
-	_buttonStart ctrlEnable false;
-	_buttonCancel ctrlEnable false;
+	// gelb!
+	_frame ctrlSetTextColor [1, 1, 0.4, 0.95];
+
+	_editShooter ctrlSetText (name JGKP_var_Shooter);
+
+	_buttonShooter ctrlEnable false;
 
 };
+
 
 // Trage Zeit für den Schützen ein, wenn Messung vorhanden
 if (JGKP_var_lastShotTime != 0) then {
@@ -58,5 +60,10 @@ if (JGKP_var_lastShotTime != 0) then {
 	_edit = _dialog displayCtrl 1401;
 	_edit ctrlSetText format["%1 sec", JGKP_var_lastShotTime];
 
+};
+
+// Aufseher soll Waffe auf den Rücken tun
+if (not weaponLowered player) then {
+	player action ["WeaponOnBack", player];
 };
 

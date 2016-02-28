@@ -20,7 +20,7 @@ _color = (_this select 3) select 0;
 switch (_color) do {
 	case "blau": {
 		JGKP_var_wettkampf = true;
-		
+
 		if (isNil "JGKP_var_menu_blue") then {
 
 			JGKP_var_menu_blue = player addAction ["<t color='#0000ff' size='1.25'>IPSC Timer - öffnen</t>", {createDialog "IPSCTimerDialog";}];
@@ -34,6 +34,7 @@ switch (_color) do {
 
 	case "gelb": {
 		JGKP_var_wettkampf = false;
+		JGKP_var_Shooter = player;
 
 		if (isNil "JGKP_var_menu_yellow") then {
 
