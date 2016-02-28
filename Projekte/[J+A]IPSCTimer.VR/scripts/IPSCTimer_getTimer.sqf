@@ -20,12 +20,18 @@ _color = (_this select 3) select 0;
 switch (_color) do {
 	case "blau": {
 		JGKP_var_wettkampf = true;
+		player addAction ["<t color='#0000ff' size='1.25'>IPSC Timer - öffnen</t>", {createDialog "IPSCTimerDialog";}];
 	};
 
 	case "gelb": {
 		JGKP_var_wettkampf = false;
+		player addAction ["<t color='#ffff66' size='1.25'>IPSC Timer -  öffnen</t>", {createDialog "IPSCTimerDialog";}];
 	};	
 };
 
+
+/* Ahab Farb- und Textanpassung
 // Spieler die Möglichkeit geben, den Timer zu öffnen
 player addAction ["<t size='1.25'>Timer öffnen</t>", {createDialog "IPSCTimerDialog";}];
+
+*/
