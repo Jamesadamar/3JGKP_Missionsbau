@@ -39,7 +39,6 @@ class IPSCTimerDialog {
 			y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 35 * GUI_GRID_W;
 			h = 6 * GUI_GRID_H;
-			colorText[] = {1,1,1,1};
 			colorBackground[] = {0.65, 0.73, 0.65, 0.95};
 			moving = 1;
 		};
@@ -52,7 +51,7 @@ class IPSCTimerDialog {
 			y = 6 * GUI_GRID_H + GUI_GRID_Y;
 			w = 35 * GUI_GRID_W;
 			h = 6.5 * GUI_GRID_H;
-			sizeEx = 1 * GUI_GRID_H;
+			sizeEx = 1 * GUI_GRID_H * 1.25;
 		};
 	
 		class RscText_1000: IPSCTimerText

@@ -21,7 +21,7 @@ _ID = player addAction ["<t color='#00ff00' size='1.25'>Schütze wählen</t>", {
 	if (not isNull cursorTarget) then {
 
 		JGKP_var_Shooter = cursorTarget;
-		hint format["%1 als Schütze gewählt", name cursorTarget]; 
+		hint parseText format["<t size='1.25' color='#00ff00'>%1 als Schütze gewählt</t>", name cursorTarget]; 
 
 	} else {
 
@@ -34,11 +34,11 @@ waitUntil {
 	if (not isNull cursorTarget) then {
 
   		_name = name cursorTarget;
-  		hintSilent format["Schütze: %1", _name];
+  		hintSilent parseText format["<t size='1.25>Anvisierter Schütze:</t><br/> %1", _name];
 
   	} else {
 
-  		hintSilent "kein Ziel anvisiert";
+  		hintSilent parseText "<t size='1.25'>Bitte Schütze anvisieren</t>";
 
   	};
   
