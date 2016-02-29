@@ -51,6 +51,9 @@ if (JGKP_var_wettkampf) then {
 
 	_buttonShooter ctrlEnable false;
 
+	// Gehe direkt zu Standby
+	JGKP_var_timerStatus = 2;
+
 };
 
 
