@@ -20,7 +20,7 @@ _end = param [1, [5000, 5000, 0], [[]], 3];
 _resolution = param [2, 100,[1]];
 _size = param [3, 5, [1]];
 _markerID = 1;
-_safetyDistance = "SafetyDistance" call BIS_fnc_getParamValue;
+_safetyDistance = "SafetyDistance" call BIS_fnc_getParamValue; // siehe Description
 
 // begin of script
 _distanceX = (_end select 0) - (_start select 0); // 5000 - 0 = 5000 m in x
@@ -38,7 +38,7 @@ _cities = []; // empty array for later
 
 JGKP_fnc_searchSquare = {
 	
-	private ["_cell","_newCell","_direction","_resolution", "_nrBuildings","_marker"];
+	private ["_cell", "_newCell", "_direction", "_resolution", "_nrBuildings", "_marker"];
 
 	_cell = _this select 0;
 	_direction = _this select 1;
@@ -193,8 +193,15 @@ JGKP_fnc_searchCentre = {
 	// Erzeuge Marker für Zentrum und Ausdehnung
 	_city = _x;
 	_centre = [_city] call JGKP_fnc_searchCentre; // einfach erstes Planquadrat der Stadt
-	_marker = createMarker [format["city:%1", _centre select 0], _centre select 0];
-	_markerBorder = createMarker [format["cityborder:%1",_centre select 0], _centre select 0];
+
+	_marker = createMarker [
+		format["city:%1", _centre select 0], 
+		_centre select 0
+	];
+	_markerBorder = createMarker [
+		format["cityborder:%1", _centre select 0], 
+		_centre select 0
+	];
 
 	_marker setMarkerShape "ICON";
 	_marker setMarkerType "C_Unknown";
@@ -205,8 +212,10 @@ JGKP_fnc_searchCentre = {
 
 	_markerBorder setMarkerShape "ELLIPSE";
 	_markerBorder setMarkerBrush "SolidBorder";
-	_markerBorder setMarkerSize [	(_centre select 1) + _resolution / 2, 
-									(_centre select 2) + _resolution / 2]; // Marker gehen nur bis zur Mitte des Quadrats!
+	_markerBorder setMarkerSize [	
+		(_centre select 1) + _resolution / 2, 
+		(_centre select 2) + _resolution / 2
+	]; // Marker gehen nur bis zur Mitte des Quadrats!
 	_markerBorder setMarkerColor "ColorBLUE";
 	_markerBorder setMarkerAlpha 0.3;
 
@@ -221,6 +230,174 @@ JGKP_fnc_searchCentre = {
 		_markerID = _markerID + 1;
 
 	} foreach _city;
+
+	// Erzeuge für jede Stadt eine Upsmon-Zone mit viel Dynamik
+	_trgUpsmon = createTrigger ["EmptyDetector", _centre select 0, false];
+
+	// Auslöseradius + 1 km für Spieler! 
+	// TODO: eventuell erhöhen?!
+	_trgUpsmon setTriggerArea [	
+		(_centre select 1) + 1000, 
+		(_centre select 2) + 1000, 
+		0, 
+		false
+	];
+
+	// Dynamische Anpassung an Spieleranzahl und Stadtgröße!
+	_templates = [];
+
+	// Anzahl an Templates in Abhängigkeit von Stadtgröße bestimmen
+	switch (count _city) do {
+		case 1;
+		case 2: {
+			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+
+			if (random 1 > 0.5) then {
+				_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+			};
+		};
+		case 3;
+		case 4;
+		case 5;
+		case 6: {
+			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+
+			if (random 1 > 0.5) then {
+				_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+			};
+		};
+		case 7;
+		case 8;
+		case 9;
+		case 10: {
+			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+
+			if (random 1 > 0.5) then {
+				_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+				_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+			};
+
+			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+
+			_templates pushBack [[10,11,12,13] call BIS_fnc_selectRandom]; // static
+			_templates pushBack [[14,15,16] call BIS_fnc_selectRandom]; // UAZ
+		};
+		case 11;
+		case 12;
+		case 13;
+		case 14;
+		case 15: {
+			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [[10,11,12,13] call BIS_fnc_selectRandom]; // static
+			_templates pushBack [[14,15,16] call BIS_fnc_selectRandom]; // UAZ
+			_templates pushBack [[17,18,19] call BIS_fnc_selectRandom]; // armored
+		};
+		default {
+			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [[10,11,12,13] call BIS_fnc_selectRandom]; // static
+			_templates pushBack [[10,11,12,13] call BIS_fnc_selectRandom]; // static
+			_templates pushBack [[14,15,16] call BIS_fnc_selectRandom]; // UAZ
+			_templates pushBack [[17,18,19] call BIS_fnc_selectRandom]; // armored
+			_templates pushBack [[17,18,19] call BIS_fnc_selectRandom]; // armored
+		};
+	};
+
+	_tempString = "";
+
+	{
+		_temp = _x;
+		_tempNr = _x select 0; // template Nummer
+
+		_behaviour = format["%1", str(["CARELESS", "SAFE", "AWARE", "COMBAT", "STEALTH"] call BIS_fnc_selectRandom)];
+		_speedMode = format["%1", str(["LIMITED", "FULL", "NORMAL"] call BIS_fnc_selectRandom)];
+		_formation = format["%1", str(["LINE", "STAG COLUMN", "COLUMN", "VEE", "WEDGE"] call BIS_fnc_selectRandom)];
+
+		_upsArgs = format["%1, %2, %3", _behaviour, _speedMode, _formation];
+
+		// zufälliges fortify
+		_fortify = random 1;
+		if (_fortify > 0.5) then {
+
+			_fortify = format["%1", str("FORTIFY")];
+			_upsArgs = format["%1, %2", _upsArgs, _fortify];
+
+		};
+
+		// zufälliges nofollow
+		_nofollow = random 1;
+		if (_nofollow > 0.5) then {
+
+			_nofollow = format["%1", str("NOFOLLOW")];
+			_upsArgs = format["%1, %2", _upsArgs, _nofollow];
+
+		};
+
+		// zufälliges ambush + ambushdist zwischen 0 und resolution / 2, sofern nicht fortify
+		_ambush = random 1;
+		if (typeName _fortify != "STRING" and _ambush > 0.5) then {
+
+			_ambush = format[
+				"%1, 'AMBUSHDIST:',%2]",
+				str(["AMBUSH","AMBUSH2"] call BIS_fnc_selectRandom),
+				random (_resolution / 2)
+			];
+			_upsArgs = format["%1, %2", _upsArgs, _ambush];
+
+		};
+
+		// zufälliges random, sofern nicht ambush
+		_random = random 1;
+		if (_random > 0.5 and typeName _ambush != "STRING") then {
+
+			_random = format["%1", str(["RANDOMUP", "RANDOMDN", "RANDOMA"] call BIS_fnc_selectRandom)];
+			_upsArgs = format["%1, %2", _upsArgs, _random];
+
+		};
+
+		// zwingend onroad für templates 14-19
+		_onroad = "";
+		if (_tempNr in [14,15,16,17,18,19]) then {
+
+			_onroad = format["%1", str("ONROAD")];
+			_upsArgs = format["%1, %2", _upsArgs, _onroad];
+		};		
+
+		_tempString = _tempString + format[
+			"nul = [%1, %2, %3, [%4, %5, 'SPAWNED', 'RANDOM','DELETE:',120]] execVM 'modules\Upsmon\UPSMON\MODULES\UPSMON_spawn.SQF';",
+			_tempNr,
+			_centre select 0,
+			1, 
+			str(_markerBorder), 
+			_upsArgs
+		];
+
+	} forEach _templates;
+
+
+	_trgUpsmon setTriggerActivation ["WEST", "PRESENT", false];
+	_trgUpsmon setTriggerStatements [
+		"this",
+		_tempString,
+		""
+	];
+
+	_trgUpsmon setTriggerTimeout [5, 10, 7, false];
 
 } foreach _cities;
 

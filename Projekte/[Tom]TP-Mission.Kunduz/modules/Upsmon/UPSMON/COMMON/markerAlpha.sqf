@@ -11,4 +11,8 @@
 		
 ================================================= */
 
-{ _x setmarkeralpha 0; } foreach ["area0", "area1", "area2","area3","area4","area5","area6","area7","area8","area9","area10","area11","area12","area13","ups_spawn_templates"]; 
+for "_i" from 0 to 100 do {
+	format["area%1", _i] setMarkerAlpha 0;
+};
+
+{ _x setmarkeralpha 0; } forEach ["ups_spawn_templates"]; 
