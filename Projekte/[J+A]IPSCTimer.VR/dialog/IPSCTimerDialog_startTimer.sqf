@@ -6,7 +6,7 @@
 	arguments: 			None
 	return value:		None
 
-	example call: 		wird vom Dialog aufgerufen.
+	example call: 		wird von IPSCTimerDialog_voiceCommands.sqf aufgerufen
 */
 
 // arguments
@@ -19,6 +19,7 @@ player addAction ["<t color='ff0000' size='1.25'>Messung stoppen</t>", {
 	player removeAllEventHandlers "FiredNear";
 	hint format["%1\n-------------------\n%2 sec",name JGKP_var_Shooter, JGKP_var_lastShotTime];
 	player removeAction _ID;
+	JGKP_var_timerStatus = 0;
 
 }];
 
@@ -26,23 +27,29 @@ player addEventHandler ["FiredNear", {
 
 	if (_this select 1 == JGKP_var_Shooter) then {
 
-		JGKP_var_lastShotTime = serverTime - JGKP_var_startTime;
+		if (isMultiplayer) then {
 
-	}
+			JGKP_var_lastShotTime = ServerTime - JGKP_var_startTime;
+
+		} else {
+
+			JGKP_var_lastShotTime = time - JGKP_var_startTime;
+
+		};
+	};
 }];
 
-[0, ["Load and make ready", "PLAIN DOWN"]] remoteExec ["cutText", JGKP_var_Shooter];
-hintSilent parseText "<t size='1.25'>Load and make ready</t>";
-sleep 2;
+sleep 1+random(2);
 
-[0, ["Are you ready?", "PLAIN DOWN"]] remoteExec ["cutText", JGKP_var_Shooter];
-hintSilent parseText "<t size='1.25'>Are you ready?</t>";
-sleep 2;
+if (isMultiplayer) then {
 
-[0, ["Standby", "PLAIN DOWN"]] remoteExec ["cutText", JGKP_var_Shooter];
-hintSilent parseText "<t size='1.25'>Standby</t>";
-sleep (1+random 2);
+	JGKP_var_startTime = serverTime;
 
-JGKP_var_startTime = serverTime; 
+} else {
+
+	JGKP_var_startTime = time; 
+	
+};
+
 playSound "IPSCAlarm";
 hintSilent "";

@@ -67,3 +67,22 @@ if (not weaponLowered player) then {
 	player action ["WeaponOnBack", player];
 };
 
+// Passe Schrift auf Button start an
+switch (JGKP_var_timerStatus) do { 
+	case 0 : { 
+		_buttonStart ctrlSetText "Load...";
+	}; 
+
+	case 1 : { 
+		_buttonStart ctrlSetText "Ready?...";
+	}; 
+
+	case 2: {
+		_buttonStart ctrlSetText "Standby...";
+	};
+
+	case 3: {
+		_buttonStart ctrlEnable false;
+	};	
+};
+
