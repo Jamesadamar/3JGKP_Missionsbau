@@ -32,8 +32,8 @@ _kiste addAction ["<t color='#66ff66' size='1.25'>IPSC Timer </t> abgeben", {
 	};
 
 	// lege verwendete Variablen fest
-	[] execVM "scripts\IPSCTimer_initVars.sqf";
+	[0] execVM "scripts\IPSCTimer_initVars.sqf";
 }];
 
 // lege verwendete Variablen fest
-[] execVM "scripts\IPSCTimer_initVars.sqf";
+[0] execVM "scripts\IPSCTimer_initVars.sqf";

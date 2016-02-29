@@ -116,13 +116,13 @@ class IPSCTimerDialog {
 		class RscButton_Cancel: IPSCTimerButton
 		{
 			idc = 1602;
-			text = "Timer stoppen"; //--- ToDo: Localize;
+			text = "Timer resetten"; //--- ToDo: Localize;
 			x = 28 * GUI_GRID_W + GUI_GRID_X;
 			y = 10.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 8.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			colorBackground[] = {0.38, 0.23, 0.19, 0.7};
-			action = "[] execVM 'scripts\IPSCTimer_initVars.sqf'; closeDialog 0;"
+			action = "[1] execVM 'scripts\IPSCTimer_initVars.sqf'; closeDialog 0;"
 		};
 	};
 };

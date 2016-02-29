@@ -51,5 +51,6 @@ if (isMultiplayer) then {
 	
 };
 
+"IPSCAlarm" remoteExec ["playSound", JGKP_var_Shooter];
 playSound "IPSCAlarm";
 hintSilent "";
