@@ -31,18 +31,18 @@ player addEventHandler ["FiredNear", {
 	}
 }];
 
-["Load and make ready", "hint", JGKP_var_Shooter, false, false] call BIS_fnc_mp;
-hintSilent "Load and make ready";
+[0, ["Load and make ready", "PLAIN DOWN"]] remoteExec ["cutText", JGKP_var_Shooter];
+hintSilent parseText "<t size='1.25'>Load and make ready</t>";
 sleep 2;
 
-["Are you ready?", "hint", JGKP_var_Shooter, false, false] call BIS_fnc_mp;
-hintSilent "Are you ready?";
+[0, ["Are you ready?", "PLAIN DOWN"]] remoteExec ["cutText", JGKP_var_Shooter];
+hintSilent parseText "<t size='1.25'>Are you ready?</t>";
 sleep 2;
 
-["Standby", "hint", JGKP_var_Shooter, false, false] call BIS_fnc_mp;
-hintSilent "Standby";
-
+[0, ["Standby", "PLAIN DOWN"]] remoteExec ["cutText", JGKP_var_Shooter];
+hintSilent parseText "<t size='1.25'>Standby</t>";
 sleep (1+random 2);
-// TODO: PEEP sound
 
 JGKP_var_startTime = serverTime; 
+playSound "IPSCAlarm";
+hintSilent "";

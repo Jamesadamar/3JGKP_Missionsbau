@@ -19,24 +19,36 @@ _color = (_this select 3) select 0;
 // legt fest, ob es sich um einen Wettkampf Timer handelt
 switch (_color) do {
 	case "blau": {
-		JGKP_var_wettkampf = true;
-
+		
 		if (isNil "JGKP_var_menu_blue") then {
+
+			if (not isNil "JGKP_var_menu_yellow") exitWith {
+
+				hint "Bitte erst den gelben IPSC Timer ablegen";
+
+			};
+
+			JGKP_var_wettkampf = true;
 
 			JGKP_var_menu_blue = player addAction ["<t color='#0000ff' size='1.25'>IPSC Timer - öffnen</t>", {createDialog "IPSCTimerDialog";}];
 
 		} else {
 
 			hintSilent "Wir sind wohl etwas gierig?...";
-
 		};
 	};
 
 	case "gelb": {
-		JGKP_var_wettkampf = false;
-		JGKP_var_Shooter = player;
-
 		if (isNil "JGKP_var_menu_yellow") then {
+
+			if (not isNil "JGKP_var_menu_blue") exitWith {
+
+				hint "Bitte erst den blauen IPSC Timer ablegen";
+				
+			};
+
+			JGKP_var_wettkampf = false;
+			JGKP_var_Shooter = player;
 
 			JGKP_var_menu_yellow = player addAction ["<t color='#ffff66' size='1.25'>IPSC Timer -  öffnen</t>", {createDialog "IPSCTimerDialog";}];
 
@@ -44,7 +56,6 @@ switch (_color) do {
 
 			hintSilent "Wir sind wohl etwas gierig?...";
 
-		};
-		
+		};		
 	};	
 };

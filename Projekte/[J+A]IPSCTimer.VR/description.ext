@@ -1,2 +1,17 @@
+/* ------------------ IPSC Timer ------------------ */
 #include "dialog\parent.hpp"
 #include "dialog\IPSCTimerDialog.hpp"
+
+class CfgSounds
+{
+	sounds[] = {};
+	class IPSCAlarm
+	{
+		name = "Startsignal IPSC Timer";
+		// start path to sound file in AddOn with @
+		sound[] = {"sound\alarm.ogg", 1, 1};
+		titles[] = {0,"IPSC Startsignal"};
+	};
+};
+
+/* ------------------ Normale Description ------------------ */
