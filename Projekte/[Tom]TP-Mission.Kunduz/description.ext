@@ -113,4 +113,21 @@ class Params
 		function = "BIS_fnc_paramDaytime"; // (Optional) Function called when player joins, selected value is passed as an argument
  		isGlobal = 1; // (Optional) 1 to execute script / function locally for every player who joins, 0 to do it only on server
 	};
+
+	class SquareSize 
+	{
+		title = "Größe der feindlichen Planquadrate";
+		values[] = {50,100,150,200,250,500,1000};
+		texts[] = {"50 m", "100 m", "150 m", "200 m", "250 m", "500 m", "1 km"};
+		default = 100;
+	};
+
+	class CitySize 
+	{
+		title = "Kerngröße von Städten";
+		values[] = {1,2,3,4,5};
+		texts[] = {"1 Gebäude", "2 Gebäude", "3 Gebäude", "4 Gebäude", "5 Gebäude"};
+		default = 3;
+	};
+	
 };

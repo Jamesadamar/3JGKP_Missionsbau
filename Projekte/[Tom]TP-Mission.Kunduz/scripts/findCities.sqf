@@ -3,24 +3,36 @@
 	version: 			1.00
 	date: 				2016-02-22
 	purpose: 			Analysiert eine Karte nach Städten und Dörfern. Zählt nur begehbare Häuser.
-	arguments: 			start (int): Startkoordinate, meist unten links
-						end (int): Endkoordinate, meist oben rechts
-						resolution (int): Größe eines Planquadrates (z.B. 100m)
-						size (int): Größe einer Siedlung, Anzahl der begehbaren Häuser, bildet Zentrum für den Suchalgorithmus!
+	arguments: 			trg (trigger): Auslöser, dessen Maße übernommen werden, bitte rechteckig!
+						y-dir (int): Richtung der y-Achse: 1 - aufwärts, (-1): abwärts
 	return value:		None
 
-	example call: 		[[0,0,0],[5000,5000,0],100,3] execVM "scripts\findCities.sqf";
+	example call: 		[trg,] execVM "scripts\findCities.sqf";
 */
 
 // arguments
 _params = _this;
+_trg = param [0, objNull, [objNull]];
+_yDir = param [1, 1, [1]];
 
-_start = param [0, [0, 0, 0], [[]], 3];
-_end = param [1, [5000, 5000, 0], [[]], 3];
-_resolution = param [2, 100,[1]];
-_size = param [3, 5, [1]];
-_markerID = 1;
-_safetyDistance = "SafetyDistance" call BIS_fnc_getParamValue; // siehe Description
+if (isNull _trg) exitWith {
+	parseText "<t color='#ff0000' size='2'>Kein gültigen Auslöser übergeben!</t>" remoteExec ["hint", 0];
+};
+
+_trgArea = triggerArea _trg;
+			_start = [	(getpos _trg select 0) - (_trgArea select 0),
+						(getpos _trg select 1) - (_trgArea select 0) * _yDir,
+						0 
+					];
+
+_end = 				[	(getpos _trg select 0) + (_trgArea select 0),
+						(getpos _trg select 1) + (_trgArea select 0) * _yDir,
+						0 
+					];
+_resolution =  		"SquareSize" call BIS_fnc_getParamValue; // siehe Description
+_size = 			"CitySize" call BIS_fnc_getParamValue; // siehe Description
+_markerID = 		1;
+_safetyDistance = 	"SafetyDistance" call BIS_fnc_getParamValue; // siehe Description
 
 // begin of script
 _distanceX = (_end select 0) - (_start select 0); // 5000 - 0 = 5000 m in x
@@ -378,13 +390,17 @@ JGKP_fnc_searchCentre = {
 			_upsArgs = format["%1, %2", _upsArgs, _onroad];
 		};		
 
-		_tempString = _tempString + format[
-			"nul = [%1, %2, %3, [%4, %5, 'SPAWNED', 'RANDOM','DELETE:',120]] execVM 'modules\Upsmon\UPSMON\MODULES\UPSMON_spawn.SQF';",
-			_tempNr,
-			_centre select 0,
-			1, 
-			str(_markerBorder), 
-			_upsArgs
+		_upsArgs = format["%1, %2", _upsArgs, str('SPAWNED','RANDOM','DELETE:', 120)];
+
+		_tempString = format["%1%2",
+			_tempString,
+			format["nul = [%1, %2, %3, [%4, %5]] execVM 'modules\Upsmon\UPSMON\MODULES\UPSMON_spawn.SQF';",
+				_tempNr,
+				_centre select 0,
+				1, 
+				str(_markerBorder), 
+				_upsArgs
+			]
 		];
 
 	} forEach _templates;
