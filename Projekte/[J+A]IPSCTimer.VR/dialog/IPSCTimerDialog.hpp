@@ -63,6 +63,7 @@ class IPSCTimerDialog {
 			w = 10 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 		};
+		
 		class RscEdit_1400: IPSCTimerEdit
 		{
 			idc = 1400;
@@ -82,6 +83,7 @@ class IPSCTimerDialog {
 			w = 10 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 		};
+
 		class RscEdit_1401: IPSCTimerEdit
 		{
 			idc = 1401;
@@ -102,6 +104,7 @@ class IPSCTimerDialog {
 			h = 1.5 * GUI_GRID_H;
 			action = "[] execVM 'dialog\IPSCTimerDialog_selectShooter.sqf'; closeDialog 0;";
 		};
+
 		class RscButton_Start: IPSCTimerButton
 		{
 			idc = 1601;
@@ -113,6 +116,7 @@ class IPSCTimerDialog {
 			colorBackground[] = {0.26, 0.38, 0.19, 0.7};
 			action = "[] execVM 'dialog\IPSCTimerDialog_voiceCommands.sqf';";
 		};
+
 		class RscButton_Cancel: IPSCTimerButton
 		{
 			idc = 1602;
@@ -122,7 +126,7 @@ class IPSCTimerDialog {
 			w = 8.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			colorBackground[] = {0.38, 0.23, 0.19, 0.7};
-			action = "[1] execVM 'scripts\IPSCTimer_initVars.sqf'; closeDialog 0;"
+			action = "[1] execVM 'scripts\IPSCTimer_initVars.sqf'; closeDialog 0;";
 		};
 	};
 };
