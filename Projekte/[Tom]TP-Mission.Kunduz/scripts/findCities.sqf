@@ -362,10 +362,10 @@ JGKP_fnc_searchCentre = {
 
 		// zufälliges ambush + ambushdist zwischen 0 und resolution / 2, sofern nicht fortify
 		_ambush = random 1;
-		if (typeName _fortify != "STRING" and _ambush > 0.5) then {
+		if (typeName _fortify != "STRING" and _ambush > 0.7) then {
 
 			_ambush = format[
-				"%1, 'AMBUSHDIST:',%2]",
+				"%1, 'AMBUSHDIST:', %2",
 				str(["AMBUSH","AMBUSH2"] call BIS_fnc_selectRandom),
 				random (_resolution / 2)
 			];
@@ -383,23 +383,26 @@ JGKP_fnc_searchCentre = {
 		};
 
 		// zwingend onroad für templates 14-19
+		/*
 		_onroad = "";
 		if (_tempNr in [14,15,16,17,18,19]) then {
 
 			_onroad = format["%1", str("ONROAD")];
 			_upsArgs = format["%1, %2", _upsArgs, _onroad];
-		};		
+		};
+		*/		
 
-		_upsArgs = format["%1, %2", _upsArgs, str('SPAWNED','RANDOM','DELETE:', 120)];
+		_upsArgs = format["%1, %2, %3, %4, %5", _upsArgs, str("SPAWNED"), str("RANDOM"), str("DELETE:"), 120];
 
-		_tempString = format["%1%2",
+		_tempString = format["%1 %2",
 			_tempString,
-			format["nul = [%1, %2, %3, [%4, %5]] execVM 'modules\Upsmon\UPSMON\MODULES\UPSMON_spawn.SQF';",
+			format["nul = [%1, %2, %3, [%4, %5]] execVM %6;",
 				_tempNr,
 				_centre select 0,
 				1, 
 				str(_markerBorder), 
-				_upsArgs
+				_upsArgs,
+				str("modules\Upsmon\UPSMON\MODULES\UPSMON_spawn.SQF")
 			]
 		];
 
