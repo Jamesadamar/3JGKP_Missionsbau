@@ -9,8 +9,8 @@
 //** Definieren von Variablen
 //**********************************************************************************
 #define LOADSCREEN "loadscreen.jpg"
-#define LOADSCREENTEXT "[3.JGKP]UPSMON_BASIC + HC"
-#define INTROTEXT "Text unterm Ladebild (Intro)"
+#define LOADSCREENTEXT "[T+J]Insurgency Kundus"
+#define INTROTEXT "Klassische Insurgency - voll dynamisch"
 
 //**********************************************************************************
 //** Einfügen von UserInterfaces/Dialoge von anderen Modulen/Scripts/etc
@@ -20,10 +20,9 @@
 //**********************************************************************************
 //** Missionsparamter
 //**********************************************************************************
-OnLoadName = "[James]UPSMON_Basic + HC";		// String (usually mission name) shown during mission loading
+OnLoadName = "[T+J]Insurgency Kundus";		// String (usually mission name) shown during mission loading
 author="[3.JgKp]James";					// Author of the mission
 onLoadMission = LOADSCREENTEXT;				// Displays a message while the mission is loading. In MP this is the name you see when selecting a mission and also the name that is presented to the Gamebrowser.
-onLoadIntro = Beispielmission;					// Displays a message while the intro is loading.
 onLoadMissionTime = true;					// Define whether you will see the time and date displayed while the mission loads. 1 means visible, 0 hidden.
 onLoadIntroTime = true;						// Define whether you will see the time and date displayed while the intro loads. 1 means visible, 0 hidden.
 //loadScreen = LOADSCREEN; 					// You can define a picture to be shown while the mission is loaded. The path is relative to the mission folder.

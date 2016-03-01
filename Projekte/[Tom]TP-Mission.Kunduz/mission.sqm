@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=133;
+	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=1164;
+		nextID=1165;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5;
+		nextID=6;
 	};
 	class Camera
 	{
-		pos[]={1451.1188,376.65829,177.18668};
-		dir[]={0.46364293,-0.80382794,0.37272701};
-		up[]={0.62649262,0.59484845,0.50364423};
-		aside[]={0.62656164,-9.4471034e-008,-0.77939308};
+		pos[]={1309.913,59.297783,454.53299};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -123,25 +123,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -157,36 +138,8 @@ class CustomAttributes
 					};
 					class value
 					{
-						items=3;
+						items=1;
 						class Item0
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Confirm";
-							};
-						};
-						class Item1
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="MenuPosition";
-							};
-						};
-						class Item2
 						{
 							class data
 							{
@@ -201,6 +154,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -6017,8 +5989,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={52.112679,65.384941,244.97717};
-				angles[]={0.13517246,0,6.175601};
+				position[]={52.112999,65.384926,244.97701};
+				angles[]={0.13517575,0,6.1756029};
 			};
 			init="nul = call compile preprocessFile ""modules\Upsmon\UPSMON\COMMON\markerAlpha.sqf"";";
 			id=508;
@@ -9972,10 +9944,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={81.393425,57.401588,308.76251};
-				angles[]={0.095706008,0,6.1637568};
+				position[]={81.392998,57.401588,308.763};
+				angles[]={0.095713861,0,6.1637526};
 			};
 			name="headlessclient";
+			isPlayable=1;
 			description="Headless Client";
 			id=595;
 			type="HeadlessClient_F";
