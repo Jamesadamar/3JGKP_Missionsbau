@@ -1,16 +1,9 @@
 //**********************************************************************************
-//** Scripted by DasMaeh		v1.0
+//** Scripted by DasMaeh, James		v1.0
 //**********************************************************************************
 //** Quelle(n):
 //** https://community.bistudio.com/wiki/Description.ext
 //**********************************************************************************
-
-//**********************************************************************************
-//** Definieren von Variablen
-//**********************************************************************************
-#define LOADSCREEN "loadscreen.jpg"
-#define LOADSCREENTEXT "[T+J]Insurgency Kundus"
-#define INTROTEXT "Klassische Insurgency - voll dynamisch"
 
 //**********************************************************************************
 //** Einfügen von UserInterfaces/Dialoge von anderen Modulen/Scripts/etc
@@ -20,15 +13,40 @@
 //**********************************************************************************
 //** Missionsparamter
 //**********************************************************************************
-OnLoadName = "[T+J]Insurgency Kundus";		// String (usually mission name) shown during mission loading
-author="[3.JgKp]James";					// Author of the mission
-onLoadMission = LOADSCREENTEXT;				// Displays a message while the mission is loading. In MP this is the name you see when selecting a mission and also the name that is presented to the Gamebrowser.
-onLoadMissionTime = true;					// Define whether you will see the time and date displayed while the mission loads. 1 means visible, 0 hidden.
-onLoadIntroTime = true;						// Define whether you will see the time and date displayed while the intro loads. 1 means visible, 0 hidden.
-//loadScreen = LOADSCREEN; 					// You can define a picture to be shown while the mission is loaded. The path is relative to the mission folder.
-//minScore = 0;								// Set minimum score for your mission. Score is related to the star display in the debriefing screen. The score can be influenced during a missions progress by using the addRating command.
-//avgScore = 1800;							// Set average score for your mission. Score is related to the star display in the debriefing screen.
-//maxScore = 75000;							// Set minimum score for your mission. Score is related to the star display in the debriefing screen.
+
+/**
+Displays a message while the mission is loading. Note that a mission that takes very little time to load will only display the message for a short time. Care should be taken to see whether your message is readable in that timeframe.
+
+The OnLoadMission option is used to present the mission name to the user. In MP this is the name you see when selecting a mission and also the name that is presented to the MultiPlayer browser. 
+*/
+onLoadMission = "Befrieden Sie die Region Kundus und lassen Sie wieder Ruhe in das Gebiet einkehren...";
+
+/**
+Displays a message while the intro is loading. 
+*/
+onLoadIntro = "Vorbereitungen laufen...";
+
+/**
+Define whether you will see the time and date displayed while the mission loads. 1 means visible, 0 hidden. 
+*/
+onLoadMissionTime = 1;
+
+/**
+Define whether you will see the time and date displayed while the intro loads. 1 means visible, 0 hidden. 
+*/
+onLoadIntroTime = 0;
+
+/**
+You can define a picture to be shown while the mission is loaded.
+
+The path is relative to the mission folder. 
+*/
+loadScreen = "";
+
+
+author = "[3.JgKp]James"; // Author
+onLoadName = "[T+J]Insurgency Kundus v0.1"; // Mission name (temporary solution; actual name set in editor will be used later in the alpha)
+
 
 //*********************************
 //** Sets respawn type.
@@ -49,22 +67,147 @@ respawnDelay = 10;							// Set respawn delay in seconds.
 respawnVehicleDelay = 11;					// Set vehicle respawn delay in seconds.
 respawnDialog = 1;							// Show the scoreboard and respawn countdown timer for a player if he is killed with respawnType 3. Default is 1 (true).
 joinUnassigned = 1;							// New Player auto assigned to the side with least players
-//forceRotorLibSimulation = 1; 				// Force enable or disable RotorLib [Default value: 0 - options based; 1 - force enable; 2 - force disable]
-disabledAI = 1;								// When 1, removes all playable units which do not have a human player. (MP)
-//aiKills = 1;								// Enables scorelist for AI players
-//briefing = 0;								// Skip briefing screen for SP missions. If no briefing.html is present, it is skipped anyway.
-//debriefing = 0;							// Defines if the debriefing is shown or not at the end of the mission.
 
-enableDebugConsole = 1;						// ermöglicht es als eingelogter Admin die DebugKonsole zu nutzen
-ShowGPS = 1;								// Enables/Disables the GPS
+/**
+respawnOnStart = 1;//Respawn on start. Run respawn script on start.
+respawnOnStart = 0;//Dont respawn on start. Run respawn script on start.
+respawnOnStart = -1;//Dont respawn on start. Don't run respawn script on start.
+*/
+respawnOnStart = 0;
+
+/**
+When 1, removes all playable units which do not have a human player. When 0, a logging out player will have AI take control of his character. Default value is 0. (MP) 
+*/
+disabledAI = 1;	
+
+/**
+Enables scorelist for AI players 
+*/							
+aiKills = 0;	
+
+/**
+Defines if the debriefing is shown or not at the end of the mission. 
+*/
+debriefing = 0;		
+
+/**
+As of Arma 3 v1.49.131879 showHUD param could be an array to allow control over separate HUD elements, for example: 
+*/	
+showHUD[] = {
+	true,	// Scripted HUD (same as showHUD command)
+	true,	// Vehicle + soldier info
+	true,	// Vehicle radar
+	true,	// Vehicle compass 
+	true,	// Tank direction indicator
+	true,	// Commanding menu
+	false,	// Group Bar
+	true	// HUD Weapon Cursors
+};				
+
+ShowGPS = 0;								// In ArmA 1.04 toggle this option to disable the mini map attached to the GPS. 
 showCompass = 1;							// Defines if the compass is visible.
 showMap = 1;								// Defines if the map is shown after the mission starts.
 showNotePad = 0;							// Defines if the NotePad is shown after the mission starts.
 showWatch = 1;								// Defines if the watch is visible.
 scriptedPlayer = 0;							// When scripted player is enabled, game no longer shows "No player select" error message upon mission start when no player unit is present.
-// disableChannels[]={0,1,2,3,4};			// Deaktiviert Chatkanäle (0 = Global; 1 = Side; 2 = Command; 3 = Group; 4 = Vehicle; 5 = Direct; 6 = System)
-enableItemsDropping = 0;					// Activate dropping items while swimming
 
+/**
+Disable global, side, command and system chat. MOTD and admin say have exception and will show in global. Introduced in BETA 1.60.93398. 
+0 = Global
+1 = Side
+2 = Command
+3 = Group
+4 = Vehicle
+5 = Direct
+6 = System
+*/
+disableChannels[]={0,2,6,5,6};
+
+/**
+Disable dropping items while swimming. Introduced in BETA 1.60.93965. 
+*/
+enableItemsDropping = 0;
+
+/**
+Allows access to the Debug Console outside of the editor during normal gameplay. 
+0 = Default behavior, available only in editor
+1 = Available in SP and for hosts / logged in admins
+2 = Available for everyone
+*/
+enableDebugConsole = 1;
+
+/**
+Sets the mode for corpse removal manager. 
+0 = None - None of the units are managed by the manager
+1 = All - All units are managed by the manager
+2 = None_But_Respawned - Only units that can respawn are managed by the manager
+3 = All_But_Respawned - All units are managed by the manager with exception of respawned (opposite to mode 2)
+Default value: 0 for SP, 2 for MP
+*/
+corpseManagerMode = 3;
+
+/**
+Corpse limit before which ( <= ) corpseRemovalMaxTime applies and after which ( > ) corpseRemovalMinTime applies (see below).
+Default value: 15
+*/
+corpseLimit = 15;
+
+/**
+Remove all bodies that have been dead longer than corpseRemovalMinTime when corpseLimit is breached.
+Default value: 10
+*/
+corpseRemovalMinTime = 120;
+
+/**
+Maximum time a corpse can remain on the ground if total number of corpses is equal or under corpseLimit.
+Default value: 3600
+*/
+corpseRemovalMaxTime = 600;
+
+/**
+Sets the mode for wreck removal manager.
+
+0 = None - None of the vehicles are managed by the manager
+1 = All - All vehicles are managed by the manager
+2 = None_But_Respawned - Only vehicles that can respawn are managed by the manager
+3 = All_But_Respawned - All vehicles are managed by the manager with exception of respawned (opposite to mode 2)
+Default value: 0 for SP, 2 for MP
+*/
+wreckManagerMode = 3;
+
+/**
+Vehicle wreck limit before which ( <= ) wreckRemovalMaxTime applies and after which ( > ) wreckRemovalMinTime applies (see below).
+
+Default value: 15
+*/
+wreckLimit = 5;
+
+/**
+Remove all wrecks that have existed longer than wreckRemovalMinTime when wreckLimit is breached.
+
+Default value: 10
+*/
+wreckRemovalMinTime = 60; //seconds
+
+wreckRemovalMaxTime = 600;
+
+/**
+0: do not use new 2D markers (default), 1: replace task markers with new 2D markers
+*/
+taskManagement_markers2D = 1;
+/**
+0: do not use new 3D markers (default), 1: replace task waypoints with new 3D markers 
+*/
+taskManagement_markers3D = 1;
+/**
+0: do not propagate (default), 1: propagate shared tasks to subordinates 
+*/
+taskManagement_propagate = 1;
+
+/**
+When set to 1, changes default GPS mini map into a radar like display that indicates group members relative position to the player 
+*/
+showGroupIndicator = 0;
 
 //**********************************************************************************
 //** The purpose of the following class definition is to signal the engine the gameType
@@ -88,8 +231,8 @@ enableItemsDropping = 0;					// Activate dropping items while swimming
 class Header
 {
 	gameType = COOP; 			// game type
-	minPlayers = 10; 			// min # of players the mission supports
-	maxPlayers = 53; 			// max # of players the mission supports
+	minPlayers = 1; 			// min # of players the mission supports
+	maxPlayers = 60; 			// max # of players the mission supports
 	playerCountMultipleOf = 1;	// 1=all on one side (Coop), 2= TvT (balanced Teams)
 };
 

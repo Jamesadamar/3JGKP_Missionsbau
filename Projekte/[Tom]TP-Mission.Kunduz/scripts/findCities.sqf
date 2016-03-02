@@ -9,6 +9,7 @@
 
 	example call: 		[trg,] execVM "scripts\findCities.sqf";
 */
+#include "define_templates.hpp"
 
 // arguments
 _params = _this;
@@ -262,71 +263,71 @@ JGKP_fnc_searchCentre = {
 	switch (count _city) do {
 		case 1;
 		case 2: {
-			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
 
 			if (random 1 > 0.5) then {
-				_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+				_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
 			};
 		};
 		case 3;
 		case 4;
 		case 5;
 		case 6: {
-			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
 
 			if (random 1 > 0.5) then {
-				_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+				_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
 			};
 		};
 		case 7;
 		case 8;
 		case 9;
 		case 10: {
-			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
 
 			if (random 1 > 0.5) then {
-				_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
-				_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+				_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+				_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
 			};
 
-			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
 
-			_templates pushBack [[10,11,12,13] call BIS_fnc_selectRandom]; // static
-			_templates pushBack [[14,15,16] call BIS_fnc_selectRandom]; // UAZ
+			_templates pushBack [JGKP_var_template_static call BIS_fnc_selectRandom]; // static
+			_templates pushBack [JGKP_var_template_car call BIS_fnc_selectRandom]; // Cars
 		};
 		case 11;
 		case 12;
 		case 13;
 		case 14;
 		case 15: {
-			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [[10,11,12,13] call BIS_fnc_selectRandom]; // static
-			_templates pushBack [[14,15,16] call BIS_fnc_selectRandom]; // UAZ
-			_templates pushBack [[17,18,19] call BIS_fnc_selectRandom]; // armored
+			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [JGKP_var_template_static call BIS_fnc_selectRandom]; // static
+			_templates pushBack [JGKP_var_template_car call BIS_fnc_selectRandom]; // UAZ
+			_templates pushBack [JGKP_var_template_armored call BIS_fnc_selectRandom]; // armored
 		};
 		default {
-			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [[1,2,3,4] call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [[5,6,7] call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [[10,11,12,13] call BIS_fnc_selectRandom]; // static
-			_templates pushBack [[10,11,12,13] call BIS_fnc_selectRandom]; // static
-			_templates pushBack [[14,15,16] call BIS_fnc_selectRandom]; // UAZ
-			_templates pushBack [[17,18,19] call BIS_fnc_selectRandom]; // armored
-			_templates pushBack [[17,18,19] call BIS_fnc_selectRandom]; // armored
+			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [JGKP_var_template_static call BIS_fnc_selectRandom]; // static
+			_templates pushBack [JGKP_var_template_static call BIS_fnc_selectRandom]; // static
+			_templates pushBack [JGKP_var_template_car call BIS_fnc_selectRandom]; // UAZ
+			_templates pushBack [JGKP_var_template_armored call BIS_fnc_selectRandom]; // armored
+			_templates pushBack [JGKP_var_template_armored call BIS_fnc_selectRandom]; // armored
 		};
 	};
 
@@ -342,57 +343,65 @@ JGKP_fnc_searchCentre = {
 
 		_upsArgs = format["%1, %2, %3", _behaviour, _speedMode, _formation];
 
-		// zufälliges fortify
-		_fortify = random 1;
-		if (_fortify > 0.5) then {
+		// Verhalten für Infanterie
+		if (_tempNr in JGKP_var_template_small_grp or 
+			_tempNr in JGKP_var_template_big_grp) then {
 
-			_fortify = format["%1", str("FORTIFY")];
-			_upsArgs = format["%1, %2", _upsArgs, _fortify];
+			// zufälliges fortify
+			_fortify = random 1;
+			if (_fortify > 0.5) then {
+
+				_fortify = format["%1", str("FORTIFY")];
+				_upsArgs = format["%1, %2", _upsArgs, _fortify];
+
+			};
+
+			// zufälliges nofollow
+			_nofollow = random 1;
+			if (_nofollow > 0.5) then {
+
+				_nofollow = format["%1", str("NOFOLLOW")];
+				_upsArgs = format["%1, %2", _upsArgs, _nofollow];
+
+			};
+
+			// zufälliges ambush + ambushdist zwischen 0 und resolution / 2, sofern nicht fortify
+			_ambush = random 1;
+			if (typeName _fortify != "STRING" and _ambush > 0.75) then {
+
+				_ambush = format[
+					"%1, 'AMBUSHDIST:', %2",
+					str(["AMBUSH","AMBUSH2"] call BIS_fnc_selectRandom),
+					random (_resolution / 2)
+				];
+				_upsArgs = format["%1, %2", _upsArgs, _ambush];
+
+			};
+
+			// zufälliges random, sofern nicht ambush
+			_random = random 1;
+			if (_random > 0.5 and 
+				typeName _ambush != "STRING" and 
+				typeName _fortify != "STRING") then {
+
+				_random = format["%1", str(["RANDOMUP", "RANDOMDN", "RANDOMA"] call BIS_fnc_selectRandom)];
+				_upsArgs = format["%1, %2", _upsArgs, _random];
+
+			};
+
+			// Verhalten für Fahrzeuge
+		} else {
+
+			if (_tempNr in JGKP_var_template_car or
+				_tempNr in JGKP_var_template_armored) then {
+
+				_onroad = format["%1", str("ONROAD")];
+				_upsArgs = format["%1, %2", _upsArgs, _onroad];
+			};
 
 		};
 
-		// zufälliges nofollow
-		_nofollow = random 1;
-		if (_nofollow > 0.5) then {
-
-			_nofollow = format["%1", str("NOFOLLOW")];
-			_upsArgs = format["%1, %2", _upsArgs, _nofollow];
-
-		};
-
-		// zufälliges ambush + ambushdist zwischen 0 und resolution / 2, sofern nicht fortify
-		_ambush = random 1;
-		if (typeName _fortify != "STRING" and _ambush > 0.7) then {
-
-			_ambush = format[
-				"%1, 'AMBUSHDIST:', %2",
-				str(["AMBUSH","AMBUSH2"] call BIS_fnc_selectRandom),
-				random (_resolution / 2)
-			];
-			_upsArgs = format["%1, %2", _upsArgs, _ambush];
-
-		};
-
-		// zufälliges random, sofern nicht ambush
-		_random = random 1;
-		if (_random > 0.5 and typeName _ambush != "STRING") then {
-
-			_random = format["%1", str(["RANDOMUP", "RANDOMDN", "RANDOMA"] call BIS_fnc_selectRandom)];
-			_upsArgs = format["%1, %2", _upsArgs, _random];
-
-		};
-
-		// zwingend onroad für templates 14-19
-		/*
-		_onroad = "";
-		if (_tempNr in [14,15,16,17,18,19]) then {
-
-			_onroad = format["%1", str("ONROAD")];
-			_upsArgs = format["%1, %2", _upsArgs, _onroad];
-		};
-		*/		
-
-		_upsArgs = format["%1, %2, %3, %4, %5", _upsArgs, str("SPAWNED"), str("RANDOM"), str("DELETE:"), 120];
+		_upsArgs = format["%1, %2, %3", _upsArgs, str("DELETE:"), 120];
 
 		_tempString = format["%1 %2",
 			_tempString,

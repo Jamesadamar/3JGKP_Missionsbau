@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=8;
 	};
 	class Camera
 	{
 		pos[]={1309.913,59.297783,454.53299};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -11336,13 +11336,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3547.2134,7.1148129,2935.8525};
-						angles[]={6.2678375,1.2695787,0.017800748};
+						position[]={3547.2129,7.1147928,2935.8521};
+						angles[]={6.2678437,1.2695699,0.017802358};
 					};
 					side="East";
 					flags=2;
 					class Attributes
 					{
+						skill=0.34999999;
 					};
 					id=673;
 					type="GLT_Middle_East_Rifleman1";
@@ -11405,13 +11406,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4540.9326,9.6908026,2106.3198};
-						angles[]={0.035984326,1.2695787,6.2671909};
+						position[]={4540.9331,9.6907873,2106.3201};
+						angles[]={0.035988688,1.2695699,6.2671981};
 					};
 					side="East";
 					flags=2;
 					class Attributes
 					{
+						skill=0.34999999;
 					};
 					id=676;
 					type="GLT_Middle_East_Rifleman1";
@@ -11474,13 +11476,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3957.1567,7.3244324,646.30743};
-						angles[]={0.016395822,1.2695787,6.2799835};
+						position[]={3957.157,7.3244386,646.30701};
+						angles[]={0.016388642,1.2695699,6.2799911};
 					};
 					side="East";
 					flags=2;
 					class Attributes
 					{
+						skill=0.3508957;
 					};
 					id=679;
 					type="GLT_Middle_East_Rifleman1";
@@ -11517,8 +11520,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3957.1592,8.0445242,646.26892};
-				angles[]={0.016395822,1.2695787,6.2799835};
+				position[]={3957.1594,8.0445309,646.26849};
+				angles[]={0.016388642,1.2695699,6.2799911};
 			};
 			side="East";
 			flags=2;
@@ -11543,13 +11546,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4641.9092,8.2634735,4830.0684};
-						angles[]={6.2550817,1.2695787,6.2794352};
+						position[]={4641.9092,8.2634907,4830.0688};
+						angles[]={6.2550859,1.2695699,6.2794328};
 					};
 					side="East";
 					flags=2;
 					class Attributes
 					{
+						skill=0.34999999;
 					};
 					id=682;
 					type="GLT_Middle_East_Rifleman1";
