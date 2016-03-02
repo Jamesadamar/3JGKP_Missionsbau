@@ -349,7 +349,7 @@ JGKP_fnc_searchCentre = {
 
 			// zufälliges fortify
 			_fortify = random 1;
-			if (_fortify > 0.5) then {
+			if (_fortify > 1) then {
 
 				_fortify = format["%1", str("FORTIFY")];
 				_upsArgs = format["%1, %2", _upsArgs, _fortify];
@@ -401,7 +401,7 @@ JGKP_fnc_searchCentre = {
 
 		};
 
-		_upsArgs = format["%1, %2, %3", _upsArgs, str("DELETE:"), 120];
+		_upsArgs = format["%1, %2, %3, %4", _upsArgs, str("RANDOM"), str("DELETE:"), 120];
 
 		_tempString = format["%1 %2",
 			_tempString,
