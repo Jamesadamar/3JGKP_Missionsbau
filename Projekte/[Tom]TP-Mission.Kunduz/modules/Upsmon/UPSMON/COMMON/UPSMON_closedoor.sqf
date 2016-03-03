@@ -6,5 +6,5 @@ sleep 20;
 
 for "_i" from 0 to _nbrdoors do 
 {
-	[_bld, "door_" + str _i + "_rot", "Door_Handle_" + str _i + "_rot_1", "Door_Handle_" + str _i + "_rot_2"] execVM "\A3\Structures_F\scripts\Door_close.sqf";
+	[_bld, "door_" + str _i + "_rot", "Door_Handle_" + str _i + "_rot_1", "Door_Handle_" + str _i + "_rot_2"] call BIS_fnc_DoorClose;
 };

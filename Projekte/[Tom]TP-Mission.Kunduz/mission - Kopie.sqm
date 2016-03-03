@@ -8,22 +8,22 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=1169;
+		nextID=1165;
 	};
 	class MarkerIDProvider
 	{
-		nextID=13;
+		nextID=11;
 	};
 	class LayerIndexProvider
 	{
-		nextID=11;
+		nextID=8;
 	};
 	class Camera
 	{
-		pos[]={1230.083,59.297783,282.42566};
-		dir[]={0.52914959,-0.35050032,0.77278334};
-		up[]={0.1980525,0.93654615,0.28923854};
-		aside[]={0.82512385,-8.6717773e-007,-0.56499261};
+		pos[]={1309.913,59.297783,454.53299};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -91,6 +91,7 @@ addons[]=
 	"bwa3_units",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Modules_F_Sites",
+	"ace_vehiclelock",
 	"A3_Modules_F_Multiplayer",
 	"A3_Characters_F",
 	"caf_ag_faction_afr_p",
@@ -121,25 +122,6 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -172,6 +154,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -230,7 +231,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=356;
+		items=368;
 		class Item0
 		{
 			dataType="Marker";
@@ -321,7 +322,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb1 select 0, getPos bomb1 select 1,0],[], 0, 'FLY'];};";
 				sizeA=2;
 				sizeB=5;
@@ -339,7 +340,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb22 select 0, getPos bomb22 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -373,7 +374,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb31 select 0, getPos bomb31 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -390,7 +391,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb2 select 0, getPos bomb2 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -403,11 +404,11 @@ class Mission
 		class Item10
 		{
 			dataType="Trigger";
-			position[]={2075.272,31.062454,155.12};
+			position[]={2075.272,31.06242,155.11957};
 			class Attributes
 			{
 				text="IED Gross";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Bo_GBU12_LGB_MI10',[getPos bomb3 select 0, getPos bomb3 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -425,7 +426,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb4 select 0, getPos bomb4 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=15;
@@ -443,7 +444,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb5 select 0, getPos bomb5 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -461,7 +462,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb6 select 0, getPos bomb6 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=10;
@@ -480,7 +481,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb7 select 0, getPos bomb7 select 1,0],[], 0, 'FLY'];};";
 				sizeA=15;
 				sizeB=5;
@@ -498,7 +499,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb8 select 0, getPos bomb8 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -516,7 +517,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb9 select 0, getPos bomb9 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -534,7 +535,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb10 select 0, getPos bomb10 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -551,7 +552,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb11 select 0, getPos bomb11 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -569,7 +570,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb12 select 0, getPos bomb12 select 1,0],[], 0, 'FLY'];};";
 				sizeA=3;
 				sizeB=5;
@@ -588,7 +589,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb13 select 0, getPos bomb13 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -606,7 +607,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb14 select 0, getPos bomb14 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=15;
@@ -624,7 +625,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb15 select 0, getPos bomb15 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -641,7 +642,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb16 select 0, getPos bomb16 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -658,7 +659,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb17 select 0, getPos bomb17 select 1,0],[], 0, 'FLY'];};";
 				sizeA=15;
 				sizeB=15;
@@ -675,7 +676,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Gross";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Bo_GBU12_LGB_MI10',[getPos bomb18 select 0, getPos bomb18 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -693,7 +694,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb19 select 0, getPos bomb19 select 1,0],[], 0, 'FLY'];};";
 				sizeA=15;
 				sizeB=15;
@@ -710,7 +711,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb20 select 0, getPos bomb20 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -727,7 +728,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb21 select 0, getPos bomb21 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -744,7 +745,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb35 select 0, getPos bomb35 select 1,0],[], 0, 'FLY'];};";
 				sizeA=10;
 				sizeB=10;
@@ -762,7 +763,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb23 select 0, getPos bomb23 select 1,0],[], 0, 'FLY'];};";
 				sizeA=2;
 				sizeB=5;
@@ -781,7 +782,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb24 select 0, getPos bomb24 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -798,7 +799,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb25 select 0, getPos bomb25 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -816,7 +817,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb26 select 0, getPos bomb26 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -833,7 +834,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Gross";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Bo_GBU12_LGB_MI10',[getPos bomb27 select 0, getPos bomb27 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -850,7 +851,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb28 select 0, getPos bomb28 select 1,0],[], 0, 'FLY'];};";
 				sizeA=15;
 				sizeB=15;
@@ -867,7 +868,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb29 select 0, getPos bomb29 select 1,0],[], 0, 'FLY'];};";
 				sizeA=15;
 				sizeB=15;
@@ -885,7 +886,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb30 select 0, getPos bomb30 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=15;
@@ -904,7 +905,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb32 select 0, getPos bomb32 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=15;
@@ -923,7 +924,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb33 select 0, getPos bomb33 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -941,7 +942,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb34 select 0, getPos bomb34 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -958,7 +959,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Gross";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Bo_GBU12_LGB_MI10',[getPos bomb36 select 0, getPos bomb36 select 1,0],[], 0, 'FLY'];};";
 				sizeA=15;
 				sizeB=15;
@@ -976,7 +977,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb37 select 0, getPos bomb37 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -993,7 +994,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Gross";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Bo_GBU12_LGB_MI10',[getPos bomb38 select 0, getPos bomb38 select 1,0],[], 0, 'FLY'];};";
 				sizeA=10;
 				sizeB=10;
@@ -1010,7 +1011,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Gross";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Bo_GBU12_LGB_MI10',[getPos bomb40 select 0, getPos bomb40 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -1028,7 +1029,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb41 select 0, getPos bomb41 select 1,0],[], 0, 'FLY'];};";
 				sizeA=15;
 				sizeB=5;
@@ -1046,7 +1047,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb42 select 0, getPos bomb42 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -1064,7 +1065,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb43 select 0, getPos bomb43 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -1081,7 +1082,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Klein";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['R_80mm_HE',[getPos bomb44 select 0, getPos bomb44 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -1098,7 +1099,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Gross";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Bo_GBU12_LGB_MI10',[getPos bomb45 select 0, getPos bomb45 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -1116,7 +1117,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb46 select 0, getPos bomb46 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -1134,7 +1135,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb47 select 0, getPos bomb47 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -1152,7 +1153,7 @@ class Mission
 			class Attributes
 			{
 				text="IED Mittel";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="remotebombe = []spawn {_bombe= createVehicle ['Sh_122_HE',[getPos bomb48 select 0, getPos bomb48 select 1,0],[], 0, 'FLY'];};";
 				sizeA=5;
 				sizeB=5;
@@ -1205,7 +1206,7 @@ class Mission
 			{
 				name="SpawnGrps_Server_1_1_2_5";
 				text="Spawnt Template 2 1 mal";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="nul = [2,getpos spawn9,1,[""area1"",""Limited"",""Aware"",""SPAWNED""]] execVM ""modules\Upsmon\UPSMON\MODULES\UPSMON_spawn.SQF"";";
 				sizeA=1500;
 				sizeB=1500;
@@ -1224,7 +1225,7 @@ class Mission
 			{
 				name="SpawnGrps_Server_1_1_2_5_2";
 				text="Spawnt Template 2 1 mal";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="nul = [6,getpos spawn11,1,[""area1"",""Limited"",""Aware"",""SPAWNED""]] execVM ""modules\Upsmon\UPSMON\MODULES\UPSMON_spawn.SQF"";";
 				sizeA=150;
 				sizeB=2500;
@@ -1244,7 +1245,7 @@ class Mission
 			{
 				name="SpawnGrps_Server_1_1_2_5_2_1";
 				text="Spawnt Template 2 1 mal";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="nul = [7,getpos spawn11,1,[""area1"",""Limited"",""Aware"",""SPAWNED""]] execVM ""modules\Upsmon\UPSMON\MODULES\UPSMON_spawn.SQF"";";
 				sizeA=150;
 				sizeB=2500;
@@ -1264,7 +1265,7 @@ class Mission
 			{
 				name="SpawnGrps_Server_1_1_2_5_1_1";
 				text="Spawnt Template 2 1 mal";
-				condition="this and isServer and ((getpos (thislist select 0)) select 2 < 5)";
+				condition="this and ((getpos (thislist select 0)) select 2 < 5)";
 				onActivation="nul = [2,getpos spawn12,1,[""area1"",""Limited"",""Aware"",""SPAWNED""]] execVM ""modules\Upsmon\UPSMON\MODULES\UPSMON_spawn.SQF"";";
 				sizeA=1500;
 				sizeB=1500;
@@ -1391,8 +1392,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1245.75,36.480305,443.875};
-				angles[]={6.2751918,0.95445776,6.2791886};
+				position[]={1247.1764,36.472145,444.29065};
+				angles[]={6.2791886,0.95445776,6.2751918};
 			};
 			side="Empty";
 			class Attributes
@@ -1776,7 +1777,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1298.75,36.432308,375.375};
+				position[]={1299.427,36.432308,375.54013};
 				angles[]={0,0.91698545,0};
 			};
 			side="Empty";
@@ -1879,33 +1880,10 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				lock="UNLOCKED";
+				lock="LOCKEDPLAYER";
 			};
 			id=322;
 			type="bw_dingo_isaf";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""FirstAidKit"",""GLT_Item_Jerrycan_Fuel_10_Liter_Diesel""],[1,1]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item97
 		{
@@ -1929,8 +1907,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1282.375,35.614311,426.25};
-				angles[]={0,4.0596037,0};
+				position[]={1285.89,35.614311,420.436};
+				angles[]={0,0.914083,0};
 			};
 			side="Empty";
 			class Attributes
@@ -2250,81 +2228,33 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1311.08,36.625687,366.259};
+				position[]={1311.08,36.625465,366.259};
 				angles[]={0,0.95993108,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				lock="UNLOCKED";
 				init="this setVariable [""ACE_isRepairVehicle"",1];";
 			};
 			id=344;
 			type="GLT_HEMTT_Repair_Tropentarn";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""MineDetector""],[1]],[[""12Rnd_mas_45acp_Mag"",""BWA3_15Rnd_9x19_P8""],[10,10]],[[""ToolKit""],[1]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item119
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1313.29,36.230213,361.841};
-				angles[]={0,0.94265229,0};
+				position[]={1313.29,36.23061,361.841};
+				angles[]={0,0.94266111,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				lock="UNLOCKED";
 			};
 			id=345;
 			type="GLT_HEMTT_Fuel_Tropentarn";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""GLT_Item_Jerrycan_Fuel_20_Liter_Diesel"",""FirstAidKit""],[5,1]],[[""RPA_JerryCan_Item_Full""],[2]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item120
 		{
@@ -2363,40 +2293,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1307.86,36.236797,371.24701};
+				position[]={1307.86,36.23661,371.24701};
 				angles[]={0,0.95993108,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				lock="UNLOCKED";
 			};
 			id=348;
 			type="GLT_HEMTT_Ammo_Tropentarn";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""BWA3_P8"",""FirstAidKit""],[1,1]],[[""BWA3_15Rnd_9x19_P8""],[10]],[[""ToolKit"",""acc_flashlight""],[1,5]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item123
 		{
@@ -2410,33 +2316,10 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				lock="UNLOCKED";
+				lock="LOCKEDPLAYER";
 			};
 			id=349;
 			type="bw_dingo_isaf";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""FirstAidKit"",""GLT_Item_Jerrycan_Fuel_10_Liter_Diesel""],[1,1]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item124
 		{
@@ -2450,33 +2333,10 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				lock="UNLOCKED";
+				lock="LOCKEDPLAYER";
 			};
 			id=350;
 			type="bw_dingo_isaf";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""FirstAidKit"",""GLT_Item_Jerrycan_Fuel_10_Liter_Diesel""],[1,1]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item125
 		{
@@ -2490,33 +2350,10 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				lock="UNLOCKED";
+				lock="LOCKEDPLAYER";
 			};
 			id=351;
 			type="bw_dingo_isaf";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""FirstAidKit"",""GLT_Item_Jerrycan_Fuel_10_Liter_Diesel""],[1,1]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item126
 		{
@@ -2557,8 +2394,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1306.625,36.418808,489.875};
-				angles[]={0,4.0683627,0.0039967569};
+				position[]={1306.3125,36.418228,488.52344};
+				angles[]={0.0039967569,4.0683627,0};
 			};
 			side="Empty";
 			class Attributes
@@ -2659,74 +2496,28 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				lock="UNLOCKED";
+				lock="LOCKEDPLAYER";
 			};
 			id=360;
 			type="bw_dingo_isaf";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""FirstAidKit"",""GLT_Item_Jerrycan_Fuel_10_Liter_Diesel""],[1,1]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item135
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1332.1073,36.103931,454.48401};
-				angles[]={0,2.4556084,6.2791882};
+				position[]={1332.1073,36.103928,454.48401};
+				angles[]={0,2.4556084,6.2791886};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				lock="UNLOCKED";
+				lock="LOCKEDPLAYER";
 				init="this setVariable [""ace_medical_isMedicalFacility"", true,true];";
 			};
 			id=361;
 			type="GLT_Fennek_Ambulance_Tropentarn";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""BWA3_G36_equipped"",""FirstAidKit"",""Medikit"",""GLT_Item_Bandage"",""GLT_Item_Epinephrine"",""GLT_Item_Morphine"",""GLT_Item_Jerrycan_Fuel_10_Liter_Diesel""],[1,10,1,5,5,5,1]],[[""BWA3_30Rnd_556x45_G36"",""BWA3_200Rnd_556x45"",""HandGrenade"",""SmokeShell"",""SmokeShellGreen"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""12Rnd_mas_45acp_Mag""],[8,2,5,2,2,5,2,6]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item136
 		{
@@ -2765,8 +2556,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1351.125,36.590305,368.375};
-				angles[]={0.027993103,5.6389842,0.019996032};
+				position[]={1350.2957,36.540989,369.80902};
+				angles[]={0.031990308,5.6389842,0.015998369};
 			};
 			side="Empty";
 			class Attributes
@@ -2781,40 +2572,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1348.5486,36.134956,403.17142};
-				angles[]={0,0.88325876,0};
+				position[]={1348.5491,36.134529,403.17133};
+				angles[]={0,0.88326573,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				lock="UNLOCKED";
+				lock="LOCKEDPLAYER";
 			};
 			id=365;
 			type="BWA3_Tiger_Gunpod_FZ";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""BWA3_G36K_equipped"",""FirstAidKit""],[2,2]],[[""BWA3_DM25"",""BWA3_DM32_Orange"",""BWA3_30Rnd_556x45_G36""],[2,2,4]],[[""ToolKit"",""BWA3_ItemNaviPad""],[1,1]],[[""B_Parachute""],[2]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item140
 		{
@@ -2839,8 +2607,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1378.375,36.428806,395};
-				angles[]={0.0039967569,4.0370512,6.2791886};
+				position[]={1377.9829,36.433685,394.59711};
+				angles[]={0.0080009829,4.0370512,6.2791886};
 			};
 			side="Empty";
 			class Attributes
@@ -2968,80 +2736,34 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1292.3624,36.400642,415.45355};
+				position[]={1292.3622,36.400642,415.45352};
 				angles[]={0,0.9075712,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				lock="UNLOCKED";
+				lock="LOCKEDPLAYER";
 			};
 			id=375;
 			type="bw_dingo_gl_isaf";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""FirstAidKit"",""GLT_Item_Jerrycan_Fuel_10_Liter_Diesel""],[1,1]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item150
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1294.7004,36.400642,412.11255};
+				position[]={1294.7006,36.400642,412.11276};
 				angles[]={0,0.9075712,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				lock="UNLOCKED";
+				lock="LOCKEDPLAYER";
 			};
 			id=376;
 			type="bw_dingo_gl_isaf";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""FirstAidKit"",""GLT_Item_Jerrycan_Fuel_10_Liter_Diesel""],[1,1]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item151
 		{
@@ -4888,8 +4610,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={84.722,69.07093,217.983};
-				angles[]={0.36315063,0,6.1245351};
+				position[]={84.721649,69.071106,217.98267};
+				angles[]={0.36314583,0,6.1245294};
 			};
 			name="Event_6";
 			id=493;
@@ -4923,8 +4645,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={63.52,70.487747,217.94299};
-				angles[]={0.3133215,0,6.1480098};
+				position[]={63.519867,70.487877,217.94263};
+				angles[]={0.31332639,0,6.148016};
 			};
 			name="Event_2";
 			id=494;
@@ -4984,7 +4706,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -5079,7 +4801,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0.80000001;
+							value=1;
 						};
 					};
 				};
@@ -5186,8 +4908,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={84.916,64.991142,232.89};
-				angles[]={0.27300441,0,6.2791882};
+				position[]={84.915985,64.991173,232.88989};
+				angles[]={0.27300769,0,6.2791886};
 			};
 			name="Event_3";
 			id=495;
@@ -5209,7 +4931,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=-1;
+							value=100;
 						};
 					};
 				};
@@ -5259,8 +4981,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={64.121002,66.148254,232.886};
-				angles[]={0.28778735,0,6.1558809};
+				position[]={64.121307,66.148224,232.88599};
+				angles[]={0.28778237,0,6.1558781};
 			};
 			name="Event_1";
 			id=496;
@@ -5339,7 +5061,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5472,7 +5194,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=3;
 						};
 					};
 				};
@@ -9036,6 +8758,77 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
+				position[]={1312.6389,34.290001,428.74176};
+			};
+			id=578;
+			type="ACE_VehicleLock_ModuleSetup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_VehicleLock_ModuleSetup_DefaultLockpickStrength";
+					expression="_this setVariable ['DefaultLockpickStrength',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_VehicleLock_ModuleSetup_VehicleStartingLockState";
+					expression="_this setVariable ['VehicleStartingLockState',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ACE_VehicleLock_ModuleSetup_LockVehicleInventory";
+					expression="_this setVariable ['LockVehicleInventory',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item300
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
 				position[]={1317.5201,34.290001,429.83215};
 			};
 			id=579;
@@ -9235,7 +9028,97 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item300
+		class Item301
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1329.366,34.290001,447.32056};
+			};
+			id=580;
+			type="ACE_VehicleLock_ModuleSyncedAssign";
+		};
+		class Item302
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1334.899,34.259182,450.4068};
+			};
+			id=581;
+			type="ACE_VehicleLock_ModuleSyncedAssign";
+		};
+		class Item303
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1312.2347,34.290001,435.56274};
+			};
+			id=582;
+			type="ACE_VehicleLock_ModuleSyncedAssign";
+		};
+		class Item304
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1308.6702,34.290001,433.27515};
+			};
+			id=583;
+			type="ACE_VehicleLock_ModuleSyncedAssign";
+		};
+		class Item305
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1304.5204,34.290001,430.72144};
+			};
+			id=584;
+			type="ACE_VehicleLock_ModuleSyncedAssign";
+		};
+		class Item306
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1301.4348,34.290001,428.11462};
+			};
+			id=585;
+			type="ACE_VehicleLock_ModuleSyncedAssign";
+		};
+		class Item307
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1295.1034,34.290001,417.47406};
+			};
+			id=586;
+			type="ACE_VehicleLock_ModuleSyncedAssign";
+		};
+		class Item308
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1298,34.290001,413.625};
+			};
+			id=587;
+			type="ACE_VehicleLock_ModuleSyncedAssign";
+		};
+		class Item309
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1346.0182,34.290001,408.21655};
+			};
+			id=588;
+			type="ACE_VehicleLock_ModuleSyncedAssign";
+		};
+		class Item310
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9439,7 +9322,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item301
+		class Item311
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9643,7 +9526,88 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item302
+		class Item312
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1321.077,34.290001,367.79633};
+			};
+			id=591;
+			type="ACE_VehicleLock_ModuleSyncedAssign";
+		};
+		class Item313
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1321.2654,34.290001,375.75073};
+			};
+			id=592;
+			type="ACE_VehicleLock_ModuleSetup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_VehicleLock_ModuleSetup_DefaultLockpickStrength";
+					expression="_this setVariable ['DefaultLockpickStrength',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_VehicleLock_ModuleSetup_VehicleStartingLockState";
+					expression="_this setVariable ['VehicleStartingLockState',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ACE_VehicleLock_ModuleSetup_LockVehicleInventory";
+					expression="_this setVariable ['LockVehicleInventory',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item314
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9809,7 +9773,7 @@ class Mission
 				nAttributes=8;
 			};
 		};
-		class Item303
+		class Item315
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9975,7 +9939,7 @@ class Mission
 				nAttributes=8;
 			};
 		};
-		class Item304
+		class Item316
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9989,7 +9953,7 @@ class Mission
 			id=595;
 			type="HeadlessClient_F";
 		};
-		class Item305
+		class Item317
 		{
 			dataType="Group";
 			side="East";
@@ -10074,7 +10038,7 @@ class Mission
 			};
 			id=596;
 		};
-		class Item306
+		class Item318
 		{
 			dataType="Group";
 			side="East";
@@ -10177,7 +10141,7 @@ class Mission
 			};
 			id=601;
 		};
-		class Item307
+		class Item319
 		{
 			dataType="Group";
 			side="East";
@@ -10334,7 +10298,7 @@ class Mission
 			};
 			id=608;
 		};
-		class Item308
+		class Item320
 		{
 			dataType="Group";
 			side="East";
@@ -10572,7 +10536,7 @@ class Mission
 			};
 			id=617;
 		};
-		class Item309
+		class Item321
 		{
 			dataType="Group";
 			side="East";
@@ -10736,7 +10700,7 @@ class Mission
 			};
 			id=628;
 		};
-		class Item310
+		class Item322
 		{
 			dataType="Object";
 			class PositionInfo
@@ -10754,7 +10718,7 @@ class Mission
 			id=634;
 			type="CAF_AG_ME_T_Offroad";
 		};
-		class Item311
+		class Item323
 		{
 			dataType="Group";
 			side="East";
@@ -10829,7 +10793,7 @@ class Mission
 			};
 			id=637;
 		};
-		class Item312
+		class Item324
 		{
 			dataType="Object";
 			class PositionInfo
@@ -10870,7 +10834,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item313
+		class Item325
 		{
 			dataType="Group";
 			side="East";
@@ -10945,7 +10909,7 @@ class Mission
 			};
 			id=647;
 		};
-		class Item314
+		class Item326
 		{
 			dataType="Object";
 			class PositionInfo
@@ -10964,7 +10928,7 @@ class Mission
 			id=648;
 			type="LOP_TKA_BMP2";
 		};
-		class Item315
+		class Item327
 		{
 			dataType="Group";
 			side="East";
@@ -11147,7 +11111,7 @@ class Mission
 			};
 			id=651;
 		};
-		class Item316
+		class Item328
 		{
 			dataType="Group";
 			side="East";
@@ -11247,7 +11211,7 @@ class Mission
 			};
 			id=662;
 		};
-		class Item317
+		class Item329
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11266,7 +11230,7 @@ class Mission
 			id=663;
 			type="LOP_TKA_T72BA";
 		};
-		class Item318
+		class Item330
 		{
 			dataType="Group";
 			side="East";
@@ -11341,7 +11305,7 @@ class Mission
 			};
 			id=667;
 		};
-		class Item319
+		class Item331
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11360,7 +11324,7 @@ class Mission
 			id=668;
 			type="LOP_TKA_BMP1";
 		};
-		class Item320
+		class Item332
 		{
 			dataType="Group";
 			side="East";
@@ -11411,7 +11375,7 @@ class Mission
 			};
 			id=671;
 		};
-		class Item321
+		class Item333
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11430,7 +11394,7 @@ class Mission
 			id=672;
 			type="GLT_Static_Mortar_MEA";
 		};
-		class Item322
+		class Item334
 		{
 			dataType="Group";
 			side="East";
@@ -11481,7 +11445,7 @@ class Mission
 			};
 			id=674;
 		};
-		class Item323
+		class Item335
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11500,7 +11464,7 @@ class Mission
 			id=675;
 			type="GLT_Static_Mortar_MEA";
 		};
-		class Item324
+		class Item336
 		{
 			dataType="Group";
 			side="East";
@@ -11551,7 +11515,7 @@ class Mission
 			};
 			id=677;
 		};
-		class Item325
+		class Item337
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11570,7 +11534,7 @@ class Mission
 			id=678;
 			type="GLT_Static_Mortar_MEA";
 		};
-		class Item326
+		class Item338
 		{
 			dataType="Group";
 			side="East";
@@ -11621,7 +11585,7 @@ class Mission
 			};
 			id=680;
 		};
-		class Item327
+		class Item339
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11640,7 +11604,7 @@ class Mission
 			id=681;
 			type="GLT_Static_Mortar_MEA";
 		};
-		class Item328
+		class Item340
 		{
 			dataType="Marker";
 			position[]={1284,34.312206,461.5};
@@ -11648,7 +11612,7 @@ class Mission
 			type="respawn_inf";
 			id=684;
 		};
-		class Item329
+		class Item341
 		{
 			dataType="Group";
 			side="West";
@@ -11676,7 +11640,7 @@ class Mission
 			};
 			id=1083;
 		};
-		class Item330
+		class Item342
 		{
 			dataType="Group";
 			side="East";
@@ -11752,7 +11716,7 @@ class Mission
 			};
 			id=1087;
 		};
-		class Item331
+		class Item343
 		{
 			dataType="Group";
 			side="East";
@@ -11828,7 +11792,7 @@ class Mission
 			};
 			id=1093;
 		};
-		class Item332
+		class Item344
 		{
 			dataType="Group";
 			side="East";
@@ -11964,7 +11928,7 @@ class Mission
 			};
 			id=1102;
 		};
-		class Item333
+		class Item345
 		{
 			dataType="Group";
 			side="East";
@@ -12014,7 +11978,7 @@ class Mission
 			};
 			id=1117;
 		};
-		class Item334
+		class Item346
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12031,7 +11995,7 @@ class Mission
 			id=1118;
 			type="LOP_TKA_Static_M2";
 		};
-		class Item335
+		class Item347
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12048,7 +12012,7 @@ class Mission
 			id=1120;
 			type="LOP_TKA_Static_M2_MiniTripod";
 		};
-		class Item336
+		class Item348
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12065,7 +12029,7 @@ class Mission
 			id=1122;
 			type="LOP_TKA_Static_Mk19_TriPod";
 		};
-		class Item337
+		class Item349
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12082,7 +12046,7 @@ class Mission
 			id=1124;
 			type="LOP_TKA_NSV_TriPod";
 		};
-		class Item338
+		class Item350
 		{
 			dataType="Group";
 			side="East";
@@ -12132,7 +12096,7 @@ class Mission
 			};
 			id=1126;
 		};
-		class Item339
+		class Item351
 		{
 			dataType="Group";
 			side="East";
@@ -12182,7 +12146,7 @@ class Mission
 			};
 			id=1127;
 		};
-		class Item340
+		class Item352
 		{
 			dataType="Group";
 			side="East";
@@ -12232,7 +12196,7 @@ class Mission
 			};
 			id=1128;
 		};
-		class Item341
+		class Item353
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12271,7 +12235,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item342
+		class Item354
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12310,7 +12274,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item343
+		class Item355
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12350,7 +12314,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item344
+		class Item356
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12366,7 +12330,7 @@ class Mission
 			id=1138;
 			type="LOP_TKA_BMP1";
 		};
-		class Item345
+		class Item357
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12382,7 +12346,7 @@ class Mission
 			id=1141;
 			type="LOP_TKA_BMP2D";
 		};
-		class Item346
+		class Item358
 		{
 			dataType="Group";
 			side="East";
@@ -12482,7 +12446,7 @@ class Mission
 			};
 			id=1144;
 		};
-		class Item347
+		class Item359
 		{
 			dataType="Object";
 			class PositionInfo
@@ -12522,7 +12486,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item348
+		class Item360
 		{
 			dataType="Group";
 			side="East";
@@ -12597,7 +12561,7 @@ class Mission
 			};
 			id=1149;
 		};
-		class Item349
+		class Item361
 		{
 			dataType="Group";
 			side="East";
@@ -12672,7 +12636,7 @@ class Mission
 			};
 			id=1150;
 		};
-		class Item350
+		class Item362
 		{
 			dataType="Group";
 			side="East";
@@ -12747,7 +12711,7 @@ class Mission
 			};
 			id=1151;
 		};
-		class Item351
+		class Item363
 		{
 			dataType="Group";
 			side="East";
@@ -12822,7 +12786,7 @@ class Mission
 			};
 			id=1152;
 		};
-		class Item352
+		class Item364
 		{
 			dataType="Group";
 			side="East";
@@ -12897,13 +12861,13 @@ class Mission
 			};
 			id=1153;
 		};
-		class Item353
+		class Item365
 		{
 			dataType="Layer";
 			name="Kontrollpunkt (Groß)";
 			id=1160;
 		};
-		class Item354
+		class Item366
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12914,7 +12878,7 @@ class Mission
 			id=1162;
 			type="LocationBase_F";
 		};
-		class Item355
+		class Item367
 		{
 			dataType="Trigger";
 			position[]={2560,6.73,2560};
@@ -12922,7 +12886,7 @@ class Mission
 			{
 				name="trg_findCities";
 				text="Startet auf dem Server das Analyseskript";
-				condition="isServer";
+				condition="isServer ";
 				onActivation="nul = [thistrigger,1] execVM ""scripts\findCities.sqf"";";
 				sizeA=2560;
 				sizeB=2560;
@@ -12937,15 +12901,15 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=13;
+			nextID=79;
 		};
 		class Links
 		{
-			items=13;
+			items=79;
 			class Item0
 			{
 				linkID=0;
-				item0=579;
+				item0=578;
 				item1=322;
 				class CustomData
 				{
@@ -12955,8 +12919,8 @@ class Mission
 			class Item1
 			{
 				linkID=1;
-				item0=590;
-				item1=344;
+				item0=585;
+				item1=322;
 				class CustomData
 				{
 					type="Sync";
@@ -12965,8 +12929,8 @@ class Mission
 			class Item2
 			{
 				linkID=2;
-				item0=590;
-				item1=345;
+				item0=579;
+				item1=322;
 				class CustomData
 				{
 					type="Sync";
@@ -12976,7 +12940,7 @@ class Mission
 			{
 				linkID=3;
 				item0=590;
-				item1=348;
+				item1=344;
 				class CustomData
 				{
 					type="Sync";
@@ -12985,8 +12949,8 @@ class Mission
 			class Item4
 			{
 				linkID=4;
-				item0=579;
-				item1=349;
+				item0=592;
+				item1=344;
 				class CustomData
 				{
 					type="Sync";
@@ -12995,8 +12959,8 @@ class Mission
 			class Item5
 			{
 				linkID=5;
-				item0=579;
-				item1=350;
+				item0=591;
+				item1=344;
 				class CustomData
 				{
 					type="Sync";
@@ -13005,8 +12969,8 @@ class Mission
 			class Item6
 			{
 				linkID=6;
-				item0=579;
-				item1=351;
+				item0=590;
+				item1=345;
 				class CustomData
 				{
 					type="Sync";
@@ -13015,8 +12979,8 @@ class Mission
 			class Item7
 			{
 				linkID=7;
-				item0=589;
-				item1=365;
+				item0=592;
+				item1=345;
 				class CustomData
 				{
 					type="Sync";
@@ -13025,8 +12989,8 @@ class Mission
 			class Item8
 			{
 				linkID=8;
-				item0=579;
-				item1=375;
+				item0=591;
+				item1=345;
 				class CustomData
 				{
 					type="Sync";
@@ -13035,8 +12999,8 @@ class Mission
 			class Item9
 			{
 				linkID=9;
-				item0=579;
-				item1=376;
+				item0=590;
+				item1=348;
 				class CustomData
 				{
 					type="Sync";
@@ -13045,8 +13009,8 @@ class Mission
 			class Item10
 			{
 				linkID=10;
-				item0=574;
-				item1=522;
+				item0=592;
+				item1=348;
 				class CustomData
 				{
 					type="Sync";
@@ -13055,8 +13019,8 @@ class Mission
 			class Item11
 			{
 				linkID=11;
-				item0=360;
-				item1=579;
+				item0=591;
+				item1=348;
 				class CustomData
 				{
 					type="Sync";
@@ -13065,7 +13029,667 @@ class Mission
 			class Item12
 			{
 				linkID=12;
-				item0=361;
+				item0=578;
+				item1=349;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item13
+			{
+				linkID=13;
+				item0=582;
+				item1=349;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item14
+			{
+				linkID=14;
+				item0=579;
+				item1=349;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item15
+			{
+				linkID=15;
+				item0=578;
+				item1=350;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item16
+			{
+				linkID=16;
+				item0=584;
+				item1=350;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item17
+			{
+				linkID=17;
+				item0=579;
+				item1=350;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item18
+			{
+				linkID=18;
+				item0=578;
+				item1=351;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item19
+			{
+				linkID=19;
+				item0=583;
+				item1=351;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item20
+			{
+				linkID=20;
+				item0=579;
+				item1=351;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item21
+			{
+				linkID=21;
+				item0=578;
+				item1=360;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item22
+			{
+				linkID=22;
+				item0=580;
+				item1=360;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item23
+			{
+				linkID=23;
+				item0=578;
+				item1=361;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item24
+			{
+				linkID=24;
+				item0=581;
+				item1=361;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item25
+			{
+				linkID=25;
+				item0=578;
+				item1=365;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item26
+			{
+				linkID=26;
+				item0=589;
+				item1=365;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item27
+			{
+				linkID=27;
+				item0=588;
+				item1=366;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item28
+			{
+				linkID=28;
+				item0=578;
+				item1=375;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item29
+			{
+				linkID=29;
+				item0=586;
+				item1=375;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item30
+			{
+				linkID=30;
+				item0=579;
+				item1=375;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item31
+			{
+				linkID=31;
+				item0=578;
+				item1=376;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item32
+			{
+				linkID=32;
+				item0=587;
+				item1=376;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item33
+			{
+				linkID=33;
+				item0=579;
+				item1=376;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item34
+			{
+				linkID=34;
+				item0=574;
+				item1=522;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item35
+			{
+				linkID=35;
+				item0=580;
+				item1=524;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item36
+			{
+				linkID=36;
+				item0=581;
+				item1=524;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item37
+			{
+				linkID=37;
+				item0=582;
+				item1=524;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item38
+			{
+				linkID=38;
+				item0=583;
+				item1=524;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item39
+			{
+				linkID=39;
+				item0=584;
+				item1=524;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item40
+			{
+				linkID=40;
+				item0=585;
+				item1=524;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item41
+			{
+				linkID=41;
+				item0=586;
+				item1=524;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item42
+			{
+				linkID=42;
+				item0=587;
+				item1=524;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item43
+			{
+				linkID=43;
+				item0=588;
+				item1=524;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item44
+			{
+				linkID=44;
+				item0=591;
+				item1=524;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item45
+			{
+				linkID=45;
+				item0=581;
+				item1=525;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item46
+			{
+				linkID=46;
+				item0=580;
+				item1=525;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item47
+			{
+				linkID=47;
+				item0=582;
+				item1=525;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item48
+			{
+				linkID=48;
+				item0=583;
+				item1=525;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item49
+			{
+				linkID=49;
+				item0=584;
+				item1=525;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item50
+			{
+				linkID=50;
+				item0=585;
+				item1=525;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item51
+			{
+				linkID=51;
+				item0=586;
+				item1=525;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item52
+			{
+				linkID=52;
+				item0=587;
+				item1=525;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item53
+			{
+				linkID=53;
+				item0=588;
+				item1=525;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item54
+			{
+				linkID=54;
+				item0=591;
+				item1=525;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item55
+			{
+				linkID=55;
+				item0=580;
+				item1=527;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item56
+			{
+				linkID=56;
+				item0=582;
+				item1=527;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item57
+			{
+				linkID=57;
+				item0=583;
+				item1=527;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item58
+			{
+				linkID=58;
+				item0=584;
+				item1=527;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item59
+			{
+				linkID=59;
+				item0=585;
+				item1=527;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item60
+			{
+				linkID=60;
+				item0=587;
+				item1=527;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item61
+			{
+				linkID=61;
+				item0=586;
+				item1=527;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item62
+			{
+				linkID=62;
+				item0=582;
+				item1=531;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item63
+			{
+				linkID=63;
+				item0=586;
+				item1=531;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item64
+			{
+				linkID=64;
+				item0=582;
+				item1=532;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item65
+			{
+				linkID=65;
+				item0=586;
+				item1=532;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item66
+			{
+				linkID=66;
+				item0=583;
+				item1=542;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item67
+			{
+				linkID=67;
+				item0=584;
+				item1=542;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item68
+			{
+				linkID=68;
+				item0=583;
+				item1=543;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item69
+			{
+				linkID=69;
+				item0=585;
+				item1=553;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item70
+			{
+				linkID=70;
+				item0=587;
+				item1=553;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item71
+			{
+				linkID=71;
+				item0=585;
+				item1=554;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item72
+			{
+				linkID=72;
+				item0=587;
+				item1=554;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item73
+			{
+				linkID=73;
+				item0=581;
+				item1=564;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item74
+			{
+				linkID=74;
+				item0=591;
+				item1=568;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item75
+			{
+				linkID=75;
+				item0=588;
+				item1=572;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item76
+			{
+				linkID=76;
+				item0=588;
+				item1=573;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item77
+			{
+				linkID=77;
+				item0=580;
+				item1=579;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item78
+			{
+				linkID=78;
+				item0=581;
 				item1=579;
 				class CustomData
 				{

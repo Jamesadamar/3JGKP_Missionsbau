@@ -348,6 +348,7 @@ JGKP_fnc_searchCentre = {
 			_tempNr in JGKP_var_template_big_grp) then {
 
 			// zufälliges fortify
+			/*
 			_fortify = random 1;
 			if (_fortify > 1) then {
 
@@ -355,6 +356,7 @@ JGKP_fnc_searchCentre = {
 				_upsArgs = format["%1, %2", _upsArgs, _fortify];
 
 			};
+			*/
 
 			// zufälliges nofollow
 			_nofollow = random 1;
@@ -380,14 +382,23 @@ JGKP_fnc_searchCentre = {
 
 			// zufälliges random, sofern nicht ambush
 			_random = random 1;
-			if (_random > 0.5 and 
-				typeName _ambush != "STRING" and 
-				typeName _fortify != "STRING") then {
+			if (_random > 0.6 and 
+				typeName _ambush != "STRING") then {
 
 				_random = format["%1", str(["RANDOMUP", "RANDOMDN", "RANDOMA"] call BIS_fnc_selectRandom)];
 				_upsArgs = format["%1, %2", _upsArgs, _random];
 
 			};
+
+			// zufälliges noshare
+			_noshare = random 1;
+			if (_noshare > 0.75) then {
+
+				_noshare = format["%1", str("NOSHARE")];
+				_upsArgs = format["%1, %2", _upsArgs, _noshare];
+
+			};
+
 
 			// Verhalten für Fahrzeuge
 		} else {
@@ -401,7 +412,7 @@ JGKP_fnc_searchCentre = {
 
 		};
 
-		_upsArgs = format["%1, %2, %3, %4", _upsArgs, str("RANDOM"), str("DELETE:"), 120];
+		_upsArgs = format["%1, %2, %3, %4, %5", _upsArgs, str("RANDOM"), str("DELETE:"), 120, str("RADIORANGE:"), 500];
 
 		_tempString = format["%1 %2",
 			_tempString,
@@ -425,7 +436,7 @@ JGKP_fnc_searchCentre = {
 		""
 	];
 
-	_trgUpsmon setTriggerTimeout [5, 10, 7, false];
+	_trgUpsmon setTriggerTimeout [1, 60, 30, false];
 
 } foreach _cities;
 
