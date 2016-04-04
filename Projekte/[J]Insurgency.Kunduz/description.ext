@@ -14,17 +14,6 @@
 //** Missionsparamter
 //**********************************************************************************
 
-/**
-Displays a message while the mission is loading. Note that a mission that takes very little time to load will only display the message for a short time. Care should be taken to see whether your message is readable in that timeframe.
-
-The OnLoadMission option is used to present the mission name to the user. In MP this is the name you see when selecting a mission and also the name that is presented to the MultiPlayer browser. 
-*/
-onLoadMission = "Befrieden Sie die Region Kundus und lassen Sie wieder Ruhe in das Gebiet einkehren...";
-
-/**
-Displays a message while the intro is loading. 
-*/
-onLoadIntro = "Vorbereitungen laufen...";
 
 /**
 Define whether you will see the time and date displayed while the mission loads. 1 means visible, 0 hidden. 
@@ -42,11 +31,6 @@ You can define a picture to be shown while the mission is loaded.
 The path is relative to the mission folder. 
 */
 loadScreen = "";
-
-
-author = "[3.JgKp]James"; // Author
-onLoadName = "[T+J]Insurgency Kundus v0.1"; // Mission name (temporary solution; actual name set in editor will be used later in the alpha)
-
 
 //*********************************
 //** Sets respawn type.

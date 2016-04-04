@@ -369,7 +369,7 @@ JGKP_fnc_searchCentre = {
 
 			// zufälliges ambush + ambushdist zwischen 0 und resolution / 2, sofern nicht fortify
 			_ambush = random 1;
-			if (typeName _fortify != "STRING" and _ambush > 0.75) then {
+			if (_ambush > 0.75) then {
 
 				_ambush = format[
 					"%1, 'AMBUSHDIST:', %2",

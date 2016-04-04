@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=12;
+		nextID=14;
 	};
 	class Camera
 	{
-		pos[]={1328.484,109.75002,341.42865};
-		dir[]={-0.1885096,-0.55926627,0.80729991};
-		up[]={-0.12717858,0.82896256,0.5446533};
-		aside[]={0.97382838,-9.5948053e-008,0.2273909};
+		pos[]={1309.3212,54.858871,396.96191};
+		dir[]={0.50263155,-0.62994921,0.59210134};
+		up[]={0.40770057,0.7766068,0.4802703};
+		aside[]={0.76237518,1.1576049e-007,-0.64718068};
 	};
 };
 binarizationWanted=0;
@@ -104,6 +104,11 @@ addons[]=
 randomSeed=16577411;
 class ScenarioData
 {
+	author="[3.JgKp]James";
+	overviewText="Kundus Insurgency V0.1";
+	onLoadMission="Erobern Sie Kundus stückweise zurück! Wie? Das liegt ganz bei Ihnen, die Karte gehört Ihnen.";
+	debriefing=0;
+	saving=0;
 	disabledAI=1;
 	respawn=3;
 	respawnDelay=10.865571;
@@ -195,7 +200,7 @@ class CustomAttributes
 							"SCALAR"
 						};
 					};
-					value=0;
+					value=1;
 				};
 			};
 		};
@@ -206,7 +211,8 @@ class Mission
 {
 	class Intel
 	{
-		overviewText="[T+J]Insurgency Kundus";
+		briefingName="[J]Insurgency";
+		overviewText="[J]Insurgency V0.1";
 		startWeather=0.30469999;
 		startWind=0.30399999;
 		startWindDir=232.245;
@@ -223,8 +229,8 @@ class Mission
 		year=2009;
 		month=7;
 		day=6;
-		hour=12;
-		minute=37;
+		hour=13;
+		minute=-22;
 		startFogDecay=0.0049333;
 		forecastFogDecay=0.0049333;
 	};
@@ -12272,7 +12278,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={61,70.5765,218.375};
-				angles[]={0.31332621,0,6.2232571};
+				angles[]={0.3133215,0,6.2232509};
 			};
 			id=1190;
 			type="ACE_moduleMedicalSettings";
@@ -12445,7 +12451,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0.80000001;
+							value=0.85000002;
 						};
 					};
 				};

@@ -62,9 +62,9 @@ _trg setTriggerStatements [
 	 {side _x == WEST} count thislist > 0 && 
 	 {side _x == EAST} count thislist == 0", 
 	"if ({side _x == EAST} count list thistrigger > 0) then {
-		thistrigger getVariable 'marker' setMarkerColor 'ColorEAST';
+		(thistrigger getVariable 'marker') setMarkerColor 'ColorEAST';
 	} else {
-		thistrigger getVariable 'marker' setMarkerColorLocal 'ColorWEST';
+		(thistrigger getVariable 'marker') setMarkerColor 'ColorWEST';
 	};",
 	""];
 
