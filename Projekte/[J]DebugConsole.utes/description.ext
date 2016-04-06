@@ -1,0 +1,4 @@
+// Importanweisungen für Debug Dialog
+#include "dialog\parent.hpp"
+#include "dialog\JGKP_DC.hpp"
+#include "dialog\JGKP_DCPin.hpp"
