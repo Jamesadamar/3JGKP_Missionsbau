@@ -11,7 +11,6 @@
 disableSerialization;
 
 private ["_params", "_display", "_rows"];
-hint "schluss";
 
 // arguments
 _params = _this;
@@ -22,9 +21,11 @@ _rows = [1400,1402,1404,1406,1408];
 
 {
 	_code = ctrlText _x;
-	
+
 	JGKP_DC_Rows set [_forEachIndex, [_x, _code]];
 } forEach _rows;
 
 profileNamespace setVariable ["JGKP_DC_Rows", JGKP_DC_Rows];
 
+// schließe Rsc sicherheitshalber
+3101 cutFadeOut 0;

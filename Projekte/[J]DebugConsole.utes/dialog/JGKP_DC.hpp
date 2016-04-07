@@ -72,7 +72,7 @@ class JGKP_DC {
 	movingEnable = true;
 	enableSimulation = true;      // freeze the game
 	onLoad = "(_this) execVM 'dialog\initDialog.sqf';";
-	onUnload = "(_this) execVM 'dialog\storeVariables.sqf';";
+	onUnload = "(_this) call JGKP_DC_fnc_storeVariables;";
 
 	class controlsBackground {
 
