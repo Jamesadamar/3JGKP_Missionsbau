@@ -8,7 +8,7 @@
 
 	example call: 		[2100, 2101] execVM "getValue.sqf"
 */
-private ["_params", "_inputIDC", "_outputIDC", "_code", "_value"];
+private ["_params", "_inputIDC", "_outputIDC", "_code", "_value", "_output"];
 
 // arguments
 _params = _this;
@@ -26,16 +26,25 @@ try {
 
 };
 
-_code = ctrlText _inputIDC;
+_multiCode = (ctrlText _inputIDC) splitString ";";
+_output = "";
 
 try {
+	
+	{
+		_code = _x;
+		if (_code == "") exitWith {}; // kein Code übergeben
 
-	_value = call compile _code;
-	if (isNil "_value") throw "Fehlerhafter Code";
+		_value = call compile _code;		
+		if (isNil "_value") throw "Fehlerhafter Code";
 
-	ctrlSetText [_outputIDC, format["%1", _value]];
+		_output = format["%1%2; ", _output, _value];
+
+	} forEach _multiCode;
+
+	ctrlSetText [_outputIDC, format["%1", _output]];
 
 } catch {
 
-	ctrlSetText [_outputIDC, format["Code fehlerhaft: %1", _exception]];
+	ctrlSetText [_outputIDC, format["Laufzeitfehler: %1", _exception]];
 };

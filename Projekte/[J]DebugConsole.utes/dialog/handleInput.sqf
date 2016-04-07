@@ -35,11 +35,13 @@ ALT - 56
 SPACE - 57
 STRGL - 29
 F1 - 59
+DELETE - 211
 */
 // Beginne Auswertung, sobald STRGL gedrückt wird
 if (_key == 29) then {
 
-	[_inputIDC, _outputIDC] call JGKP_DC_fnc_getValue;
+	[_inputIDC, _outputIDC] call JGKP_DC_fnc_calcValue;
+
 };
 
 // Dauerhafte Auswertung, sobald ALTL gedrückt wird
@@ -52,9 +54,28 @@ if (_key == 56) then {
 
 		while {ctrlText _inputIDC != ""} do {
 
-			[_inputIDC, _outputIDC] call JGKP_DC_fnc_getValue;
+			[_inputIDC, _outputIDC] call JGKP_DC_fnc_calcValue;
 
 			sleep 0.1;
 		};
+	};
+};
+
+// Lösche Feld bei ENTF
+if (_key == 211) then {
+	
+	// lösche alle Felder
+	if (_ctrl) then {
+
+		{
+		   
+		   ctrlSetText [_x, ""];
+
+		} forEach [1400, 1402, 1404, 1406]; 
+
+	} else {
+
+		ctrlSetText [_inputIDC, ""];
+
 	};
 };

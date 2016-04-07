@@ -10,7 +10,7 @@
 */
 disableSerialization;
 
-private ["_params","_display","_text", "_code","_value"];
+private ["_params","_display","_text", "_code","_multiCode", "_value"];
 
 // arguments
 _params = _this;
@@ -24,10 +24,16 @@ while {count JGKP_DC_Pin_Value > 0} do {
 	_text = ''; 
 
 	{
-		_code = _x select 1;
-		_value = call compile _code;
+		// splite Code in mehrere Teile (für Multivariableneingabe)
+		_multiCode = (_x select 1) splitString ";"; // Array
 
-		_text = format["%1<t underline='true'>%2</t> : %3<br/>", _text, _code, _value]; 
+		{
+			_code = _x;
+			_value = call compile _code;
+
+			_text = format["%1<t underline='true'>%2</t> : %3<br/>", _text, _code, _value]; 
+		} forEach _multiCode;
+
 	} foreach JGKP_DC_Pin_Value;
 
 	(_display displayCtrl -1) ctrlSetStructuredText (parseText _text);

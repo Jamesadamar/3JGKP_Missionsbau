@@ -72,6 +72,7 @@ class JGKP_DC {
 	movingEnable = true;
 	enableSimulation = true;      // freeze the game
 	onLoad = "(_this) execVM 'dialog\initDialog.sqf';";
+	onUnload = "(_this) execVM 'dialog\storeVariables.sqf';";
 
 	class controlsBackground {
 
@@ -101,7 +102,7 @@ class JGKP_DC {
 		{
 			idc = 1200;
 			text = "rsc\wappen_250.paa";
-			x = 17 * GUI_GRID_W + GUI_GRID_X;
+			x = 17.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 3 * GUI_GRID_H + GUI_GRID_Y;
 			w = 5 * GUI_GRID_W;
 			h = 6 * GUI_GRID_H;
@@ -189,6 +190,7 @@ class JGKP_DC {
 			w = 1.5 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_GOLD;
+			action = "[1400] execVM 'dialog\log.sqf';";
 		};
 
 		// LINE 2
@@ -396,6 +398,7 @@ class JGKP_DC {
 			w = 1.5 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_GREEN;
+			action = "[1408,player] execVM 'dialog\runCode.sqf';";
 		};
 
 		// RECHTE SEITE - BUTTONS
@@ -408,6 +411,7 @@ class JGKP_DC {
 			w = 1.5 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_RED;
+			action = "[1408,0] execVM 'dialog\runCode.sqf';";
 		};
 		class COMMAND_EXEC_SERVER: JGKP_DCRscButton
 		{
@@ -418,6 +422,7 @@ class JGKP_DC {
 			w = 1.5 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_RED;
+			action = "[1408,2] execVM 'dialog\runCode.sqf';";
 		};
 		class COMMAND_SAVE: JGKP_DCRscButton
 		{
@@ -442,15 +447,17 @@ class JGKP_DC {
 		
 
 		// UNTERER ABSCHNITT - ERWEITERTE BEFEHLE
+		// SPALTE 1
 		class FUNC_PLAYER_LIST: JGKP_DCRscButton
 		{
 			idc = 1613;
-			text = "Spieler anzeigen"; //--- ToDo: Localize;
+			text = "Spieler verwalten"; //--- ToDo: Localize;
 			x = 6 * GUI_GRID_W + GUI_GRID_X;
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
+
 		class FUNC_MARKER: JGKP_DCRscButton
 		{
 			idc = 1614;
@@ -460,42 +467,48 @@ class JGKP_DC {
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
-		class FUNC_STOP: JGKP_DCRscButton
-		{
-			idc = 1615;
-			text = "KI anhalten"; //--- ToDo: Localize;
-			x = 11 * GUI_GRID_W + GUI_GRID_X;
-			y = 16 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-		};
-		class FUNC_PERFORMANCE: JGKP_DCRscButton
-		{
-			idc = 1616;
-			text = "Performance"; //--- ToDo: Localize;
-			x = 16 * GUI_GRID_W + GUI_GRID_X;
-			y = 15 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
-		};
+
 		class FUNC_GODMODE: JGKP_DCRscButton
 		{
-			idc = 1617;
+			idc = 1615;
 			text = "God mode an"; //--- ToDo: Localize;
 			x = 6 * GUI_GRID_W + GUI_GRID_X;
 			y = 17 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
+
 		class FUNC_HIDE: JGKP_DCRscButton
 		{
-			idc = 1618;
+			idc = 1616;
 			text = "Unsichtbar werden"; //--- ToDo: Localize;
 			x = 6 * GUI_GRID_W + GUI_GRID_X;
 			y = 18 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
+
+		// SPALTE 2
+		class FUNC_AI_COUNT: JGKP_DCRscButton
+		{
+			idc = 1617;
+			text = "Anzahl Feinde"; //--- ToDo: Localize;
+			x = 11 * GUI_GRID_W + GUI_GRID_X;
+			y = 15 * GUI_GRID_H + GUI_GRID_Y;
+			w = 3 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
+		};
+
+		class FUNC_STOP: JGKP_DCRscButton
+		{
+			idc = 1618;
+			text = "KI anhalten"; //--- ToDo: Localize;
+			x = 11 * GUI_GRID_W + GUI_GRID_X;
+			y = 16 * GUI_GRID_H + GUI_GRID_Y;
+			w = 3 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
+		};
+
 		class FUNC_AI_KILL: JGKP_DCRscButton
 		{
 			idc = 1619;
@@ -505,24 +518,53 @@ class JGKP_DC {
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
-		class FUNC_AI_COUNT: JGKP_DCRscButton
+
+		// SPALTE 3
+		class FUNC_PERFORMANCE: JGKP_DCRscButton
 		{
-			idc = 1620;
-			text = "Anzahl Feinde"; //--- ToDo: Localize;
-			x = 11 * GUI_GRID_W + GUI_GRID_X;
+			idc = 1621;
+			text = "Performance"; //--- ToDo: Localize;
+			x = 16 * GUI_GRID_W + GUI_GRID_X;
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
-		class FUNC_PLAYER_HEAL: JGKP_DCRscButton
+
+		// SPALTE 4
+		class FUNC_FUNCTION_VIEWER: JGKP_DCRscButton
 		{
-			idc = 1621;
-			text = "Spieler heilen"; //--- ToDo: Localize;
-			x = 11 * GUI_GRID_W + GUI_GRID_X;
-			y = 18 * GUI_GRID_H + GUI_GRID_Y;
+			idc = 1625;
+			text = "Funktionen"; //--- ToDo: Localize;
+			x = 21 * GUI_GRID_W + GUI_GRID_X;
+			y = 15 * GUI_GRID_H + GUI_GRID_Y;
+			w = 3 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
+			action = "[] call BIS_fnc_help;";
+		};
+
+		class FUNC_CONFIG_VIEWER: JGKP_DCRscButton
+		{
+			idc = 1625;
+			text = "Config"; //--- ToDo: Localize;
+			x = 21 * GUI_GRID_W + GUI_GRID_X;
+			y = 16 * GUI_GRID_H + GUI_GRID_Y;
+			w = 3 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
+			action = "[] spawn BIS_fnc_configviewer;";
+		};
+
+		class FUNC_CAMERA: JGKP_DCRscButton
+		{
+			idc = 1625;
+			text = "Satcom"; //--- ToDo: Localize;
+			x = 21 * GUI_GRID_W + GUI_GRID_X;
+			y = 17 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
+
+		
+		
 	};
 };
 ////////////////////////////////////////////////////////

@@ -29,19 +29,24 @@ if (_isEnabled) then {
 	// werte Code aus und speichere Ergbenis in JGKP_DC_Pin_Value zwischen. Falls Code fehlerhaft, passiert nichts, Fehler wird ausgegeben
 	try {
 
-		_value = call compile _code;
+		if (_code == "") exitWith{};
+
+		_value = call compile _code; // können auch mehrere Variablen sein
 		if (isNil "_value") throw "Fehlerhafter Code"; // bricht dann hier ab
 
 		
 		if (isNil "JGKP_DC_Pin_Value") then {
+
 			JGKP_DC_Pin_Value = [[_inputIDC, _code]];
+
 		} else {
+
 			JGKP_DC_Pin_Value pushBackUnique [_inputIDC, _code];
 		};
 
 		3101 cutRsc ["JGKP_DCPin","PLAIN"];
 
-		[_inputIDC, _outputIDC] call JGKP_DC_fnc_getValue;
+		[_inputIDC, _outputIDC] call JGKP_DC_fnc_calcValue;
 
 		// Sperre Feld und Button so lang
 		ctrlEnable [_inputIDC, false];
@@ -49,7 +54,7 @@ if (_isEnabled) then {
 
 	} catch {
 
-		ctrlSetText [_outputIDC, format["Code fehlerhaft: %1", _exception]];
+		ctrlSetText [_outputIDC, format["Laufzeitfehler: %1", _exception]];
 	};
 
 } else {
