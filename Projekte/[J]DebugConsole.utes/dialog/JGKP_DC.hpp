@@ -444,6 +444,7 @@ class JGKP_DC {
 			w = 1.5 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_RED;
+			action = "[2100] execVM 'dialog\deleteCommand.sqf';";
 		};
 		
 
