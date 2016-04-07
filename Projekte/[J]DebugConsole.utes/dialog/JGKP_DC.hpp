@@ -398,7 +398,7 @@ class JGKP_DC {
 			w = 1.5 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_GREEN;
-			action = "[1408,player] execVM 'dialog\runCode.sqf';";
+			action = "[1408, player] execVM 'dialog\runCode.sqf';";
 		};
 
 		// RECHTE SEITE - BUTTONS
@@ -411,7 +411,7 @@ class JGKP_DC {
 			w = 1.5 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_RED;
-			action = "[1408,0] execVM 'dialog\runCode.sqf';";
+			action = "[1408, 0] execVM 'dialog\runCode.sqf';";
 		};
 		class COMMAND_EXEC_SERVER: JGKP_DCRscButton
 		{
@@ -422,7 +422,7 @@ class JGKP_DC {
 			w = 1.5 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_RED;
-			action = "[1408,2] execVM 'dialog\runCode.sqf';";
+			action = "[1408, 2] execVM 'dialog\runCode.sqf';";
 		};
 		class COMMAND_SAVE: JGKP_DCRscButton
 		{
@@ -433,6 +433,7 @@ class JGKP_DC {
 			w = 1.5 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_GREEN;
+			action = "[1408, 2100] execVM 'dialog\saveCommand.sqf';";
 		};
 		class COMMAND_DELETE: JGKP_DCRscButton
 		{
