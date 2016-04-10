@@ -184,3 +184,21 @@ Lösung könnte sein, nach Abschluss einer HLW den Puls z. B. auf 10 zu setzen m
 player setVariable ["ace_medical_heartrate", 10];
 
 Dann bliebe der Spieler zwar noch bewusstlos, ließe sich aber via Epi auf einen höheren Puls hochbringen.
+
+Zum Testen habe ich das Blutvolumen des Spielers von Normal 100 mit folgendem Befehl auf 20 gesetzt:
+
+player setVariable ["ace_medical_bloodvolume", 20];
+
+Der Spieler wird sofort bewusstlos und der Puls fällt auf 0 (!). Auch wenn man danach das Blutvolumen wieder hochgesetzt mit
+
+player setVariable ["ace_medical_bloodvolume", 100];
+
+bleibt der Puls bei Null. Wenn man nun den Puls versucht manuell auf 60 zu setzen klappt dies nur für den Bruchteil einer Sekunde. Danach fällt der Puls automatisch wieder auf 0 (!) zurück:
+
+player setVariable ["ace_medical_heartrate", 60];
+
+Da hilft es auch nichts Schmerzen zurückzusetzen mit
+
+player setVariable ["ace_medical_pain", 0.0];
+
+Denn der Spieler hat zu diesem Zeitpunkt gemäß Code gar keine Schmerzen.
