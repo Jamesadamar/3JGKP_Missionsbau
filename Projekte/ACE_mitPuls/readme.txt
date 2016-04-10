@@ -207,6 +207,15 @@ Was funktioniert ist, wenn man dem Spieler einfach sagt, dass er jetzt eben nich
 
 player setVariable ["ace_isunconscious", false];
 
-Dann steht der Spieler tatsächlich wieder auf. Hat aber eigentlich gar keinen Puls. Und das wäre dann seltsam in der Mission.
+Dann steht der Spieler tatsächlich wieder auf. Hat aber eigentlich gar keinen Puls. Und das wäre dann seltsam in der Mission. Außerdem fällt der Spieler nach wenigen Sekunden/Minuten wieder um, sobald erkannt wird, dass der Puls bei 0 liegt.
+
+Ich probiere mal neben Blutvolumen auch den Blutdruck zu normalisieren und anschließend Puls und Schmerz auf vertretbare Niveaus zu setzen:
+
+player setVariable ["ace_medical_bloodvolume", 100];
+player setVariable ["ace_medical_bloodpressure", [80.0,120.0]];
+player setVariable ["ace_medical_heartrate", 60];
+player setVariable ["ace_medical_pain", 0.0];
+
+Trotzdem springt der Puls sofort auf 0 zurück.
 
 Allein durch das Editieren von Spieler Variablen kommen wir also nicht weiter. Wir müssen an die ACE Funktionen ran.
