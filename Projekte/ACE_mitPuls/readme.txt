@@ -219,3 +219,17 @@ player setVariable ["ace_medical_pain", 0.0];
 Trotzdem springt der Puls sofort auf 0 zurück.
 
 Allein durch das Editieren von Spieler Variablen kommen wir also nicht weiter. Wir müssen an die ACE Funktionen ran.
+
+Ich durchsuche alle ACE_medical Dateien nach "heartRate" und stoße auf "fnc_handleUnitVitals.sqf".
+
+Interessant ist der Bereich ab Zeile 99 also alles nach "if (GVAR(level) >= 2) then {" zumal hier das Advanced Medical System behandelt wird. Hier steht was jede Sekunde einmal pro Spieler aktualisiert wird.
+
+- Fällt das Blutvolumen unter 30 wird der Spieler für Tod erklärt und falls mehrere Wiederbeleben seitens Server erlaubt sind dann auf ace_medical_inrevivestate true gesetzt. In diesem Kontext wird auch der Puls auf 0 geschraubt (!) via _unit setVariable [QGVAR(heartRate), 0];
+
+- Fällt das Blutvolumen unter 60 wird der Spieler bewusstlos (wenn auch nicht sofort sondern zeitverzögert)
+
+Interessant könnte auch diese Variable sein, die besagt ob der Spieler einen Herzstillstand hat oder nicht:
+
+_unit setVariable [QGVAR(inCardiacArrest), true,true];
+bzw.
+_unit setVariable [QGVAR(inCardiacArrest), nil,true];
