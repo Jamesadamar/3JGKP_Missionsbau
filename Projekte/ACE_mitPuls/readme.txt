@@ -202,3 +202,11 @@ Da hilft es auch nichts Schmerzen zurückzusetzen mit
 player setVariable ["ace_medical_pain", 0.0];
 
 Denn der Spieler hat zu diesem Zeitpunkt gemäß Code gar keine Schmerzen.
+
+Was funktioniert ist, wenn man dem Spieler einfach sagt, dass er jetzt eben nicht bewusstlos sein soll und ganz platt den Befehl gibt:
+
+player setVariable ["ace_isunconscious", false];
+
+Dann steht der Spieler tatsächlich wieder auf. Hat aber eigentlich gar keinen Puls. Und das wäre dann seltsam in der Mission.
+
+Allein durch das Editieren von Spieler Variablen kommen wir also nicht weiter. Wir müssen an die ACE Funktionen ran.
