@@ -176,3 +176,11 @@ if (!ace_interact_menu_actionOnKeyRelease && ace_interact_menu_actionSelected) t
 17:34:08 "ace_medical_cantreat_leg_l_tourniquet : any"
 17:34:08 "ace_medical_cantreat_leg_l_epinephrine : any"
 17:34:08 "ace_oldvalue_ace_overheating_bwa3_g36_temp : 0"
+
+Entscheidet ist die Variable 'ace_medical_heartrate'. Fällt diese unter 20, so wird der Spieler bewusstlos. Via Epi steigt der Puls wieder und alles wird gut. Problematisch ist es bei einem Puls von 0 welcher sich via Epi nicht zu erhöhen lassen scheint.
+
+Lösung könnte sein, nach Abschluss einer HLW den Puls z. B. auf 10 zu setzen mit dem Befehl:
+
+player setVariable ["ace_medical_heartrate", 10];
+
+Dann bliebe der Spieler zwar noch bewusstlos, ließe sich aber via Epi auf einen höheren Puls hochbringen.
