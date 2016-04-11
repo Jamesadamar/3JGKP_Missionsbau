@@ -28,5 +28,6 @@ Mitglieder dieser Gruppe, die die entsprechenden Rechte an diesem Projekt besitz
 * Frostie
 * Wiesel
 * Rok
+* Schmitt
 
 
