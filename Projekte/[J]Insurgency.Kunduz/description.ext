@@ -255,5 +255,21 @@ class Params
 		texts[] = {"1 Gebäude", "2 Gebäude", "3 Gebäude", "4 Gebäude", "5 Gebäude"};
 		default = 3;
 	};
+
+	class Debug
+	{
+		title = "Debugmodus";
+		values[] = {1,0};
+		texts[] = {"an (Marker auf Karte)","aus"};
+		default = 0;
+	};
+
+	class SquareMarker
+	{
+		title = "Farbige Planquadrate";
+		values[] = {1,0};
+		texts[] = {"an (Marker auf Karte)","aus"};
+		default = 1;
+	};
 	
 };

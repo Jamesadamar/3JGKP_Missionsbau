@@ -8,22 +8,22 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=1330;
+		nextID=1332;
 	};
 	class MarkerIDProvider
 	{
-		nextID=15;
+		nextID=16;
 	};
 	class LayerIndexProvider
 	{
-		nextID=16;
+		nextID=18;
 	};
 	class Camera
 	{
-		pos[]={5133.7871,16.539143,834.95087};
-		dir[]={-0.90944386,-0.41420421,-0.03739829};
-		up[]={-0.41393143,0.91014379,-0.017021442};
-		aside[]={-0.041086007,6.9065572e-007,0.9991805};
+		pos[]={5044.6104,24.24147,1652.7567};
+		dir[]={-0.025640674,-0.31969947,0.94718748};
+		up[]={-0.0086514223,0.94751948,0.31958649};
+		aside[]={0.99964929,2.734705e-007,0.027061271};
 	};
 };
 binarizationWanted=0;
@@ -236,7 +236,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=443;
+		items=444;
 		class Item0
 		{
 			dataType="Marker";
@@ -1175,9 +1175,9 @@ class Mission
 			class Attributes
 			{
 				name="trgKillAll";
-				onActivation="{if (vehicle _x != _x) then { { deleteVehicle _x; } foreach crew _x; deleteVehicle _x; } else { deleteVehicle _x; }; } foreach thislist";
+				onActivation="{{ deleteVehicle _x; } foreach crew _x; deleteVehicle _x; } foreach thislist; ""ups_templates_spawn"" setMarkerAlpha 0;";
 				sizeB=100;
-				timeout[]={15,15,15};
+				timeout[]={30,30,30};
 				repeatable=1;
 				activationBy="EAST";
 				isRectangle=1;
@@ -1205,7 +1205,7 @@ class Mission
 		class Item55
 		{
 			dataType="Trigger";
-			position[]={4504.1514,7.5222096,4495.5054};
+			position[]={4504.1509,7.5222449,4495.5049};
 			angle=-2.4951396;
 			class Attributes
 			{
@@ -11052,6 +11052,48 @@ class Mission
 					};
 					id=652;
 					type="CAF_AG_ME_T_AK47";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
@@ -11068,6 +11110,48 @@ class Mission
 					};
 					id=653;
 					type="CAF_AG_ME_T_AK47";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
@@ -11085,6 +11169,48 @@ class Mission
 					};
 					id=654;
 					type="CAF_AG_ME_T_AK74";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
@@ -11102,6 +11228,48 @@ class Mission
 					};
 					id=655;
 					type="CAF_AG_ME_T_AK47";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
@@ -11119,6 +11287,48 @@ class Mission
 					};
 					id=656;
 					type="CAF_AG_ME_T_AK74";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
@@ -11135,6 +11345,48 @@ class Mission
 					};
 					id=657;
 					type="CAF_AG_ME_T_RPK74";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item6
 				{
@@ -11152,6 +11404,48 @@ class Mission
 					};
 					id=658;
 					type="CAF_AG_ME_T_PKM";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item7
 				{
@@ -11169,23 +11463,108 @@ class Mission
 					};
 					id=659;
 					type="CAF_AG_ME_T_AK47";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5053.9121,4.3775139,3034.6355};
-						angles[]={6.1756024,0,0.035984326};
+						position[]={5053.9121,4.3774476,3034.635};
+						angles[]={6.1756029,0,0.035988688};
 					};
 					side="East";
 					class Attributes
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
+						init="if(isServer)then{nul = [this,""area1"",""aware"",""Limited""] execVM ""modules\Upsmon\UPSMON.sqf"";};";
 					};
 					id=660;
 					type="CAF_AG_ME_T_RPG";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item9
 				{
@@ -11203,6 +11582,48 @@ class Mission
 					};
 					id=661;
 					type="CAF_AG_ME_T_AK47";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -11341,8 +11762,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5028.0928,5.2631054,3028.6924};
-						angles[]={0.071875811,5.7594647,6.2392135};
+						position[]={5027.9961,5.2701507,3028.5701};
+						angles[]={0.071872659,5.7594647,6.2392201};
 					};
 					side="East";
 					class Attributes
@@ -11356,8 +11777,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5028.0928,5.2631054,3028.6924};
-						angles[]={0.071875811,5.7594647,6.2392135};
+						position[]={5027.9961,5.2701507,3028.5701};
+						angles[]={0.071872659,5.7594647,6.2392201};
 					};
 					side="East";
 					flags=2;
@@ -11409,8 +11830,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5028.0928,7.4621444,3028.6775};
-				angles[]={0.071875811,5.7594647,6.2392135};
+				position[]={5028.0928,7.461679,3028.678};
+				angles[]={0.071872659,5.7594647,6.2392201};
 			};
 			side="East";
 			flags=2;
@@ -11839,6 +12260,48 @@ class Mission
 					};
 					id=1092;
 					type="GLT_Middle_East_Teamleader";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
@@ -12989,7 +13452,7 @@ class Mission
 				name="trg_findCities";
 				text="Startet auf dem Server das Analyseskript";
 				condition="isServer ";
-				onActivation="nul = [thistrigger,1] execVM ""scripts\findCities.sqf"";";
+				onActivation="nul = [trg_findCities,1] execVM ""scripts\findCities.sqf"";";
 				sizeA=2560;
 				sizeB=2560;
 				timeout[]={5,5,5};
@@ -14000,6 +14463,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this addAction [""Verlegen zur Hauptbasis"", {player setpos getMarkerPos ""base""}]; this addAction [""Verlegen zur Basis Südost"", {player setpos getMarkerPos ""base_so""}];";
 				name="nord";
 			};
 			id=1230;
@@ -14519,6 +14983,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this addAction [""Verlegen zur Haupt-Basis"", {player setpos getMarkerPos ""base""}]; this addAction [""Verlegen zur Basis Nord"", {player setpos getMarkerPos ""base_nord""}];";
 				name="so";
 			};
 			id=1316;
@@ -15076,28 +15541,20 @@ class Mission
 		class Item439
 		{
 			dataType="Marker";
-			position[]={351.55615,4.5031466,4700.8926};
-			name="marker_11";
+			position[]={341.875,4.4600048,4698.375};
+			name="base_nord";
 			type="flag_Germany";
 			id=1326;
 		};
 		class Item440
 		{
 			dataType="Marker";
-			position[]={1316.3464,34.290001,411.5448};
-			name="marker_13";
+			position[]={1301.625,34.290001,459.75};
+			name="base";
 			type="flag_Germany";
 			id=1327;
 		};
 		class Item441
-		{
-			dataType="Marker";
-			position[]={5138.396,12.914882,850.4068};
-			name="marker_12";
-			type="flag_Germany";
-			id=1328;
-		};
-		class Item442
 		{
 			dataType="Object";
 			class PositionInfo
@@ -15108,6 +15565,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this addAction [""Verlegen zur Basis Nord"", {player setpos getMarkerPos ""base_nord""}]; this addAction [""Verlegen zur Basis Südost"", {player setpos getMarkerPos ""base_so""}];";
 				name="sw";
 			};
 			id=1329;
@@ -15135,6 +15593,33 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item442
+		{
+			dataType="Marker";
+			position[]={5128.25,13.4575,833.125};
+			name="base_so";
+			type="flag_Germany";
+			id=1330;
+		};
+		class Item443
+		{
+			dataType="Trigger";
+			position[]={1316.5,34.290001,450.125};
+			angle=-0.64163172;
+			class Attributes
+			{
+				name="trgTest";
+				condition="this && player in thislist";
+				onActivation="hint format[""Hallo %1"", name player]";
+				sizeA=3;
+				sizeB=3;
+				repeatable=1;
+				activationBy="WEST";
+				isRectangle=1;
+			};
+			id=1331;
+			type="EmptyDetectorArea10x10";
 		};
 	};
 	class Connections

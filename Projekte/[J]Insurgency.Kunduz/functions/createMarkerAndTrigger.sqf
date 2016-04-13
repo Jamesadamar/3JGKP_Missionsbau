@@ -71,5 +71,9 @@ _trg setTriggerStatements [
 // Lösche Erzeugungstrigger
 deleteVehicle _trigger;
 
+if ("SquareMarker" call BIS_fnc_getParamValue == 0) then {
 
+	_marker setMarkerAlpha 0;
+
+};
 

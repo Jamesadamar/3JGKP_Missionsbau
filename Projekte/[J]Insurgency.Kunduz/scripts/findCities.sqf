@@ -199,29 +199,31 @@ JGKP_fnc_searchCentre = {
 	_a = abs(_xmin - (_centre select 0)) max abs(_xmax - (_centre select 0));
 	_b = abs(_ymin - (_centre select 1)) max abs(_ymax - (_centre select 1));
 
-	[_centre, _a, _b]
+	[_centre, _a, _b] // Koordinaten für Mittelpunkt, Ausdehnung in x und y
 };
 
 {	
 	// Erzeuge Marker für Zentrum und Ausdehnung
 	_city = _x;
-	_centre = [_city] call JGKP_fnc_searchCentre; // einfach erstes Planquadrat der Stadt
+	_centre = [_city] call JGKP_fnc_searchCentre; // Funktion ermittelt mittleres Planquadrat
 
+	// marker für Stadtzentrum
 	_marker = createMarker [
 		format["city:%1", _centre select 0], 
 		_centre select 0
 	];
-	_markerBorder = createMarker [
-		format["cityborder:%1", _centre select 0], 
-		_centre select 0
-	];
-
 	_marker setMarkerShape "ICON";
 	_marker setMarkerType "C_Unknown";
 	_marker setMarkerText "Stadt";
 	//_marker setMarkerSize [_resolution / 2, _resolution / 2];
 	//_marker setMarkerColor "ColorEAST";
 	_marker setMarkerAlpha 0.3;
+
+	// marker für Stadtgrenze (Oval)
+	_markerBorder = createMarker [
+		format["cityborder:%1", _centre select 0], 
+		_centre select 0
+	];
 
 	_markerBorder setMarkerShape "ELLIPSE";
 	_markerBorder setMarkerBrush "SolidBorder";
@@ -231,6 +233,13 @@ JGKP_fnc_searchCentre = {
 	]; // Marker gehen nur bis zur Mitte des Quadrats!
 	_markerBorder setMarkerColor "ColorBLUE";
 	_markerBorder setMarkerAlpha 0.3;
+	
+	if ("Debug" call BIS_fnc_getParamValue == 1) then {
+
+		_marker setMarkerAlpha 0;
+		_markerBorder setMarkerAlpha 0;
+		
+	};
 
 	// Erzeuge für jede Stadt Auslöser + Marker für Freund/Feind-Erkennung:
 	{
@@ -250,8 +259,8 @@ JGKP_fnc_searchCentre = {
 	// Auslöseradius + 1 km für Spieler! 
 	// TODO: eventuell erhöhen?!
 	_trgUpsmon setTriggerArea [	
-		(_centre select 1) + 1000, 
-		(_centre select 2) + 1000, 
+		(_centre select 1) + 750, // 750 Meter vor Grenze Spawn auslösen
+		(_centre select 2) + 750, 
 		0, 
 		false
 	];
