@@ -49,7 +49,7 @@ respawn = 3;
 
 respawnDelay = 10;							// Set respawn delay in seconds.
 respawnVehicleDelay = 11;					// Set vehicle respawn delay in seconds.
-respawnDialog = 1;							// Show the scoreboard and respawn countdown timer for a player if he is killed with respawnType 3. Default is 1 (true).
+respawnDialog = 0;							// Show the scoreboard and respawn countdown timer for a player if he is killed with respawnType 3. Default is 1 (true).
 joinUnassigned = 1;							// New Player auto assigned to the side with least players
 
 /**
@@ -58,21 +58,6 @@ respawnOnStart = 0;//Dont respawn on start. Run respawn script on start.
 respawnOnStart = -1;//Dont respawn on start. Don't run respawn script on start.
 */
 respawnOnStart = 0;
-
-/**
-When 1, removes all playable units which do not have a human player. When 0, a logging out player will have AI take control of his character. Default value is 0. (MP) 
-*/
-disabledAI = 1;	
-
-/**
-Enables scorelist for AI players 
-*/							
-aiKills = 0;	
-
-/**
-Defines if the debriefing is shown or not at the end of the mission. 
-*/
-debriefing = 0;		
 
 /**
 As of Arma 3 v1.49.131879 showHUD param could be an array to allow control over separate HUD elements, for example: 
@@ -88,12 +73,6 @@ showHUD[] = {
 	true	// HUD Weapon Cursors
 };				
 
-ShowGPS = 0;								// In ArmA 1.04 toggle this option to disable the mini map attached to the GPS. 
-showCompass = 1;							// Defines if the compass is visible.
-showMap = 1;								// Defines if the map is shown after the mission starts.
-showNotePad = 0;							// Defines if the NotePad is shown after the mission starts.
-showWatch = 1;								// Defines if the watch is visible.
-scriptedPlayer = 0;							// When scripted player is enabled, game no longer shows "No player select" error message upon mission start when no player unit is present.
 
 /**
 Disable global, side, command and system chat. MOTD and admin say have exception and will show in global. Introduced in BETA 1.60.93398. 
@@ -212,14 +191,6 @@ showGroupIndicator = 0;
 //** The default is 2, so it means the mission will try to balance the game to multiples of 2 (2 vs 2, 4 vs 4, etc.)
 //** and you did not end up with a team mission with 5 maximum players(2 vs 3 is unfair?). Coop type missions use 1, Team type missions use 2 (default). 
 //**********************************************************************************
-class Header
-{
-	gameType = COOP; 			// game type
-	minPlayers = 1; 			// min # of players the mission supports
-	maxPlayers = 60; 			// max # of players the mission supports
-	playerCountMultipleOf = 1;	// 1=all on one side (Coop), 2= TvT (balanced Teams)
-};
-
 class Params
 {
 	class SafetyDistance
