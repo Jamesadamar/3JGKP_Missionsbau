@@ -10,10 +10,18 @@
 //**********************************************************************************
 //#include "defines.hpp"
 
-//**********************************************************************************
-//** Missionsparamter
-//**********************************************************************************
+/**
+Game type is a simplified category describing what a mission is about. It helps player to navigate through potentially large number of available missions and pick the one they would like to play.
 
+Number of available types is limited to a range of well recognized and easily understandable entries like Deathmatch or Sector Control. 
+*/
+
+class Header
+{
+	gameType = Coop; // Game type, see 'class' columns in the table below
+	minPlayers = 1; //min # of players the mission supports
+	maxPlayers = 60; //max # of players the mission supports
+};
 
 /**
 Define whether you will see the time and date displayed while the mission loads. 1 means visible, 0 hidden. 
@@ -25,12 +33,7 @@ Define whether you will see the time and date displayed while the intro loads. 1
 */
 onLoadIntroTime = 0;
 
-/**
-You can define a picture to be shown while the mission is loaded.
 
-The path is relative to the mission folder. 
-*/
-loadScreen = "";
 
 //*********************************
 //** Sets respawn type.
@@ -91,106 +94,12 @@ Disable dropping items while swimming. Introduced in BETA 1.60.93965.
 */
 enableItemsDropping = 0;
 
-/**
-Allows access to the Debug Console outside of the editor during normal gameplay. 
-0 = Default behavior, available only in editor
-1 = Available in SP and for hosts / logged in admins
-2 = Available for everyone
-*/
-enableDebugConsole = 1;
-
-/**
-Sets the mode for corpse removal manager. 
-0 = None - None of the units are managed by the manager
-1 = All - All units are managed by the manager
-2 = None_But_Respawned - Only units that can respawn are managed by the manager
-3 = All_But_Respawned - All units are managed by the manager with exception of respawned (opposite to mode 2)
-Default value: 0 for SP, 2 for MP
-*/
-corpseManagerMode = 3;
-
-/**
-Corpse limit before which ( <= ) corpseRemovalMaxTime applies and after which ( > ) corpseRemovalMinTime applies (see below).
-Default value: 15
-*/
-corpseLimit = 15;
-
-/**
-Remove all bodies that have been dead longer than corpseRemovalMinTime when corpseLimit is breached.
-Default value: 10
-*/
-corpseRemovalMinTime = 120;
-
-/**
-Maximum time a corpse can remain on the ground if total number of corpses is equal or under corpseLimit.
-Default value: 3600
-*/
-corpseRemovalMaxTime = 600;
-
-/**
-Sets the mode for wreck removal manager.
-
-0 = None - None of the vehicles are managed by the manager
-1 = All - All vehicles are managed by the manager
-2 = None_But_Respawned - Only vehicles that can respawn are managed by the manager
-3 = All_But_Respawned - All vehicles are managed by the manager with exception of respawned (opposite to mode 2)
-Default value: 0 for SP, 2 for MP
-*/
-wreckManagerMode = 3;
-
-/**
-Vehicle wreck limit before which ( <= ) wreckRemovalMaxTime applies and after which ( > ) wreckRemovalMinTime applies (see below).
-
-Default value: 15
-*/
-wreckLimit = 5;
-
-/**
-Remove all wrecks that have existed longer than wreckRemovalMinTime when wreckLimit is breached.
-
-Default value: 10
-*/
-wreckRemovalMinTime = 60; //seconds
-
-wreckRemovalMaxTime = 600;
-
-/**
-0: do not use new 2D markers (default), 1: replace task markers with new 2D markers
-*/
-taskManagement_markers2D = 1;
-/**
-0: do not use new 3D markers (default), 1: replace task waypoints with new 3D markers 
-*/
-taskManagement_markers3D = 1;
-/**
-0: do not propagate (default), 1: propagate shared tasks to subordinates 
-*/
-taskManagement_propagate = 1;
 
 /**
 When set to 1, changes default GPS mini map into a radar like display that indicates group members relative position to the player 
 */
 showGroupIndicator = 0;
 
-//**********************************************************************************
-//** The purpose of the following class definition is to signal the engine the gameType
-//** which is displayed in the MP game browser.
-//** This can assist other players for finding particular missions using the filters.
-//**********************************************************************************
-//** gameType can be one of following:
-//**		DM - Death Match 
-//**		CTF - Capture the Flag 
-//**		FF - Flag Fight 
-//**		Coop -Cooperative Mission 
-//**		Team - Team Mission 
-//**		Scont - Sector Control 
-//**		Hold - Hold Location 
-//**		Unknown - Unknown - is used when no class header is defined.
-//**********************************************************************************
-//** playerCountMultipleOf: the game server would set the maximum amount of players based on bandwidth and eventually this parameter.
-//** The default is 2, so it means the mission will try to balance the game to multiples of 2 (2 vs 2, 4 vs 4, etc.)
-//** and you did not end up with a team mission with 5 maximum players(2 vs 3 is unfair?). Coop type missions use 1, Team type missions use 2 (default). 
-//**********************************************************************************
 class Params
 {
 	class SafetyDistance
