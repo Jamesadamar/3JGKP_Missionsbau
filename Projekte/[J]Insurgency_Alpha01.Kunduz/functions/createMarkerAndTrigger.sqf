@@ -57,11 +57,11 @@ _trg setTriggerActivation ["ANY", "PRESENT", true];
 // trigger setTriggerTimeout [min, mid, max, interruptable] 
 _trg setTriggerTimeout [_min, (_min+_max)/2, _max,true];
 _trg setTriggerStatements [
-	"{side _x == EAST} count thislist > 0 && 
+	"{side _x == RESISTANCE} count thislist > 0 && 
 	 {side _x == WEST} count thislist == 0 || 
 	 {side _x == WEST} count thislist > 0 && 
-	 {side _x == EAST} count thislist == 0", 
-	"if ({side _x == EAST} count list thistrigger > 0) then {
+	 {side _x == RESISTANCE} count thislist == 0", 
+	"if ({side _x == RESISTANCE} count list thistrigger > 0) then {
 		(thistrigger getVariable 'marker') setMarkerColor 'ColorEAST';
 	} else {
 		(thistrigger getVariable 'marker') setMarkerColor 'ColorWEST';

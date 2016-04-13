@@ -94,6 +94,7 @@ Disable dropping items while swimming. Introduced in BETA 1.60.93965.
 */
 enableItemsDropping = 0;
 
+enableDebugConsole = 1;
 
 /**
 When set to 1, changes default GPS mini map into a radar like display that indicates group members relative position to the player 
