@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=18;
+		nextID=19;
 	};
 	class Camera
 	{
@@ -127,6 +127,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -158,25 +177,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
 				};
 			};
 		};
@@ -1175,6 +1175,7 @@ class Mission
 			class Attributes
 			{
 				name="trgKillAll";
+				condition="this && UPSMON_INIT==1";
 				onActivation="{{ deleteVehicle _x; } foreach crew _x; deleteVehicle _x; } foreach thislist; ""ups_templates_spawn"" setMarkerAlpha 0;";
 				sizeB=100;
 				timeout[]={30,30,30};
@@ -10077,6 +10078,48 @@ class Mission
 					};
 					id=597;
 					type="CAF_AG_ME_T_AK47";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
@@ -10731,6 +10774,48 @@ class Mission
 					};
 					id=633;
 					type="CAF_AG_ME_T_PKM";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
@@ -10945,8 +11030,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5044.2466,6.324234,2996.3638};
-						angles[]={0.083803542,5.7594647,6.2392135};
+						position[]={5044.1699,6.3291168,2996.322};
+						angles[]={0.083810709,5.7594647,6.2392201};
 					};
 					side="East";
 					class Attributes
@@ -10960,8 +11045,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5044.2466,6.3242345,2996.3638};
-						angles[]={0.083803542,5.7594647,6.2392135};
+						position[]={5044.1699,6.3291168,2996.322};
+						angles[]={0.083810709,5.7594647,6.2392201};
 					};
 					side="East";
 					flags=2;
@@ -11013,15 +11098,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5044.2637,8.4475708,2996.4497};
-				angles[]={0.083803542,5.7594647,6.2392135};
+				position[]={5044.2632,8.44736,2996.45};
+				angles[]={0.083810709,5.7594647,6.2392201};
 			};
 			side="East";
 			flags=2;
 			class Attributes
 			{
 				skill=0.28755438;
-				init="if(isServer)then{nul = [this,""area1"",""aware"",""Limited"",""onroad""] execVM ""modules\Upsmon\UPSMON.sqf"";};";
+				init="_nul = [this,""area1"",""aware"",""Limited"",""onroad""] execVM ""modules\Upsmon\UPSMON.sqf"";";
 				presence=0.49678987;
 			};
 			id=648;
@@ -11511,7 +11596,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5053.9121,4.3774476,3034.635};
+						position[]={5053.9121,4.3774481,3034.635};
 						angles[]={6.1756029,0,0.035988688};
 					};
 					side="East";
@@ -11519,7 +11604,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="if(isServer)then{nul = [this,""area1"",""aware"",""Limited""] execVM ""modules\Upsmon\UPSMON.sqf"";};";
+						init="nul = [this,""area1"",""aware"",""Limited""] execVM ""modules\Upsmon\UPSMON.sqf"";";
 					};
 					id=660;
 					type="CAF_AG_ME_T_RPG";
@@ -11643,8 +11728,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5009.4805,4.5727453,3062.1855};
-						angles[]={0.019996032,5.7594647,6.1795578};
+						position[]={5009.3398,4.5826273,3062.123};
+						angles[]={0.020001473,5.7594647,6.179565};
 					};
 					side="East";
 					class Attributes
@@ -11658,8 +11743,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5009.4805,4.5727448,3062.1855};
-						angles[]={0.019996032,5.7594647,6.1795578};
+						position[]={5009.3398,4.5826273,3062.123};
+						angles[]={0.020001473,5.7594647,6.179565};
 					};
 					side="East";
 					flags=2;
@@ -11674,8 +11759,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5009.4805,4.5727448,3062.1855};
-						angles[]={0.019996032,5.7594647,6.1795578};
+						position[]={5009.3398,4.5826273,3062.123};
+						angles[]={0.020001473,5.7594647,6.179565};
 					};
 					side="East";
 					class Attributes
@@ -11736,19 +11821,42 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5009.5435,6.5380616,3062.1135};
-				angles[]={0.019996032,5.7594647,6.1795578};
+				position[]={5009.5435,6.5380931,3062.1138};
+				angles[]={0.020001473,5.7594647,6.179565};
 			};
 			side="East";
 			flags=2;
 			class Attributes
 			{
 				skill=0.36378825;
-				init="if(isServer)then{nul = [this,""area1"",""aware"",""Limited"",""onroad""] execVM ""modules\Upsmon\UPSMON.sqf"";};";
+				init="nul = [this,""area1"",""aware"",""Limited"",""onroad""] execVM ""modules\Upsmon\UPSMON.sqf"";";
 				presence=0.2409126;
 			};
 			id=663;
 			type="LOP_TKA_T72BA";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item318
 		{
@@ -11900,15 +12008,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3547.2004,7.8347945,2935.791};
-				angles[]={6.2678375,1.2695787,0.017800748};
+				position[]={3547.2,7.834775,2935.7905};
+				angles[]={6.2678437,1.2695699,0.017802358};
 			};
 			side="East";
 			flags=2;
 			class Attributes
 			{
 				skill=0.44999999;
-				init="if(isServer)then{nul = [this,""area1"",""fortify""] execVM ""modules\Upsmon\UPSMON.sqf"";};";
+				init="nul = [this,""area1"",""fortify""] execVM ""modules\Upsmon\UPSMON.sqf"";";
 				presence=0.25429356;
 			};
 			id=672;
@@ -11970,15 +12078,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4540.9443,10.410443,2106.2954};
-				angles[]={0.035984326,1.2695787,6.2671909};
+				position[]={4540.9448,10.410428,2106.2957};
+				angles[]={0.035988688,1.2695699,6.2671981};
 			};
 			side="East";
 			flags=2;
 			class Attributes
 			{
 				skill=0.44999999;
-				init="if(isServer)then{nul = [this,""area1"",""fortify""] execVM ""modules\Upsmon\UPSMON.sqf"";};";
+				init="nul = [this,""area1"",""fortify""] execVM ""modules\Upsmon\UPSMON.sqf"";";
 				presence=0.25429356;
 			};
 			id=675;
@@ -12048,7 +12156,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.44999999;
-				init="if(isServer)then{nul = [this,""area1"",""fortify""] execVM ""modules\Upsmon\UPSMON.sqf"";};";
+				init="nul = [this,""area1"",""fortify""] execVM ""modules\Upsmon\UPSMON.sqf"";";
 				presence=0.25429356;
 			};
 			id=678;
@@ -12066,7 +12174,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4641.9092,8.2634907,4830.0688};
+						position[]={4641.9092,8.2631731,4830.0576};
 						angles[]={6.2550859,1.2695699,6.2794328};
 					};
 					side="East";
@@ -12110,15 +12218,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4641.9121,8.9833603,4829.998};
-				angles[]={6.2550817,1.2695787,6.2794352};
+				position[]={4641.9121,8.9832783,4829.9976};
+				angles[]={6.2550859,1.2695699,6.2794328};
 			};
 			side="East";
 			flags=2;
 			class Attributes
 			{
 				skill=0.44999999;
-				init="if(isServer)then{nul = [this,""area1"",""fortify""] execVM ""modules\Upsmon\UPSMON.sqf"";};";
+				init="nul = [this,""area1"",""fortify""] execVM ""modules\Upsmon\UPSMON.sqf"";";
 				presence=0.25429356;
 			};
 			id=681;
@@ -13451,7 +13559,7 @@ class Mission
 			{
 				name="trg_findCities";
 				text="Startet auf dem Server das Analyseskript";
-				condition="isServer ";
+				condition="isServer && UPSMON_INIT==1";
 				onActivation="nul = [trg_findCities,1] execVM ""scripts\findCities.sqf"";";
 				sizeA=2560;
 				sizeB=2560;
@@ -15565,7 +15673,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this addAction [""Verlegen zur Basis Nord"", {player setpos getMarkerPos ""base_nord""}]; this addAction [""Verlegen zur Basis Südost"", {player setpos getMarkerPos ""base_so""}];";
+				init="this addAction [""Verlegen zur Basis Nord"", {player setpos getMarkerPos ""base_nord""}]; this addAction [""Verlegen zur Basis Südost"", {player setpos getMarkerPos ""base_so""}]; this addAction [""Verlegen zur Gruppe"", ""scripts\gruppenteleport.sqf"", []];";
 				name="sw";
 			};
 			id=1329;
@@ -15606,7 +15714,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={1316.5,34.290001,450.125};
-			angle=-0.64163172;
+			angle=-0.64163154;
 			class Attributes
 			{
 				name="trgTest";

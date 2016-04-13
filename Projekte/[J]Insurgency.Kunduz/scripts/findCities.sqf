@@ -234,7 +234,7 @@ JGKP_fnc_searchCentre = {
 	_markerBorder setMarkerColor "ColorBLUE";
 	_markerBorder setMarkerAlpha 0.3;
 	
-	if ("Debug" call BIS_fnc_getParamValue == 1) then {
+	if ("Debug" call BIS_fnc_getParamValue == 0) then {
 
 		_marker setMarkerAlpha 0;
 		_markerBorder setMarkerAlpha 0;
@@ -271,17 +271,18 @@ JGKP_fnc_searchCentre = {
 	// Anzahl an Templates in Abhängigkeit von Stadtgröße bestimmen
 	switch (count _city) do {
 		case 1;
-		case 2: {
+		case 2;
+		case 3: {
 			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
 
 			if (random 1 > 0.5) then {
 				_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
 			};
 		};
-		case 3;
 		case 4;
 		case 5;
-		case 6: {
+		case 6;
+		case 7: {
 			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
 			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
 			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
@@ -289,11 +290,16 @@ JGKP_fnc_searchCentre = {
 			if (random 1 > 0.5) then {
 				_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
 			};
+
+			if (random 1 > 0.5) then {
+				_templates pushBack [JGKP_var_template_motorized call BIS_fnc_selectRandom]; // Cars
+			};
 		};
-		case 7;
 		case 8;
 		case 9;
-		case 10: {
+		case 10;
+		case 11;
+		case 12: {
 			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
 			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
 
@@ -308,8 +314,6 @@ JGKP_fnc_searchCentre = {
 			_templates pushBack [JGKP_var_template_static call BIS_fnc_selectRandom]; // static
 			_templates pushBack [JGKP_var_template_car call BIS_fnc_selectRandom]; // Cars
 		};
-		case 11;
-		case 12;
 		case 13;
 		case 14;
 		case 15: {
@@ -445,7 +449,7 @@ JGKP_fnc_searchCentre = {
 		""
 	];
 
-	_trgUpsmon setTriggerTimeout [1, 60, 30, false];
+	_trgUpsmon setTriggerTimeout [1, 10, 30, false];
 
 } foreach _cities;
 
