@@ -36,3 +36,6 @@ if (not isServer and not hasInterface) then {
 	JGKP_HC = player;
 	publicVariableServer "JGKP_HC";
 };
+
+//Sollte den Insignia Fehler beheben
+[player,"ACE_insignia_logo"] call bis_fnc_setUnitInsignia;
