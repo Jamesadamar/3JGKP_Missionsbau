@@ -1,4 +1,4 @@
-_Awh = nearestObjects [spawnstuff, ["BWA3_Box_Attachments"], 5];
+_Awh = nearestObjects [spawnstuff, ["ReammoBox_F"], 5];
 
 if ((count _Awh)>= 1) then {	
 	hint "Bereich ist blockiert"

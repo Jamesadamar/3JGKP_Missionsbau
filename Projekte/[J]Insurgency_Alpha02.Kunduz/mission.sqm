@@ -8,7 +8,7 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=1828;
+		nextID=1829;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=33;
+		nextID=34;
 	};
 	class Camera
 	{
-		pos[]={715.16199,261.50192,4759.832};
-		dir[]={0.95709586,-0.13860767,-0.2545276};
-		up[]={0.13396221,0.99034774,-0.035626318};
-		aside[]={-0.25700971,-3.0454976e-007,-0.96642524};
+		pos[]={5144.7349,38.968098,855.52856};
+		dir[]={-0.84896666,-0.52539897,-0.057023067};
+		up[]={-0.52422225,0.85084641,-0.035210807};
+		aside[]={-0.067017674,1.4937541e-007,0.99776828};
 	};
 };
 binarizationWanted=0;
@@ -103,15 +103,17 @@ addons[]=
 	"rhs_cti_insurgents",
 	"rhs_c_troops",
 	"rhs_c_heavyweapons",
-	"A3_Structures_F_Kart_Civ_SportsGrounds",
-	"glt_survive_objects"
+	"glt_survive_objects",
+	"A3_Structures_F_Kart_Civ_SportsGrounds"
 };
 randomSeed=16577411;
 class ScenarioData
 {
 	author="[3.JgKp]James";
 	overviewText="Erobern Sie die Karte Stück für Stück, gehen Sie gemäß Ihrer Gruppenstärke vor und wählen Sie zwischen drei strategischen Angriffsrichtungen.";
+	overViewPicture="loadscreen.jpg";
 	onLoadMission="Klassische Insurgency auf Kundus";
+	loadScreen="loadscreen.jpg";
 	showUAVFeed=0;
 	saving=0;
 	disabledAI=1;
@@ -132,6 +134,42 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Counter";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -146,24 +184,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -199,7 +219,7 @@ class Mission
 	class Intel
 	{
 		briefingName="[J]Insurgency Kundus";
-		overviewText="Erobern Sie die Karte, V0.1";
+		overviewText="Erobern Sie die Karte, V0.2";
 		resistanceWest=0;
 		resistanceEast=1;
 		startWeather=0.30469999;
@@ -2575,23 +2595,48 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1331.2567,35.448212,361.28162};
-				angles[]={0.0080009829,6.4014836e-005,0.0039967569};
+				position[]={1333.875,35.465172,360.5};
+				angles[]={0.0080009829,5.6392021,0.011995304};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
+				init="this allowDamage false; this enableSimulation false;";
 			};
 			id=355;
 			type="CamoNet_OPFOR_open_Curator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item130
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1327.9602,35.095528,363.13141};
+				position[]={1326.125,35.128532,356.25};
+				angles[]={0.0039967569,5.6049056,0.015998369};
 			};
 			side="Empty";
 			class Attributes
@@ -6566,8 +6611,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1298.953,34.291439,457.47897};
-						angles[]={0,0.20566961,0};
+						position[]={1319.375,34.291439,446.79999};
+						angles[]={0,2.4820952,0};
 					};
 					side="West";
 					flags=2;
@@ -16870,8 +16915,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1334.75,35.182858,362.375};
-				angles[]={0.011990411,3.1902523,0.0079936078};
+				position[]={1335.3682,35.187775,362.51025};
+				angles[]={0.015998369,5.6529636,0.012000273};
 			};
 			side="Empty";
 			class Attributes
@@ -16930,17 +16975,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1330.875,35.249504,361.75};
-				angles[]={0,5.5413156,0};
+				position[]={1325,35.331055,440};
+				angles[]={0,2.4478419,0};
 			};
 			side="Empty";
+			flags=1;
 			class Attributes
 			{
-				skill=0.60000002;
-				name="spawnstuff";
+				init="this addAction [""Verlegen zur Basis Nord"", {player setpos getMarkerPos ""base_nord""}]; this addAction [""Verlegen zur Basis Südost"", {player setpos getMarkerPos ""base_so""}]; this addAction [""Verlegen zur Gruppe"", ""scripts\gruppenteleport.sqf"", []]; this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""loadscreen.jpg""];";
+				name="sw";
 			};
-			id=1821;
-			type="Oil_Spill_F";
+			id=1824;
+			type="GLT_Sign_Refugee01";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16970,17 +17016,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1325,35.331055,440};
-				angles[]={0,2.4478419,0};
+				position[]={5126.75,13.941053,846.125};
+				angles[]={0,4.7439618,0};
 			};
 			side="Empty";
 			flags=1;
 			class Attributes
 			{
-				init="this addAction [""Verlegen zur Basis Nord"", {player setpos getMarkerPos ""base_nord""}]; this addAction [""Verlegen zur Basis Südost"", {player setpos getMarkerPos ""base_so""}]; this addAction [""Verlegen zur Gruppe"", ""scripts\gruppenteleport.sqf"", []];";
-				name="sw";
+				init="this addAction [""Verlegen zur Haupt-Basis"", {player setpos getMarkerPos ""base""}]; this addAction [""Verlegen zur Basis Nord"", {player setpos getMarkerPos ""base_nord""}]; this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""loadscreen.jpg""];";
+				name="so";
 			};
-			id=1824;
+			id=1825;
 			type="GLT_Sign_Refugee01";
 			class CustomAttributes
 			{
@@ -17011,17 +17057,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5126.75,13.941053,846.125};
-				angles[]={0,4.7439618,0};
+				position[]={341.75,5.458056,4696};
+				angles[]={0,4.2411151,0};
 			};
 			side="Empty";
 			flags=1;
 			class Attributes
 			{
-				init="this addAction [""Verlegen zur Haupt-Basis"", {player setpos getMarkerPos ""base""}]; this addAction [""Verlegen zur Basis Nord"", {player setpos getMarkerPos ""base_nord""}];";
-				name="so";
+				init="this addAction [""Verlegen zur Hauptbasis"", {player setpos getMarkerPos ""base""}]; this addAction [""Verlegen zur Basis Südost"", {player setpos getMarkerPos ""base_so""}]; this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""loadscreen.jpg""];";
+				name="nord";
 			};
-			id=1825;
+			id=1827;
 			type="GLT_Sign_Refugee01";
 			class CustomAttributes
 			{
@@ -17052,18 +17098,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={341.75,5.458056,4696};
-				angles[]={0,4.2411151,0};
+				position[]={1331.25,34.337006,359.25};
+				angles[]={0.015987216,5.5413156,0.0039968039};
 			};
 			side="Empty";
-			flags=1;
 			class Attributes
 			{
-				init="this addAction [""Verlegen zur Hauptbasis"", {player setpos getMarkerPos ""base""}]; this addAction [""Verlegen zur Basis Südost"", {player setpos getMarkerPos ""base_so""}];";
-				name="nord";
+				skill=0.60000002;
+				init="this allowDamage false; this enableSimulation false;";
+				name="spawnstuff";
 			};
-			id=1827;
-			type="GLT_Sign_Refugee01";
+			id=1828;
+			type="Oil_Spill_F";
 			class CustomAttributes
 			{
 				class Attribute0

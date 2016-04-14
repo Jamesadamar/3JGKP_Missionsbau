@@ -1,7 +1,11 @@
 _cargoUnit = _this select 0; //get cargo unit on which the script should run
 
+_ID = _this select 2;
+
+_cargoUnit removeAction _ID;
 
 _cargoUnit addAction [("<t color=""#475135"">" + "----------Versorgung----------" + "</t>"),"",""];
+_cargoUnit addAction ["Räumen", "scripts\Supply_Stuff\leeren.sqf"];
 _cargoUnit addAction ["Leere Versorgungskiste", "scripts\Supply_Stuff\kiste.sqf"];
 _cargoUnit addAction ["Leere Waffenkiste", "scripts\Supply_Stuff\waffenkiste.sqf"];
 _cargoUnit addAction ["Leere Scharfschützenkiste", "scripts\Supply_Stuff\ZF.sqf"];
@@ -26,4 +30,3 @@ _cargoUnit addAction ["Versorgungskiste Granaten", "scripts\Supply_Stuff\Granate
 _cargoUnit addAction ["Versorgungskiste Hunt IR", "scripts\Supply_Stuff\HuntIr.sqf"];
 _cargoUnit addAction ["Versorgungskiste Nachtkampf", "scripts\Supply_Stuff\Nachtkampf.sqf"];
 _cargoUnit addAction ["Versorgungskiste Signalmittel", "scripts\Supply_Stuff\Signalmittel.sqf"];
-_cargoUnit addAction ["Räumen", "scripts\Supply_Stuff\leeren.sqf"];
