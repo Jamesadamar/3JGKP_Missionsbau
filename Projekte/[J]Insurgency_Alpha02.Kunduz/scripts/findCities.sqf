@@ -274,6 +274,7 @@ JGKP_fnc_searchCentre = {
 		case 2;
 		case 3: {
 			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
 
 			if (random 1 > 0.5) then {
 				_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
@@ -285,7 +286,7 @@ JGKP_fnc_searchCentre = {
 		case 7: {
 			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
 			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom];< // 8-12 men
 
 			if (random 1 > 0.5) then {
 				_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
@@ -308,6 +309,10 @@ JGKP_fnc_searchCentre = {
 				_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
 			};
 
+			if (random 1 > 0.5) then {
+				_templates pushBack [JGKP_var_template_motorized call BIS_fnc_selectRandom]; // Cars
+			};
+
 			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
 			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
 
@@ -327,6 +332,10 @@ JGKP_fnc_searchCentre = {
 			_templates pushBack [JGKP_var_template_static call BIS_fnc_selectRandom]; // static
 			_templates pushBack [JGKP_var_template_car call BIS_fnc_selectRandom]; // UAZ
 			_templates pushBack [JGKP_var_template_armored call BIS_fnc_selectRandom]; // armored
+
+			if (random 1 > 0.5) then {
+				_templates pushBack [JGKP_var_template_motorized call BIS_fnc_selectRandom]; // Cars
+			};
 		};
 		default {
 			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
@@ -341,6 +350,10 @@ JGKP_fnc_searchCentre = {
 			_templates pushBack [JGKP_var_template_car call BIS_fnc_selectRandom]; // UAZ
 			_templates pushBack [JGKP_var_template_armored call BIS_fnc_selectRandom]; // armored
 			_templates pushBack [JGKP_var_template_armored call BIS_fnc_selectRandom]; // armored
+
+			if (random 1 > 0.5) then {
+				_templates pushBack [JGKP_var_template_motorized call BIS_fnc_selectRandom]; // Cars
+			};
 		};
 	};
 

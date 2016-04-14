@@ -33,7 +33,7 @@ Define whether you will see the time and date displayed while the intro loads. 1
 */
 onLoadIntroTime = 0;
 
-
+onLoadName = "[J]Insurgency Kundus";
 
 //*********************************
 //** Sets respawn type.
@@ -48,12 +48,7 @@ onLoadIntroTime = 0;
 //** 4 or "GROUP" - Respawn in your group (if there's no AI left, you'll become a seagull).
 //** 5 or "SIDE" - Respawn into an AI unit on your side (if there's no AI left, you'll become a seagull).
 //*********************************
-respawn = 3;
-
-respawnDelay = 10;							// Set respawn delay in seconds.
-respawnVehicleDelay = 11;					// Set vehicle respawn delay in seconds.
-respawnDialog = 0;							// Show the scoreboard and respawn countdown timer for a player if he is killed with respawnType 3. Default is 1 (true).
-joinUnassigned = 1;							// New Player auto assigned to the side with least players
+// New Player auto assigned to the side with least players
 
 /**
 respawnOnStart = 1;//Respawn on start. Run respawn script on start.

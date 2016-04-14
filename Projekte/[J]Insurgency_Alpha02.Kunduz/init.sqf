@@ -7,3 +7,5 @@ JGKP_fnc_createMarkerAndTrigger = compile preprocessFileLineNumbers "functions\c
 //** http://www.armaholic.com/page.php?id=21935
 //**********************************************************************************
 call compile preprocessFileLineNumbers "modules\Upsmon\Init_UPSMON.sqf";
+
+setViewDistance 2500;
