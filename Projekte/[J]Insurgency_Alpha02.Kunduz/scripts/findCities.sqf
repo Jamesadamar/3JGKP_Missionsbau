@@ -286,7 +286,7 @@ JGKP_fnc_searchCentre = {
 		case 7: {
 			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
 			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom];< // 8-12 men
+			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
 
 			if (random 1 > 0.5) then {
 				_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men

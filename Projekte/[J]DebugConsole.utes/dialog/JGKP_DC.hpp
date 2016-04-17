@@ -156,6 +156,7 @@ class JGKP_DC {
 			autocomplete = "scripting";
 			colorBackground[] = COLOR_GREY;
 			onKeyUp = "(_this) execVM 'dialog\handleInput.sqf';";
+			tooltip = "STRG - ausführen. ALT - dauerhaft ausführen. ENTF - löschen. STRG + ENTF - alle löschen.";
 		};
 		class LINE1_OUTPUT: JGKP_DCRscEdit
 		{
@@ -213,6 +214,7 @@ class JGKP_DC {
 			autocomplete = "scripting";
 			colorBackground[] = COLOR_GREY;
 			onKeyUp = "(_this) execVM 'dialog\handleInput.sqf';";
+			tooltip = "STRG - ausführen. ALT - dauerhaft ausführen. ENTF - löschen. STRG + ENTF - alle löschen.";
 		};
 		class LINE2_OUTPUT: JGKP_DCRscEdit
 		{
@@ -267,6 +269,7 @@ class JGKP_DC {
 			autocomplete = "scripting";
 			colorBackground[] = COLOR_GREY;
 			onKeyUp = "(_this) execVM 'dialog\handleInput.sqf';";
+			tooltip = "STRG - ausführen. ALT - dauerhaft ausführen. ENTF - löschen. STRG + ENTF - alle löschen.";
 		};
 		class LINE3_OUTPUT: JGKP_DCRscEdit
 		{
@@ -321,6 +324,7 @@ class JGKP_DC {
 			autocomplete = "scripting";
 			colorBackground[] = COLOR_GREY;
 			onKeyUp = "(_this) execVM 'dialog\handleInput.sqf';";
+			tooltip = "STRG - ausführen. ALT - dauerhaft ausführen. ENTF - löschen. STRG + ENTF - alle löschen.";
 		};
 		class LINE4_OUTPUT: JGKP_DCRscEdit
 		{
@@ -388,7 +392,10 @@ class JGKP_DC {
 			w = 6.5 * GUI_GRID_W;
 			h = 0.6 * GUI_GRID_H;
 			colorBackground[] = COLOR_GREY;
+			onLBSelChanged = "(_this) execVM 'dialog\selChanged.sqf';";
 		};
+
+		// RECHTE SEITE - BUTTONS
 		class COMMAND_EXEC_LOCAL: JGKP_DCRscButton
 		{
 			idc = 1608;
@@ -401,7 +408,6 @@ class JGKP_DC {
 			action = "[1408, player] execVM 'dialog\runCode.sqf';";
 		};
 
-		// RECHTE SEITE - BUTTONS
 		class COMMAND_EXEC_GLOBAL: JGKP_DCRscButton
 		{
 			idc = 1609;
@@ -413,6 +419,7 @@ class JGKP_DC {
 			colorBackground[] = COLOR_RED;
 			action = "[1408, 0] execVM 'dialog\runCode.sqf';";
 		};
+
 		class COMMAND_EXEC_SERVER: JGKP_DCRscButton
 		{
 			idc = 1610;
@@ -463,7 +470,7 @@ class JGKP_DC {
 		class FUNC_MARKER: JGKP_DCRscButton
 		{
 			idc = 1614;
-			text = "Marker anzeigen"; //--- ToDo: Localize;
+			text = ""; //--- ToDo: Localize;
 			x = 6 * GUI_GRID_W + GUI_GRID_X;
 			y = 16 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;

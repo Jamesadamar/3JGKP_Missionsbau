@@ -28,6 +28,59 @@ JGKP_DC_Rows = profileNamespace getVariable ["JGKP_DC_Rows",[]];
 	_inputIDC = _x select 0;
 	_code = _x select 1;
 
-	ctrlSetText [_inputIDC, _code];
+	// Befülle Combobox
+	if (typeName _code == "ARRAY") then {
+
+		{
+
+			(_display displayCtrl _inputIDC) lbAdd _x;
+
+		} forEach _code;
+
+	} else {
+
+		ctrlSetText [_inputIDC, _code];
+
+	};
 
 } forEach JGKP_DC_Rows;
+
+// button status
+// MARKER
+_control = (findDisplay 3100) displayCtrl 1614;
+if (isNil "JGKP_DC_marker_status") then {
+
+	ctrlSetText [1614, "Marker anzeigen"];
+
+	// remove old EH
+	_control ctrlRemoveAllEventHandlers "ButtonClick";
+
+	// add new EH
+	_control ctrlAddEventHandler ["ButtonClick", "[true, 1614] execVM 'dialog\marker.sqf';"];
+
+} else {
+
+	if (JGKP_DC_marker_status) then {
+
+		ctrlSetText [1614, "Marker verbergen"];
+
+		// remove old EH
+		_control ctrlRemoveAllEventHandlers "ButtonClick";
+
+		// add new EH
+		_control ctrlAddEventHandler ["ButtonClick", "[false, 1614] execVM 'dialog\marker.sqf';"];
+
+	} else {
+
+		ctrlSetText [1614, "Marker anzeigen"];
+
+		// remove old EH
+		_control ctrlRemoveAllEventHandlers "ButtonClick";
+
+		// add new EH
+		_control ctrlAddEventHandler ["ButtonClick", "[true, 1614] execVM 'dialog\marker.sqf';"];
+
+	};
+};
+
+

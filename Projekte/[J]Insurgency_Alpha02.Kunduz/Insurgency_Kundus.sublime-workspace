@@ -523,7 +523,7 @@
 			"file": "scripts/findCities.sqf",
 			"settings":
 			{
-				"buffer_size": 13040,
+				"buffer_size": 13635,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "functions/createMarkerAndTrigger.sqf",
 			"settings":
 			{
-				"buffer_size": 2370,
+				"buffer_size": 2388,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,40 +539,16 @@
 			"file": "description.ext",
 			"settings":
 			{
-				"buffer_size": 9720,
+				"buffer_size": 5000,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "modules/gruppenteleport.sqf",
+			"file": "init.sqf",
 			"settings":
 			{
-				"buffer_size": 223,
+				"buffer_size": 593,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_getTimer.sqf",
-			"settings":
-			{
-				"buffer_size": 1335,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_init.sqf",
-			"settings":
-			{
-				"buffer_size": 1027,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog.hpp",
-			"settings":
-			{
-				"buffer_size": 4637,
-				"line_ending": "Windows"
 			}
 		},
 		{
@@ -731,12 +707,16 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency.Kunduz",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency.Kunduz/modules",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency.Kunduz/modules/Upsmon"
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/functions",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/scripts"
 	],
 	"file_history":
 	[
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_getTimer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/modules/gruppenteleport.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_initVars.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog_startTimer.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog_init.sqf",
@@ -860,11 +840,7 @@
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]Basic_UPSMON_HC.Altis/modules/Upsmon/UPSMON/COMMON/markerAlpha.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]Basic_UPSMON_HC.Altis/modules/Upsmon/Init_UPSMON.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/Missionslayout_Event.VR/onPlayerRespawn.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]Basic_UPSMON_HC.Altis/description.ext",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/marker_change_color.utes/createMarkerAndTrigger.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/onKeyUp.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/initSaveDialog.sqf",
-		"/D/Meine Daten/Dropbox/Git/3jgkp_database/@extDB2_DEBUG/extdb-conf.ini"
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]Basic_UPSMON_HC.Altis/description.ext"
 	],
 	"find":
 	{
@@ -1090,7 +1066,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1099,15 +1075,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13040,
+						"buffer_size": 13635,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5770,
-								5770
+								518,
+								518
 							]
 						],
 						"settings":
@@ -1115,31 +1091,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -1150,35 +1101,60 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"syntax": "Packages/User/SQF.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3320.0,
+						"translation.y": 63.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1187,15 +1163,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2370,
+						"buffer_size": 2388,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2364,
-								2364
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1203,11 +1179,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1218,36 +1189,11 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -1257,7 +1203,37 @@
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
-								"bh_angle_content"
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/User/SQF.tmLanguage",
 							"translate_tabs_to_spaces": false
@@ -1266,7 +1242,7 @@
 						"translation.y": 462.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1275,15 +1251,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9720,
+						"buffer_size": 5000,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9709,
-								9709
+								2581,
+								2581
 							]
 						],
 						"settings":
@@ -1291,11 +1267,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1306,36 +1277,11 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -1345,33 +1291,63 @@
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
-								"bh_angle_content"
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/SQF Language/SQF.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3276.0,
+						"translation.y": 350.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "modules/gruppenteleport.sqf",
+					"file": "init.sqf",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 223,
+						"buffer_size": 593,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								593,
+								593
 							]
 						],
 						"settings":
@@ -1379,11 +1355,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1394,36 +1365,11 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -1433,7 +1379,37 @@
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
-								"bh_angle_content"
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/User/SQF.tmLanguage"
 						},
@@ -1441,216 +1417,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_getTimer.sqf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1335,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/SQF.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_init.sqf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1027,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"syntax": "Packages/User/SQF.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4637,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 633.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "modules/Upsmon/Init_UPSMON.sqf",
 					"semi_transient": false,
 					"settings":
@@ -1737,7 +1508,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 5,
 					"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/parent.hpp",
 					"semi_transient": false,
 					"settings":
@@ -1821,7 +1592,7 @@
 						"translation.y": 622.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]

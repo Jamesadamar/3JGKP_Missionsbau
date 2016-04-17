@@ -10,19 +10,40 @@
 */
 disableSerialization;
 
-private ["_params", "_display", "_rows"];
+private ["_params", "_display", "_rows", "_size", "_commands"];
 
 // arguments
 _params = _this;
 _display = _this select 0;
 
 // begin of script
-_rows = [1400,1402,1404,1406,1408];
+
+// speichere Text aus allen 4 Edit-Feldern
+_rows = [1400,1402,1404,1406, 1408, 2100];
 
 {
 	_code = ctrlText _x;
 
-	JGKP_DC_Rows set [_forEachIndex, [_x, _code]];
+	// speichere Befehle der Combobox
+	if (_x == 2100) then {
+
+		_size = lbSize 2100;
+		_commands = [];
+
+		for "_id" from 0 to (_size -1) do {
+			_commands pushBackUnique (lbText [_x, _id]);
+		};
+
+		// überschreiben da stets alle Befehle
+		JGKP_DC_Rows set [_forEachIndex, [_x, _commands]];
+
+	} else {
+
+		// speichere Befehle der Edit-Felder
+		JGKP_DC_Rows set [_forEachIndex, [_x, _code]];
+
+	};
+
 } forEach _rows;
 
 profileNamespace setVariable ["JGKP_DC_Rows", JGKP_DC_Rows];
