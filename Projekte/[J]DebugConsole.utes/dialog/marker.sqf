@@ -53,71 +53,173 @@ if (_status) then {
 					{
 
 						_leader = leader _x;
+						_vehicle = vehicle _x;
 
-						_marker = createMarkerLocal [
+						// nicht in einem Fahrzeug -> in jedem Fall Marker
+						if (_vehicle == _x) then {
+
+							// Marker for unit
+							_markerUnit = createMarkerLocal [
 							format["%1_%2", name _x, count JGKP_DC_marker_list],
 							getpos _x
-						];
-						JGKP_DC_marker_list pushBack _marker;
+							];
 
-						_markerView = createMarkerLocal [
+							_markerUnit setMarkerSizeLocal [1.1, 1.1];
+							_markerUnit setMarkerColorLocal "COLORWEST";
+
+							_markerView = createMarkerLocal [
 							format["%1_%2_view", name _x, count JGKP_DC_marker_list],
 							getpos _x
-						];
-						JGKP_DC_marker_list pushBack _markerView;
+							];
 
-						if (_x == _leader) then {
+							// marker for view direction
+							_markerView setMarkerTypeLocal "hd_arrow";
+							_markerView setMarkerColorLocal "ColorBlack";
+							_markerView setMarkerSizeLocal [0.8, 0.8];
+							_markerView setMarkerDirLocal (getDir _x);
+							_markerView setMarkerAlphaLocal 0.7;
 
-							_marker setMarkerTypeLocal "b_inf";
-							_marker setMarkerSizeLocal [0.8, 0.8];
-							_marker setMarkerTextLocal format[" %1 (%2)", name _x, count units _x];
+
+							JGKP_DC_marker_list pushBack _markerUnit;
+							JGKP_DC_marker_list pushBack _markerView;
+
+							// welche Typ von Einheit?
+							if (_x == _leader) then {
+
+								// Inf symbol
+								_markerUnit setMarkerTypeLocal "b_inf";
+
+								// GrpFhr Name + GrpGröße
+								_markerUnit setMarkerTextLocal format[" %1 (%2)", name _x, count units _x];
+
+							} else {
+
+								// dot symbol größer
+								_markerUnit setMarkerTypeLocal "hd_dot";
+								_markerUnit setMarkerSizeLocal [1.5, 1.5];
+
+								// Marker für Verbindung
+								_distance = _x distance2D _leader;
+								_vectorDiff = (getPos _leader) vectorDiff ((getPos _x)) select [0,2];
+
+								_markerConnect = createMarkerLocal [
+									format["%1_%2_connect", name _x, count JGKP_DC_marker_list],
+									[
+										(getPos _x select 0) + (_vectorDiff select 0) / 2,
+										(getPos _x select 1) + (_vectorDiff select 1) / 2
+									]
+								];
+
+								JGKP_DC_marker_list pushBack _markerConnect;
+
+								_markerConnect setMarkerShapeLocal "RECTANGLE";
+								_markerConnect setMarkerColorLocal "ColorBlack";
+								_markerConnect setMarkerSizeLocal [_distance / 2, 0.1];
+
+								_winkel = 0;
+								if (_vectorDiff select 0 == 0) then {
+									
+									_winkel = 90;
+
+								} else {
+
+									_winkel = atan((_vectorDiff select 1) / (_vectorDiff select 0));		
+
+								};
+														
+								_markerConnect setMarkerDirLocal ( -_winkel );
+
+							};
 
 						} else {
 
-							_marker setMarkerTypeLocal "hd_dot";
-							_marker setMarkerSizeLocal [1.5, 1.5];
+							// Fahrzeug und Fahrer -> Marker!
+							if (_x == driver _vehicle) then {
 
-							// Marker für Verbindung
-							_distance = _x distance2D _leader;
-							_vectorDiff = (getPos _leader) vectorDiff ((getPos _x)) select [0,2];
+								// Marker for unit
+								_markerUnit = createMarkerLocal [
+								format["%1_%2", name _x, count JGKP_DC_marker_list],
+								getpos _vehicle
+								];
 
-							_markerConnect = createMarkerLocal [
-								format["%1_%2_connect", name _x, count JGKP_DC_marker_list],
-								[
-									(getPos _x select 0) + (_vectorDiff select 0) / 2,
-									(getPos _x select 1) + (_vectorDiff select 1) / 2
-								]
-							];
-							JGKP_DC_marker_list pushBack _markerConnect;
+								_markerUnit setMarkerSizeLocal [1.1, 1.1];
+								_markerUnit setMarkerColorLocal "COLORWEST";
 
-							_markerConnect setMarkerShapeLocal "RECTANGLE";
-							_markerConnect setMarkerColorLocal "ColorBlack";
-							_markerConnect setMarkerSizeLocal [_distance / 2, 0.2];
+								// GrpFhr Name + GrpGröße
+								_markerUnit setMarkerTextLocal format[" %1 (%2)", name _x, count crew _vehicle];
 
-							_winkel = atan((_vectorDiff select 1) / (_vectorDiff select 0));								
-							_markerConnect setMarkerDirLocal ( -_winkel );
+								if (_vehicle isKindOf "Tank") then {
 
-						};
+									_markerUnit setMarkerTypeLocal "b_armor";
 
-						_marker setMarkerColorLocal "COLORWEST";
-						//_marker setMarkerTextLocal format[" %1", name _x];
+								};
+								if (_vehicle isKindOf "Car") then {
 
-						// marker for view direction
-						_markerView setMarkerTypeLocal "hd_arrow";
-						_markerView setMarkerColorLocal "ColorBlack";
-						_markerView setMarkerSizeLocal [0.8, 0.8];
-						_markerView setMarkerDirLocal (getDir _x);
-						_markerView setMarkerAlphaLocal 0.7;
+									_markerUnit setMarkerTypeLocal "b_motor_inf";
 
-						_delta_x = 0 * cos(-(getDir _x)) - 3 * sin(-(getDir _x));
-						_delta_y = 0 * sin(-(getDir _x)) + 3 * cos(-(getDir _x));
+								};
 
-						/*
-						_markerView setMarkerPosLocal [
-							(getMarkerPos _markerView select 0) + _delta_x,
-							(getMarkerPos _markerView select 1) + _delta_y
-						];
-						*/
+								JGKP_DC_marker_list pushBack _markerUnit;
+
+								if (not isNull gunner _vehicle) then {
+
+									// marker for view direction of gunner
+									_markerView = createMarkerLocal [
+									format["%1_%2_view", name _x, count JGKP_DC_marker_list],
+									getpos _vehicle
+									];
+
+									// marker for view direction
+									_markerView setMarkerTypeLocal "hd_arrow";
+									_markerView setMarkerColorLocal "ColorBlack";
+									_markerView setMarkerSizeLocal [0.8, 0.8];
+									_markerView setMarkerDirLocal (getDir gunner _vehicle);
+									_markerView setMarkerAlphaLocal 0.7;
+
+									JGKP_DC_marker_list pushBack _markerView;
+
+								};						
+							
+								// Marker für Verbindung
+								if (not (_x in (crew vehicle _leader))) then {
+									
+									// Marker für Verbindung
+									_distance = _vehicle distance2D (vehicle _leader);
+									_vectorDiff = (getPos vehicle _leader) vectorDiff ((getPos _vehicle)) select [0,2];
+
+									_markerConnect = createMarkerLocal [
+										format["%1_%2_connect", name _x, count JGKP_DC_marker_list],
+										[
+											(getPos _vehicle select 0) + (_vectorDiff select 0) / 2,
+											(getPos _vehicle select 1) + (_vectorDiff select 1) / 2
+										]
+									];
+
+									JGKP_DC_marker_list pushBack _markerConnect;
+
+									_markerConnect setMarkerShapeLocal "RECTANGLE";
+									_markerConnect setMarkerColorLocal "ColorBlack";
+									_markerConnect setMarkerSizeLocal [_distance / 2, 0.1];
+
+									_winkel = 0;
+									if (_vectorDiff select 0 == 0) then {
+										
+										_winkel = 90;
+
+									} else {
+
+										_winkel = atan((_vectorDiff select 1) / (_vectorDiff select 0));		
+
+									};
+															
+									_markerConnect setMarkerDirLocal ( -_winkel );
+
+								};
+
+							};
+							// überspringe alle anderen
+
+						}; 
 
 					} forEach units _x;
 
@@ -129,71 +231,173 @@ if (_status) then {
 					{
 
 						_leader = leader _x;
+						_vehicle = vehicle _x;
 
-						_marker = createMarkerLocal [
+						// nicht in einem Fahrzeug -> in jedem Fall Marker
+						if (_vehicle == _x) then {
+
+							// Marker for unit
+							_markerUnit = createMarkerLocal [
 							format["%1_%2", name _x, count JGKP_DC_marker_list],
 							getpos _x
-						];
-						JGKP_DC_marker_list pushBack _marker;
+							];
 
-						_markerView = createMarkerLocal [
+							_markerUnit setMarkerSizeLocal [1.1, 1.1];
+							_markerUnit setMarkerColorLocal "ColorEast";
+
+							_markerView = createMarkerLocal [
 							format["%1_%2_view", name _x, count JGKP_DC_marker_list],
 							getpos _x
-						];
-						JGKP_DC_marker_list pushBack _markerView;
+							];
 
-						if (_x == _leader) then {
+							// marker for view direction
+							_markerView setMarkerTypeLocal "hd_arrow";
+							_markerView setMarkerColorLocal "ColorBlack";
+							_markerView setMarkerSizeLocal [0.8, 0.8];
+							_markerView setMarkerDirLocal (getDir _x);
+							_markerView setMarkerAlphaLocal 0.7;
 
-							_marker setMarkerTypeLocal "o_inf";
-							_marker setMarkerSizeLocal [0.8, 0.8];
-							_marker setMarkerTextLocal format[" %1 (%2)", name _x, count units _x];
+
+							JGKP_DC_marker_list pushBack _markerUnit;
+							JGKP_DC_marker_list pushBack _markerView;
+
+							// welche Typ von Einheit?
+							if (_x == _leader) then {
+
+								// Inf symbol
+								_markerUnit setMarkerTypeLocal "b_inf";
+
+								// GrpFhr Name + GrpGröße
+								_markerUnit setMarkerTextLocal format[" %1 (%2)", name _x, count units _x];
+
+							} else {
+
+								// dot symbol größer
+								_markerUnit setMarkerTypeLocal "hd_dot";
+								_markerUnit setMarkerSizeLocal [1.5, 1.5];
+
+								// Marker für Verbindung
+								_distance = _x distance2D _leader;
+								_vectorDiff = (getPos _leader) vectorDiff ((getPos _x)) select [0,2];
+
+								_markerConnect = createMarkerLocal [
+									format["%1_%2_connect", name _x, count JGKP_DC_marker_list],
+									[
+										(getPos _x select 0) + (_vectorDiff select 0) / 2,
+										(getPos _x select 1) + (_vectorDiff select 1) / 2
+									]
+								];
+
+								JGKP_DC_marker_list pushBack _markerConnect;
+
+								_markerConnect setMarkerShapeLocal "RECTANGLE";
+								_markerConnect setMarkerColorLocal "ColorBlack";
+								_markerConnect setMarkerSizeLocal [_distance / 2, 0.1];
+
+								_winkel = 0;
+								if (_vectorDiff select 0 == 0) then {
+									
+									_winkel = 90;
+
+								} else {
+
+									_winkel = atan((_vectorDiff select 1) / (_vectorDiff select 0));		
+
+								};
+														
+								_markerConnect setMarkerDirLocal ( -_winkel );
+
+							};
 
 						} else {
 
-							_marker setMarkerTypeLocal "hd_dot";
-							_marker setMarkerSizeLocal [1.5, 1.5];
+							// Fahrzeug und Fahrer -> Marker!
+							if (_x == driver _vehicle) then {
 
-							// Marker für Verbindung
-							_distance = _x distance2D _leader;
-							_vectorDiff = (getPos _leader) vectorDiff ((getPos _x)) select [0,2];
+								// Marker for unit
+								_markerUnit = createMarkerLocal [
+								format["%1_%2", name _x, count JGKP_DC_marker_list],
+								getpos _vehicle
+								];
 
-							_markerConnect = createMarkerLocal [
-								format["%1_%2_connect", name _x, count JGKP_DC_marker_list],
-								[
-									(getPos _x select 0) + (_vectorDiff select 0) / 2,
-									(getPos _x select 1) + (_vectorDiff select 1) / 2
-								]
-							];
-							JGKP_DC_marker_list pushBack _markerConnect;
+								_markerUnit setMarkerSizeLocal [1.1, 1.1];
+								_markerUnit setMarkerColorLocal "ColorEast";
 
-							_markerConnect setMarkerShapeLocal "RECTANGLE";
-							_markerConnect setMarkerColorLocal "ColorBlack";
-							_markerConnect setMarkerSizeLocal [_distance / 2, 0.2];
+								// GrpFhr Name + GrpGröße
+								_markerUnit setMarkerTextLocal format[" %1 (%2)", name _x, count crew _vehicle];
 
-							_winkel = atan((_vectorDiff select 1) / (_vectorDiff select 0));								
-							_markerConnect setMarkerDirLocal ( -_winkel );
+								if (_vehicle isKindOf "Tank") then {
 
-						};
+									_markerUnit setMarkerTypeLocal "b_armor";
 
-						_marker setMarkerColorLocal "ColorEast";
-						//_marker setMarkerTextLocal format[" %1", name _x];
+								};
+								if (_vehicle isKindOf "Car") then {
 
-						// marker for view direction
-						_markerView setMarkerTypeLocal "hd_arrow";
-						_markerView setMarkerColorLocal "ColorBlack";
-						_markerView setMarkerSizeLocal [0.8, 0.8];
-						_markerView setMarkerDirLocal (getDir _x);
-						_markerView setMarkerAlphaLocal 0.7;
+									_markerUnit setMarkerTypeLocal "b_motor_inf";
 
-						_delta_x = 0 * cos(-(getDir _x)) - 3 * sin(-(getDir _x));
-						_delta_y = 0 * sin(-(getDir _x)) + 3 * cos(-(getDir _x));
+								};
 
-						/*
-						_markerView setMarkerPosLocal [
-							(getMarkerPos _markerView select 0) + _delta_x,
-							(getMarkerPos _markerView select 1) + _delta_y
-						];
-						*/
+								JGKP_DC_marker_list pushBack _markerUnit;
+
+								if (not isNull gunner _vehicle) then {
+
+									// marker for view direction of gunner
+									_markerView = createMarkerLocal [
+									format["%1_%2_view", name _x, count JGKP_DC_marker_list],
+									getpos _vehicle
+									];
+
+									// marker for view direction
+									_markerView setMarkerTypeLocal "hd_arrow";
+									_markerView setMarkerColorLocal "ColorBlack";
+									_markerView setMarkerSizeLocal [0.8, 0.8];
+									_markerView setMarkerDirLocal (getDir gunner _vehicle);
+									_markerView setMarkerAlphaLocal 0.7;
+
+									JGKP_DC_marker_list pushBack _markerView;
+
+								};						
+							
+								// Marker für Verbindung
+								if (not (_x in (crew vehicle _leader))) then {
+									
+									// Marker für Verbindung
+									_distance = _vehicle distance2D (vehicle _leader);
+									_vectorDiff = (getPos vehicle _leader) vectorDiff ((getPos _vehicle)) select [0,2];
+
+									_markerConnect = createMarkerLocal [
+										format["%1_%2_connect", name _x, count JGKP_DC_marker_list],
+										[
+											(getPos _vehicle select 0) + (_vectorDiff select 0) / 2,
+											(getPos _vehicle select 1) + (_vectorDiff select 1) / 2
+										]
+									];
+
+									JGKP_DC_marker_list pushBack _markerConnect;
+
+									_markerConnect setMarkerShapeLocal "RECTANGLE";
+									_markerConnect setMarkerColorLocal "ColorBlack";
+									_markerConnect setMarkerSizeLocal [_distance / 2, 0.1];
+
+									_winkel = 0;
+									if (_vectorDiff select 0 == 0) then {
+										
+										_winkel = 90;
+
+									} else {
+
+										_winkel = atan((_vectorDiff select 1) / (_vectorDiff select 0));		
+
+									};
+															
+									_markerConnect setMarkerDirLocal ( -_winkel );
+
+								};
+
+							};
+							// überspringe alle anderen
+
+						}; 
 
 					} forEach units _x;
 
@@ -205,71 +409,173 @@ if (_status) then {
 					{
 
 						_leader = leader _x;
+						_vehicle = vehicle _x;
 
-						_marker = createMarkerLocal [
+						// nicht in einem Fahrzeug -> in jedem Fall Marker
+						if (_vehicle == _x) then {
+
+							// Marker for unit
+							_markerUnit = createMarkerLocal [
 							format["%1_%2", name _x, count JGKP_DC_marker_list],
 							getpos _x
-						];
-						JGKP_DC_marker_list pushBack _marker;
+							];
 
-						_markerView = createMarkerLocal [
+							_markerUnit setMarkerSizeLocal [1.1, 1.1];
+							_markerUnit setMarkerColorLocal "ColorGuer";
+
+							_markerView = createMarkerLocal [
 							format["%1_%2_view", name _x, count JGKP_DC_marker_list],
 							getpos _x
-						];
-						JGKP_DC_marker_list pushBack _markerView;
+							];
 
-						if (_x == _leader) then {
+							// marker for view direction
+							_markerView setMarkerTypeLocal "hd_arrow";
+							_markerView setMarkerColorLocal "ColorBlack";
+							_markerView setMarkerSizeLocal [0.8, 0.8];
+							_markerView setMarkerDirLocal (getDir _x);
+							_markerView setMarkerAlphaLocal 0.7;
 
-							_marker setMarkerTypeLocal "n_inf";
-							_marker setMarkerSizeLocal [0.8, 0.8];
-							_marker setMarkerTextLocal format[" %1 (%2)", name _x, count units _x];
+
+							JGKP_DC_marker_list pushBack _markerUnit;
+							JGKP_DC_marker_list pushBack _markerView;
+
+							// welche Typ von Einheit?
+							if (_x == _leader) then {
+
+								// Inf symbol
+								_markerUnit setMarkerTypeLocal "b_inf";
+
+								// GrpFhr Name + GrpGröße
+								_markerUnit setMarkerTextLocal format[" %1 (%2)", name _x, count units _x];
+
+							} else {
+
+								// dot symbol größer
+								_markerUnit setMarkerTypeLocal "hd_dot";
+								_markerUnit setMarkerSizeLocal [1.5, 1.5];
+
+								// Marker für Verbindung
+								_distance = _x distance2D _leader;
+								_vectorDiff = (getPos _leader) vectorDiff ((getPos _x)) select [0,2];
+
+								_markerConnect = createMarkerLocal [
+									format["%1_%2_connect", name _x, count JGKP_DC_marker_list],
+									[
+										(getPos _x select 0) + (_vectorDiff select 0) / 2,
+										(getPos _x select 1) + (_vectorDiff select 1) / 2
+									]
+								];
+
+								JGKP_DC_marker_list pushBack _markerConnect;
+
+								_markerConnect setMarkerShapeLocal "RECTANGLE";
+								_markerConnect setMarkerColorLocal "ColorBlack";
+								_markerConnect setMarkerSizeLocal [_distance / 2, 0.1];
+
+								_winkel = 0;
+								if (_vectorDiff select 0 == 0) then {
+									
+									_winkel = 90;
+
+								} else {
+
+									_winkel = atan((_vectorDiff select 1) / (_vectorDiff select 0));		
+
+								};
+														
+								_markerConnect setMarkerDirLocal ( -_winkel );
+
+							};
 
 						} else {
 
-							_marker setMarkerTypeLocal "hd_dot";
-							_marker setMarkerSizeLocal [1.5, 1.5];
+							// Fahrzeug und Fahrer -> Marker!
+							if (_x == driver _vehicle) then {
 
-							// Marker für Verbindung
-							_distance = _x distance2D _leader;
-							_vectorDiff = (getPos _leader) vectorDiff ((getPos _x)) select [0,2];
+								// Marker for unit
+								_markerUnit = createMarkerLocal [
+								format["%1_%2", name _x, count JGKP_DC_marker_list],
+								getpos _vehicle
+								];
 
-							_markerConnect = createMarkerLocal [
-								format["%1_%2_connect", name _x, count JGKP_DC_marker_list],
-								[
-									(getPos _x select 0) + (_vectorDiff select 0) / 2,
-									(getPos _x select 1) + (_vectorDiff select 1) / 2
-								]
-							];
-							JGKP_DC_marker_list pushBack _markerConnect;
+								_markerUnit setMarkerSizeLocal [1.1, 1.1];
+								_markerUnit setMarkerColorLocal "ColorGuer";
 
-							_markerConnect setMarkerShapeLocal "RECTANGLE";
-							_markerConnect setMarkerColorLocal "ColorBlack";
-							_markerConnect setMarkerSizeLocal [_distance / 2, 0.2];
+								// GrpFhr Name + GrpGröße
+								_markerUnit setMarkerTextLocal format[" %1 (%2)", name _x, count crew _vehicle];
 
-							_winkel = atan((_vectorDiff select 1) / (_vectorDiff select 0));								
-							_markerConnect setMarkerDirLocal ( -_winkel );
+								if (_vehicle isKindOf "Tank") then {
 
-						};
+									_markerUnit setMarkerTypeLocal "b_armor";
 
-						_marker setMarkerColorLocal "ColorGuer";
-						//_marker setMarkerTextLocal format[" %1", name _x];
+								};
+								if (_vehicle isKindOf "Car") then {
 
-						// marker for view direction
-						_markerView setMarkerTypeLocal "hd_arrow";
-						_markerView setMarkerColorLocal "ColorBlack";
-						_markerView setMarkerSizeLocal [0.8, 0.8];
-						_markerView setMarkerDirLocal (getDir _x);
-						_markerView setMarkerAlphaLocal 0.7;
+									_markerUnit setMarkerTypeLocal "b_motor_inf";
 
-						_delta_x = 0 * cos(-(getDir _x)) - 3 * sin(-(getDir _x));
-						_delta_y = 0 * sin(-(getDir _x)) + 3 * cos(-(getDir _x));
+								};
 
-						/*
-						_markerView setMarkerPosLocal [
-							(getMarkerPos _markerView select 0) + _delta_x,
-							(getMarkerPos _markerView select 1) + _delta_y
-						];
-						*/
+								JGKP_DC_marker_list pushBack _markerUnit;
+
+								if (not isNull gunner _vehicle) then {
+
+									// marker for view direction of gunner
+									_markerView = createMarkerLocal [
+									format["%1_%2_view", name _x, count JGKP_DC_marker_list],
+									getpos _vehicle
+									];
+
+									// marker for view direction
+									_markerView setMarkerTypeLocal "hd_arrow";
+									_markerView setMarkerColorLocal "ColorBlack";
+									_markerView setMarkerSizeLocal [0.8, 0.8];
+									_markerView setMarkerDirLocal (getDir gunner _vehicle);
+									_markerView setMarkerAlphaLocal 0.7;
+
+									JGKP_DC_marker_list pushBack _markerView;
+
+								};						
+							
+								// Marker für Verbindung
+								if (not (_x in (crew vehicle _leader))) then {
+									
+									// Marker für Verbindung
+									_distance = _vehicle distance2D (vehicle _leader);
+									_vectorDiff = (getPos vehicle _leader) vectorDiff ((getPos _vehicle)) select [0,2];
+
+									_markerConnect = createMarkerLocal [
+										format["%1_%2_connect", name _x, count JGKP_DC_marker_list],
+										[
+											(getPos _vehicle select 0) + (_vectorDiff select 0) / 2,
+											(getPos _vehicle select 1) + (_vectorDiff select 1) / 2
+										]
+									];
+
+									JGKP_DC_marker_list pushBack _markerConnect;
+
+									_markerConnect setMarkerShapeLocal "RECTANGLE";
+									_markerConnect setMarkerColorLocal "ColorBlack";
+									_markerConnect setMarkerSizeLocal [_distance / 2, 0.1];
+
+									_winkel = 0;
+									if (_vectorDiff select 0 == 0) then {
+										
+										_winkel = 90;
+
+									} else {
+
+										_winkel = atan((_vectorDiff select 1) / (_vectorDiff select 0));		
+
+									};
+															
+									_markerConnect setMarkerDirLocal ( -_winkel );
+
+								};
+
+							};
+							// überspringe alle anderen
+
+						}; 
 
 					} forEach units _x;
 
