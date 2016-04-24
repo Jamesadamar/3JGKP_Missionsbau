@@ -45,42 +45,25 @@ JGKP_DC_Rows = profileNamespace getVariable ["JGKP_DC_Rows",[]];
 
 } forEach JGKP_DC_Rows;
 
-// button status
-// MARKER
-_control = (findDisplay 3100) displayCtrl 1614;
-if (isNil "JGKP_DC_marker_status") then {
+// für angepinnte Felder -> ausgrauen und Text ändern
+if (!isNil "JGKP_DC_Pin_Value") then {
 
-	ctrlSetText [1614, "Marker anzeigen"];
+	{
+		_inputIDC = _x select 0;
+		_buttonIDC = _inputIDC + 200; // button hat IDC + 200
+		// Sperre Feld und Button so lang
+		ctrlEnable [_inputIDC, false];
+		ctrlSetText [_buttonIDC, "Unpin"];
 
-	// remove old EH
-	_control ctrlRemoveAllEventHandlers "ButtonClick";
+	} forEach JGKP_DC_Pin_Value;
 
-	// add new EH
-	_control ctrlAddEventHandler ["ButtonClick", "[true, 1614] execVM 'dialog\marker.sqf';"];
-
-} else {
-
-	if (JGKP_DC_marker_status) then {
-
-		ctrlSetText [1614, "Marker verbergen"];
-
-		// remove old EH
-		_control ctrlRemoveAllEventHandlers "ButtonClick";
-
-		// add new EH
-		_control ctrlAddEventHandler ["ButtonClick", "[false, 1614] execVM 'dialog\marker.sqf';"];
-
-	} else {
-
-		ctrlSetText [1614, "Marker anzeigen"];
-
-		// remove old EH
-		_control ctrlRemoveAllEventHandlers "ButtonClick";
-
-		// add new EH
-		_control ctrlAddEventHandler ["ButtonClick", "[true, 1614] execVM 'dialog\marker.sqf';"];
-
-	};
 };
 
 
+// button status
+// SETZE ALLE OPTIONEN
+{
+
+	[_x, 3100] call JGKP_DC_fnc_readOption;
+
+} forEach JGKP_DC_options;

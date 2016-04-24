@@ -480,7 +480,7 @@ class JGKP_DC {
 		class FUNC_GODMODE: JGKP_DCRscButton
 		{
 			idc = 1615;
-			text = "God mode an"; //--- ToDo: Localize;
+			text = ""; //--- ToDo: Localize;
 			x = 6 * GUI_GRID_W + GUI_GRID_X;
 			y = 17 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
@@ -490,7 +490,7 @@ class JGKP_DC {
 		class FUNC_HIDE: JGKP_DCRscButton
 		{
 			idc = 1616;
-			text = "Unsichtbar werden"; //--- ToDo: Localize;
+			text = ""; //--- ToDo: Localize;
 			x = 6 * GUI_GRID_W + GUI_GRID_X;
 			y = 18 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;

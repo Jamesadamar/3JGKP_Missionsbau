@@ -3,7 +3,7 @@ class RscTitles {
 
 	class JGKP_DCPin { 
 
-		idd = 3101; 
+		idd = 31; 
 		duration = 600; // 10 minutes
 		fadein = 0.5; 
 		fadeout = 0.5;

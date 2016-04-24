@@ -42,4 +42,4 @@ while {count JGKP_DC_Pin_Value > 0} do {
 };
 
 // Löse Rsc auf
-3101 cutFadeOut 0;
+31 cutFadeOut 0;

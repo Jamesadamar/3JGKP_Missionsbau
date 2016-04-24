@@ -44,7 +44,7 @@ if (_isEnabled) then {
 			JGKP_DC_Pin_Value pushBackUnique [_inputIDC, _code];
 		};
 
-		3101 cutRsc ["JGKP_DCPin","PLAIN"];
+		31 cutRsc ["JGKP_DCPin","PLAIN"];
 
 		[_inputIDC, _outputIDC] call JGKP_DC_fnc_calcValue;
 
