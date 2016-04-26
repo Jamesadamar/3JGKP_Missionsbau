@@ -39,3 +39,6 @@ if (not isServer and not hasInterface) then {
 
 //Sollte den Insignia Fehler beheben
 [player,"ACE_insignia_logo"] call bis_fnc_setUnitInsignia;
+
+// Einmal bei JIP neu ausrüsten -> nach Respawn in der onPlayerRespawn.sqf
+["jgkp_equip_loadout",[player,player getVariable "LoadoutID"]] call CBA_fnc_clientToServerEvent;

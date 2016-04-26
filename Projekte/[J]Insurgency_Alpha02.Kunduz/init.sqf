@@ -1,5 +1,3 @@
-JGKP_fnc_createMarkerAndTrigger = compile preprocessFileLineNumbers "functions\createMarkerAndTrigger.sqf";
-
 //**********************************************************************************
 //** Initialisieren des UPSMON script
 //** steuert die KI anhand von Routinen und Marker

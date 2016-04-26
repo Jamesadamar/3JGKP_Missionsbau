@@ -259,8 +259,8 @@ JGKP_fnc_searchCentre = {
 	// Auslöseradius + 1 km für Spieler! 
 	// TODO: eventuell erhöhen?!
 	_trgUpsmon setTriggerArea [	
-		(_centre select 1) + 750, // 750 Meter vor Grenze Spawn auslösen
-		(_centre select 2) + 750, 
+		(_centre select 1) + ("SpawnRadius" call BIS_fnc_getParamValue), // 750 Meter vor Grenze Spawn auslösen
+		(_centre select 2) + ("SpawnRadius" call BIS_fnc_getParamValue), 
 		0, 
 		false
 	];
@@ -457,7 +457,7 @@ JGKP_fnc_searchCentre = {
 
 	_trgUpsmon setTriggerActivation ["WEST", "PRESENT", false];
 	_trgUpsmon setTriggerStatements [
-		"this",
+		"player in thislist && (position player) select 2 < 5",
 		_tempString,
 		""
 	];

@@ -132,6 +132,14 @@ class Params
 		default = 3;
 	};
 
+	class SpawnRadius 
+	{
+		title = "Auslöseradius von Städten";
+		values[] = {250,500,750,1000,1500};
+		texts[] = {"250 m vom Zentrum", "500 m vom Zentrum", "750 m vom Zentrum", "1 km vom Zentrum", "1.5 km vom Zentrum"};
+		default = 750;
+	};
+
 	class Debug
 	{
 		title = "Debugmodus";
