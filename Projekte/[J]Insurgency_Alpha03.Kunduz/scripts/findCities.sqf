@@ -457,7 +457,7 @@ JGKP_fnc_searchCentre = {
 
 	_trgUpsmon setTriggerActivation ["WEST", "PRESENT", false];
 	_trgUpsmon setTriggerStatements [
-		"player in thislist && (position player) select 2 < 5",
+		"(thislist select 0) in allPlayers && {(position _x) select 2 > 5} count thislist == 0",
 		_tempString,
 		""
 	];
