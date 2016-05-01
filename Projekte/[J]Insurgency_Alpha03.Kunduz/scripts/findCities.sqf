@@ -21,19 +21,21 @@ if (isNull _trg) exitWith {
 };
 
 _trgArea = triggerArea _trg;
-			_start = [	(getpos _trg select 0) - (_trgArea select 0),
-						(getpos _trg select 1) - (_trgArea select 0) * _yDir,
-						0 
-					];
+_start = [	(getpos _trg select 0) - (_trgArea select 0),
+			(getpos _trg select 1) - (_trgArea select 0) * _yDir,
+			0 
+		];
 
-_end = 				[	(getpos _trg select 0) + (_trgArea select 0),
-						(getpos _trg select 1) + (_trgArea select 0) * _yDir,
-						0 
-					];
+_end = 	[	(getpos _trg select 0) + (_trgArea select 0),
+			(getpos _trg select 1) + (_trgArea select 0) * _yDir,
+			0 
+		];
+
 _resolution =  		"SquareSize" call BIS_fnc_getParamValue; // siehe Description
 _size = 			"CitySize" call BIS_fnc_getParamValue; // siehe Description
 _markerID = 		1;
 _safetyDistance = 	"SafetyDistance" call BIS_fnc_getParamValue; // siehe Description
+_spawnRadius = 		"SpawnRadius" call BIS_fnc_getParamValue; // siehe Description
 
 // begin of script
 _distanceX = (_end select 0) - (_start select 0); // 5000 - 0 = 5000 m in x
@@ -205,6 +207,8 @@ JGKP_fnc_searchCentre = {
 {	
 	// Erzeuge Marker für Zentrum und Ausdehnung
 	_city = _x;
+	_cityIndex = _forEachIndex;
+	
 	_centre = [_city] call JGKP_fnc_searchCentre; // Funktion ermittelt mittleres Planquadrat
 
 	// marker für Stadtzentrum
@@ -218,6 +222,10 @@ JGKP_fnc_searchCentre = {
 	//_marker setMarkerSize [_resolution / 2, _resolution / 2];
 	//_marker setMarkerColor "ColorEAST";
 	_marker setMarkerAlpha 0.3;
+
+	// neue Location
+	_location = createLocation ["NameVillage", _centre select 0, _centre select 1, _centre select 2];
+	_location setText format["city:%1", _centre select 0];
 
 	// marker für Stadtgrenze (Oval)
 	_markerBorder = createMarker [
@@ -253,18 +261,6 @@ JGKP_fnc_searchCentre = {
 
 	} foreach _city;
 
-	// Erzeuge für jede Stadt eine Upsmon-Zone mit viel Dynamik
-	_trgUpsmon = createTrigger ["EmptyDetector", _centre select 0, false];
-
-	// Auslöseradius + 1 km für Spieler! 
-	// TODO: eventuell erhöhen?!
-	_trgUpsmon setTriggerArea [	
-		(_centre select 1) + ("SpawnRadius" call BIS_fnc_getParamValue), // 750 Meter vor Grenze Spawn auslösen
-		(_centre select 2) + ("SpawnRadius" call BIS_fnc_getParamValue), 
-		0, 
-		false
-	];
-
 	// Dynamische Anpassung an Spieleranzahl und Stadtgröße!
 	_templates = [];
 
@@ -272,197 +268,178 @@ JGKP_fnc_searchCentre = {
 	switch (count _city) do {
 		case 1;
 		case 2;
-		case 3: {
-			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+		case 3;
+		case 4: {
+			_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
+			_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
 
 			if (random 1 > 0.5) then {
-				_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+				_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
 			};
 		};
-		case 4;
 		case 5;
 		case 6;
-		case 7: {
-			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
+		case 7;
+		case 8: {
+			_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
+			_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
+			_templates pushBack (JGKP_var_template_big_grp call BIS_fnc_selectRandom); // 8-12 men
 
 			if (random 1 > 0.5) then {
-				_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
+				_templates pushBack (JGKP_var_template_big_grp call BIS_fnc_selectRandom); // 8-12 men
 			};
 
 			if (random 1 > 0.5) then {
-				_templates pushBack [JGKP_var_template_motorized call BIS_fnc_selectRandom]; // Cars
+				_templates pushBack (JGKP_var_template_motorized call BIS_fnc_selectRandom); // Cars
 			};
 		};
-		case 8;
 		case 9;
 		case 10;
 		case 11;
 		case 12: {
-			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
+			_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
+			_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
 
 			if (random 1 > 0.5) then {
-				_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
-				_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
+				_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
+				_templates pushBack (JGKP_var_template_big_grp call BIS_fnc_selectRandom); // 8-12 men
 			};
 
 			if (random 1 > 0.5) then {
-				_templates pushBack [JGKP_var_template_motorized call BIS_fnc_selectRandom]; // Cars
+				_templates pushBack (JGKP_var_template_motorized call BIS_fnc_selectRandom); // Cars
 			};
 
-			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
+			_templates pushBack (JGKP_var_template_big_grp call BIS_fnc_selectRandom); // 8-12 men
+			_templates pushBack (JGKP_var_template_big_grp call BIS_fnc_selectRandom); // 8-12 men
 
-			_templates pushBack [JGKP_var_template_static call BIS_fnc_selectRandom]; // static
-			_templates pushBack [JGKP_var_template_car call BIS_fnc_selectRandom]; // Cars
+			_templates pushBack (JGKP_var_template_static call BIS_fnc_selectRandom); // static
+			_templates pushBack (JGKP_var_template_car call BIS_fnc_selectRandom); // Cars
 		};
 		case 13;
 		case 14;
 		case 15: {
-			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [JGKP_var_template_static call BIS_fnc_selectRandom]; // static
-			_templates pushBack [JGKP_var_template_car call BIS_fnc_selectRandom]; // UAZ
-			_templates pushBack [JGKP_var_template_armored call BIS_fnc_selectRandom]; // armored
+			_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
+			_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
+			_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
+			_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
+			_templates pushBack (JGKP_var_template_big_grp call BIS_fnc_selectRandom); // 8-12 men
+			_templates pushBack (JGKP_var_template_big_grp call BIS_fnc_selectRandom); // 8-12 men
+			_templates pushBack (JGKP_var_template_big_grp call BIS_fnc_selectRandom); // 8-12 men
+			_templates pushBack (JGKP_var_template_static call BIS_fnc_selectRandom); // static
+			_templates pushBack (JGKP_var_template_car call BIS_fnc_selectRandom); // UAZ
+			_templates pushBack (JGKP_var_template_armored call BIS_fnc_selectRandom); // armored
 
 			if (random 1 > 0.5) then {
-				_templates pushBack [JGKP_var_template_motorized call BIS_fnc_selectRandom]; // Cars
+				_templates pushBack (JGKP_var_template_motorized call BIS_fnc_selectRandom); // Cars
 			};
 		};
 		default {
-			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [JGKP_var_template_small_grp call BIS_fnc_selectRandom]; // 4-5 men
-			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [JGKP_var_template_big_grp call BIS_fnc_selectRandom]; // 8-12 men
-			_templates pushBack [JGKP_var_template_static call BIS_fnc_selectRandom]; // static
-			_templates pushBack [JGKP_var_template_static call BIS_fnc_selectRandom]; // static
-			_templates pushBack [JGKP_var_template_car call BIS_fnc_selectRandom]; // UAZ
-			_templates pushBack [JGKP_var_template_armored call BIS_fnc_selectRandom]; // armored
-			_templates pushBack [JGKP_var_template_armored call BIS_fnc_selectRandom]; // armored
+			_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
+			_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
+			_templates pushBack (JGKP_var_template_small_grp call BIS_fnc_selectRandom); // 4-5 men
+			_templates pushBack (JGKP_var_template_big_grp call BIS_fnc_selectRandom); // 8-12 men
+			_templates pushBack (JGKP_var_template_big_grp call BIS_fnc_selectRandom); // 8-12 men
+			_templates pushBack (JGKP_var_template_big_grp call BIS_fnc_selectRandom); // 8-12 men
+			_templates pushBack (JGKP_var_template_big_grp call BIS_fnc_selectRandom); // 8-12 men
+			_templates pushBack (JGKP_var_template_static call BIS_fnc_selectRandom); // static
+			_templates pushBack (JGKP_var_template_static call BIS_fnc_selectRandom); // static
+			_templates pushBack (JGKP_var_template_car call BIS_fnc_selectRandom); // UAZ
+			_templates pushBack (JGKP_var_template_armored call BIS_fnc_selectRandom); // armored
+			_templates pushBack (JGKP_var_template_armored call BIS_fnc_selectRandom); // armored
 
 			if (random 1 > 0.5) then {
-				_templates pushBack [JGKP_var_template_motorized call BIS_fnc_selectRandom]; // Cars
+				_templates pushBack (JGKP_var_template_motorized call BIS_fnc_selectRandom); // Cars
 			};
 		};
 	};
 
-	_tempString = "";
+	call compile format["JGKP_T8_Container_%1 = []", _cityIndex];
 
 	{
-		_temp = _x;
-		_tempNr = _x select 0; // template Nummer
+		
+		// BASIC SETTING
+		_basic = [];
 
-		_behaviour = format["%1", str(["CARELESS", "SAFE", "AWARE", "COMBAT", "STEALTH"] call BIS_fnc_selectRandom)];
-		_speedMode = format["%1", str(["LIMITED", "FULL", "NORMAL"] call BIS_fnc_selectRandom)];
-		_formation = format["%1", str(["LINE", "STAG COLUMN", "COLUMN", "VEE", "WEDGE"] call BIS_fnc_selectRandom)];
+		_basic pushBack (call compile _x); // Einheiten-Container, z.B.  [ "O_soldier_TL_F", "O_medic_F", "O_soldier_F" ]; 
+		_basic pushBack (_markerBorder); // Marker für Spawn-Punkt
+		// false wenn Template Fahrzeuge enthält
+		if (not (_x in JGKP_var_template_small_grp) && not (_x in JGKP_var_template_big_grp)) then {
+			_basic pushBack false;
+		};
 
-		_upsArgs = format["%1, %2, %3", _behaviour, _speedMode, _formation];
+		// TASK SETTING
+		_task = [];
+		_random = random 1;
 
-		// Verhalten für Infanterie
-		if (_tempNr in JGKP_var_template_small_grp or 
-			_tempNr in JGKP_var_template_big_grp) then {
+		// most common case in 50% of all cases
+		if (_random < 0.4) then {
 
-			// zufälliges fortify
-			/*
-			_fortify = random 1;
-			if (_fortify > 1) then {
-
-				_fortify = format["%1", str("FORTIFY")];
-				_upsArgs = format["%1, %2", _upsArgs, _fortify];
-
-			};
-			*/
-
-			// zufälliges nofollow
-			_nofollow = random 1;
-			if (_nofollow > 0.5) then {
-
-				_nofollow = format["%1", str("NOFOLLOW")];
-				_upsArgs = format["%1, %2", _upsArgs, _nofollow];
-
-			};
-
-			// zufälliges ambush + ambushdist zwischen 0 und resolution / 2, sofern nicht fortify
-			_ambush = random 1;
-			if (_ambush > 0.75) then {
-
-				_ambush = format[
-					"%1, 'AMBUSHDIST:', %2",
-					str(["AMBUSH","AMBUSH2"] call BIS_fnc_selectRandom),
-					random (_resolution / 2)
-				];
-				_upsArgs = format["%1, %2", _upsArgs, _ambush];
-
-			};
-
-			// zufälliges random, sofern nicht ambush
 			_random = random 1;
-			if (_random > 0.6 and 
-				typeName _ambush != "STRING") then {
 
-				_random = format["%1", str(["RANDOMUP", "RANDOMDN", "RANDOMA"] call BIS_fnc_selectRandom)];
-				_upsArgs = format["%1, %2", _upsArgs, _random];
+			if (_random < 0.3) then {
 
-			};
-
-			// zufälliges noshare
-			_noshare = random 1;
-			if (_noshare > 0.75) then {
-
-				_noshare = format["%1", str("NOSHARE")];
-				_upsArgs = format["%1, %2", _upsArgs, _noshare];
+			 	_task pushBack "PATROL_URBAN";
 
 			};
 
+			if (_random > 0.3 and _random < 0.8) then {
 
-			// Verhalten für Fahrzeuge
-		} else {
+				_task pushBack "PATROL";
 
-			if (_tempNr in JGKP_var_template_car or
-				_tempNr in JGKP_var_template_armored) then {
+			};
 
-				_onroad = format["%1", str("ONROAD")];
-				_upsArgs = format["%1, %2", _upsArgs, _onroad];
+			if (_random > 0.8) then {
+
+				_task pushBack "PATROL_AROUND";
+				_task pushBack 100;
+
+			};
+		};
+
+		if (_random > 0.4 and _random < 0.7) then {
+
+			_task pushBack "PATROL_GARRISON";
+			
+		};
+
+		if (_random > 0.7 and _random < 0.9) then {
+
+			_task pushBack "OCCUPY";
+
+			_random = random 1;
+
+			// disable movement
+			if (_random < 0.3) then {
+				_task pushBack true;
 			};
 
 		};
 
-		_upsArgs = format["%1, %2, %3, %4, %5", _upsArgs, str("RANDOM"), str("DELETE:"), 120, str("RADIORANGE:"), 500];
+		if (_random > 0.9) then {
 
-		_tempString = format["%1 %2",
-			_tempString,
-			format["nul = [%1, %2, %3, [%4, %5]] execVM %6;",
-				_tempNr,
-				_centre select 0,
-				1, 
-				str(_markerBorder), 
-				_upsArgs,
-				str("modules\Upsmon\UPSMON\MODULES\UPSMON_spawn.SQF")
-			]
-		];
+			_task pushBack "GARRISON";
+		};
+
+		call compile format["JGKP_T8_Container_%1 pushBack [%2, %3]", _cityIndex, _basic, _task]; // own spawning template for this city
 
 	} forEach _templates;
 
+	/*
+	[ “myGroupContainer”, “myMarker”, “EAST”, “ANY”, 1000, “this”, “”, “” ] 
+call T8U_fnc_Zone;
+	*/
 
-	_trgUpsmon setTriggerActivation ["WEST", "PRESENT", false];
-	_trgUpsmon setTriggerStatements [
+	_T8_trigger = 
+	[
+		format["JGKP_T8_Container_%1", _cityIndex], 
+		_marker, 
+		"GUER",
+		"WEST", 
+		_spawnRadius, 
 		"(thislist select 0) in allPlayers && {(position _x) select 2 > 5} count thislist == 0",
-		_tempString,
-		""
-	];
-
-	_trgUpsmon setTriggerTimeout [1, 10, 30, false];
+		"",
+		""  
+	] call T8U_fnc_Zone;
 
 } foreach _cities;
 

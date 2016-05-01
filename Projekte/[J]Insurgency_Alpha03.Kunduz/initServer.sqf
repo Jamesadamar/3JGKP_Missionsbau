@@ -48,4 +48,4 @@ publicVariable "coyote_debug";
 //[] spawn compile preprocessFileLineNumbers "HC_Mover\HC_Mover_Violet.sqf";   //Aktiviert HC-Mover für Zivile Einheiten        wenn nicht benötigt mit // deaktivieren
 
 // Skript für Markererstellung
-JGKP_fnc_createMarkerAndTrigger = compile preprocessFileLineNumbers "functions\createMarkerAndTrigger.sqf";
+JGKP_fnc_createMarkerAndTrigger = compile preprocessFileLineNumbers "functions\fn_createMarkerAndTrigger.sqf";
