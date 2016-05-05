@@ -37,11 +37,6 @@
 
 // DEBUG Settings
 
-T8U_var_DEBUG			= true;
-T8U_var_DEBUG_hints		= true;
-T8U_var_DEBUG_marker	= true;
-T8U_var_DEBUG_useCon	= true;
-
 /*
 	T8U_var_DEBUG					= false;		// general Debug 
 	T8U_var_DEBUG_hints				= false;		// show Debug Hints
@@ -50,9 +45,23 @@ T8U_var_DEBUG_useCon	= true;
 */
 
 
+// DEBUG SETTINGS
+if ("Debug" call BIS_fnc_getParamValue == 1) then {
+	T8U_var_DEBUG			= true;
+	T8U_var_DEBUG_hints		= true;
+	T8U_var_DEBUG_marker	= true;
+	T8U_var_DEBUG_useCon	= true;
+} else {
+	T8U_var_DEBUG			= false;
+	T8U_var_DEBUG_hints		= false;
+	T8U_var_DEBUG_marker	= false;
+	T8U_var_DEBUG_useCon	= false;
+};
+
+
 // Options to register units with ZEUS
 // this may slow down spawning
-T8U_var_AllowZEUS				= true;			// Register spawned units with "allCurators"
+T8U_var_AllowZEUS				= false;			// Register spawned units with "allCurators"
 
 // run the script on Headless Client and not on the Server
 //			!! WARNING: this is untested !!
@@ -63,7 +72,7 @@ T8U_var_AllowDAC				= false;		// Allow DAC
 T8U_var_DACtimeout				= 180;			// Time out after calling DAC to help group
 
 // standard side for spawned units
-T8U_var_EnemySide 				= EAST;
+T8U_var_EnemySide 				= RESISTANCE;
 
 // Independent Diplomacy 'switch' -> 0: GUR neutral; 1: GUR friendly to BLUE; 2: GUR friendly to RED; 3: GUR enemy of both; 
 // ( for finding enemy when calling for help when under attack - check your mission settings )
@@ -74,7 +83,7 @@ T8U_var_AllowCBM				= true;
 
 T8U_var_TaskReturnTime			= 30;			// when SAD WP is finished group will redo origin task after x sec
 T8U_var_CacheTime				= 15;			// units in Zones are cached after X seconds when zone is left
-T8U_var_DirectCallRange			= 1200;			// group leader searches for help within XXX m
+T8U_var_DirectCallRange			= 800;			// group leader searches for help within XXX m
 T8U_var_RevealRange				= 300;			// group leader shares info of enemies he "knowsabout > 1" to friendly units within XXX m
 T8U_var_PatAroundRange			= 50;			// zone radius + T8U_var_PatAroundRange (e.g. 40 m) is the distance where units will patrol around zones.
 T8U_var_KilledLeaderTimeout		= 20;			// if group leader killed, x sec no communication > then check for new group leader who can communicate

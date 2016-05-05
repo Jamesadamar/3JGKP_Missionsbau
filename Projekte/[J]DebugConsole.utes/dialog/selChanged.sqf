@@ -8,6 +8,7 @@
 
 	example call: 		nur über event handler ui onLBSelChanged
 */
+disableSerialization;
 
 // arguments
 _params = _this;

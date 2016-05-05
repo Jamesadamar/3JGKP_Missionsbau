@@ -56,6 +56,22 @@ JGKP_DC_options = []; // enthält [buttonIDC, [true, text, EH], [false, text, EH
 		1616, 	
 		["Unsichtbar werden", "['JGKP_DC_options_hide'] execVM 'dialog\hide.sqf';"], // mode an
 		["Sichtbar werden",  "['JGKP_DC_options_hide'] execVM 'dialog\hide.sqf';"] // mode aus
+	],
+
+	[
+		"JGKP_DC_options_hold",
+		false,
+		1618, 	
+		["KI anhalten", "['JGKP_DC_options_hold'] execVM 'dialog\hold.sqf';"], // mode an
+		["KI freigeben",  "['JGKP_DC_options_hold'] execVM 'dialog\hold.sqf';"] // mode aus
+	],
+
+	[
+		"JGKP_DC_options_perf",
+		false,
+		1621, 	
+		["Performance anzeigen", "['JGKP_DC_options_perf'] execVM 'dialog\perf.sqf';"], // mode an
+		["Performance ausblenden",  "['JGKP_DC_options_perf'] execVM 'dialog\perf.sqf';"] // mode aus
 	]
 
 ];

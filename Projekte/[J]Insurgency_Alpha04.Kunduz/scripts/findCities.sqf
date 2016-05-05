@@ -17,7 +17,7 @@ _trg = param [0, objNull, [objNull]];
 _yDir = param [1, 1, [1]];
 
 if (isNull _trg) exitWith {
-	parseText "<t color='#ff0000' size='2'>Kein gültigen Auslöser übergeben!</t>" remoteExec ["hint", 0];
+	parseText "<t color='#ff0000' size='2'>Keinen gültigen Auslöser übergeben!</t>" remoteExec ["hint", 0];
 };
 
 _trgArea = triggerArea _trg;

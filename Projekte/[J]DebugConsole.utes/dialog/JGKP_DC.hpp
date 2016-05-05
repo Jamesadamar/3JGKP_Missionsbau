@@ -501,17 +501,19 @@ class JGKP_DC {
 		class FUNC_AI_COUNT: JGKP_DCRscButton
 		{
 			idc = 1617;
-			text = "Anzahl Feinde"; //--- ToDo: Localize;
+			text = "Einheiten pro Seite"; //--- ToDo: Localize;
 			x = 11 * GUI_GRID_W + GUI_GRID_X;
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
+			action = "hint parseText format['BLUEFOR: %1 <br/>OPFOR: %2 <br/>GUER: %3 <br/>CIV: %4', WEST countSide allUnits, EAST countSide allUnits, RESISTANCE countSide allUnits, CIVILIAN countSide allUnits];";
+
 		};
 
 		class FUNC_STOP: JGKP_DCRscButton
 		{
 			idc = 1618;
-			text = "KI anhalten"; //--- ToDo: Localize;
+			text = ""; //--- ToDo: Localize;
 			x = 11 * GUI_GRID_W + GUI_GRID_X;
 			y = 16 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
@@ -526,13 +528,14 @@ class JGKP_DC {
 			y = 17 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
+			action = "{ if ([playerSide, side _x] call BIS_fnc_sideIsEnemy) then {_x setDamage 1;} } forEach allUnits;";
 		};
 
 		// SPALTE 3
 		class FUNC_PERFORMANCE: JGKP_DCRscButton
 		{
 			idc = 1621;
-			text = "Performance"; //--- ToDo: Localize;
+			text = ""; //--- ToDo: Localize;
 			x = 16 * GUI_GRID_W + GUI_GRID_X;
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;

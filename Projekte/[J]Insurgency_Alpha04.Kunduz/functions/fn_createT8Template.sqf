@@ -24,14 +24,38 @@ _units = [];
 if (isNull _leader) exitWith {systemChat "Funktion createT8Template falsch aufgerufen"};
 
 // begin of script
-for "_i" from 1 to _repeat do {
 
-	{
+_ignore = [];
+{
 
-		_units pushBack (typeOf _x);
+	if (not (_x in _ignore)) then {
 
-	} forEach units group _leader;
+		if (vehicle _x != _x) then {
+
+			// ignore all other crew members
+			{
+				_ignore pushBack _x;
+			} forEach crew vehicle _x;
+			
+			// nur das Fahrzeug!
+			_units pushBack (typeOf vehicle _x);
+			
+		} else {
+
+			_units pushBack (typeOf _x);
+
+		};
+	};
+
+} forEach (units group _leader);
+
+// copy and merge 
+for "_i" from 1 to (_repeat-1) do {
+
+	_units append _units;
+
 };
+
 
 call compile format["%1 = %2", ("JGKP_T8_" + _globalName), _units];
 

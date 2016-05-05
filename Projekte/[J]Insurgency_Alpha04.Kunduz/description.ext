@@ -162,5 +162,13 @@ class Params
 		texts[] = {"an (Marker auf Karte)","aus"};
 		default = 1;
 	};
+
+	class Patrols
+	{
+		title = "Überland-Patrouillen";
+		values[] = {1,0};
+		texts[] = {"an (Feind auch zwischen den Städten)","aus"};
+		default = 1;
+	};
 	
 };

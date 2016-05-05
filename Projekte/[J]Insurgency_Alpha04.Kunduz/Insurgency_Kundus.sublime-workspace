@@ -520,10 +520,50 @@
 	"buffers":
 	[
 		{
+			"file": "T8/CONFIG.hpp",
+			"settings":
+			{
+				"buffer_size": 7316,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Meine Daten/Google Drive/3.JgKp/Skripte/battleWarden/settings.ini",
+			"settings":
+			{
+				"buffer_size": 715,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/godMode.sqf",
+			"settings":
+			{
+				"buffer_size": 1075,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "T8/fnc/fn_checkEXEC.sqf",
+			"settings":
+			{
+				"buffer_size": 988,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scripts/findCities.sqf",
+			"settings":
+			{
+				"buffer_size": 12635,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "initServer.sqf",
 			"settings":
 			{
-				"buffer_size": 2985,
+				"buffer_size": 2984,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,39 +571,7 @@
 			"file": "init.sqf",
 			"settings":
 			{
-				"buffer_size": 22,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scripts/findCities.sqf",
-			"settings":
-			{
-				"buffer_size": 12633,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "description.ext",
-			"settings":
-			{
-				"buffer_size": 5312,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-05-01_16-43-42.rpt",
-			"settings":
-			{
-				"buffer_size": 4490445,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "functions/fn_createT8Template.sqf",
-			"settings":
-			{
-				"buffer_size": 1018,
+				"buffer_size": 146,
 				"line_ending": "Windows"
 			}
 		},
@@ -573,6 +581,22 @@
 			{
 				"buffer_size": 613,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "functions/fn_createT8Template.sqf",
+			"settings":
+			{
+				"buffer_size": 1339,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-05-02_19-50-53.rpt",
+			"settings":
+			{
+				"buffer_size": 3167292,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -715,13 +739,37 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/functions",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/scripts"
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha04.Kunduz",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha04.Kunduz/functions",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha04.Kunduz/HC_Mover",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha04.Kunduz/T8",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha04.Kunduz/T8/fnc"
 	],
 	"file_history":
 	[
+		"/C/Users/Michael/AppData/Local/Temp/Rar$DIa0.963/unit_pool.sqf",
+		"/C/Users/Michael/AppData/Local/Temp/Rar$DIa0.558/unit_pool.sqf",
+		"/C/Users/Michael/AppData/Local/Temp/Rar$DIa0.698/patrol.sqf",
+		"/C/Users/Michael/AppData/Local/Temp/Rar$DIa0.707/spawn.sqf",
+		"/C/Users/Michael/AppData/Local/Temp/fn_captureHideout.sqf",
+		"/C/Users/Michael/AppData/Local/Temp/Rar$DIa0.441/crashsite.sqf",
+		"/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-05-02_19-50-53.rpt",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/T8-Test.utes/T8/FUNCTIONS.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/T8-Test.utes/T8/fnc/fn_INIT.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/T8-Test.utes/T8/fnc/fn_.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/T8-Test.utes/T8_missionEXEC.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/functions/fn_createT8Template.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_server.VR/init.sqf",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/Build/sk3yn3t_server/functions/fn_init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_server.VR/initPlayerLocal.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/initServer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_server.VR/onPlayerRespawn.sqf",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/Build/sk3yn3t_client/functions/fn_equipSoldier.sqf",
+		"/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-05-01_16-43-42.rpt",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/Build/sk3yn3t_server/functions/fn_call_equipSoldier.sqf",
+		"/W/Winspiele/Steam/SteamApps/common/Tales of Zestiria/TZT.exe",
+		"/C/Users/Michael/AppData/Local/Temp/Rar$DIa0.257/crashsite.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/init.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/T8-Test.utes/functions/fn_createT8Template.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/description.ext",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/scripts/define_templates.hpp",
@@ -729,7 +777,6 @@
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/T8-Test.utes/init.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/parent.hpp",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/modules/Upsmon/Init_UPSMON.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/init.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/scripts/findCities.sqf",
 		"/D/Meine Daten/Google Drive/3.JgKp/Zugriffe/DB-Zugriff/gameserver/po_loadout.sql",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/functions/createMarkerAndTrigger.sqf",
@@ -827,28 +874,7 @@
 		"/C/Users/Michael/AppData/Local/Temp/Rar$DIa0.149/init.sqf",
 		"/C/Users/Michael/AppData/Local/Temp/Rar$DIa0.986/BLU_F_groupArrays.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/fnc/fn_INIT.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/FUNCTIONS.hpp",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/fnc/fn_.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/MACRO.hpp",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8_Units/init.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/intro.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/description.ext",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[James&Ahab]Duala-Up.IslaDuala3/description.ext",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/init.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]Seven_up_Al_Rayak.pja310/modules/T8_Units/description.ext",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/mission.sqm",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/scripts/teleport.sqf",
-		"/C/Users/Michael/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-01-28_20-33-01.rpt",
-		"/D/Meine Daten/Dropbox/Git/Seven_up/[J+A]Seven_up_Al_Rayak.pja310/mission.sqm",
-		"/S/Steam/steamapps/common/Arma 3/@inidbi/db/xCam/Library_Pre/_xCamPrefabs.ini",
-		"/G/Workplace/[3%2eJgKp]James/missions/[James]Warfare_Chernarus.Chernarus/scripts/misc/fn_objectsMapper.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/functions/fn_init.sqf",
-		"/S/Steam/steamapps/common/Arma 3/@extDB2_DEBUG/extDB/logs/2016/1/09/16-42-12.log",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/db_extdb_test.VR/dialog/DBCrateDialog/saveCrate.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/Template_Waldkatze.mske/mission.sqm",
-		"/G/Workplace/[3%2eJgKp]James/missions/ZeusToSQM.utes/init.sqf",
-		"/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-01-13_19-50-06.rpt"
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/FUNCTIONS.hpp"
 	],
 	"find":
 	{
@@ -871,6 +897,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"hc",
+			"get_loadout",
+			"loadout",
 			"[JGKP_var_template_armored call BIS_fnc_selectRandom]",
 			"[JGKP_var_template_car call BIS_fnc_selectRandom]",
 			"[JGKP_var_template_static call BIS_fnc_selectRandom]",
@@ -995,10 +1024,7 @@
 			"Race0",
 			"Race1",
 			"Race2",
-			"Race3",
-			"\"\"Race\"\",0",
-			"\"\"Race\"\",1",
-			"\"\"Race\"\",2"
+			"Race3"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1074,24 +1100,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "initServer.sqf",
+					"file": "T8/CONFIG.hpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2985,
+						"buffer_size": 7316,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2985,
-								2985
+								2819,
+								2819
 							]
 						],
 						"settings":
@@ -1099,11 +1125,21 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1114,36 +1150,16 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -1153,24 +1169,34 @@
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_curly_content"
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
-							"syntax": "Packages/User/SQF.tmLanguage"
+							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 252.0,
+						"translation.y": 563.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "init.sqf",
+					"file": "/D/Meine Daten/Google Drive/3.JgKp/Skripte/battleWarden/settings.ini",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 22,
+						"buffer_size": 715,
 						"regions":
 						{
 						},
@@ -1186,6 +1212,41 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1196,53 +1257,18 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_curly_content"
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
-							"syntax": "Packages/User/SQF.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1253,19 +1279,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "scripts/findCities.sqf",
+					"file": "/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/godMode.sqf",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12633,
+						"buffer_size": 1075,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11296,
-								11296
+								277,
+								277
 							]
 						],
 						"settings":
@@ -1273,6 +1299,41 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1283,77 +1344,42 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_curly_content"
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"syntax": "Packages/User/SQF.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4766.0,
+						"translation.y": 252.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "description.ext",
+					"file": "T8/fnc/fn_checkEXEC.sqf",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 5312,
+						"buffer_size": 988,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								466,
+								477
 							]
 						],
 						"settings":
@@ -1361,11 +1387,21 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1376,124 +1412,16 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"syntax": "Packages/SQF Language/SQF.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1764.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-05-01_16-43-42.rpt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4490445,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4093668,
-								4093681
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -1503,94 +1431,17 @@
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 838936.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "functions/fn_createT8Template.sqf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1018,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								632,
-								632
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
+								"bh_curly_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/User/SQF.tmLanguage",
 							"translate_tabs_to_spaces": false
@@ -1599,11 +1450,273 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scripts/findCities.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12635,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11202,
+								11202
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/User/SQF.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3387.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
+					"buffer": 5,
+					"file": "initServer.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2984,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2984,
+								2984
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/User/SQF.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 294.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
 					"buffer": 6,
+					"file": "init.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 146,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								146,
+								146
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/User/SQF.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "scripts/define_templates.hpp",
 					"semi_transient": false,
 					"settings":
@@ -1615,8 +1728,8 @@
 						"selection":
 						[
 							[
-								49,
-								49
+								354,
+								354
 							]
 						],
 						"settings":
@@ -1624,11 +1737,21 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1639,36 +1762,16 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -1678,7 +1781,17 @@
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_curly_content"
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
@@ -1686,7 +1799,182 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "functions/fn_createT8Template.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1339,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/User/SQF.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 210.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-05-02_19-50-53.rpt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3167292,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 511364.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1869,6 +2157,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"D:\\Meine Daten\\Dropbox\\Git\\3jgkp_database\\Build\\sk3yn3t_client\\functions\\3JGKP_DC.sublime-project"
+			]
 		],
 		"width": 380.0
 	},

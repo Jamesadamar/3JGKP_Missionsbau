@@ -8,6 +8,7 @@
 
 	example call: 		['JGKP_DC_options_god_mode'] execVM "godMode.sqf"
 */
+disableSerialization;
 
 // arguments
 _params = _this;

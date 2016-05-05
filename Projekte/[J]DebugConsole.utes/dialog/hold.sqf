@@ -1,12 +1,12 @@
 /*
 	author: 			James
 	version: 			1.00
-	date: 				2016-04-20
-	purpose: 			Aktiviert oder Deaktiviert Unsichtbarkeit
+	date: 				2016-05-05
+	purpose: 			Aktiviert oder Deaktiviert enableSimulation für den Feind
 	arguments: 			option (str): Name der Option
 	return value:		None
 
-	example call: 		['JGKP_DC_options_hide'] execVM "hide.sqf"
+	example call: 		['JGKP_DC_options_hold'] execVM "hold.sqf"
 */
 disableSerialization;
 
@@ -37,7 +37,22 @@ if (not _status) then {
 
 	[_option, 3100] call JGKP_DC_fnc_readOption;
 
-	player hideObjectGlobal true;
+	{
+
+		if (not (_x in allPlayers)) then {
+
+			if (vehicle _x != _x) then {
+
+				[vehicle _x, false] remoteExec ["enableSimulationGlobal", 2, false];
+
+			} else {
+
+				[_x, false] remoteExec ["enableSimulationGlobal", 2, false];
+
+			};
+		};
+
+	} forEach allUnits + allDead;
 
 } else {
 
@@ -48,6 +63,21 @@ if (not _status) then {
 
 	[_option, 3100] call JGKP_DC_fnc_readOption;
 
-	player hideObjectGlobal false;
+	{
+
+		if (not (_x in allPlayers)) then {
+
+			if (vehicle _x != _x) then {
+
+				[vehicle _x, true] remoteExec ["enableSimulationGlobal", 2, false];
+
+			} else {
+
+				[_x, true] remoteExec ["enableSimulationGlobal", 2, false];
+
+			};
+		};
+
+	} forEach allUnits + allDead;
 
 };
