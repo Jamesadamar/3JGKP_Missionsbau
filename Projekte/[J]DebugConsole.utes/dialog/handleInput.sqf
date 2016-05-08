@@ -19,7 +19,7 @@ _key = _params select 1;
 _shift = _params select 2;
 _ctrl = _params select 3;
 _alt = _params select 4;
-hint str(_this);
+
 
 // begin of script
 _inputIDC = ctrlIDC _control; // IDC of INPUT EDIT BOX
@@ -61,21 +61,19 @@ if (_key == 56) then {
 	};
 };
 
-// Lösche Feld bei ENTF
-if (_key == 211) then {
+// Lösche Feld bei SHIFT + ENTF
+if (_shift && _key == 211) then {
+
+	ctrlSetText [_inputIDC, ""];
+
+};
+
+if (_ctrl && _key == 211) then {
+
+	{
+	   
+	   ctrlSetText [_x, ""];
+
+	} forEach [1400, 1402, 1404, 1406]; 
 	
-	// lösche alle Felder
-	if (_ctrl) then {
-
-		{
-		   
-		   ctrlSetText [_x, ""];
-
-		} forEach [1400, 1402, 1404, 1406]; 
-
-	} else {
-
-		ctrlSetText [_inputIDC, ""];
-
-	};
 };

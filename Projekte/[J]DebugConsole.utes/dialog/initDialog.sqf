@@ -16,7 +16,7 @@ _display = _this select 0;
 
 // begin of script
 _access = true;
-_level = 3; // default höchste Level für SP, sonst in MP Neusetzung durch Server
+_level = 0; // default höchste Level für SP, sonst in MP Neusetzung durch Server
 
 // Wenn SP -> immer voller Dialog
 // Wenn MP -> prüfe ob Mitglied -> falls nein, schließe Dialog
@@ -111,4 +111,4 @@ hintSilent format["Zugangslevel:\n%1", _access_options select 1];
 	_idc = _x;
 	ctrlEnable [_idc, false];
 
-} forEach _access_options select 2;
+} forEach (_access_options select 2); // Klammern...

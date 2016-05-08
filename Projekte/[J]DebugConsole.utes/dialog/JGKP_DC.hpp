@@ -156,7 +156,7 @@ class JGKP_DC {
 			autocomplete = "scripting";
 			colorBackground[] = COLOR_GREY;
 			onKeyUp = "(_this) execVM 'dialog\handleInput.sqf';";
-			tooltip = "STRG - ausführen. ALT - dauerhaft ausführen. ENTF - löschen. STRG + ENTF - alle löschen.";
+			tooltip = "STRG - ausführen. ALT - dauerhaft ausführen. SHIFT + ENTF - löschen. STRG + ENTF - alle löschen.";
 		};
 		class LINE1_OUTPUT: JGKP_DCRscEdit
 		{
