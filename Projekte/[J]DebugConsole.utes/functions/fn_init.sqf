@@ -28,11 +28,8 @@ JGKP_DC_fnc_findOption = compile preprocessFileLineNumbers "functions\fn_findOpt
 // OPTIONEN FÜR BUTTON
 // einheitliches Array-Format
 
-JGKP_DC_options = []; // enthält [buttonIDC, [true, text, EH], [false, text, EH]]
-
-{
-	JGKP_DC_options pushBack _x;
-} forEach [
+// enthält [buttonIDC, [true, text, EH], [false, text, EH]]
+JGKP_DC_options = [
 
 	[
 		"JGKP_DC_options_marker",
@@ -74,4 +71,40 @@ JGKP_DC_options = []; // enthält [buttonIDC, [true, text, EH], [false, text, EH
 		["Performance ausblenden",  "['JGKP_DC_options_perf'] execVM 'dialog\perf.sqf';"] // mode aus
 	]
 
+];
+
+// Zugangslevel und die deaktivierten Kontrollelemente nach IDC
+JGKP_DC_access_level = [
+	
+	[
+		0,
+		"Reguläre Mitglieder",
+		[
+			1400, 1600, 1601, 1402, 1602, 1603, 1404, 1604, 1605, 1406, 1606, 1607, 1408, 2100, 1608, 1609, 1610, 1611, 1612, 1614, 1615, 1616, 1617, 1618, 1619, 1624
+		]
+	],
+
+	[
+		1,
+		"Missionsbauer",
+		[
+			1614, 1617
+		]
+	],
+
+	[
+		2,
+		"Zugführer",
+		[
+			
+		]
+	],
+
+	[
+		3,
+		"Admin",
+		[
+			
+		]
+	]
 ];

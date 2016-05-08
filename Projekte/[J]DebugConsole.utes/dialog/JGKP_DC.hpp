@@ -545,7 +545,7 @@ class JGKP_DC {
 		// SPALTE 4
 		class FUNC_FUNCTION_VIEWER: JGKP_DCRscButton
 		{
-			idc = 1625;
+			idc = 1622;
 			text = "Funktionen"; //--- ToDo: Localize;
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
@@ -556,7 +556,7 @@ class JGKP_DC {
 
 		class FUNC_CONFIG_VIEWER: JGKP_DCRscButton
 		{
-			idc = 1625;
+			idc = 1623;
 			text = "Config"; //--- ToDo: Localize;
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
 			y = 16 * GUI_GRID_H + GUI_GRID_Y;
@@ -567,7 +567,7 @@ class JGKP_DC {
 
 		class FUNC_CAMERA: JGKP_DCRscButton
 		{
-			idc = 1625;
+			idc = 1624;
 			text = "Satcom"; //--- ToDo: Localize;
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
 			y = 17 * GUI_GRID_H + GUI_GRID_Y;
