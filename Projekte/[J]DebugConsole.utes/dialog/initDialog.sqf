@@ -16,7 +16,7 @@ _display = _this select 0;
 
 // begin of script
 _access = true;
-_level = 0; // default höchste Level für SP, sonst in MP Neusetzung durch Server
+_level = 1; // default höchste Level für SP, sonst in MP Neusetzung durch Server
 
 // Wenn SP -> immer voller Dialog
 // Wenn MP -> prüfe ob Mitglied -> falls nein, schließe Dialog

@@ -507,7 +507,6 @@ class JGKP_DC {
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 			action = "hint parseText format['BLUEFOR: %1 <br/>OPFOR: %2 <br/>GUER: %3 <br/>CIV: %4', WEST countSide allUnits, EAST countSide allUnits, RESISTANCE countSide allUnits, CIVILIAN countSide allUnits];";
-
 		};
 
 		class FUNC_STOP: JGKP_DCRscButton
@@ -573,9 +572,7 @@ class JGKP_DC {
 			y = 17 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
-		};
-
-		
+		};		
 		
 	};
 };

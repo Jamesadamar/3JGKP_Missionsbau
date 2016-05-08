@@ -88,7 +88,7 @@ JGKP_DC_access_level = [
 		1,
 		"Missionsbauer",
 		[
-			1614, 1617
+			1615, 1616, 1618, 1619, 1624
 		]
 	],
 
