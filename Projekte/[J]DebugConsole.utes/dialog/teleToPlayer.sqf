@@ -33,9 +33,9 @@ if (count _names > 1) exitWith {hint "Befehl nicht möglich\nMehr als ein Spiele
 // retrieve player object from player name and teleport to admin (player using console)
 _name = _names select 0;
 _player = [
-  		[_name] call JGKP_DC_fnc_getPlayer,
-  		[_name select [0, (_name find " (*)")]] call JGKP_DC_fnc_getPlayer
-  	] select (_name find " (*)" != -1);
+	[_name] call JGKP_DC_fnc_getPlayer,
+	[_name select [0, (_name find " (*)")]] call JGKP_DC_fnc_getPlayer
+] select (_name find " (*)" != -1);
 
 
 

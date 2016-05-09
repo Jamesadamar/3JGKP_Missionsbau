@@ -4,3 +4,4 @@
 #include "dialog\JGKP_DCPin.hpp"
 #include "dialog\JGKP_ConfirmDialog.hpp"
 #include "dialog\JGKP_PlayerDialog.hpp"
+#include "dialog\JGKP_MessageDialog.hpp"

@@ -36,7 +36,6 @@ if (count _names == 0) exitWith {hint "Befehl nicht möglich\nKein Spieler ausge
   		[_x] call JGKP_DC_fnc_getPlayer,
   		[_x select [0, (_x find " (*)")]] call JGKP_DC_fnc_getPlayer
   	] select (_x find " (*)" != -1);
-  	hint str(_player);
   	
   	if (simulationEnabled _player) then {
 
@@ -46,7 +45,7 @@ if (count _names == 0) exitWith {hint "Befehl nicht möglich\nKein Spieler ausge
 	  	[[_player], {(_this select 0) enableSimulationGlobal false}] remoteExec ["BIS_fnc_spawn", 2, false];
 
 	  	// markiere Namen als freeze
-	  	_lstBox lbSetText [_forEachIndex, _x + " (*)"];
+	  	_lstBox lbSetText [_indices select _forEachIndex, _x + " (*)"];
 
   	} else {
 
@@ -56,7 +55,7 @@ if (count _names == 0) exitWith {hint "Befehl nicht möglich\nKein Spieler ausge
   		[[_player], {(_this select 0) enableSimulationGlobal true}] remoteExec ["BIS_fnc_spawn", 2, false];
 
   		// markiere Namen als freeze
-  		_lstBox lbSetText [_forEachIndex, _x select [0, (_x find " (*)")]];
+  		_lstBox lbSetText [_indices select _forEachIndex, _x select [0, (_x find " (*)")]];
 
 	};
 

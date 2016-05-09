@@ -84,6 +84,7 @@ class JGKP_PlayerDialog {
 			colorBackground[] = COLOR_GREY;
 			style = ST_LEFT + LB_TEXTURES + LB_MULTI;
 		};
+		
 		class BUTTON_TELE_HERE : JGKP_DCRscButton
 		{
 			idc = 1600;
@@ -95,6 +96,7 @@ class JGKP_PlayerDialog {
 			colorBackground[] = COLOR_GREY;
 			action = "[] execVM 'dialog\telePlayer.sqf';";
 		};
+
 		class BUTTON_TELE_TO : JGKP_DCRscButton
 		{
 			idc = 1601;
@@ -109,7 +111,7 @@ class JGKP_PlayerDialog {
 		class RscButton_1602: JGKP_DCRscButton
 		{
 			idc = 1602;
-			text = "Einfrieren\nAuftauen"; //--- ToDo: Localize;
+			text = "Einfrieren | Auftauen"; //--- ToDo: Localize;
 			x = 26 * GUI_GRID_W + GUI_GRID_X;
 			y = 14 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7.5 * GUI_GRID_W;

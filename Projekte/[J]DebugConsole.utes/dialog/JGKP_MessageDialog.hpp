@@ -60,6 +60,9 @@ class JGKP_MessageDialog {
 			y = 9.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 24 * GUI_GRID_W;
 			h = 2.5 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
+			style= ST_MULTI + ST_NO_RECT;
+			tooltip = "Geben Sie ihre Nachricht ein. Umbrüche mit '\ n' (ohne Leer)";
 		};
 
 		class RscText_1000: JGKP_DCRscText
@@ -70,8 +73,7 @@ class JGKP_MessageDialog {
 			y = 8.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 6 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
-			style= ST_MULTI + ST_NO_RECT;
-			tooltip = "Geben Sie ihre Nachricht ein. Umbrüche sind '\n'";
+			
 		};
 		class RscButton_1600: JGKP_DCRscButton
 		{
@@ -98,5 +100,6 @@ class JGKP_MessageDialog {
 		// GUI EDITOR OUTPUT END
 		////////////////////////////////////////////////////////
 
+		};
 	};
 };

@@ -30,18 +30,21 @@ if (count _names > 1) exitWith {hint "Befehl nicht möglich\nMehr als ein Spiele
 
 // Nachricht eingeben
 createDialog "JGKP_MessageDialog";
-waitUntil {isNull findDisplay "JGKP_MessageDialog"};
+waitUntil {isNull (findDisplay 3103)};
 
-if (JGKP_DC_message == "") exitWith {hint "Keine Nachricht gesendet"};
+{
 
-_name = _names select 0;
-_player = [
-  		[_name] call JGKP_DC_fnc_getPlayer,
-  		[_name select [0, (_name find " (*)")]] call JGKP_DC_fnc_getPlayer
-  	] select (_name find " (*)" != -1);
+	if (JGKP_DC_message == "") exitWith {hint "Keine Nachricht gesendet"};
 
-// Nachricht an Spieler
-"Sie erhalten eine Nachricht vom Admin!" remoteExec ["hint", _player, false];
-sleep 2;
+	_player = [
+	  		[_x] call JGKP_DC_fnc_getPlayer,
+	  		[_x select [0, (_x find " (*)")]] call JGKP_DC_fnc_getPlayer
+	  	] select (_x find " (*)" != -1);
 
-JGKP_DC_message remoteExec ["hint", _player, false];
+	// Nachricht an Spieler
+	"Sie erhalten eine Nachricht vom Admin!" remoteExec ["hint", _player, false];
+	sleep 2;
+
+	JGKP_DC_message remoteExec ["hint", _player, false];
+
+} forEach _names;
