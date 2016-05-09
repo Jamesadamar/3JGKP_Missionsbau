@@ -24,6 +24,8 @@ $[
 #define COLOR_RED {0.8,0.02,0.02,0.8}
 #define COLOR_GOLD {0.35,0.27,0.09, 0.8}
 #define COLOR_GREY {0.1,0.1,0.1,0.8}
+#define COLOR_UPPER {0.38,	0.43,	0.51,	0.8}
+#define COLOR_LOWER {0.27,	0.35,	0.47,	0.8}
 
 ////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT START (by [3.JgKp]James, v1.063, #Xefupe)
@@ -42,9 +44,10 @@ class JGKP_PlayerDialog {
 		{
 			idc = 2200;
 			x = 6.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 2.1 * GUI_GRID_H + GUI_GRID_Y;
+			y = 2.2 * GUI_GRID_H + GUI_GRID_Y;
 			w = 29 * GUI_GRID_W;
-			h = 20.9 * GUI_GRID_H;
+			h = 20.8 * GUI_GRID_H;
+			colorBackground[] = COLOR_LOWER;
 		};
 
 		class RscFrame_1800: JGKP_DCRscFrame
@@ -61,7 +64,15 @@ class JGKP_PlayerDialog {
 
 	class controls {
 		// define controls here
-
+		class RscText_1000: JGKP_DCRscText
+		{
+			idc = 1000;
+			text = "Liste aller Spieler"; //--- ToDo: Localize;
+			x = 7 * GUI_GRID_W + GUI_GRID_X;
+			y = 3 * GUI_GRID_H + GUI_GRID_Y;
+			w = 17 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
+		};
 
 		class RscListbox_1500: JGKP_DCRscListbox
 		{
@@ -70,6 +81,7 @@ class JGKP_PlayerDialog {
 			y = 4 * GUI_GRID_H + GUI_GRID_Y;
 			w = 17 * GUI_GRID_W;
 			h = 18 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 		};
 		class RscButton_1600: JGKP_DCRscButton
 		{
@@ -79,6 +91,7 @@ class JGKP_PlayerDialog {
 			y = 4 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 		};
 		class RscButton_1601: JGKP_DCRscButton
 		{
@@ -88,6 +101,7 @@ class JGKP_PlayerDialog {
 			y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 		};
 		class RscButton_1602: JGKP_DCRscButton
 		{
@@ -97,6 +111,7 @@ class JGKP_PlayerDialog {
 			y = 14 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 		};
 		class RscButton_1603: JGKP_DCRscButton
 		{
@@ -106,6 +121,7 @@ class JGKP_PlayerDialog {
 			y = 9 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 		};
 		class RscButton_1604: JGKP_DCRscButton
 		{
@@ -115,16 +131,7 @@ class JGKP_PlayerDialog {
 			y = 11.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-		};
-
-		class RscText_1000: JGKP_DCRscText
-		{
-			idc = 1000;
-			text = "Liste aller Spieler"; //--- ToDo: Localize;
-			x = 7 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 17 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
+			colorBackround[] = COLOR_GREY;
 		};
 	};
 };

@@ -90,7 +90,7 @@ class JGKP_DC {
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
 			y = 2.4 * GUI_GRID_H + GUI_GRID_Y;
 			w = 30 * GUI_GRID_W;
-			h = 11.7 * GUI_GRID_H;
+			h = 11.8 * GUI_GRID_H;
 			colorBackground[] = COLOR_UPPER;
 		};
 		class FRAME_UPPER: JGKP_DCRscFrame
@@ -119,9 +119,9 @@ class JGKP_DC {
 		{
 			idc = 2201;
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
-			y = 14 * GUI_GRID_H + GUI_GRID_Y;
+			y = 14.1 * GUI_GRID_H + GUI_GRID_Y;
 			w = 30 * GUI_GRID_W;
-			h = 5.8 * GUI_GRID_H;
+			h = 5.7 * GUI_GRID_H;
 			colorBackground[] = COLOR_LOWER;
 		};
 		class FRAME_LOWER: JGKP_DCRscFrame

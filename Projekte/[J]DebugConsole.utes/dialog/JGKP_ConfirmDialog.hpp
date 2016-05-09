@@ -22,6 +22,8 @@ $[
 #define COLOR_RED {0.8,0.02,0.02,0.8}
 #define COLOR_GOLD {0.35,0.27,0.09, 0.8}
 #define COLOR_GREY {0.1,0.1,0.1,0.8}
+#define COLOR_UPPER {0.38,	0.43,	0.51,	0.8}
+#define COLOR_LOWER {0.27,	0.35,	0.47,	0.8}
 
 #define COMMAND_FONT (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)
 
@@ -45,6 +47,7 @@ class JGKP_ConfirmDialog {
 			y = 10.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 21.5 * GUI_GRID_W;
 			h = 4 * GUI_GRID_H;
+			colorBackground[] = COLOR_LOWER;
 		};
 		class RscFrame_1800: JGKP_DCRscFrame
 		{
@@ -68,7 +71,7 @@ class JGKP_ConfirmDialog {
 			h = 1 * GUI_GRID_H;
 			text = "";
 		};
-		
+
 		class RscButtonOK_2600: JGKP_DCRscButton
 		{
 			idc = 2600;

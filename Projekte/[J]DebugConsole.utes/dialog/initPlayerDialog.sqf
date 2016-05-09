@@ -20,6 +20,6 @@ _lstBox = _dialog displayCtrl 1500;
 {
 
 	_lstBox lbAdd (name _x); // Anzeigename
-	_lstBox lbSetData [_forEachIndex, _x]; // eigentliches Objekt
+	_lstBox lbSetData [_forEachIndex, getPlayerUID _x]; // Player UID als Identifikator
 
 } forEach allPlayers;
