@@ -2,3 +2,4 @@
 #include "dialog\parent.hpp"
 #include "dialog\JGKP_DC.hpp"
 #include "dialog\JGKP_DCPin.hpp"
+#include "dialog\JGKP_ConfirmDialog.hpp"

@@ -17,7 +17,21 @@ _params = _this;
 _comboBoxIDC = _params select 0;
 
 // begin of script
-_index = lbCurSel _comboBoxIDC;
-lbDelete [_comboBoxIDC, _index];
+// Öffne Bestötigungsdialog und warte, bis er geschlossen wird
+JGKP_DC_command_text = "Befehl aus Liste löschen?";
 
-// setze auf vorherigen Befehl
+createDialog "JGKP_ConfirmDialog";
+
+waitUntil { isNull (findDisplay 3101); };
+
+if (JGKP_DC_command_isConfirmed) then {
+
+	// lösche Eintrag aus Listbox
+	_index = lbCurSel _comboBoxIDC;
+	lbDelete [_comboBoxIDC, _index];
+
+} else {
+
+	hintSilent "Befehl abgebrochen";
+
+};

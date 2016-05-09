@@ -24,4 +24,27 @@ if (_code == "") exitWith {};
 
 // run lokal, global oder auf dem Server
 // always JIP false
-(compile _code) remoteExec ["BIS_fnc_spawn", _mode, false];
+if (_mode in [0,2]) then {
+
+	// Öffne Bestötigungsdialog und warte, bis er geschlossen wird
+	JGKP_DC_command_text = "Befehl global oder serverseitig ausführen?";
+
+	createDialog "JGKP_ConfirmDialog";
+
+	waitUntil { isNull (findDisplay 3101); };
+
+	if (JGKP_DC_command_isConfirmed) then {
+
+		(compile _code) remoteExec ["BIS_fnc_spawn", _mode, false];
+
+	} else {
+
+		hintSilent "Befehl abgebrochen";
+
+	};
+
+} else {
+
+	(compile _code) remoteExec ["BIS_fnc_spawn", _mode, false];
+
+};

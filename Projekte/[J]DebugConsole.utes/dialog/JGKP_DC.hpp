@@ -62,6 +62,9 @@ $[
 
 #define COMMAND_FONT (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)
 
+#define COLUMN_WIDTH 5
+#define COLUMN_HEIGHT 1.2
+
 ////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT START (by [3.JgKp]James, v1.063, #Lacevo)
 ////////////////////////////////////////////////////////
@@ -115,7 +118,7 @@ class JGKP_DC {
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
 			y = 14 * GUI_GRID_H + GUI_GRID_Y;
 			w = 30 * GUI_GRID_W;
-			h = 5 * GUI_GRID_H;
+			h = 5.7 * GUI_GRID_H;
 		};
 		class FRAME_LOWER: JGKP_DCRscFrame
 		{
@@ -124,7 +127,7 @@ class JGKP_DC {
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
 			y = 13.7 * GUI_GRID_H + GUI_GRID_Y;
 			w = 30 * GUI_GRID_W;
-			h = 5.3 * GUI_GRID_H;
+			h = 6 * GUI_GRID_H;
 			sizeEx = 0.8 * GUI_GRID_H;
 		};
 		
@@ -412,8 +415,8 @@ class JGKP_DC {
 		{
 			idc = 1609;
 			text = "Global"; //--- ToDo: Localize;
-			x = 24.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 11.5 * GUI_GRID_H + GUI_GRID_Y;
+			x = 23 * GUI_GRID_W + GUI_GRID_X;
+			y = 12.2 * GUI_GRID_H + GUI_GRID_Y;
 			w = 1.5 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_RED;
@@ -424,8 +427,8 @@ class JGKP_DC {
 		{
 			idc = 1610;
 			text = "Server"; //--- ToDo: Localize;
-			x = 26 * GUI_GRID_W + GUI_GRID_X;
-			y = 11.5 * GUI_GRID_H + GUI_GRID_Y;
+			x = 23 * GUI_GRID_W + GUI_GRID_X;
+			y = 12.9 * GUI_GRID_H + GUI_GRID_Y;
 			w = 1.5 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_RED;
@@ -435,7 +438,7 @@ class JGKP_DC {
 		{
 			idc = 1611;
 			text = "Speichern"; //--- ToDo: Localize;
-			x = 31 * GUI_GRID_W + GUI_GRID_X;
+			x = 32.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 11.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 1.5 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
@@ -447,7 +450,7 @@ class JGKP_DC {
 			idc = 1612;
 			text = "Löschen"; //--- ToDo: Localize;
 			x = 32.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 11.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 12.2 * GUI_GRID_H + GUI_GRID_Y;
 			w = 1.5 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_RED;
@@ -457,6 +460,17 @@ class JGKP_DC {
 
 		// UNTERER ABSCHNITT - ERWEITERTE BEFEHLE
 		// SPALTE 1
+
+		class FUNC_LABEL_COL1: JGKP_DCRscText
+		{
+			idc = 1005;
+			text = "Spieler:"; //--- ToDo: Localize;
+			x = 6 * GUI_GRID_W + GUI_GRID_X;
+			y = 14.2 * GUI_GRID_H + GUI_GRID_Y;
+			w = 2 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
+		};
+
 		class FUNC_PLAYER_LIST: JGKP_DCRscButton
 		{
 			idc = 1613;
@@ -467,12 +481,34 @@ class JGKP_DC {
 			h = 1 * GUI_GRID_H;
 		};
 
+		// SPALTE 2
+		class FUNC_LABEL_COL2: JGKP_DCRscText
+		{
+			idc = 1006;
+			text = "Admin:"; //--- ToDo: Localize;
+			x = (6 + COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
+			y = 14.2 * GUI_GRID_H + GUI_GRID_Y;
+			w = 2 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
+		};
+
+		class FUNC_TELEPORT: JGKP_DCRscButton
+		{
+			idc = 1625;
+			text = "Teleport"; //--- ToDo: Localize;
+			x = (6 + COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
+			y = 15 * GUI_GRID_H + GUI_GRID_Y;
+			w = 3 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
+			action = "[] execVM 'dialog\teleport.sqf;'";
+		};
+
 		class FUNC_MARKER: JGKP_DCRscButton
 		{
 			idc = 1614;
 			text = ""; //--- ToDo: Localize;
-			x = 6 * GUI_GRID_W + GUI_GRID_X;
-			y = 16 * GUI_GRID_H + GUI_GRID_Y;
+			x = (6 + COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
+			y = (15 + COLUMN_HEIGHT) * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
@@ -481,8 +517,8 @@ class JGKP_DC {
 		{
 			idc = 1615;
 			text = ""; //--- ToDo: Localize;
-			x = 6 * GUI_GRID_W + GUI_GRID_X;
-			y = 17 * GUI_GRID_H + GUI_GRID_Y;
+			x = (6 + COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
+			y = (15 + 2 * COLUMN_HEIGHT) * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
@@ -491,30 +527,29 @@ class JGKP_DC {
 		{
 			idc = 1616;
 			text = ""; //--- ToDo: Localize;
-			x = 6 * GUI_GRID_W + GUI_GRID_X;
-			y = 18 * GUI_GRID_H + GUI_GRID_Y;
+			x = (6 + COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
+			y = (15 + 3 * COLUMN_HEIGHT) * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
 
-		// SPALTE 2
-		class FUNC_AI_COUNT: JGKP_DCRscButton
+		// SPALTE 3
+		class FUNC_LABEL_COL3: JGKP_DCRscText
 		{
-			idc = 1617;
-			text = "Einheiten pro Seite"; //--- ToDo: Localize;
-			x = 11 * GUI_GRID_W + GUI_GRID_X;
-			y = 15 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
+			idc = 1007;
+			text = "KI:"; //--- ToDo: Localize;
+			x = (6 + 2 * COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
+			y = 14.2 * GUI_GRID_H + GUI_GRID_Y;
+			w = 2 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
-			action = "hint parseText format['BLUEFOR: %1 <br/>OPFOR: %2 <br/>GUER: %3 <br/>CIV: %4', WEST countSide allUnits, EAST countSide allUnits, RESISTANCE countSide allUnits, CIVILIAN countSide allUnits];";
 		};
 
 		class FUNC_STOP: JGKP_DCRscButton
 		{
 			idc = 1618;
 			text = ""; //--- ToDo: Localize;
-			x = 11 * GUI_GRID_W + GUI_GRID_X;
-			y = 16 * GUI_GRID_H + GUI_GRID_Y;
+			x = (6 + 2 * COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
+			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
@@ -523,30 +558,61 @@ class JGKP_DC {
 		{
 			idc = 1619;
 			text = "Alle Feinde töten"; //--- ToDo: Localize;
-			x = 11 * GUI_GRID_W + GUI_GRID_X;
-			y = 17 * GUI_GRID_H + GUI_GRID_Y;
+			x = (6 + 2 * COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
+			y = (15 + 1 * COLUMN_HEIGHT) * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
-			action = "{ if ([playerSide, side _x] call BIS_fnc_sideIsEnemy) then {_x setDamage 1;} } forEach allUnits;";
+			action = "[] execVM 'dialog\kill.sqf';";
 		};
 
-		// SPALTE 3
+		// SPALTE 4
+		class FUNC_LABEL_COL4: JGKP_DCRscText
+		{
+			idc = 1008;
+			text = "Performance:"; //--- ToDo: Localize;
+			x = (6 + 3 * COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
+			y = 14.2 * GUI_GRID_H + GUI_GRID_Y;
+			w = 2 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
+		};
+
 		class FUNC_PERFORMANCE: JGKP_DCRscButton
 		{
 			idc = 1621;
 			text = ""; //--- ToDo: Localize;
-			x = 16 * GUI_GRID_W + GUI_GRID_X;
+			x = (6 + 3 * COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
 
-		// SPALTE 4
+		class FUNC_AI_COUNT: JGKP_DCRscButton
+		{
+			idc = 1617;
+			text = "Einheiten pro Seite"; //--- ToDo: Localize;
+			x = (6 + 3 * COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
+			y = (15 + COLUMN_HEIGHT) * GUI_GRID_H + GUI_GRID_Y;
+			w = 3 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
+			action = "hint parseText format['BLUEFOR: %1 <br/>OPFOR: %2 <br/>GUER: %3 <br/>CIV: %4', WEST countSide allUnits, EAST countSide allUnits, RESISTANCE countSide allUnits, CIVILIAN countSide allUnits];";
+		};
+
+		// SPALTE 5
+		class FUNC_LABEL_COL5: JGKP_DCRscText
+		{
+			idc = 1009;
+			text = "Hilfs-FUNC:"; //--- ToDo: Localize;
+			x = (6 + 4 * COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
+			y = 14.2 * GUI_GRID_H + GUI_GRID_Y;
+			w = 2 * GUI_GRID_W;
+			h = 1 * GUI_GRID_H;
+		};
+
 		class FUNC_FUNCTION_VIEWER: JGKP_DCRscButton
 		{
 			idc = 1622;
 			text = "Funktionen"; //--- ToDo: Localize;
-			x = 21 * GUI_GRID_W + GUI_GRID_X;
+			x = (6 + 4 * COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
@@ -557,8 +623,8 @@ class JGKP_DC {
 		{
 			idc = 1623;
 			text = "Config"; //--- ToDo: Localize;
-			x = 21 * GUI_GRID_W + GUI_GRID_X;
-			y = 16 * GUI_GRID_H + GUI_GRID_Y;
+			x = (6 + 4 * COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
+			y = (15 + COLUMN_HEIGHT) * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 			action = "[] spawn BIS_fnc_configviewer;";
@@ -568,8 +634,8 @@ class JGKP_DC {
 		{
 			idc = 1624;
 			text = "Satcom"; //--- ToDo: Localize;
-			x = 21 * GUI_GRID_W + GUI_GRID_X;
-			y = 17 * GUI_GRID_H + GUI_GRID_Y;
+			x = (6 + 4 * COLUMN_WIDTH) * GUI_GRID_W + GUI_GRID_X;
+			y = (15 + 2 * COLUMN_HEIGHT) * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};		

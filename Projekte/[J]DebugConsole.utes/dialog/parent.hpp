@@ -1566,7 +1566,7 @@ class JGKP_DCRscButtonMenuCancel
 		"0x00050000 + 1"
 	};
 	idc = 2;
-	text = "Abbrechen";
+	text = "Cancel";
 };
 
 class JGKP_DCRscControlsGroup
