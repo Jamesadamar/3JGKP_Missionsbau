@@ -55,10 +55,12 @@ $[
 #define GUI_GRID_WAbs	(safezoneW)
 #define GUI_GRID_HAbs	(safezoneH)
 
-#define COLOR_GREEN {0.02,0.6,0.02,0.8}
-#define COLOR_RED {0.8,0.02,0.02,0.8}
-#define COLOR_GOLD {0.35,0.27,0.09, 0.8}
-#define COLOR_GREY {0.1,0.1,0.1,0.8}
+#define COLOR_GREEN {0.02,	0.6, 	0.02,	0.8}
+#define COLOR_RED 	{0.8, 	0.02, 	0.02,	0.8}
+#define COLOR_GOLD 	{0.35,	0.27, 	0.09, 	0.8}
+#define COLOR_GREY 	{0.1, 	0.1,	0.1,	0.8}
+#define COLOR_UPPER {0.38,	0.43,	0.51,	0.8}
+#define COLOR_LOWER {0.27,	0.35,	0.47,	0.8}
 
 #define COMMAND_FONT (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)
 
@@ -88,16 +90,17 @@ class JGKP_DC {
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
 			y = 2.4 * GUI_GRID_H + GUI_GRID_Y;
 			w = 30 * GUI_GRID_W;
-			h = 11.6 * GUI_GRID_H;
+			h = 11.7 * GUI_GRID_H;
+			colorBackground[] = COLOR_UPPER;
 		};
 		class FRAME_UPPER: JGKP_DCRscFrame
 		{
 			idc = 1800;
-			text = "3JGKP - Debug Konsole"; //--- ToDo: Localize;
+			text = "3.JGKP - Debug Konsole"; //--- ToDo: Localize;
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
 			y = 2 * GUI_GRID_H + GUI_GRID_Y;
 			w = 30 * GUI_GRID_W;
-			h = 17 * GUI_GRID_H;
+			h = 12.1 * GUI_GRID_H;
 			sizeEx = 0.8 * GUI_GRID_H;
 		};
 
@@ -118,7 +121,8 @@ class JGKP_DC {
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
 			y = 14 * GUI_GRID_H + GUI_GRID_Y;
 			w = 30 * GUI_GRID_W;
-			h = 5.7 * GUI_GRID_H;
+			h = 5.8 * GUI_GRID_H;
+			colorBackground[] = COLOR_LOWER;
 		};
 		class FRAME_LOWER: JGKP_DCRscFrame
 		{
@@ -127,7 +131,7 @@ class JGKP_DC {
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
 			y = 13.7 * GUI_GRID_H + GUI_GRID_Y;
 			w = 30 * GUI_GRID_W;
-			h = 6 * GUI_GRID_H;
+			h = 6.1 * GUI_GRID_H;
 			sizeEx = 0.8 * GUI_GRID_H;
 		};
 		
@@ -405,8 +409,8 @@ class JGKP_DC {
 			text = "Lokal"; //--- ToDo: Localize;
 			x = 23 * GUI_GRID_W + GUI_GRID_X;
 			y = 11.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 1.5 * GUI_GRID_W;
-			h = 0.5 * GUI_GRID_H;
+			w = 2 * GUI_GRID_W;
+			h = 0.7 * GUI_GRID_H;
 			colorBackground[] = COLOR_GREEN;
 			action = "[1408, player] execVM 'dialog\runCode.sqf';";
 		};
@@ -416,9 +420,9 @@ class JGKP_DC {
 			idc = 1609;
 			text = "Global"; //--- ToDo: Localize;
 			x = 23 * GUI_GRID_W + GUI_GRID_X;
-			y = 12.2 * GUI_GRID_H + GUI_GRID_Y;
-			w = 1.5 * GUI_GRID_W;
-			h = 0.5 * GUI_GRID_H;
+			y = 12.4 * GUI_GRID_H + GUI_GRID_Y;
+			w = 2 * GUI_GRID_W;
+			h = 0.7 * GUI_GRID_H;
 			colorBackground[] = COLOR_RED;
 			action = "[1408, 0] execVM 'dialog\runCode.sqf';";
 		};
@@ -428,9 +432,9 @@ class JGKP_DC {
 			idc = 1610;
 			text = "Server"; //--- ToDo: Localize;
 			x = 23 * GUI_GRID_W + GUI_GRID_X;
-			y = 12.9 * GUI_GRID_H + GUI_GRID_Y;
-			w = 1.5 * GUI_GRID_W;
-			h = 0.5 * GUI_GRID_H;
+			y = 13.3 * GUI_GRID_H + GUI_GRID_Y;
+			w = 2 * GUI_GRID_W;
+			h = 0.7 * GUI_GRID_H;
 			colorBackground[] = COLOR_RED;
 			action = "[1408, 2] execVM 'dialog\runCode.sqf';";
 		};
@@ -438,10 +442,10 @@ class JGKP_DC {
 		{
 			idc = 1611;
 			text = "Speichern"; //--- ToDo: Localize;
-			x = 32.5 * GUI_GRID_W + GUI_GRID_X;
+			x = 32 * GUI_GRID_W + GUI_GRID_X;
 			y = 11.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 1.5 * GUI_GRID_W;
-			h = 0.5 * GUI_GRID_H;
+			w = 2 * GUI_GRID_W;
+			h = 0.7 * GUI_GRID_H;
 			colorBackground[] = COLOR_GREEN;
 			action = "[1408, 2100] execVM 'dialog\saveCommand.sqf';";
 		};
@@ -449,10 +453,10 @@ class JGKP_DC {
 		{
 			idc = 1612;
 			text = "Löschen"; //--- ToDo: Localize;
-			x = 32.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 12.2 * GUI_GRID_H + GUI_GRID_Y;
-			w = 1.5 * GUI_GRID_W;
-			h = 0.5 * GUI_GRID_H;
+			x = 32 * GUI_GRID_W + GUI_GRID_X;
+			y = 12.4 * GUI_GRID_H + GUI_GRID_Y;
+			w = 2 * GUI_GRID_W;
+			h = 0.7 * GUI_GRID_H;
 			colorBackground[] = COLOR_RED;
 			action = "[2100] execVM 'dialog\deleteCommand.sqf';";
 		};
@@ -479,6 +483,8 @@ class JGKP_DC {
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
+			action = "createDialog 'JGKP_PlayerDialog';";
 		};
 
 		// SPALTE 2
@@ -500,7 +506,9 @@ class JGKP_DC {
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
-			action = "[] execVM 'dialog\teleport.sqf;'";
+			colorBackground[] = COLOR_GREY;
+			action = "[] execVM 'dialog\teleport.sqf';";
+			tooltip = "Öffnet die Karte. Teleport mit SHIFT + Linksklick";
 		};
 
 		class FUNC_MARKER: JGKP_DCRscButton
@@ -511,6 +519,7 @@ class JGKP_DC {
 			y = (15 + COLUMN_HEIGHT) * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 		};
 
 		class FUNC_GODMODE: JGKP_DCRscButton
@@ -521,6 +530,7 @@ class JGKP_DC {
 			y = (15 + 2 * COLUMN_HEIGHT) * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 		};
 
 		class FUNC_HIDE: JGKP_DCRscButton
@@ -531,6 +541,7 @@ class JGKP_DC {
 			y = (15 + 3 * COLUMN_HEIGHT) * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 		};
 
 		// SPALTE 3
@@ -552,6 +563,7 @@ class JGKP_DC {
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 		};
 
 		class FUNC_AI_KILL: JGKP_DCRscButton
@@ -562,6 +574,7 @@ class JGKP_DC {
 			y = (15 + 1 * COLUMN_HEIGHT) * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 			action = "[] execVM 'dialog\kill.sqf';";
 		};
 
@@ -584,6 +597,7 @@ class JGKP_DC {
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 		};
 
 		class FUNC_AI_COUNT: JGKP_DCRscButton
@@ -594,6 +608,7 @@ class JGKP_DC {
 			y = (15 + COLUMN_HEIGHT) * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 			action = "hint parseText format['BLUEFOR: %1 <br/>OPFOR: %2 <br/>GUER: %3 <br/>CIV: %4', WEST countSide allUnits, EAST countSide allUnits, RESISTANCE countSide allUnits, CIVILIAN countSide allUnits];";
 		};
 
@@ -606,6 +621,7 @@ class JGKP_DC {
 			y = 14.2 * GUI_GRID_H + GUI_GRID_Y;
 			w = 2 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
+
 		};
 
 		class FUNC_FUNCTION_VIEWER: JGKP_DCRscButton
@@ -616,6 +632,7 @@ class JGKP_DC {
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 			action = "[] call BIS_fnc_help;";
 		};
 
@@ -627,6 +644,7 @@ class JGKP_DC {
 			y = (15 + COLUMN_HEIGHT) * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 			action = "[] spawn BIS_fnc_configviewer;";
 		};
 
@@ -638,6 +656,7 @@ class JGKP_DC {
 			y = (15 + 2 * COLUMN_HEIGHT) * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREY;
 		};		
 		
 	};
