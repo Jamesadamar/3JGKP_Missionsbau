@@ -7,6 +7,8 @@ JGKP_DC_fnc_readOption = compile preprocessFileLineNumbers "functions\fn_readOpt
 
 JGKP_DC_fnc_findOption = compile preprocessFileLineNumbers "functions\fn_findOption.sqf";
 
+JGKP_DC_fnc_getPlayer = compile preprocessFileLineNumbers "functions\fn_getPlayer.sqf";
+
 // muss in einem externen Prozess laufen
 // Beispiel für Lesbarkeit!
 // Shift + ^ -> DC öffnen

@@ -15,20 +15,6 @@ _params = _this;
 _dialog = _this select 0;
 
 // begin of script
-_lstBox = _dialog displayCtrl 1500;
+_editField = _dialog displayCtrl 1400;
 
-{
-
-	if (!simulationEnabled _x) then {
-
-		_lstBox lbAdd ((name _x) + " (*)");
-
-	} else {
-
-		_lstBox lbAdd (name _x); // Anzeigename
-
-	};
-
-	_lstBox lbSetData [_forEachIndex, getPlayerUID _x]; // Player UID als Identifikator
-
-} forEach allPlayers;
+JGKP_DC_message = "";

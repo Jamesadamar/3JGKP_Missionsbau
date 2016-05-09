@@ -44,9 +44,9 @@ class JGKP_PlayerDialog {
 		{
 			idc = 2200;
 			x = 6.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 2.2 * GUI_GRID_H + GUI_GRID_Y;
+			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 29 * GUI_GRID_W;
-			h = 20.8 * GUI_GRID_H;
+			h = 20.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_LOWER;
 		};
 
@@ -58,7 +58,7 @@ class JGKP_PlayerDialog {
 			y = 2 * GUI_GRID_H + GUI_GRID_Y;
 			w = 29 * GUI_GRID_W;
 			h = 21 * GUI_GRID_H;
-			sizeEx = 1 * GUI_GRID_H;
+			sizeEx = 1.1 * GUI_GRID_H;
 		};
 	};
 
@@ -82,8 +82,9 @@ class JGKP_PlayerDialog {
 			w = 17 * GUI_GRID_W;
 			h = 18 * GUI_GRID_H;
 			colorBackground[] = COLOR_GREY;
+			style = ST_LEFT + LB_TEXTURES + LB_MULTI;
 		};
-		class RscButton_1600: JGKP_DCRscButton
+		class BUTTON_TELE_HERE : JGKP_DCRscButton
 		{
 			idc = 1600;
 			text = "Zu Dir telen"; //--- ToDo: Localize;
@@ -92,8 +93,9 @@ class JGKP_PlayerDialog {
 			w = 7.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_GREY;
+			action = "[] execVM 'dialog\telePlayer.sqf';";
 		};
-		class RscButton_1601: JGKP_DCRscButton
+		class BUTTON_TELE_TO : JGKP_DCRscButton
 		{
 			idc = 1601;
 			text = "Zu Spieler telen"; //--- ToDo: Localize;
@@ -102,16 +104,18 @@ class JGKP_PlayerDialog {
 			w = 7.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_GREY;
+			action = "[] execVM 'dialog\teleToPlayer.sqf';";
 		};
 		class RscButton_1602: JGKP_DCRscButton
 		{
 			idc = 1602;
-			text = "Einfrieren"; //--- ToDo: Localize;
+			text = "Einfrieren\nAuftauen"; //--- ToDo: Localize;
 			x = 26 * GUI_GRID_W + GUI_GRID_X;
 			y = 14 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_GREY;
+			action = "[] execVM 'dialog\freezePlayer.sqf';";
 		};
 		class RscButton_1603: JGKP_DCRscButton
 		{
@@ -122,6 +126,8 @@ class JGKP_PlayerDialog {
 			w = 7.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_GREY;
+			action = "[] execVM 'dialog\healPlayer.sqf';";
+
 		};
 		class RscButton_1604: JGKP_DCRscButton
 		{
@@ -132,6 +138,8 @@ class JGKP_PlayerDialog {
 			w = 7.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			colorBackround[] = COLOR_GREY;
+			action = "[] execVM 'dialog\messagePlayer.sqf';";
+
 		};
 	};
 };
