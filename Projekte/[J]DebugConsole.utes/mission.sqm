@@ -36,10 +36,97 @@ randomSeed=2695135;
 class ScenarioData
 {
 	author="James";
+	respawnDialog=0;
+	respawn=2;
+	class Header
+	{
+		gameType="Sandbox";
+		minPlayers=1;
+		maxPlayers=10;
+	};
 };
 class CustomAttributes
 {
 	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Counter";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=3;
+	};
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -68,6 +155,7 @@ class Mission
 {
 	class Intel
 	{
+		overviewText="[J]DebugConsole";
 		timeOfChanges=1800.0002;
 		startWeather=0.40000001;
 		startWind=0.1;
@@ -878,6 +966,7 @@ class Mission
 			{
 				position[]={3551.948,18.91749,3568.25};
 			};
+			name="headlessclient";
 			isPlayable=1;
 			description="headlessclient";
 			id=54;
