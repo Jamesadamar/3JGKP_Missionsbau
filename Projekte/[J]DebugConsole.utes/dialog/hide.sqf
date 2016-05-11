@@ -37,7 +37,7 @@ if (not _status) then {
 
 	[_option, 3100] call JGKP_DC_fnc_readOption;
 
-	player hideObjectGlobal true;
+	[player, true] remoteExec ["hideObjectGlobal", 2, false];
 
 } else {
 
@@ -48,6 +48,6 @@ if (not _status) then {
 
 	[_option, 3100] call JGKP_DC_fnc_readOption;
 
-	player hideObjectGlobal false;
+	[player, false] remoteExec ["hideObjectGlobal", 2, false];
 
 };

@@ -24,8 +24,8 @@ $[
 #define COLOR_RED {0.8,0.02,0.02,0.8}
 #define COLOR_GOLD {0.35,0.27,0.09, 0.8}
 #define COLOR_GREY {0.1,0.1,0.1,0.8}
-#define COLOR_UPPER {0.38,	0.43,	0.51,	0.8}
-#define COLOR_LOWER {0.27,	0.35,	0.47,	0.8}
+#define COLOR_UPPER {0.15,	0.20,	0.15,	0.7}
+#define COLOR_LOWER {0.15,	0.20,	0.15,	0.8}
 
 ////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT START (by [3.JgKp]James, v1.063, #Xefupe)

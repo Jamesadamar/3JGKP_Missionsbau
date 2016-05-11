@@ -59,8 +59,9 @@ $[
 #define COLOR_RED 	{0.8, 	0.02, 	0.02,	0.8}
 #define COLOR_GOLD 	{0.35,	0.27, 	0.09, 	0.8}
 #define COLOR_GREY 	{0.1, 	0.1,	0.1,	0.8}
-#define COLOR_UPPER {0.38,	0.43,	0.51,	0.8}
-#define COLOR_LOWER {0.27,	0.35,	0.47,	0.8}
+#define COLOR_UPPER {0.15,	0.20,	0.15,	0.7}
+#define COLOR_LOWER {0.15,	0.20,	0.15,	0.8}
+#define COLOR_DARKRED {0.38, 0.23, 0.22, 0.8}
 
 #define COMMAND_FONT (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)
 
@@ -163,7 +164,7 @@ class JGKP_DC {
 			autocomplete = "scripting";
 			colorBackground[] = COLOR_GREY;
 			onKeyUp = "(_this) execVM 'dialog\handleInput.sqf';";
-			tooltip = "STRG - ausführen. ALT - dauerhaft ausführen. SHIFT + ENTF - löschen. STRG + ENTF - alle löschen.";
+			tooltip = "LOKAL. STRG - ausführen. ALT - dauerhaft ausführen. SHIFT + ENTF - löschen. STRG + ENTF - alle löschen.";
 		};
 		class LINE1_OUTPUT: JGKP_DCRscEdit
 		{
@@ -221,7 +222,7 @@ class JGKP_DC {
 			autocomplete = "scripting";
 			colorBackground[] = COLOR_GREY;
 			onKeyUp = "(_this) execVM 'dialog\handleInput.sqf';";
-			tooltip = "STRG - ausführen. ALT - dauerhaft ausführen. ENTF - löschen. STRG + ENTF - alle löschen.";
+			tooltip = "LOKAL. STRG - ausführen. ALT - dauerhaft ausführen. SHIFT + ENTF - löschen. STRG + ENTF - alle löschen.";
 		};
 		class LINE2_OUTPUT: JGKP_DCRscEdit
 		{
@@ -276,7 +277,7 @@ class JGKP_DC {
 			autocomplete = "scripting";
 			colorBackground[] = COLOR_GREY;
 			onKeyUp = "(_this) execVM 'dialog\handleInput.sqf';";
-			tooltip = "STRG - ausführen. ALT - dauerhaft ausführen. ENTF - löschen. STRG + ENTF - alle löschen.";
+			tooltip = "LOKAL. STRG - ausführen. ALT - dauerhaft ausführen. SHIFT + ENTF - löschen. STRG + ENTF - alle löschen.";
 		};
 		class LINE3_OUTPUT: JGKP_DCRscEdit
 		{
@@ -329,9 +330,9 @@ class JGKP_DC {
 			w = 8 * GUI_GRID_W;
 			h = 0.5 * GUI_GRID_H;
 			autocomplete = "scripting";
-			colorBackground[] = COLOR_GREY;
+			colorBackground[] = COLOR_DARKRED;
 			onKeyUp = "(_this) execVM 'dialog\handleInput.sqf';";
-			tooltip = "STRG - ausführen. ALT - dauerhaft ausführen. ENTF - löschen. STRG + ENTF - alle löschen.";
+			tooltip = "SERVER. STRG - ausführen. ALT - dauerhaft ausführen. SHIFT + ENTF - löschen. STRG + ENTF - alle löschen.";
 		};
 		class LINE4_OUTPUT: JGKP_DCRscEdit
 		{

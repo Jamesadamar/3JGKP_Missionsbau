@@ -24,7 +24,7 @@ if (isMultiplayer) then {
 
 	ResultIsMember = nil;
 	["jgkp_is_member", [player]] call CBA_fnc_clientToServerEvent;  
-	waitUntil {!isNil "ResultIsMember "};
+	waitUntil {!isNil "ResultIsMember"};
 
 	if (!ResultIsMember) then {
 
@@ -38,7 +38,7 @@ if (isMultiplayer) then {
 
 	// Wenn MP und Mitglied, prüfe Rang
 	ResultRightInfo = nil;
-	["jgkp_get_right", [player,"DebugConsole"]] call CBA_fnc_clientToServerEvent;
+	["jgkp_get_right", [player, "DebugConsole"]] call CBA_fnc_clientToServerEvent;
 	waitUntil {!isNil "ResultRightInfo"};
 
 	_level = parseNumber ResultRightInfo;

@@ -59,6 +59,9 @@ if (not _status) then {
 			[[player], 
 			{server_fps = diag_fps; (owner (_this select 0)) publicVariableClient "server_fps";
 			 server_units = {local _x} count allUnits; (owner (_this select 0)) publicVariableClient "server_units"}] remoteExec ["BIS_fnc_call", 2, false];
+			 waitUntil { 
+			 	!isNil "server_fps" && !isNil "server_fps"
+			 };
 
 			// HC
 			// ermittle, ob HC anwesend (HC ist client wie andere Spieler!)
