@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=5;
+	toggles=517;
 	class ItemIDProvider
 	{
 		nextID=55;
@@ -36,13 +36,15 @@ randomSeed=2695135;
 class ScenarioData
 {
 	author="James";
+	showUAVFeed=0;
+	saving=0;
 	respawnDialog=0;
 	respawn=2;
 	class Header
 	{
 		gameType="Sandbox";
 		minPlayers=1;
-		maxPlayers=10;
+		maxPlayers=7;
 	};
 };
 class CustomAttributes
@@ -144,7 +146,7 @@ class CustomAttributes
 							"SCALAR"
 						};
 					};
-					value=0;
+					value=1;
 				};
 			};
 		};

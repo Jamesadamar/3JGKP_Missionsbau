@@ -245,7 +245,7 @@ class JGKP_DC {
 			h = 0.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_GOLD;
 			action = "[1602,1402] execVM 'dialog\pinInput.sqf';";
-			type = CT_EDIT;
+			style = 2 + ST_BACKGROUND;
 		};
 		class LINE2_LOG: JGKP_DCRscButton
 		{
