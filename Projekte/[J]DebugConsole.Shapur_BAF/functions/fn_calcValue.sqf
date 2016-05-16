@@ -31,7 +31,7 @@ _abort = false;
 {	
 
 	// "=", "spawn", "execVM" are not allowed
-	if ( _x find "=" != -1 && ( !((_x select [(_x find "=") - 1, 1]) in ["!","<",">"]) && (_x select [(_x find "=") + 1, 1]) != "=") || _x find "execVM" != -1 || _x find "spawn" != -1) exitWith { _abort = true; }
+	if ( _x find "=" != -1 && ( !((_x select [(_x find "=") - 1, 1]) in ["!","<",">"]) && (_x select [(_x find "=") + 1, 1]) != "=") || _x find "execVM" != -1 || _x find "spawn" != -1 || _x find "remoteExec" != -1) exitWith { _abort = true; }
 
 } forEach _multiCode;
 

@@ -48,13 +48,14 @@ if (isMultiplayer) then {
 if (!_access) exitWith { hint format["Dialog nur für Mitglieder der 3.!"]; };
 
 
+// Befülle alle Felder mit den geladenen Werten:
 // Lade Variable aus profileNamespace
 JGKP_DC_Commands = profileNamespace getVariable ["JGKP_DC_Commands",[]];
 
 JGKP_DC_Rows = profileNamespace getVariable ["JGKP_DC_Rows",[]];
 
+JGKP_DC_command_temp = missionNamespace getVariable ["JGKP_DC_command_temp", []];
 
-// Befülle alle Felder mit den geladenen Werten:
 // Rows
 {
 	
@@ -89,7 +90,6 @@ if (!isNil "JGKP_DC_Pin_Value") then {
 		ctrlSetText [_buttonIDC, "Unpin"];
 
 	} forEach JGKP_DC_Pin_Value;
-
 };
 
 

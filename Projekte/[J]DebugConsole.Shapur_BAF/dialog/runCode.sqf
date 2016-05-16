@@ -48,3 +48,6 @@ if (_mode in [0,2]) then {
 	call (compile _code);
 
 };
+
+// speichere ausgeführten Befehl in temporärem Speicher
+JGKP_DC_temp_commands pushBackUnique _code;

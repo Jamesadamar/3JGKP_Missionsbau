@@ -245,7 +245,6 @@ class JGKP_DC {
 			h = 0.5 * GUI_GRID_H;
 			colorBackground[] = COLOR_GOLD;
 			action = "[1602,1402] execVM 'dialog\pinInput.sqf';";
-			style = 2 + ST_BACKGROUND;
 		};
 		class LINE2_LOG: JGKP_DCRscButton
 		{
@@ -440,6 +439,36 @@ class JGKP_DC {
 			colorBackground[] = COLOR_RED;
 			action = "[1408, 2] execVM 'dialog\runCode.sqf';";
 		};
+
+		// BACK AND FOR
+		class COMMAND_BACK: JGKP_DCRscButton
+		{
+			idc = 1626;
+			text = "<<"; //--- ToDo: Localize;
+			x = 26 * GUI_GRID_W + GUI_GRID_X;
+			y = 11.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 2 * GUI_GRID_W;
+			h = 0.7 * GUI_GRID_H;
+			colorBackground[] = COLOR_GREEN;
+			action = "[1408, -1] execVM 'dialog\nextCommand.sqf';";
+			tooltip = "Vorheriger Befehl";
+
+		};
+		class COMMAND_NEXT: JGKP_DCRscButton
+		{
+			idc = 1627;
+			text = ">>"; //--- ToDo: Localize;
+			x = 27 * GUI_GRID_W + GUI_GRID_X;
+			y = 11.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 2 * GUI_GRID_W;
+			h = 0.7 * GUI_GRID_H;
+			colorBackground[] = COLOR_RED;
+			action = "[1408, 1] execVM 'dialog\nextCommand.sqf';";
+			tooltip = "Nächster Befehl";
+		};
+
+
+		// SAVE AND DELETE
 		class COMMAND_SAVE: JGKP_DCRscButton
 		{
 			idc = 1611;

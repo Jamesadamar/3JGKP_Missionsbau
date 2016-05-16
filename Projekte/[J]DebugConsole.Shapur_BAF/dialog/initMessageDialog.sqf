@@ -14,7 +14,5 @@ disableSerialization;
 _params = _this;
 _dialog = _this select 0;
 
-// begin of script
-_editField = _dialog displayCtrl 1400;
-
+// reset JKPG_DC_message
 JGKP_DC_message = "";
