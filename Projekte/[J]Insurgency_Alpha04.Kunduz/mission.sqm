@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=51;
+		nextID=52;
 	};
 	class Camera
 	{
-		pos[]={1298.4021,80.243652,354.25922};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={1271.1671,51.439987,412.54883};
+		dir[]={0.3509579,-0.68284076,0.64076412};
+		up[]={0.32802707,0.73056304,0.59889764};
+		aside[]={0.87706906,-2.2980385e-007,-0.48038706};
 	};
 };
 binarizationWanted=0;
@@ -1928,17 +1928,40 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1282.375,35.614311,426.25};
-				angles[]={0,4.0596037,0};
+				angles[]={0,4.0596008,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="clearMagazineCargoGlobal this; clearWeaponCargoGlobal this;this addAction [""<t color='#CCCC00'><t size='1.5'>Zugführer"", { [""jgkp_equip_loadout"",[player,141]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>Zugfunker"", { [""jgkp_equip_loadout"",[player,106]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>Hflg Staffelführer"", { [""jgkp_equip_loadout"",[player,142]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""];  this addAction [""<t color='#CCCC00'><t size='1.5'>Hflg Pilot Hubschrauber"", { [""jgkp_equip_loadout"",[player,143]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>Hflg Pilot Jet"", { [""jgkp_equip_loadout"",[player,144]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>Hflg Crewman"", { [""jgkp_equip_loadout"",[player,145]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>SanDst Gruppenführer"", { [""jgkp_equip_loadout"",[player,146]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>SanDst Feldarzt"", { [""jgkp_equip_loadout"",[player,147]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>Nsch/Inst Gruppenführer"", { [""jgkp_equip_loadout"",[player,148]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>Nsch/Inst Soldat"", { [""jgkp_equip_loadout"",[player,149]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>Spz/Kpz Kommandant"", { [""jgkp_equip_loadout"",[player,150]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>Spz/Kpz Fahrer/Schütze"", { [""jgkp_equip_loadout"",[player,151]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>Spotter"", { [""jgkp_equip_loadout"",[player,152]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>Scharfschütze G22"", { [""jgkp_equip_loadout"",[player,153]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>Scharfschütze G82"", { [""jgkp_equip_loadout"",[player,154]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""];  this addAction [""<t color='#CCCC00'><t size='1.5'>Pionier"", { [""jgkp_equip_loadout"",[player,155]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>JTAC/Artilleriebeobachter"", { [""jgkp_equip_loadout"",[player,156]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; this addAction [""<t color='#CCCC00'><t size='1.5'>Drohnenoperator"", { [""jgkp_equip_loadout"",[player,157]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""];";
+				init="clearMagazineCargoGlobal this; " \n "clearWeaponCargoGlobal this; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Zugführer"", { [""jgkp_equip_loadout"",[player,141]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Zugfunker"", { [""jgkp_equip_loadout"",[player,106]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Hflg Staffelführer"", { [""jgkp_equip_loadout"",[player,142]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Hflg Pilot Hubschrauber"", { [""jgkp_equip_loadout"",[player,143]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Hflg Pilot Jet"", { [""jgkp_equip_loadout"",[player,144]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Hflg Crewman"", { [""jgkp_equip_loadout"",[player,145]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>SanDst Gruppenführer"", { [""jgkp_equip_loadout"",[player,146]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>SanDst Feldarzt"", { [""jgkp_equip_loadout"",[player,147]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Nsch/Inst Gruppenführer"", { [""jgkp_equip_loadout"",[player,148]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Nsch/Inst Soldat"", { [""jgkp_equip_loadout"",[player,149]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Spz/Kpz Kommandant"", { [""jgkp_equip_loadout"",[player,150]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Spz/Kpz Fahrer/Schütze"", { [""jgkp_equip_loadout"",[player,151]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Spotter"", { [""jgkp_equip_loadout"",[player,152]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Scharfschütze G22"", { [""jgkp_equip_loadout"",[player,153]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Scharfschütze G82"", { [""jgkp_equip_loadout"",[player,154]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Pionier"", { [""jgkp_equip_loadout"",[player,165]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Pionier AP"", { [""jgkp_equip_loadout"",[player,167]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Pionier AT"", { [""jgkp_equip_loadout"",[player,169]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>JTAC/Artilleriebeobachter"", { [""jgkp_equip_loadout"",[player,156]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""]; " \n "this addAction [""<t color='#33CC00'><t size='1.5'>Drohnenoperator"", { [""jgkp_equip_loadout"",[player,171]] call CBA_fnc_clientToServerEvent;},[], 1, false, false,"""",""""];";
 			};
 			id=324;
 			type="Land_Cargo20_sand_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item93
 		{
@@ -4051,7 +4074,7 @@ class Mission
 			};
 			id=423;
 			type="IEDUrbanSmall_F";
-			atlOffset=0.19936943;
+			atlOffset=0.59139061;
 		};
 		class Item192
 		{
