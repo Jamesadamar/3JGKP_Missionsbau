@@ -58,7 +58,7 @@ class JGKP_PlayerDialog {
 			y = 2 * GUI_GRID_H + GUI_GRID_Y;
 			w = 29 * GUI_GRID_W;
 			h = 21 * GUI_GRID_H;
-			sizeEx = 1.1 * GUI_GRID_H;
+			sizeEx = 1.2 * GUI_GRID_H;
 		};
 	};
 

@@ -50,4 +50,4 @@ if (_mode in [0,2]) then {
 };
 
 // speichere ausgeführten Befehl in temporärem Speicher
-JGKP_DC_temp_commands pushBackUnique _code;
+JGKP_DC_command_temp pushBackUnique _code;

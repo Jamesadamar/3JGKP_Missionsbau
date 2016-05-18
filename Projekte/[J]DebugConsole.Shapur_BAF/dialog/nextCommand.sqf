@@ -43,7 +43,7 @@ switch (_dir) do {
 	}; 
 	case 1 : {  
 
-		if (_id == (count JGKP_DC_command_temp) - 1) exitWith { hint "kein Befehl übrig"};
+		if (_id == (count JGKP_DC_command_temp) - 1) exitWith { hint "Kein Befehl übrig"};
 
 		_txtField ctrlSetText (JGKP_DC_command_temp select _id + 1);
 

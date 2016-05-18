@@ -449,20 +449,21 @@ class JGKP_DC {
 			y = 11.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 2 * GUI_GRID_W;
 			h = 0.7 * GUI_GRID_H;
-			colorBackground[] = COLOR_GREEN;
+			colorBackground[] = COLOR_GREY;
+			sizeEx = 0.4 * GUI_GRID_H;
 			action = "[1408, -1] execVM 'dialog\nextCommand.sqf';";
 			tooltip = "Vorheriger Befehl";
-
 		};
 		class COMMAND_NEXT: JGKP_DCRscButton
 		{
 			idc = 1627;
 			text = ">>"; //--- ToDo: Localize;
-			x = 27 * GUI_GRID_W + GUI_GRID_X;
+			x = 28.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 11.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 2 * GUI_GRID_W;
 			h = 0.7 * GUI_GRID_H;
-			colorBackground[] = COLOR_RED;
+			colorBackground[] = COLOR_GREY;
+			sizeEx = 0.4 * GUI_GRID_H;
 			action = "[1408, 1] execVM 'dialog\nextCommand.sqf';";
 			tooltip = "Nächster Befehl";
 		};

@@ -15,8 +15,8 @@ _params = _this;
 _display = _this select 0;
 
 // begin of script
-_access = true;
-_level = 3; // default höchste Level für SP, sonst in MP Neusetzung durch Server
+JGKP_DC_access = true;
+JGKP_DC_level = 3; // default höchste Level für SP, sonst in MP Neusetzung durch Server
 
 // Wenn SP -> immer voller Dialog
 // Wenn MP -> prüfe ob Mitglied -> falls nein, schließe Dialog
@@ -29,7 +29,7 @@ if (isMultiplayer) then {
 	if (!ResultIsMember) then {
 
 		closeDialog 0;
-		_access = false;
+		JGKP_DC_access = false;
 
 		// log-Eintrag in DB log anlegen
 		["jgkp_log_action", [getPlayerUID player, "DebugConsole", "[login, gescheitert]"]] call CBA_fnc_clientToServerEvent;
@@ -41,11 +41,11 @@ if (isMultiplayer) then {
 	["jgkp_get_right", [player, "DebugConsole"]] call CBA_fnc_clientToServerEvent;
 	waitUntil {!isNil "ResultRightInfo"};
 
-	_level = parseNumber ResultRightInfo;
+	JGKP_DC_level = parseNumber ResultRightInfo;
 
 };
 
-if (!_access) exitWith { hint format["Dialog nur für Mitglieder der 3.!"]; };
+if (!JGKP_DC_access) exitWith { hint format["Dialog nur für Mitglieder der 3.!"]; };
 
 
 // Befülle alle Felder mit den geladenen Werten:
@@ -102,7 +102,7 @@ if (!isNil "JGKP_DC_Pin_Value") then {
 } forEach JGKP_DC_options;
 
 // DEAKTIVIERE BUTTON GEMÄß ACCESS LEVEL
-_access_options = JGKP_DC_access_level select _level;
+_access_options = JGKP_DC_access_level select JGKP_DC_level;
 
 hintSilent format["Zugangslevel:\n%1", _access_options select 1];
 

@@ -32,3 +32,15 @@ _lstBox = _dialog displayCtrl 1500;
 	_lstBox lbSetData [_forEachIndex, getPlayerUID _x]; // Player UID als Identifikator
 
 } forEach allPlayers - entities "HeadlessClient_F";
+
+// DEAKTIVIERE BUTTON GEMÄß ACCESS LEVEL
+_access_options = JGKP_DC_access_level select JGKP_DC_level;
+
+hintSilent format["Zugangslevel:\n%1", _access_options select 1];
+
+{
+
+	_idc = _x;
+	ctrlEnable [_idc, false];
+
+} forEach (_access_options select 3); // Klammern...
