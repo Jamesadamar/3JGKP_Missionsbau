@@ -19,18 +19,15 @@ createDialog "JGKP_ConfirmDialog";
 
 waitUntil { isNull (findDisplay 3101); };
 
-if (JGKP_DC_command_isConfirmed) then {
+if (!JGKP_DC_command_isConfirmed) exitWith { hintSilent "Befehl abgebrochen"; };
 
-	{ 
-	
-		if ([playerSide, side _x] call BIS_fnc_sideIsEnemy) then {
-			_x setDamage 1;
-		};
+{ 
 
-	} forEach allUnits;
+	if ([playerSide, side _x] call BIS_fnc_sideIsEnemy) then {
+		_x setDamage 1;
+	};
 
-} else {
+} forEach allUnits;
 
-	hintSilent "Befehl abgebrochen";
-
-};
+// log
+["jgkp_log_action", [getPlayerUID player, "DebugConsole", "[kill, ausgeführt]"]] call CBA_fnc_clientToServerEvent;

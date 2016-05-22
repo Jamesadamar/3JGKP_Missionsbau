@@ -47,4 +47,7 @@ waitUntil {isNull (findDisplay 3103)};
 
 	JGKP_DC_message remoteExec ["hint", _player, false];
 
+	// log
+	["jgkp_log_action", [getPlayerUID player, "DebugConsole", format["[player, %1, %2, %3]", name _player, "message", JGKP_DC_message]]] call CBA_fnc_clientToServerEvent;
+
 } forEach _names;

@@ -39,6 +39,9 @@ if (not _status) then {
 
 	player allowDamage false;
 
+	// log
+	["jgkp_log_action", [getPlayerUID player, "DebugConsole", "[godMode, ausgeführt]"]] call CBA_fnc_clientToServerEvent;
+
 } else {
 
 	// change status and text

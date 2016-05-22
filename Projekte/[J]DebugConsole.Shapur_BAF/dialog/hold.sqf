@@ -54,6 +54,9 @@ if (not _status) then {
 
 	} forEach allUnits + allDead;
 
+	// log
+	["jgkp_log_action", [getPlayerUID player, "DebugConsole", "[hold, ausgeführt]"]] call CBA_fnc_clientToServerEvent;
+
 } else {
 
 	// change status and text

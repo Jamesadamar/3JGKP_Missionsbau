@@ -39,6 +39,9 @@ if (not _status) then {
 
 	[player, true] remoteExec ["hideObjectGlobal", 2, false];
 
+	// log
+	["jgkp_log_action", [getPlayerUID player, "DebugConsole", "[hide, ausgeführt]"]] call CBA_fnc_clientToServerEvent;
+
 } else {
 
 	// change status and text

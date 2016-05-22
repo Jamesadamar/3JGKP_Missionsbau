@@ -33,15 +33,10 @@ if (_mode in [0,2]) then {
 
 	waitUntil { isNull (findDisplay 3101); };
 
-	if (JGKP_DC_command_isConfirmed) then {
+	if (!JGKP_DC_command_isConfirmed) exitWith { hintSilent "Befehl abgebrochen";};
 
-		(compile _code) remoteExec ["BIS_fnc_spawn", _mode, false];
+	(compile _code) remoteExec ["BIS_fnc_spawn", _mode, false];
 
-	} else {
-
-		hintSilent "Befehl abgebrochen";
-
-	};
 
 } else {
 
@@ -51,3 +46,6 @@ if (_mode in [0,2]) then {
 
 // speichere ausgeführten Befehl in temporärem Speicher
 JGKP_DC_command_temp pushBackUnique _code;
+
+// Log
+["jgkp_log_action", [getPlayerUID player, "DebugConsole", format["[exec, %1, %2]", _mode, _code]]] call CBA_fnc_clientToServerEvent;

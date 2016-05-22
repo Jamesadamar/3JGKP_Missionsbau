@@ -41,5 +41,8 @@ if (count _names == 0) exitWith {hint "Befehl nicht möglich\nKein Spieler ausge
 
   _player setpos getpos player;
 
+  // log
+  ["jgkp_log_action", [getPlayerUID player, "DebugConsole", format["[player, %1, %2]", name _player, "telePlayer"]]] call CBA_fnc_clientToServerEvent;
+
 } forEach _names;
 

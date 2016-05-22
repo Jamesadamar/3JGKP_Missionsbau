@@ -37,8 +37,6 @@ _player = [
 	[_name select [0, (_name find " (*)")]] call JGKP_DC_fnc_getPlayer
 ] select (_name find " (*)" != -1);
 
-
-
 if (vehicle _player != _player) then {
 
 	player moveInCargo vehicle _player;

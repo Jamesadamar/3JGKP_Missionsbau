@@ -1,7 +1,0 @@
-// Importanweisungen für Debug Dialog
-#include "dialog\parent.hpp"
-#include "dialog\JGKP_DC.hpp"
-#include "dialog\JGKP_DCPin.hpp"
-#include "dialog\JGKP_ConfirmDialog.hpp"
-#include "dialog\JGKP_PlayerDialog.hpp"
-#include "dialog\JGKP_MessageDialog.hpp"

@@ -1,0 +1,2597 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"JGKP",
+				"JGKP_DC_command_isConfirmed"
+			],
+			[
+				"JGKOP",
+				"JGKP_DC_command_isConfirmed"
+			],
+			[
+				"server_",
+				"server_fps"
+			],
+			[
+				"public",
+				"publicVariableServer"
+			],
+			[
+				"JG",
+				"JGKP_DC_server_var"
+			],
+			[
+				"JGKP_",
+				"JGKP_DC_server_result"
+			],
+			[
+				"JGKP_DC",
+				"JGKP_DC_marker_EH"
+			],
+			[
+				"enableS",
+				"enableSimulationGlobal"
+			],
+			[
+				"eix",
+				"exitWith"
+			],
+			[
+				"COLOR",
+				"COLOR_GREY"
+			],
+			[
+				"color",
+				"controlsBackground"
+			],
+			[
+				"COLOR_",
+				"COLOR_GREY"
+			],
+			[
+				"COL",
+				"COLUMN_WIDTH"
+			],
+			[
+				"COLU",
+				"COLUMN_HEIGHT"
+			],
+			[
+				"_acce",
+				"_access_options"
+			],
+			[
+				"_acc",
+				"_access_options"
+			],
+			[
+				"publicV",
+				"publicVariableClient"
+			],
+			[
+				"remote",
+				"remoteExec"
+			],
+			[
+				"diag",
+				"diag_fps"
+			],
+			[
+				"disa",
+				"disableSerialization"
+			],
+			[
+				"enableSim",
+				"enableSimulationGlobal"
+			],
+			[
+				"exit",
+				"exitWith"
+			],
+			[
+				"_da",
+				"_damageReport"
+			],
+			[
+				"_name",
+				"_namePart"
+			],
+			[
+				"_dama",
+				"_damagedParts"
+			],
+			[
+				"type",
+				"typeOf"
+			],
+			[
+				"hideObj",
+				"hideObjectGlobal"
+			],
+			[
+				"hideO",
+				"hideObjectGlobal"
+			],
+			[
+				"isE",
+				"isEqualTo"
+			],
+			[
+				"getpo",
+				"getPos"
+			],
+			[
+				"setMarkerA",
+				"setMarkerAlphaLocal"
+			],
+			[
+				"deleteMar",
+				"deleteMarkerLocal"
+			],
+			[
+				"push",
+				"pushBack"
+			],
+			[
+				"_delt",
+				"_delta_x"
+			],
+			[
+				"_marker",
+				"_markerView"
+			],
+			[
+				"setMarkerType",
+				"setMarkerTypeLocal"
+			],
+			[
+				"setMarkerTe",
+				"setMarkerTextLocal"
+			],
+			[
+				"setMarkerS",
+				"setMarkerSizeLocal"
+			],
+			[
+				"setMarkerT",
+				"setMarkerTypeLocal"
+			],
+			[
+				"JK",
+				"JGKP_DC_marker_list"
+			],
+			[
+				"isk",
+				"isKindOf"
+			],
+			[
+				"lbSetTe",
+				"lnbSetText"
+			],
+			[
+				"pushB",
+				"pushBackUnique"
+			],
+			[
+				"fnc_",
+				"fnc_log_fps"
+			],
+			[
+				"UPSMO",
+				"UPSMON_Debug"
+			],
+			[
+				"JGKP_vs",
+				"JGKP_var_Shooter"
+			],
+			[
+				"JGKPO",
+				"JGKP_var_lastShot"
+			],
+			[
+				"setTrig",
+				"setTriggerType"
+			],
+			[
+				"distan",
+				"distance2D"
+			],
+			[
+				"_x",
+				"_xmin"
+			],
+			[
+				"_squareS",
+				"_squareSize"
+			],
+			[
+				"_squa",
+				"_squarePos"
+			],
+			[
+				"addMagaz",
+				"addMagazineCargo"
+			],
+			[
+				"_sub",
+				"_subSquareWidth"
+			],
+			[
+				"_height",
+				"_subSquareHeight"
+			],
+			[
+				"_subs",
+				"_subSquareHeight"
+			],
+			[
+				"_Squa",
+				"_squareSize"
+			],
+			[
+				"_subS",
+				"_subSquareHeight"
+			],
+			[
+				"_sq",
+				"_squareSize"
+			],
+			[
+				"f",
+				"for	from 0 to XX do"
+			],
+			[
+				"createM",
+				"createMarker"
+			],
+			[
+				"for",
+				"for	from 0 to XX do"
+			],
+			[
+				"_new",
+				"_newAngle"
+			],
+			[
+				"_de",
+				"_deltaX"
+			],
+			[
+				"_ori",
+				"_ori_z"
+			],
+			[
+				"resi",
+				"resize"
+			],
+			[
+				"_deta",
+				"_delta_z"
+			],
+			[
+				"fo",
+				"for	from 0 to XX step -1 do"
+			],
+			[
+				"getpos",
+				"getPosASL"
+			],
+			[
+				"_newOb",
+				"_newObject"
+			],
+			[
+				"getPos",
+				"getPosASL"
+			],
+			[
+				"_query",
+				"_queryVar"
+			],
+			[
+				"prepro",
+				"preprocessFileLineNumbers"
+			],
+			[
+				"EquipLo",
+				"EquipLocal_ID"
+			],
+			[
+				"removeAllA",
+				"removeAllAssignedItems"
+			],
+			[
+				"removeMaga",
+				"removeMagazines"
+			],
+			[
+				"JGK",
+				"JGKP_TFAR_RADIO_IDS"
+			],
+			[
+				"parse",
+				"parseText"
+			],
+			[
+				"_delta",
+				"_delta_X"
+			],
+			[
+				"back",
+				"backpackCargo"
+			],
+			[
+				"magaz",
+				"magazineCargo"
+			],
+			[
+				"_edit",
+				"_edit_content"
+			],
+			[
+				"_ite",
+				"_items"
+			],
+			[
+				"_wea",
+				"_weapons"
+			],
+			[
+				"_uni",
+				"_uniformitems"
+			],
+			[
+				"CBA_",
+				"CBA_fnc_addClientToServerEventhandler"
+			],
+			[
+				"OFFSET",
+				"OFFSET_HOEHE"
+			],
+			[
+				"publi",
+				"publicVariableClient"
+			],
+			[
+				"_EF_na",
+				"_EF_name"
+			],
+			[
+				"_EF_",
+				"_EF_gruppe"
+			],
+			[
+				"_EF",
+				"_EF_gruppe"
+			],
+			[
+				"ctrlEn",
+				"ctrlEnable"
+			],
+			[
+				"_CB_",
+				"_CB_insignia"
+			],
+			[
+				"DB_connect_",
+				"DB_connect_User"
+			],
+			[
+				"swic",
+				"switch	switch_SQF"
+			],
+			[
+				"_is",
+				"_isMedic"
+			],
+			[
+				"_Button_",
+				"_Button_Save"
+			],
+			[
+				"_Butt",
+				"_Button_Refresh"
+			],
+			[
+				"_Button",
+				"_Button_LoadLoadout"
+			],
+			[
+				"forea",
+				"foreach"
+			],
+			[
+				"foreac",
+				"_forEachIndex"
+			],
+			[
+				"_CB",
+				"_CB_gruppe"
+			],
+			[
+				"_backpack",
+				"_backpack"
+			],
+			[
+				"addItemCar",
+				"addItemCargoGlobal"
+			],
+			[
+				"_backap",
+				"_backpackitems"
+			],
+			[
+				"_unif",
+				"_uniformitems"
+			],
+			[
+				"addItemToU",
+				"addItemToUniform"
+			],
+			[
+				"addItem",
+				"canAddItemToBackpack"
+			],
+			[
+				"addWea",
+				"addPrimaryWeaponItem"
+			],
+			[
+				"_weap",
+				"_weaponitems"
+			],
+			[
+				"addItemT",
+				"addItemToBackpack"
+			],
+			[
+				"addBaack",
+				"addBackpack"
+			],
+			[
+				"removeBackpack",
+				"removeBackpackGlobal"
+			],
+			[
+				"_uniform",
+				"_uniformitems"
+			],
+			[
+				"removeAllGo",
+				"hcRemoveAllGroups"
+			],
+			[
+				"_se",
+				"_selectWeapon"
+			],
+			[
+				"CBA_fnc",
+				"CBA_fnc_addEventHandler"
+			],
+			[
+				"addMaga",
+				"addMagazineCargoGlobal"
+			],
+			[
+				"addBack",
+				"addBackpackCargoGlobal"
+			],
+			[
+				"prepr",
+				"preprocessFileLineNumbers"
+			],
+			[
+				"_weapon",
+				"_weaponitems"
+			],
+			[
+				"_back",
+				"_backpack"
+			],
+			[
+				"uniform",
+				"uniformItems"
+			],
+			[
+				"addVe",
+				"addVest"
+			],
+			[
+				"switch",
+				"switch	switch_SQF"
+			],
+			[
+				"addItemTo",
+				"addItemToBackpack"
+			],
+			[
+				"publiV",
+				"publicVariableServer"
+			],
+			[
+				"_curs",
+				"_cursoraim"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "dialog/runCode.sqf",
+			"settings":
+			{
+				"buffer_size": 1308,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dialog/messagePlayer.sqf",
+			"settings":
+			{
+				"buffer_size": 1333,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dialog/parent.hpp",
+			"settings":
+			{
+				"buffer_size": 21595,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dialog/freezePlayer.sqf",
+			"settings":
+			{
+				"buffer_size": 1847,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dialog/godMode.sqf",
+			"settings":
+			{
+				"buffer_size": 1203,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dialog/healPlayer.sqf",
+			"settings":
+			{
+				"buffer_size": 1182,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dialog/telePlayer.sqf",
+			"settings":
+			{
+				"buffer_size": 1199,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dialog/kill.sqf",
+			"settings":
+			{
+				"buffer_size": 754,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dialog/hide.sqf",
+			"settings":
+			{
+				"buffer_size": 1257,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dialog/hold.sqf",
+			"settings":
+			{
+				"buffer_size": 1694,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/H/Git/3jgkp_database/Build/sk3yn3t_server/config.cpp",
+			"settings":
+			{
+				"buffer_size": 1038,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/H/Git/3jgkp_database/Build/sk3yn3t_client/parent.hpp",
+			"settings":
+			{
+				"buffer_size": 21337,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/H/Git/3jgkp_database/Build/sk3yn3t_client/config.cpp",
+			"settings":
+			{
+				"buffer_size": 55396,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dialog/teleToPlayer.sqf",
+			"settings":
+			{
+				"buffer_size": 1045,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "sqf",
+		"selected_items":
+		[
+			[
+				"sqf",
+				"Set Syntax: SQF"
+			],
+			[
+				"colr",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"color su",
+				"Colorsublime: Browse Themes"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"s",
+				"Set Syntax: SQF"
+			],
+			[
+				"sq",
+				"Set Syntax: SQF"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"packa inst",
+				"Package Control: Install Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"sy",
+				"Set Syntax: SQF"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: while"
+			],
+			[
+				"package u",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"set sy",
+				"Set Syntax: SQF"
+			],
+			[
+				"sy xml",
+				"Set Syntax: XML"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"syn sq",
+				"Set Syntax: SQF"
+			],
+			[
+				"set s",
+				"Set Syntax: SQF"
+			],
+			[
+				"m",
+				"View: Toggle Minimap"
+			],
+			[
+				"sideb",
+				"View: Toggle Open Files in Side Bar"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"view.encoding()",
+			"show.encoding()",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/H/Git/3JGKP_Missionsbau/Projekte/[J]DebugConsole.Shapur_BAF",
+		"/H/Git/3JGKP_Missionsbau/Projekte/[J]DebugConsole.Shapur_BAF/dialog",
+		"/H/Git/3JGKP_Missionsbau/Projekte/[J]DebugConsole.Shapur_BAF/functions"
+	],
+	"file_history":
+	[
+		"/H/Workplace/3.JgKp/Zugriffe/3JGKP-Admin.ini",
+		"/H/Workplace/3.JgKp/Zugriffe/James.ini",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/JGKP_MessageDialog.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/JGKP_PlayerDialog.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/JGKP_ConfirmDialog.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/functions/fn_init.sqf",
+		"/S/Steam/steamapps/common/Arma 3/@2Wings/meta.cpp",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/functions/fn_init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/initDialog.sqf",
+		"/C/Users/Michael/AppData/Local/Arma 3/arma3_2016-05-11_14-17-51.rpt",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/runCode.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/marker.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/mission.sqm",
+		"/C/Users/Michael/Desktop/arma3server03_2016-05-11_18-17-56.rpt",
+		"/C/Users/Michael/Desktop/arma3server03_2016-05-11_18-10-31.rpt",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/description.ext",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/messagePlayer.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/teleToPlayer.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/freezePlayer.sqf",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/@extDB2_DEBUG/extdb-conf.ini",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/Build/sk3yn3t_server/functions/fn_init.sqf",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/Build/sk3yn3t_client/config.cpp",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/Build/sk3yn3t_client/dialog/DBLoadoutDialog/initEntryDialog.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/initPlayerLocal.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/init.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/healPlayer.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/telePlayer.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/initMessageDialog.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/JGKP_MessageDialog.hhp",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/kill.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/handleInput.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/perf.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/teleport.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/initConfirmDialog.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/cutter.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/deleteCommand.sqf",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/Build/sk3yn3t_client/dialog/DBLoadoutDialog/saveLoadout.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]Insurgency_Alpha04.Kunduz/init.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/JGKP_DC.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/hold.sqf",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/@extDB2_DEBUG/extDB/sql_custom_v2/user.ini",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/selChanged.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/hide.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/perf.sqf",
+		"/D/Meine Daten/Google Drive/3.JgKp/Zugriffe/DB-Zugriff/gameserver/po_loadout.sql",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8_missionEXEC.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/T8-Test.utes/T8_missionEXEC.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/T8-Test.utes/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/T8-Test.utes/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/T8-Test.utes/functions/fn_createT8Template.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/initServer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/FUNCTIONS.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/mission.sqm",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/initServer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/T8-Test.utes/function/fn_createT8Template.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/T8-Test.utes/mission.sqm",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/CONFIG.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/scripts/setSkill.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/scripts/createHQ.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/initPlayerServer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/onPlayerRespawn.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/initServer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/functions/createMarkerAndTrigger.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/scripts/findCities.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/initPlayerLocal.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/modules/Upsmon/Init_UPSMON.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/InitJIPCompatible.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/godMode.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/functions/fn_findOption.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/pinInput.sqf",
+		"/H/Workplace/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/description.ext",
+		"/H/Workplace/[3%2eJgKp]James/missions/[3JgKp]RKB_v03.Altis/initServer.sqf",
+		"/H/Workplace/[3%2eJgKp]James/missions/[3JgKp]RKB_v03.Altis/intro.sqf",
+		"/H/Workplace/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/functions/fn_readOption.sqf",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/Build/sk3yn3t_server/functions/fn_logFPS.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v05.Altis/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v05.Altis/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/modules/Upsmon/Init_UPSMON.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/intro.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/initServer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/initPlayerLocal.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/initArray.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/modules/Upsmon/UPSMON.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/modules/Upsmon/UPSMON/MODULES/UPSMON_spawn.sqf",
+		"/H/Workplace/[3%2eJgKp]James/missions/[3JgKp]RKB_v03.Altis/initPlayerLocal.sqf",
+		"/H/Workplace/[3%2eJgKp]James/missions/[3JgKp]RKB_v03.Altis/initArray.sqf",
+		"/H/Workplace/[3%2eJgKp]James/missions/[3JgKp]RKB_v03.Altis/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/onPlayerRespawn.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/mission.sqm",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/functions/fn_storeVariables.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/~Analysetest.Chernarus/mission.sqm",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]AGA_v04.Chernarus/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/xcam.Chernarus/mission.sqm",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/initDialog.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/selChanged.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/JGKP_DC.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/godMode.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/initPinRsc.sqf",
+		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/JGKP_DCPin.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]AGA_v03.Chernarus/description.ext",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/Build/sk3yn3t_client/functions/fn_logFPS.sqf",
+		"/D/Meine Daten/Dropbox/Git/3jgkp_database/Build/sk3yn3t_client/dialog/DBCrateDialog/saveCrate.sqf",
+		"/C/Users/Michael/AppData/Local/Arma 3/arma3server_2016-04-17_14-02-19.rpt",
+		"/C/Users/Michael/AppData/Local/Arma 3/arma3server_2016-04-17_14-01-22.rpt",
+		"/C/Users/Michael/AppData/Local/Arma 3/arma3server_2016-04-17_13-54-47.rpt",
+		"/S/Apps/A3server/A3Master/arma3server_2016-04-12_18-29-43.rpt",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/scripts/Supply_Stuff/Attach.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/parent.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_getTimer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog.hpp",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/modules/gruppenteleport.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_initVars.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog_startTimer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog_init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog_selectShooter.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_startTimer.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSC_init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSC_getTimer.sqf"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"G:\\Workplace\\[3%2eJgKp]James\\missions\\[James]Kartrennen_v1.Altis",
+			"C:\\Users\\Michael\\Documents\\Arma 3 - Other Profiles\\[3%2eJgKp]James\\missions\\[Steff]Sandbox_V14.Takistan,D:\\Meine Daten\\Dropbox\\Git\\Duala-up\\[James&Ahab]Duala-Up.IslaDuala3\\modules\\Upsmon",
+			"C:\\Users\\Michael\\Documents\\Arma 3 - Other Profiles\\[3%2eJgKp]James\\missions\\[Steff]Sandbox_V14.Takistan",
+			"C:\\Users\\Michael\\Documents\\Arma 3 - Other Profiles\\[3%2eJgKp]James\\missions\\[COY]_BW_Zargabad_v0_5.Zargabad",
+			"C:\\Users\\Michael\\Documents\\Arma 3 - Other Profiles\\[3%2eJgKp]James\\missions\\[3JgKp]RKB_v02.Altis\\modules\\Upsmon"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"button",
+			"Button",
+			"[J]",
+			"Rehu",
+			"capsy",
+			"Halder",
+			"Neon",
+			"Taze",
+			"Carol",
+			"freak",
+			"Rukia",
+			"uffz.png",
+			"Rok",
+			"Buho",
+			"Jan",
+			"Fuzi",
+			"Bull",
+			"Lobo",
+			"Greg",
+			"Ahab",
+			"Brow",
+			"u.png",
+			"_ua",
+			"_fa",
+			"suffz.png",
+			"u.png",
+			"sfw.png",
+			"3jgkp/dg/",
+			"jpg",
+			"Listbox",
+			"colorBacktround",
+			"controlsBackground",
+			"RscButton",
+			"List",
+			"JGKP_DC_options_hold",
+			"</br>",
+			"template",
+			"HLC_Optic_G36dualoptic35x;",
+			"hlc_rifle_G36A1AG36_equipped",
+			"BWA3_optic_NSV600~1;",
+			"BWA3_acc_LLM01_irlaser;",
+			"BWA3_optic_ZO4x30",
+			"BWA3_G36",
+			"BWA3_G36_equipped",
+			"BWA3_G36_AG",
+			"BWA3_G36'",
+			"BWA3_G36;",
+			"BWA3_G36",
+			"BWA3_G36AG",
+			"BWA3_G36",
+			"hlc_rifle_g3a3ris",
+			"tf_anprc152",
+			"disable",
+			"AI",
+			"dead",
+			"BIS",
+			" ,",
+			"_markerUnit",
+			"JKPG_DC_options",
+			"Debug",
+			"shadow",
+			"button",
+			"Puris",
+			"Edit",
+			"Text",
+			"{0,0,0,1}",
+			"IPSC",
+			"IPSCTimerRsc",
+			"Frame",
+			"Rsc",
+			"class Rsc",
+			"calss Rsc",
+			"Rsc",
+			"marker",
+			"Create",
+			"expActiv",
+			"trigger",
+			";_",
+			"]; _",
+			"gruppen",
+			"MG",
+			"teleport",
+			"\"T8\\fnc\"",
+			"_camera",
+			"],[",
+			"],",
+			"],[",
+			"],",
+			"random(100)",
+			"5",
+			"_resolution",
+			"pusBack",
+			" _newObject",
+			" ",
+			"];",
+			"log",
+			"JGKP_Loadout_Selection",
+			"_weapons",
+			"_tempWeapons",
+			"_backpacks",
+			"_tempBackpacks",
+			"_EF_gruppe",
+			"_CB_zug",
+			"ResultLoadoutInfo",
+			"dialog\\",
+			"check",
+			"fn",
+			"_addmagazine",
+			"_addweapon",
+			"_addbackpack",
+			"_additem",
+			"fnc_check_result",
+			"_crateInventory",
+			"jgkp",
+			"_crate_",
+			"jgkp",
+			"jgkp_select_crate_inventory",
+			"jgkp",
+			"execVM '",
+			"'",
+			"dialog\\",
+			"server",
+			"b0",
+			"global",
+			"_unit",
+			"\";\";",
+			"_loadout",
+			"hint"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"u.png",
+			"uffz.png",
+			"",
+			"su.png",
+			"uffz.png",
+			"sf.png",
+			"uploads/ckeditor/image/raenge2/",
+			"png",
+			"",
+			"hlc_rifle_G36A1AG36",
+			"",
+			"HLC_Optic_G36dualoptic35x",
+			"hlc_rifle_G36A1",
+			"hlc_rifle_G36A1AG36",
+			"hlc_rifle_G36A1'",
+			"hlc_rifle_G36A1;",
+			"hlc_rifle_G36A1",
+			"hlc_rifle_g3sg1",
+			"pbw_sem52sl",
+			"JGKP_DC_options",
+			"{1,1,1,1}",
+			"IPSCTimer",
+			"class IPSCTimer",
+			"IPSCTimer",
+			"\"modules\\T8_Units\\T8\\fnc\"",
+			"_cam",
+			"pushBack",
+			"dialog\\DBCrateDialog\\",
+			"dialog\\DBLoadoutDialog\\",
+			"_magazines",
+			"_weapons",
+			"_backpacks",
+			"_items",
+			"sk3yn3t_server\\functions\\",
+			"PBW_Helm1_tropen_BO",
+			"PBW_Helm2_fleck",
+			"PBW_Helm1_fleck_BOD",
+			"PBW_Uniform1H_fleck",
+			"PBW_muetze2_fleck",
+			"PBW_muetze2_tropen",
+			"Land_Hbarrier_3_F",
+			"Land_",
+			"Land_IronPipes_F",
+			"Land_Mil_WallBig_Corner_F",
+			"Land_Mil_WallBig_4m_F",
+			"Land_HBarrier_Big_F",
+			"Land_HBarrier_3_F",
+			"Land_HBarrier_Big_F",
+			"\"this enableSimulation false; this allowDamage false;\"",
+			"Race1",
+			"Race2",
+			"Race3",
+			"\"\"Race\"\",1",
+			"\"\"Race\"\",2",
+			"\"\"Race\"\",3",
+			"11.10.2015",
+			"'sk3yn3t_client\\dialog",
+			"'dialog\\selectColumn.sqf'; JGKP_DB_column = ",
+			"\"~\"",
+			"ACE",
+			"ace",
+			":",
+			"",
+			"_queryResult",
+			"BWA3_Vest_Rifleman1_Fleck",
+			"BW_BACKPACK2_SAN_FLECK",
+			"BW_BACKPACK2_SAN_TROPEN",
+			"BWA3_Vest_Medic_Tropen",
+			"BWA3_Vest_Medic_Fleck",
+			"GLT_Carryall_Tropentarn",
+			"GLT_Carryall_Flecktarn",
+			"BWA3_Vest_Autorifleman_Tropen",
+			"BWA3_Vest_Autorifleman_Fleck",
+			"'CAN_COLLIDE']; _newObject enableSimulationGlobal false;",
+			"_unit",
+			"_camo_",
+			"camo",
+			"STR"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 12,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "dialog/runCode.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1167,
+								1167
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/User/SQF.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 168.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "dialog/messagePlayer.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1223,
+								1225
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/User/SQF.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "dialog/parent.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21595,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "dialog/freezePlayer.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1777,
+								1777
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/User/SQF.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "dialog/godMode.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1203,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								889,
+								1014
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/User/SQF.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "dialog/healPlayer.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1127,
+								1127
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/User/SQF.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "dialog/telePlayer.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1144,
+								1144
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/User/SQF.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "dialog/kill.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 754,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								717,
+								717
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/User/SQF.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "dialog/hide.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1000,
+								1000
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/User/SQF.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "dialog/hold.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1694,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1331,
+								1331
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/User/SQF.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/H/Git/3jgkp_database/Build/sk3yn3t_server/config.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1038,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/H/Git/3jgkp_database/Build/sk3yn3t_client/parent.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21337,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/H/Git/3jgkp_database/Build/sk3yn3t_client/config.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 55396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 286.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "dialog/teleToPlayer.sqf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1045,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								922,
+								922
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/User/SQF.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "DebugConsole.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pare",
+				"dialog\\parent.hpp"
+			],
+			[
+				"small",
+				"scripts\\DAC\\fn_createSmallRandomCamp.sqf"
+			],
+			[
+				"change",
+				"scripts\\provinzen\\fn_changeCityStatus.sqf"
+			],
+			[
+				"mis",
+				"mission.sqm"
+			],
+			[
+				"mapper",
+				"scripts\\misc\\fn_objectsMapper.sqf"
+			],
+			[
+				"temp",
+				"scripts\\misc\\templates.sqf"
+			],
+			[
+				"zeus",
+				"scripts\\zg\\zeusForZgFhr.sqf"
+			],
+			[
+				"initp",
+				"initPlayerLocal.sqf"
+			],
+			[
+				"des",
+				"Description.ext"
+			],
+			[
+				"grps",
+				"scripts\\1.grp\\loadouts\\GrpSchrfSchtz.sqf"
+			],
+			[
+				"pio",
+				"scripts\\1.grp\\loadouts\\Pio.sqf"
+			],
+			[
+				"shtz",
+				"scripts\\1.grp\\loadouts\\Schtz.sqf"
+			],
+			[
+				"san",
+				"scripts\\1.grp\\loadouts\\San.sqf"
+			],
+			[
+				"gren",
+				"scripts\\1.grp\\loadouts\\Gren.sqf"
+			],
+			[
+				"pzf",
+				"scripts\\1.grp\\loadouts\\PzF.sqf"
+			],
+			[
+				"mg5_h",
+				"scripts\\1.grp\\loadouts\\MG5_H.sqf"
+			],
+			[
+				"mg5",
+				"scripts\\1.grp\\loadouts\\MG5.sqf"
+			],
+			[
+				"mg4",
+				"scripts\\1.grp\\loadouts\\MG4.sqf"
+			],
+			[
+				"mg3",
+				"scripts\\1.grp\\loadouts\\MG3_H.sqf"
+			],
+			[
+				"grpf",
+				"scripts\\1.grp\\loadouts\\GrpF.sqf"
+			],
+			[
+				"tr",
+				"scripts\\1.grp\\loadouts\\TrpF.sqf"
+			],
+			[
+				"in",
+				"functions\\fn_inline.sqf"
+			],
+			[
+				"scope",
+				"scripts\\scope.sqf"
+			],
+			[
+				"cop",
+				"scripts\\copy.sqf"
+			],
+			[
+				"d",
+				"scripts\\loadouts\\daz_jg_start.sqf"
+			],
+			[
+				"dz",
+				"scripts\\loadouts\\daz_uo_start.sqf"
+			],
+			[
+				"init",
+				"initPlayerLocal.sqf"
+			],
+			[
+				"j",
+				"scripts\\loadouts\\daz_jg_start.sqf"
+			],
+			[
+				"fn",
+				"scripts\\fn_changeModulState.sqf"
+			],
+			[
+				"kiste",
+				"scripts\\module\\kiste8.sqf"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\Meine Daten\\Dropbox\\Git\\3jgkp_database\\Build\\sk3yn3t_client\\functions\\3JGKP_DC.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 276.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

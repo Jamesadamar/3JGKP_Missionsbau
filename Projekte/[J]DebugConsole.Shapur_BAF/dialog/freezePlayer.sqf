@@ -26,8 +26,6 @@ _names = [];
 
 if (count _names == 0) exitWith {hint "Befehl nicht möglich\nKein Spieler ausgewählt"};
 
-
-
 {
   
   	// retrieve player object from player name and teleport to admin (player using console)
@@ -47,6 +45,9 @@ if (count _names == 0) exitWith {hint "Befehl nicht möglich\nKein Spieler ausge
 	  	// markiere Namen als freeze
 	  	_lstBox lbSetText [_indices select _forEachIndex, _x + " (*)"];
 
+	  	// log
+	  	["jgkp_log_action", [getPlayerUID player, "DebugConsole", format["[player, %1, %2]", name _player, "freeze"]]] call CBA_fnc_clientToServerEvent;
+
   	} else {
 
 		// Nachricht an Spieler
@@ -56,6 +57,9 @@ if (count _names == 0) exitWith {hint "Befehl nicht möglich\nKein Spieler ausge
 
   		// markiere Namen als freeze
   		_lstBox lbSetText [_indices select _forEachIndex, _x select [0, (_x find " (*)")]];
+
+  		//log
+	  	["jgkp_log_action", [getPlayerUID player, "DebugConsole", format["[player, %1, %2]", name _player, "unfreeze"]]] call CBA_fnc_clientToServerEvent;
 
 	};
 

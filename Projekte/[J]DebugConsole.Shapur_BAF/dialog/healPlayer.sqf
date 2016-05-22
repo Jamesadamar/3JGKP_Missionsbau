@@ -42,5 +42,8 @@ if (count _names == 0) exitWith {hint "Befehl nicht möglich\nKein Spieler ausge
   	_player setDammage 0;
   	[player, _player] call ace_medical_fnc_treatmentAdvanced_fullHeal; // benutzt PK
 
+    // log
+    ["jgkp_log_action", [getPlayerUID player, "DebugConsole", format["[player, %1, %2]", name _player, "geheilt"]]] call CBA_fnc_clientToServerEvent;
+
 } forEach _names;
 
