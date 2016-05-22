@@ -519,118 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "dialog/runCode.sqf",
-			"settings":
-			{
-				"buffer_size": 1308,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dialog/messagePlayer.sqf",
-			"settings":
-			{
-				"buffer_size": 1333,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dialog/parent.hpp",
-			"settings":
-			{
-				"buffer_size": 21595,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dialog/freezePlayer.sqf",
-			"settings":
-			{
-				"buffer_size": 1847,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dialog/godMode.sqf",
-			"settings":
-			{
-				"buffer_size": 1203,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dialog/healPlayer.sqf",
-			"settings":
-			{
-				"buffer_size": 1182,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dialog/telePlayer.sqf",
-			"settings":
-			{
-				"buffer_size": 1199,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dialog/kill.sqf",
-			"settings":
-			{
-				"buffer_size": 754,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dialog/hide.sqf",
-			"settings":
-			{
-				"buffer_size": 1257,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dialog/hold.sqf",
-			"settings":
-			{
-				"buffer_size": 1694,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/H/Git/3jgkp_database/Build/sk3yn3t_server/config.cpp",
-			"settings":
-			{
-				"buffer_size": 1038,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/H/Git/3jgkp_database/Build/sk3yn3t_client/parent.hpp",
-			"settings":
-			{
-				"buffer_size": 21337,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/H/Git/3jgkp_database/Build/sk3yn3t_client/config.cpp",
-			"settings":
-			{
-				"buffer_size": 55396,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dialog/teleToPlayer.sqf",
-			"settings":
-			{
-				"buffer_size": 1045,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -777,6 +665,80 @@
 	],
 	"file_history":
 	[
+		"/H/Git/3jgkp_database/Build/jgkp_dc_client/config.cpp",
+		"/H/Git/3jgkp_database/Build/jgkp_dc_client/dialog/hpp/JGKP_ConfirmDialog.hpp",
+		"/H/Git/3jgkp_database/Build/jgkp_dc_client/dialog/hpp/JGKP_DC.hpp",
+		"/H/Git/3jgkp_database/Build/jgkp_dc_client/dialog/hpp/JGKP_DCPin.hpp",
+		"/H/Git/3jgkp_database/Build/jgkp_dc_client/dialog/hpp/JGKP_MessageDialog.hpp",
+		"/H/Git/3jgkp_database/Build/jgkp_dc_client/dialog/hpp/JGKP_PlayerDialog.hpp",
+		"/H/Git/3jgkp_database/Build/jgkp_dc_client/dialog/scripts/teleport.sqf",
+		"/H/Git/3jgkp_database/Build/jgkp_dc_client/functions/fn_init.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/hpp/JGKP_DC.hpp",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/hpp/parent.hpp",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/functions/fn_init.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/config.cpp",
+		"/H/Git/3JGKP_Missionsbau/Projekte/[J]DebugConsole.Shapur_BAF/dialog/runCode.sqf",
+		"/H/Git/3JGKP_Missionsbau/Projekte/[J]DebugConsole.Shapur_BAF/dialog/messagePlayer.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/hpp/JGKP_PlayerDialog.hpp",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/hpp/JGKP_MessageDialog.hpp",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/hpp/JGKP_DCPin.hpp",
+		"/H/Git/3JGKP_Missionsbau/Projekte/[J]DebugConsole.Shapur_BAF/dialog/parent.hpp",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/hpp/JGKP_ConfirmDialog.hpp",
+		"/H/Git/3JGKP_Missionsbau/Projekte/[J]DebugConsole.Shapur_BAF/dialog/freezePlayer.sqf",
+		"/H/Git/3JGKP_Missionsbau/Projekte/[J]DebugConsole.Shapur_BAF/dialog/godMode.sqf",
+		"/H/Git/3JGKP_Missionsbau/Projekte/[J]DebugConsole.Shapur_BAF/dialog/healPlayer.sqf",
+		"/H/Git/3JGKP_Missionsbau/Projekte/[J]DebugConsole.Shapur_BAF/dialog/telePlayer.sqf",
+		"/H/Git/3JGKP_Missionsbau/Projekte/[J]DebugConsole.Shapur_BAF/dialog/kill.sqf",
+		"/H/Git/3JGKP_Missionsbau/Projekte/[J]DebugConsole.Shapur_BAF/dialog/hide.sqf",
+		"/H/Git/3JGKP_Missionsbau/Projekte/[J]DebugConsole.Shapur_BAF/dialog/hold.sqf",
+		"/H/Git/3jgkp_database/Build/sk3yn3t_server/config.cpp",
+		"/H/Git/3jgkp_database/Build/sk3yn3t_client/parent.hpp",
+		"/H/Git/3jgkp_database/Build/sk3yn3t_client/config.cpp",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/pinInput.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/runCode.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/saveCommand.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/selChanged.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/telePlayer.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/teleport.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/teleToPlayer.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/deleteCommand.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/freezePlayer.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/godMode.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/handleInput.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/healPlayer.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/hide.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/hold.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/initConfirmDialog.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/initDialog.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/initMessageDialog.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/initPinRsc.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/initPlayerDialog.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/kill.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/log.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/marker.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/messagePlayer.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/nextCommand.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/scripts/parent.hpp",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/functions/fn_readOption.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/functions/fn_storeVariables.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/functions/fn_calcValue.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/functions/fn_findOption.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/functions/fn_getPlayer.sqf",
+		"/H/Git/3JGKP_Missionsbau/Projekte/[J]DebugConsole.Shapur_BAF/dialog/teleToPlayer.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/initServer.sqf",
+		"/H/Git/3jgkp_database/Build/sk3yn3t_server/functions/fn_init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/[J]DebugConsole.Shapur_BAF/initServer.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/initPlayerLocal.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/[J]DebugConsole.Shapur_BAF/description.ext",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/[J]DebugConsole.Shapur_BAF/init.sqf",
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/mpmissions/[J]DebugConsole.Shapur_BAF/initPlayerLocal.sqf",
+		"/S/Steam/steamapps/common/Arma 3/@CBA_A3/addons/cba_main/x/cba/addons/main/config.cpp",
+		"/S/Steam/steamapps/common/Arma 3/@CBA_A3/addons/cba_main/$MIKERO$",
+		"/S/Steam/steamapps/common/Arma 3/@CBA_A3/addons/cba_main/$PREFIX$",
+		"/S/Steam/steamapps/common/Arma 3/@CBA_A3/mod.cpp",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/init.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/dialog/marker.sqf",
+		"/H/Git/3jgkp_database/Build/3jgkp_dc_client/description.ext",
 		"/H/Workplace/3.JgKp/Zugriffe/3JGKP-Admin.ini",
 		"/H/Workplace/3.JgKp/Zugriffe/James.ini",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/JGKP_MessageDialog.hpp",
@@ -830,91 +792,18 @@
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/initServer.sqf",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/FUNCTIONS.hpp",
 		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/description.ext",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/mission.sqm",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/initServer.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/T8-Test.utes/function/fn_createT8Template.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/T8-Test.utes/mission.sqm",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/T8/CONFIG.hpp",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/scripts/setSkill.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Operation_Waldkatze.mske/scripts/createHQ.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/initPlayerServer.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/description.ext",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/onPlayerRespawn.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/initServer.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/functions/createMarkerAndTrigger.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/scripts/findCities.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/initPlayerLocal.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/modules/Upsmon/Init_UPSMON.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/init.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/InitJIPCompatible.sqf",
-		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/godMode.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/functions/fn_findOption.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/description.ext",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/pinInput.sqf",
-		"/H/Workplace/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/description.ext",
-		"/H/Workplace/[3%2eJgKp]James/missions/[3JgKp]RKB_v03.Altis/initServer.sqf",
-		"/H/Workplace/[3%2eJgKp]James/missions/[3JgKp]RKB_v03.Altis/intro.sqf",
-		"/H/Workplace/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/init.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/functions/fn_readOption.sqf",
-		"/D/Meine Daten/Dropbox/Git/3jgkp_database/Build/sk3yn3t_server/functions/fn_logFPS.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v05.Altis/init.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v05.Altis/description.ext",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/description.ext",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/modules/Upsmon/Init_UPSMON.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/intro.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/initServer.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/initPlayerLocal.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/initArray.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/init.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/modules/Upsmon/UPSMON.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/modules/Upsmon/UPSMON/MODULES/UPSMON_spawn.sqf",
-		"/H/Workplace/[3%2eJgKp]James/missions/[3JgKp]RKB_v03.Altis/initPlayerLocal.sqf",
-		"/H/Workplace/[3%2eJgKp]James/missions/[3JgKp]RKB_v03.Altis/initArray.sqf",
-		"/H/Workplace/[3%2eJgKp]James/missions/[3JgKp]RKB_v03.Altis/init.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/onPlayerRespawn.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[3JgKp]RKB_v04.Altis/mission.sqm",
-		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/functions/fn_storeVariables.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/~Analysetest.Chernarus/mission.sqm",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]AGA_v04.Chernarus/description.ext",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/xcam.Chernarus/mission.sqm",
-		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/initDialog.sqf",
-		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/dialog/selChanged.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/JGKP_DC.hpp",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/godMode.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/initPinRsc.sqf",
-		"/H/Workplace/3JGKP_Missionsbau/Projekte/[J]DebugConsole.utes/init.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]DebugConsole.utes/dialog/JGKP_DCPin.hpp",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]AGA_v03.Chernarus/description.ext",
-		"/D/Meine Daten/Dropbox/Git/3jgkp_database/Build/sk3yn3t_client/functions/fn_logFPS.sqf",
-		"/D/Meine Daten/Dropbox/Git/3jgkp_database/Build/sk3yn3t_client/dialog/DBCrateDialog/saveCrate.sqf",
-		"/C/Users/Michael/AppData/Local/Arma 3/arma3server_2016-04-17_14-02-19.rpt",
-		"/C/Users/Michael/AppData/Local/Arma 3/arma3server_2016-04-17_14-01-22.rpt",
-		"/C/Users/Michael/AppData/Local/Arma 3/arma3server_2016-04-17_13-54-47.rpt",
-		"/S/Apps/A3server/A3Master/arma3server_2016-04-12_18-29-43.rpt",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/scripts/Supply_Stuff/Attach.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/parent.hpp",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_getTimer.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_init.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog.hpp",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha02.Kunduz/modules/gruppenteleport.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_initVars.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog_startTimer.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog_init.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/dialog/IPSCTimerDialog_selectShooter.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/description.ext",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSCTimer_startTimer.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSC_init.sqf",
-		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J+A]IPSCTimer.VR/scripts/IPSC_getTimer.sqf"
+		"/C/Users/Michael/Documents/Arma 3 - Other Profiles/[3%2eJgKp]James/missions/[J]Insurgency_Alpha03.Kunduz/mission.sqm"
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
 		"height": 90.0,
 		"where_history":
 		[
+			"H:\\Git\\3jgkp_database\\Build\\jgkp_dc_client",
 			"G:\\Workplace\\[3%2eJgKp]James\\missions\\[James]Kartrennen_v1.Altis",
 			"C:\\Users\\Michael\\Documents\\Arma 3 - Other Profiles\\[3%2eJgKp]James\\missions\\[Steff]Sandbox_V14.Takistan,D:\\Meine Daten\\Dropbox\\Git\\Duala-up\\[James&Ahab]Duala-Up.IslaDuala3\\modules\\Upsmon",
 			"C:\\Users\\Michael\\Documents\\Arma 3 - Other Profiles\\[3%2eJgKp]James\\missions\\[Steff]Sandbox_V14.Takistan",
@@ -927,6 +816,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"3jgkp_dc_client",
+			"rsc\\",
+			"rsc",
+			"colorBackground",
+			"GUI_GRID_H",
+			"GUI_GRID_W",
+			"GUI_GRID_HAbs",
+			"GUI_GRID_WAbs",
+			"GUI_GRID_Y",
+			"GUI_GRID_X",
+			"GUI_GRID_H",
+			"GUI_GRID_Y",
+			"GUI_GRID_X",
+			"GUI_GRID_W",
+			"3jgkp_dc_client",
+			"dialog\\",
+			"functions",
+			"log\\hpp",
+			"dialog\\",
 			"button",
 			"Button",
 			"[J]",
@@ -1035,26 +943,7 @@
 			"check",
 			"fn",
 			"_addmagazine",
-			"_addweapon",
-			"_addbackpack",
-			"_additem",
-			"fnc_check_result",
-			"_crateInventory",
-			"jgkp",
-			"_crate_",
-			"jgkp",
-			"jgkp_select_crate_inventory",
-			"jgkp",
-			"execVM '",
-			"'",
-			"dialog\\",
-			"server",
-			"b0",
-			"global",
-			"_unit",
-			"\";\";",
-			"_loadout",
-			"hint"
+			"_addweapon"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1062,6 +951,25 @@
 		"regex": false,
 		"replace_history":
 		[
+			"jgkp_dc_client",
+			"3jgkp_dc_client\\rsc\\",
+			"GUI_GRID_H_SAVE",
+			"GUI_GRID_W_SAVE",
+			"GUI_GRID_HAbs_SAVE",
+			"GUI_GRID_WAbs_SAVE",
+			"GUI_GRID_Y_SAVE",
+			"GUI_GRID_X_SAVE",
+			"GUI_GRID_H_SAVE",
+			"GUI_GRID_Y_SAVE",
+			"GUI_GRID_X_SAVE",
+			"GUI_GRID_W_SAVE",
+			"3jgkp_dc_client\\dialog\\scripts\\",
+			"dialog\\scripts\\",
+			"3jgkp_dc_client\\dialog\\scripts\\",
+			"3jgkp_dc_client\\dialog\\",
+			"3jgkp_dc_client\\functions",
+			"dialog\\hpp",
+			"3jgkp_dc_client\\dialog\\",
 			"u.png",
 			"uffz.png",
 			"",
@@ -1150,1241 +1058,8 @@
 	"groups":
 	[
 		{
-			"selected": 12,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "dialog/runCode.sqf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1308,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1167,
-								1167
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/User/SQF.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 168.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "dialog/messagePlayer.sqf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1333,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1223,
-								1225
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/User/SQF.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 42.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "dialog/parent.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 21595,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "dialog/freezePlayer.sqf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1847,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1777,
-								1777
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/User/SQF.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 252.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "dialog/godMode.sqf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1203,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								889,
-								1014
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/User/SQF.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 126.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "dialog/healPlayer.sqf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1182,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1127,
-								1127
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/User/SQF.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 42.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "dialog/telePlayer.sqf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1199,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1144,
-								1144
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/User/SQF.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "dialog/kill.sqf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 754,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								717,
-								717
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/User/SQF.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "dialog/hide.sqf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1257,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1000,
-								1000
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/User/SQF.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 126.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "dialog/hold.sqf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1694,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1331,
-								1331
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/User/SQF.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 378.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/H/Git/3jgkp_database/Build/sk3yn3t_server/config.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1038,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/H/Git/3jgkp_database/Build/sk3yn3t_client/parent.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 21337,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "/H/Git/3jgkp_database/Build/sk3yn3t_client/config.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 55396,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 286.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "dialog/teleToPlayer.sqf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1045,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								922,
-								922
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/User/SQF.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -2427,7 +1102,7 @@
 	"project": "DebugConsole.sublime-project",
 	"replace":
 	{
-		"height": 40.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2589,7 +1264,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 276.0,
+	"side_bar_width": 277.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
