@@ -244,7 +244,7 @@ class Mission
 	class Intel
 	{
 		briefingName="[J]Insurgency Kundus";
-		overviewText="Erobern Sie die Karte, V0.4";
+		overviewText="Erobern Sie die Karte, V0.5";
 		resistanceWest=0;
 		resistanceEast=1;
 		startWeather=0.30469999;
