@@ -25,7 +25,7 @@ _trgArea = triggerArea _trg;
 
 deleteVehicle _trg;
 
-// erzeuge lokalen Marker auf Server
+// erzeuge lokalen Marker auf Server -> daher nur dort lokal sichtbar
 _marker = createMarkerLocal [format["T8Patrol_%1", _centre], _centre];
 _marker setMarkerSizeLocal [_trgArea select 0, _trgArea select 1];
 _marker setMarkerShapeLocal "RECTANGLE";
