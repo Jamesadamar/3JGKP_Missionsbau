@@ -22,12 +22,9 @@ Um Readmes zu schreiben und zu formatieren, schaut euch bitte diese Referenz an,
 ## Mitglieder
 Mitglieder dieser Gruppe, die die entsprechenden Rechte an diesem Projekt besitzen, sind:
 * James
-* Ahab
 * Taze
-* Jan
 * Frostie
 * Wiesel
 * Rok
-* Schmitt
 
 
